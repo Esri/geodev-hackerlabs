@@ -39,11 +39,6 @@ Use ArcGIS Online to manage your data in the cloud. Import datasets, share them,
 * [Create Walk Areas](./data/create_walk_areas.md)
 * [Filter Data](/data/filter_data.md)
 * [Create Authenticated Traffic Layer](./data/create_authenticated_traffic_layer.md)
-* Find Hot Spots
-* Calculate Density
-* Clip Features
-* Aggregate Features
-* Dissolve Features
 
 ### 2. Design
 
@@ -53,7 +48,6 @@ Use the Map viewer to create and style maps. Create new maps, select basemaps, s
 * [Style a Map](./design/style_a_map.md)
 * [Style Popups](./design/style_popups.md)
 * [Smart Mapping - Proportional Styling](./design/smart_mapping_proportional.md)
-* Create Map Notes
 * [Save a Layer](./design/save_a_layer.md)
 
 ### 3. Develop
