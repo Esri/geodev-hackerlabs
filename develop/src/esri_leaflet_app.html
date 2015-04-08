@@ -1,0 +1,41 @@
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title>Esri-Leaflet Feature Layers</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+  <!-- Load Leaflet from CDN-->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/leaflet/0.7.3/leaflet.css" />
+  <script src="//cdn.jsdelivr.net/leaflet/0.7.3/leaflet.js"></script>
+
+  <!-- Load Esri Leaflet from CDN -->
+  <script src="//cdn-geoweb.s3.amazonaws.com/esri-leaflet/1.0.0-rc.6/esri-leaflet.js"></script>
+
+  <style>
+    body {margin:0;padding:0;}
+    #map {position: absolute;top:0;bottom:0;right:0;left:0;}
+  </style>
+</head>
+<body>
+
+  <!-- Load Esri Leaflet Renderers -->
+  <script src="//cdn-geoweb.s3.amazonaws.com/esri-leaflet-renderers/0.0.1-beta.3/esri-leaflet-renderers.js"></script>
+
+  <div id="map"></div>
+
+  <script type='text/javascript'>
+    var map = L.map('map').setView([45.533, -122.657], 12);
+    L.esri.basemapLayer('DarkGray').addTo(map);
+
+    // Add Neighborhoods (styled)
+    L.esri.featureLayer('http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Styled/FeatureServer/0').on("load", function () {
+      // Add Rail Lines (styled)
+      L.esri.featureLayer('http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Lines_Styled/FeatureServer/0').on("load", function () {
+        // Add Rail Stops (styled)
+        L.esri.featureLayer('http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0').addTo(map); 
+      }).addTo(map);
+    }).addTo(map);
+  </script>
+
+</body>
+</html>
