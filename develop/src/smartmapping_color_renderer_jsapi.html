@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Buffer Stops with GeometryEngine</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.13/esri/css/esri.css">
+
+  <style>
+    html,body,#mapDiv {
+      padding:0;
+      margin:0;
+      height:100%;
+    }
+
+    .esriBasemapGallery {
+      background: #fafafa;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      height: 100px;
+      overflow-x: auto;
+      overflow-y: hidden;
+    }
+
+    #legendContainer {
+      background-color: #fafafa;
+      position: absolute;
+      right: 10px;
+      top: 140px;
+      padding: 8px;
+    }
+
+    .esriBasemapGalleryLabelContainer, #legendContainer {
+      font-family: sans-serif;
+      font-size: 0.75em;
+    }
+
+    #legendContainer, .esriBasemapGallery {
+      box-shadow: 0px 0px 10px;
+    }
+  </style>
+
+  <script src="http://js.arcgis.com/3.13compact/"></script>
+
+  <script>
+    var map;
+    require(["esri/map",
+             "esri/layers/FeatureLayer",
+             "esri/renderers/smartMapping",
+             "esri/basemaps",
+             "esri/dijit/Basemap",
+             "esri/dijit/BasemapGallery",
+             "esri/dijit/Legend",
+             "esri/InfoTemplate",
+             "dojo/domReady!"],
+      function(Map,FeatureLayer,smartMapping,
+        esriBasemaps,Basemap,BasemapGallery,
+        Legend,InfoTemplate) {
+
+        var basemapList = ["topo","streets","osm","gray","dark-gray"],
+            currentBasemap = basemapList[0];
+      
+        map = new Map("mapDiv", {
+          center: [-122.68, 45.52],
+          zoom: 12,
+          basemap: currentBasemap
+        });
+
+        var neighborhoodsLayer = new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Styled/FeatureServer/0", {outFields: ["NAME","TOTPOP_CY"]});
+
+        map.addLayer(neighborhoodsLayer);
+
+        neighborhoodsLayer.setInfoTemplate(new InfoTemplate("${NAME}","Population: ${TOTPOP_CY}"));
+
+        var legend = new Legend({
+          map: map,
+          layerInfos: [
+            {
+              layer: neighborhoodsLayer,
+              title: "Population"
+            }
+          ]
+        }, "legendDiv");
+
+        legend.startup();
+
+        var basemapGallery = new BasemapGallery({
+          showArcGISBasemaps: false,
+          map: map
+        }, "basemapPickerDiv");
+
+        for (var i = 0; i < basemapList.length ; i++) {
+          var esriBasemap = esriBasemaps[basemapList[i]];
+          basemapGallery.add(new Basemap({
+            id: basemapList[i],
+            layers: esriBasemap.baseMapLayers,
+            thumbnailUrl: esriBasemap.thumbnailUrl,
+            title: esriBasemap.title
+          }));
+        }
+
+        basemapGallery.startup();
+
+        function SetRenderer() {
+          smartMapping.createColorRenderer({
+            layer: neighborhoodsLayer,
+            field: "TOTPOP_CY",
+            basemap: currentBasemap,
+            theme: "high-to-low",
+            showOthers: false
+          }).then(function (colorRenderer) {
+            neighborhoodsLayer.setRenderer(colorRenderer.renderer);
+            neighborhoodsLayer.redraw();
+            legend.refresh();
+          });
+        };
+
+        neighborhoodsLayer.on("load", function() {
+          SetRenderer();
+        });
+
+        basemapGallery.on("selection-change", function (event){
+          currentBasemap = event.target.getSelected().id;
+          if (neighborhoodsLayer.loaded) {
+            SetRenderer();
+          }
+        });
+
+      }
+    );
+  </script>
+</head>
+
+<body>
+  <div id="mapDiv"></div>
+  <div id="basemapPickerDiv" class="esriBasemapGallery"></div>
+  <div id="legendContainer">
+    <div id="legendDiv"></div>
+  </div>
+</body>
+</html>
