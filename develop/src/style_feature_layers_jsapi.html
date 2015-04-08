@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS API Unique Value Renderer</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.13/esri/css/esri.css">
+  <style>
+    html,body,#mapDiv {
+      padding:0;
+      margin:0;
+      height:100%;
+    }
+  </style>
+
+  <script src="http://js.arcgis.com/3.13compact/"></script>
+  <script>
+    var map;
+    require(["esri/map",
+             "esri/layers/FeatureLayer",
+             "esri/symbols/SimpleLineSymbol",
+             "esri/renderers/UniqueValueRenderer",
+             "esri/Color",
+             "dojo/domReady!"],
+      function(Map,FeatureLayer,SimpleLineSymbol,UniqueValueRenderer,Color) {
+        map = new Map("mapDiv", {
+          center: [-122.68, 45.52],
+          zoom: 10,
+          basemap: "dark-gray"
+        });
+
+        var renderer = new UniqueValueRenderer(null, "TYPE");
+
+        // Green for Type MAX
+        renderer.addValue("MAX", new SimpleLineSymbol().setColor(new Color([96, 219, 34, 0.8])));
+
+        // Yellow for Type SC
+        renderer.addValue("SC", new SimpleLineSymbol().setColor(new Color([255, 255, 34, 0.8])));
+
+        // Red for Type MAX/SC
+        renderer.addValue("MAX/SC", new SimpleLineSymbol().setColor(new Color([238, 71, 71, 0.8])));
+
+        // Light blue for Type CR
+        renderer.addValue("CR", new SimpleLineSymbol().setColor(new Color([8, 197, 249, 1])).setWidth(4));
+
+        var featureLayer = new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Lines/FeatureServer/0",{
+          mode: FeatureLayer.MODE_ONDEMAND,
+          outFields: ["TYPE"]
+        });
+
+        featureLayer.setRenderer(renderer);
+        
+        map.addLayer(featureLayer);
+      }
+    );
+  </script>
+</head>
+
+<body>
+  <div id="mapDiv"></div>
+</body>
+</html>

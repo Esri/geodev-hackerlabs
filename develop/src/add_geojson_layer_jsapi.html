@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS API GeoJson Layer</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.13/esri/css/esri.css">
+  <style>
+    html,body,#mapDiv {
+      padding:0;
+      margin:0;
+      height:100%;
+    }
+  </style>
+
+  <script src="http://js.arcgis.com/3.13compact/"></script>
+
+  <!-- ADD Terraformer references -->
+  <script src="//cdn-geoweb.s3.amazonaws.com/terraformer/1.0.4/terraformer.min.js"></script>
+  <script src="//cdn-geoweb.s3.amazonaws.com/terraformer-arcgis-parser/1.0.4/terraformer-arcgis-parser.min.js"></script>
+
+  <script>
+    var map;
+    require(["esri/map",
+            "//esri.github.io/geojson-layer-js/src/geojsonlayer.js",
+             "dojo/domReady!"],
+      function(Map, GeoJsonLayer) {
+        map = new Map("mapDiv", {
+          center: [-122.68, 45.52],
+          zoom: 10,
+          basemap: "dark-gray"
+        });
+      
+        map.on("load", function () {
+          var geoJsonLayer = new GeoJsonLayer({
+            url : "https://cdn.rawgit.com/Esri/geodev-hackerlabs/gh-pages/resources/pdx_data/PDX_Rail_Lines.geojson"
+          });
+
+          map.addLayer(geoJsonLayer);
+        });
+      }
+    );
+  </script>
+</head>
+
+<body>
+  <div id="mapDiv"></div>
+</body>
+</html>

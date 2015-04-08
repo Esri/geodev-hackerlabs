@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Buffer Stops with GeometryEngine</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.13/esri/css/esri.css">
+  <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.13/dijit/themes/claro/claro.css">
+
+  <style>
+    html,body,#mapDiv {
+      padding:0;
+      margin:0;
+      height:100%;
+    }
+    
+    #bufferUI {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 200px;
+      z-index: 1000;
+      padding: 10px;
+      background-color: rgba(0,0,0,0.2);
+    }
+    
+    #bufferDistance {
+      color: white;
+      font-family: sans-serif;
+      height: 1.5em;
+      padding-top: 0.4em;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      text-align: center;
+    }
+  </style>
+
+  <script src="http://js.arcgis.com/3.13compact/"></script>
+
+  <script>
+    var map;
+    require(["esri/map",
+             "esri/layers/GraphicsLayer",
+             "esri/layers/FeatureLayer",
+             "esri/geometry/geometryEngineAsync",
+             "esri/graphic",
+             "esri/graphicsUtils",
+             "esri/symbols/SimpleFillSymbol",
+             "esri/symbols/SimpleLineSymbol",
+             "esri/Color",
+             "dijit/form/HorizontalSlider",
+             "dojo/dom",
+             "dojo/domReady!"],
+      function(Map,GraphicsLayer,FeatureLayer,geometryEngineAsync,Graphic,graphicsUtils,
+               SimpleFillSymbol,SimpleLineSymbol,Color,
+               HorizontalSlider,dom) {
+
+        map = new Map("mapDiv", {
+          center: [-122.68, 45.52],
+          zoom: 12,
+          basemap: "dark-gray"
+        });
+      
+        var bufferLayer = new GraphicsLayer(),
+            stopsLayer = new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0", {
+              mode: FeatureLayer.MODE_SNAPSHOT
+            });
+      
+        map.addLayers([bufferLayer, stopsLayer]);
+
+
+        var bufferDistance = 0.5,
+            bufferSymbol = new SimpleFillSymbol(SimpleFillSymbol.STYLE_SOLID,
+                             new SimpleLineSymbol(SimpleLineSymbol.STYLE_SOLID, new Color([110,110,110]), 1), 
+                           new Color([0,100,255,0.4]));
+
+        function bufferStops(miles) {
+          var stopGeoms = graphicsUtils.getGeometries(stopsLayer.graphics);
+          geometryEngineAsync.union(stopGeoms).then(function (stops) {
+            geometryEngineAsync.geodesicBuffer(stops, miles, 9035).then(function (totalBuffer) {
+              bufferLayer.clear();
+              bufferLayer.add(new Graphic(totalBuffer, bufferSymbol));
+            });
+          });
+        }
+
+        function setBufferDisplay(newValue) {
+          var roundedValue = parseFloat(newValue).toFixed(2),
+              unit = roundedValue == 1.0?"mile":"miles";
+          dom.byId("bufferDistance").innerText = roundedValue + " " + unit;
+          bufferDistance = roundedValue;
+        }
+
+        var slider = new HorizontalSlider({
+          value: bufferDistance,
+          minimum: 0.25,
+          maximum: 5,
+          intermediateChanges: true,
+          showButtons: false,
+          onChange: function(value) {
+            setBufferDisplay(value);
+          },
+          onMouseUp: function () {
+            bufferStops(bufferDistance);
+          }
+        }, "bufferSlider").startup();
+
+        setBufferDisplay(bufferDistance);
+        stopsLayer.on('update-end', function() {
+          bufferStops(bufferDistance);
+        });
+
+      }
+    );
+  </script>
+</head>
+
+<body class="claro">
+  <div id="bufferUI">
+    <div id="bufferSlider"></div>
+    <div id="bufferDistance">1</div>
+  </div>
+  <div id="mapDiv"></div>
+</body>
+</html>

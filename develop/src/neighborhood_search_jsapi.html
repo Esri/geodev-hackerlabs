@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS API Starter App</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.13/esri/css/esri.css">
+    <style>
+        html,body,#mapDiv {
+            padding:0;
+            margin:0;
+            height:100%;
+        }
+
+        #searchDiv {
+            display: block;
+            position: absolute;
+            z-index: 3;
+            top: 20px;
+            left: 74px;
+        }
+    </style>
+
+    <script src="http://js.arcgis.com/3.13compact/"></script>
+
+    <script>
+        var map;
+        require(["esri/map",
+                    "esri/layers/FeatureLayer",
+                    "esri/InfoTemplate",
+                    "esri/dijit/Search",
+                    "dojo/domReady!"],
+                function(Map,FeatureLayer,InfoTemplate,Search) {
+                    map = new Map("mapDiv", {
+                        center: [-122.68, 45.52],
+                        zoom: 10,
+                        basemap: "dark-gray"
+                    });
+
+                    var search = new Search({
+                        map: map
+                    }, "searchDiv");
+
+                    var sources = search.get("sources");
+
+                    sources.push({
+                        featureLayer: new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Styled/FeatureServer/0"),
+                        name: "Neighborhood Search",
+                        searchFields: ["NAME"],
+                        displayField: "NAME",
+                        exactMatch: false,
+                        outFields: ["NAME","AVGHINC_CY","MEDAGE_CY"],
+                        placeholder: "St. Johns",
+                        enableSuggestions: true,
+
+                        // Create an InfoTemplate for the popup
+                        infoTemplate: new InfoTemplate("Neighborhood","Name: ${NAME}</br>Avg. Household Income $ ${AVGHINC_CY}</br>Median Age: ${MEDAGE_CY}")
+                    });
+
+                    search.set("sources",sources);
+
+                    search.startup();
+                }
+        );
+    </script>
+</head>
+
+<body>
+<!-- ADD new div for the search widget -->
+<div id="searchDiv"></div>
+
+<div id="mapDiv"></div>
+</body>
+</html>
