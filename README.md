@@ -20,7 +20,7 @@ You need an ArcGIS Developer or Organization account for the labs.
 Be sure to share all of your maps and apps with this group!
 
 1. Login to [ArcGIS Online](http://arcgis.com)
-2. Join the [Geodev Hackerlabs Share](http://edn.maps.arcgis.com/home/group.html?owner=al_geodev&title=Geodev%20Hackerlabs%20Share) group.
+2. Join the [Geodev Hackerlabs Share](http://www.arcgis.com/home/group.html?owner=al_geodev&title=Geodev%20Hackerlabs%20Share) group.
 3. Share your maps, apps and other creations with this group.
 
 ## Labs
