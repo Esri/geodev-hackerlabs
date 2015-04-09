@@ -9,13 +9,13 @@ A place to learn how to build geo apps with the ArcGIS Platform.
 Follow these steps to prepare for the labs.
 
 1. Sign up for an [ArcGIS Developer subscription](https://developers.arcgis.com/en/sign-up/).
-2. Login to [ArcGIS Online](http://arcgis.com)
+2. Login to [ArcGIS Online](http://arcgis.com).
 3. Join the [Geodev Hackerlabs Share](http://www.arcgis.com/home/group.html?owner=al_geodev&title=Geodev%20Hackerlabs%20Share) group so you can share your work.
-4. Optional: Sign up for a GitHub account if you don't have one.
+4. Sign up for a GitHub account if you don't have one.
 
 ## Labs
 
-The labs can be completeed in any order. You can use the default data but we encourage you to import and use your own data throught. Don't forget to share your maps and apps with the [Geodev Hackerlabs Share](http://www.arcgis.com/home/group.html?owner=al_geodev&title=Geodev%20Hackerlabs%20Share) group.
+The labs can be completed in any order. You can use the default data but we encourage you to import and use your own data throughout. Don't forget to share your maps and apps with the [Geodev Hackerlabs Share](http://www.arcgis.com/home/group.html?owner=al_geodev&title=Geodev%20Hackerlabs%20Share) group.
 
 ### 1. Data
 
