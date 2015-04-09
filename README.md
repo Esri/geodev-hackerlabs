@@ -19,7 +19,7 @@ The labs can be completed in any order. You can use the default data but we enco
 
 ### 1. Data
 
-Use ArcGIS Online to manage your data in the cloud. Import datasets, share them, explore the REST API, enrich your data with social-economic information, perform spatial analyses and more.
+These labs show you how to use ArcGIS Online to manage all of your data in the cloud. All maps, layers and services referred to as `items`. All items contain metadata. With ArcGIS Online you can import datasets, share them, explore the REST API, enrich your data with social-economic information, perform spatial analyses and much, much more.
 
 * [Import Data](./data/import_data.md)
 * [Create and Edit Data](./data/create_and_edit_data.md)
@@ -34,7 +34,7 @@ Use ArcGIS Online to manage your data in the cloud. Import datasets, share them,
 
 ### 2. Design
 
-Use the Map viewer to create and style maps. Create new maps, select basemaps, search for layers, use smart mapping to change symbol styles, style popups, label data, show/hide fields, save layers and create new layers.
+These labs illustrate how to use the Map viewer to create and style web maps. You can create new maps, select different basemaps, search for layers, use smart mapping to change symbol styles, style popups, label data, show/hide fields, filter data, save layers, create new layers and more. Creating a web map with great cartography is important as it serves as the foundation for building better mapping applications.
 
 * [Create a New Map](./design/create_a_new_map.md)
 * [Style a Map](./design/style_a_map.md)
@@ -44,7 +44,7 @@ Use the Map viewer to create and style maps. Create new maps, select basemaps, s
 
 ### 3. Develop
 
-Use ArcGIS app builders, templates and APIs to create custom mapping apps. Use your web maps with the Web AppBuilder to create an HTML5 responsive app or AppStudio to build and deploy a native app for iOS and Android. Or just build a custom app from the ground up with the ArcGIS JS API, Esri-Leaflet or the ArcGIS Runtime APIs.
+These labs illustrate how to use ArcGIS app builders, templates and APIs to build custom mapping apps. You can use your web maps with the Web AppBuilder to create an HTML5 responsive app or AppStudio to build and deploy a native app for iOS and Android. Or you can just build a custom app from the ground up with the ArcGIS JS API, Esri-Leaflet or the ArcGIS Runtime APIs.
 
 * Web Map Apps
  * [Create a Web AppBuilder App](./develop/create_a_wab_app.md)
