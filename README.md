@@ -6,24 +6,16 @@ A place to learn how to build geo apps with the ArcGIS Platform.
 
 ## Getting Started
 
-You need an ArcGIS Developer or Organization account for the labs. 
+Follow these steps to prepare for the labs.
 
 1. Sign up for an [ArcGIS Developer subscription](https://developers.arcgis.com/en/sign-up/).
-2. Get the datasets:
-	* [Download](https://rawgit.com/Esri/geodev-hackerlabs/gh-pages/resources/pdx_data.zip)
-		```or, alternatively```
-	* Fork and Clone this repo.
-3. You should also sign up for a GitHub account if you don't have one.
-
-## Sharing
-
-Be sure to share all of your maps and apps with this group!
-
-1. Login to [ArcGIS Online](http://arcgis.com)
-2. Join the [Geodev Hackerlabs Share](http://www.arcgis.com/home/group.html?owner=al_geodev&title=Geodev%20Hackerlabs%20Share) group.
-3. Share your maps, apps and other creations with this group.
+2. Login to [ArcGIS Online](http://arcgis.com)
+3. Join the [Geodev Hackerlabs Share](http://www.arcgis.com/home/group.html?owner=al_geodev&title=Geodev%20Hackerlabs%20Share) group so you can share your work.
+4. Optional: Sign up for a GitHub account if you don't have one.
 
 ## Labs
+
+The labs can be completeed in any order. You can use the default data but we encourage you to import and use your own data throught. Don't forget to share your maps and apps with the [Geodev Hackerlabs Share](http://www.arcgis.com/home/group.html?owner=al_geodev&title=Geodev%20Hackerlabs%20Share) group.
 
 ### 1. Data
 
