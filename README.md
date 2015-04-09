@@ -10,8 +10,10 @@ Follow these steps to prepare for the labs.
 
 1. Sign up for an [ArcGIS Developer subscription](https://developers.arcgis.com/en/sign-up/).
 2. Login to [ArcGIS Online](http://arcgis.com).
-3. Join the [Geodev Hackerlabs Share](http://www.arcgis.com/home/group.html?owner=al_geodev&title=Geodev%20Hackerlabs%20Share) group so you can share your work.
-4. Sign up for a GitHub account if you don't have one.
+ * Search the `Geodev Hackerlabs Share` > `Search Groups`.
+ * Uncheck `Only search in my account/organization`.
+ * Join the group.
+3. Sign up for a GitHub account if you don't have one.
 
 ## Labs
 
