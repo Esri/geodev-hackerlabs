@@ -6,7 +6,7 @@ If you are new to Esri-Leafet you can get the examples and API documentation [he
 
 ###Steps
 
-1. Copy and paste the code below into [jsbin.com](http://jsbin.com). You can also click here [esri_leaflet_starter.html](src/esri_leaflet_starter.html).
+1. Copy and paste the code below into [jsbin.com](http://jsbin.com). You can also click here [starter_map_leaflet.html](src/starter_map_leaflet.html).
 
     ```html
 

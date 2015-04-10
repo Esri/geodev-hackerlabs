@@ -2,7 +2,7 @@
 
 In this lab you will add a feature layer to an ArcGIS API for JavaScript application. 
 
-1. Click [jsapi_starter.html](src/jsapi_starter.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
+1. Click [starter_map_jsapi.html](src/starter_map_jsapi.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
 
 2. In `JSBin` > `HTML`, update the `require` statement and function definition:
 

@@ -82,8 +82,8 @@ In this lab, you will add navbars and menus to a bootstrap map app to change bas
 	            scrollWheelZoom: false
 	          });
 
-	    		<!-- ADD - Load the responsive map -->
-	           $(document).ready(function () {
+	    		// ADD jQuery code to handle menu interaction
+	           	$(document).ready(function () {
 	              $("#basemapList li").click(function (e) {
 	                switch (e.target.text) {
 	                  case "Streets":
