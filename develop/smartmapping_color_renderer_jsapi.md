@@ -6,7 +6,7 @@ You will add a basemap picker and legend, and configure the Neighborhood layer p
 
 A continuous color ramp renderer will be used, and the color ramp will be automatically selected by Smart Mapping to best suit the underlying basemap.
 
-1. Click [jsapi_starter.html](src/jsapi_starter.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
+1. Click [starter_map_jsapi.html](src/starter_map_jsapi.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
 
 2. In `JSBin` > `HTML`, add the basemap picker and legend `div` elements:
  

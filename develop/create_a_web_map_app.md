@@ -9,8 +9,8 @@ In this lab, you will follow a tutorial in the API's documentation to create an 
 2. Work through the tutorial [here](https://developers.arcgis.com/javascript/jshelp/intro_agstemplate_amd.html), substituting the webmap above.
 
 Your app should look something like this:
- * [Code](https://github.com/Esri/geodev-hackerlabs/blob/gh-pages/develop/src/jsapi_app.html)
- * [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/jsapi_app.html)
+ * [Code](https://github.com/Esri/geodev-hackerlabs/blob/gh-pages/develop/src/web_map_app_jsapi.html)
+ * [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/web_map_app_jsapi.html)
 
 ###Extras
 * Add another widget like the [LocateButton](https://developers.arcgis.com/javascript/jsapi/locatebutton-amd.html) to the application
