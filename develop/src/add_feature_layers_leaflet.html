@@ -11,6 +11,9 @@
     <!-- Load Esri Leaflet from CDN -->
     <script src="//cdn-geoweb.s3.amazonaws.com/esri-leaflet/1.0.0-rc.6/esri-leaflet.js"></script>
 
+    <!-- Load Esri Leaflet Renderers -->
+    <script src="//cdn-geoweb.s3.amazonaws.com/esri-leaflet-renderers/0.0.1-beta.3/esri-leaflet-renderers.js"></script>
+
     <style>
         body {margin:0;padding:0;}
         #map {position: absolute;top:0;bottom:0;right:0;left:0;}
@@ -24,7 +27,19 @@
     var map = L.map('map').setView([45.533, -122.657], 12);
     L.esri.basemapLayer('DarkGray').addTo(map);
 
-    L.esri.featureLayer('http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Lines_Styled/FeatureServer/0').addTo(map);
+    // Load layers in order
+    L.esri.featureLayer('http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Styled/FeatureServer/0').on('load', function() {
+
+        L.esri.featureLayer('http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Lines_Styled/FeatureServer/0').on('load', function() {
+
+            L.esri.featureLayer('http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0').addTo(map);
+
+        }).addTo(map);
+
+    }).addTo(map);
+
+
+
 </script>
 
 </body>
