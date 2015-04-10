@@ -1,4 +1,4 @@
-###Build a Bootstrap starter map
+###Build a Bootstrap Starter Map
 
 In this lab, you will create a simple reponsive map that uses bootstrap-map-js.
 
@@ -79,8 +79,8 @@ In this lab, you will create a simple reponsive map that uses bootstrap-map-js.
 6. Run the app and test resizing the browser to view the responsive map.
 
 Your app should look something like this:
- * [Code](https://github.com/Esri/geodev-hackerlabs/blob/gh-pages/develop/src/build_starter_map_bootstrap.html)
- * [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/build_starter_map_bootstrap.html)
+ * [Code](https://github.com/Esri/geodev-hackerlabs/blob/gh-pages/develop/src/starter_map_bootstrap.html)
+ * [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/starter_map_bootstrap.html)
 
 ###Extras
 * Explore [bootstrap](http://getbootstrap.com).

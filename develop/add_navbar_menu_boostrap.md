@@ -2,7 +2,7 @@
 
 In this lab, you will add navbars and menus to a bootstrap map app to change basemaps. You will use jQuery to listen for menu item changes to change basemaps.
 
-1. Click [build_starter_map_bootstrap.html](src/build_starter_map_bootstrap.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
+1. Click [starter_map_bootstrap.html](src/starter_map_bootstrap.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
 
 2. Add some CSS styling to add space for the fixed navbar.
 
@@ -134,8 +134,8 @@ In this lab, you will add navbars and menus to a bootstrap map app to change bas
 6. Run the app and test the nav and menu items.
 
 Your app should look something like this:
- * [Code](https://github.com/Esri/geodev-hackerlabs/blob/gh-pages/develop/src/add_navbar_menus_bootstrap.html)
- * [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/add_navbar_menus_bootstrap.html)
+ * [Code](https://github.com/Esri/geodev-hackerlabs/blob/gh-pages/develop/src/add_navbar_menu_bootstrap.html)
+ * [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/add_navbar_menu_bootstrap.html)
 
 ###Extras
 * Explore [bootstrap](http://getbootstrap.com).
