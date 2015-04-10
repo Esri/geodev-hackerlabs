@@ -65,6 +65,9 @@ These labs illustrate how to use ArcGIS app builders, templates and APIs to buil
 * Esri-Leaflet
  * [Build a Starter Map](./develop/build_starter_map_leaflet.md)
  * [Add Feature Layers](./develop/add_feature_layers_leaflet.md)
+* Bootstrap
+ * [Build a Starter Bootstrap Map](./develop/build_starter_map_bootstrap.md)
+ * [Add Navbar and Menu](./develop/add_navbar_menu_bootstrap.md)
 
 ## Issues
 

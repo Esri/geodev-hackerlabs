@@ -4,7 +4,7 @@ In this lab, you will add a feature layer to an Esri Leaflet application.
 
 1. Click [esri_leaflet_starter.html](src/esri_leaflet_starter.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
 
-2. in `JSBin` > `HTML`, add the following plugin to draw the layer styles:
+2. In `JSBin` > `HTML`, add the following plugin to draw the layer styles:
 
 	```
 	<!-- Load Esri Leaflet Renderers -->
@@ -12,7 +12,7 @@ In this lab, you will add a feature layer to an Esri Leaflet application.
 
 	```
 
-3. In `JSBin` > `HTML`, add the following layers to the map:
+3. Add the following layers to the map:
 
 	```javascript
 	<script type='text/javascript'>
