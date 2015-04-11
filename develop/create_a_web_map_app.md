@@ -9,9 +9,6 @@ In this lab, you will load a map by a `WebmapID` in a custom JavaScript app. Fee
 2. In `JSBin` > `HTML`, update the `require` statement and function definition:
 
   	```javascript
-  	<script src="http://js.arcgis.com/3.13compact/"></script>
-	<script>
-	  	var map;
 	  	require([
 	    	"esri/map",
 	    	// ADD the ArcGIS library to load the web map
@@ -28,7 +25,7 @@ In this lab, you will load a map by a `WebmapID` in a custom JavaScript app. Fee
 	
 	NOTE: Feel free to use your own webmapid below!
 
-  	```
+  	```javascript
   		require([
 	    	"esri/map",
 	    	"esri/arcgis/utils",
