@@ -16,12 +16,20 @@
     background-color: #fff;
     position: absolute !important;
     z-index: 99;
-    top:10px;
-    right:20px;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    font-family: "Verdana";
   }
+  .esriScalebarLine {
+    border-color: #A8A8A8;
+  }
+  .esriScalebarLabel {
+    color: #F3F3F3;
+  }
+
 </style>
 
-<script>var dojoConfig = { parseOnLoad:true };</script>
 <script src="http://js.arcgis.com/3.13compact/"></script>
 <script>
   var map;
@@ -29,8 +37,9 @@
     "esri/map",
     "esri/arcgis/utils",
     "esri/dijit/Legend",
+    "esri/dijit/Scalebar",
     "dojo/domReady!"
-    ], function(Map, arcgisUtils, Legend) {
+    ], function(Map, arcgisUtils, Legend, Scalebar) {
       arcgisUtils.createMap("27970d32436a446dabb3c71cf949115e", "mapDiv").then(function(response) {
         map = response.map;
 
@@ -38,8 +47,13 @@
           map: map,
           layerInfos: (arcgisUtils.getLegendLayers(response))
         }, "legendDiv");
-
         legend.startup();
+
+        var scalebar = new Scalebar({
+          map: map,
+          scalebarUnit: "dual"
+        });
+
       });
   });
 </script>
