@@ -68,6 +68,11 @@ These labs illustrate how to use ArcGIS app builders, templates and APIs to buil
 * Bootstrap
  * [Build a Starter Bootstrap Map](./develop/build_starter_map_bootstrap.md)
  * [Add Navbar and Menu](./develop/add_navbar_menu_bootstrap.md)
+* Web AppBuilder Developer Edition
+ * [Setup Development Environment](./develop/wab_ide_install.md)
+ * [Add a Custom Theme](./develop/wab_custom_theme.md)
+ * [Add a Custom Widget](./develop/wab_custom_widget.md)
+ * [Deploy to ArcGIS Online](./develop/wab_deploy.md)
 
 ## Issues
 
