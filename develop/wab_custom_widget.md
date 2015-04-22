@@ -23,7 +23,8 @@ function(declare, BaseWidget, SimpleMarkerSymbol, Graphic) {
 
   		
   ```
- 4. Click the config.json file associated with the application and add the uri
+  
+4. Click the config.json file associated with the application and add the uri
   to include the widget on line 72.
   ```json
   "uri": "widgets/SimpleGraphic/Widget",
@@ -33,6 +34,7 @@ function(declare, BaseWidget, SimpleMarkerSymbol, Graphic) {
           "width": 250,
           "height": 210
   ```
-  5. Now launch your application and your new widget appears. If not, do any errors appear in the developer tools?
+  
+ 5. Now launch your application and your new widget appears. If not, do any errors appear in the developer tools?
 
   ![simple-graphic](./simple-graphic.png)
