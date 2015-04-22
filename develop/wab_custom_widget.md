@@ -34,7 +34,7 @@ function(declare, BaseWidget, SimpleMarkerSymbol, Graphic) {
           "width": 250,
           "height": 210
   ```
-  
- 5. Now launch your application and your new widget appears. If not, do any errors appear in the developer tools?
+ 
+5. Now launch your application and your new widget appears. If not, do any errors appear in the developer tools?
 
   ![simple-graphic](./simple-graphic.png)
