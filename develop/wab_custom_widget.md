@@ -7,7 +7,7 @@ In this lab you will create a custom widget and add a configurable widget to Web
 2. Download the SimpleGraphic.zip> unzip it and copy the folder to the widgets directory.
 
 3. Click SimpleGraphic folder>click Widget.js, update the function definition and extend the BaseWidget class: 
-
+ ```javascript
 function(declare, BaseWidget, SimpleMarkerSymbol, Graphic) {
   var clazz = declare([BaseWidget], {
     templateString: '<div><input type="button" value="click me to add a graphic!" data-dojo-attach-event="click:_addGraphic"></div>',
@@ -20,3 +20,6 @@ function(declare, BaseWidget, SimpleMarkerSymbol, Graphic) {
       this.map.graphics.add(myGraphic);
     }
   });
+
+  		...
+  ```
