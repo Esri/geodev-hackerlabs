@@ -21,9 +21,9 @@ function(declare, BaseWidget, SimpleMarkerSymbol, Graphic) {
     }
   });
 
-  		...
+  		
   ```
-  4. Click the config.json file associated with the application and add the uri
+ 4. Click the config.json file associated with the application and add the uri
   to include the widget on line 72.
   ```json
   "uri": "widgets/SimpleGraphic/Widget",
