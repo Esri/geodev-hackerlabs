@@ -1,6 +1,6 @@
 ### Web AppBuilder Custom Widget
 
-In this lab you will create a custom widget and add a configurable widget to Web AppBuilder.
+In this lab you will create a custom widget for Web AppBuilder.
 
 1. Click the widgets folder (e.g., webappbuilder\server\apps\1) for your existing application.
 
@@ -11,7 +11,7 @@ In this lab you will create a custom widget and add a configurable widget to Web
 function(declare, BaseWidget, SimpleMarkerSymbol, Graphic) {
   var clazz = declare([BaseWidget], {
     templateString: '<div><input type="button" value="click me to add a graphic!" data-dojo-attach-event="click:_addGraphic"></div>',
-
+	//Add a point and center
     _addGraphic: function(){
       var centerPoint = this.map.extent.getCenter();
       var symbol = SimpleMarkerSymbol();
@@ -34,5 +34,5 @@ function(declare, BaseWidget, SimpleMarkerSymbol, Graphic) {
           "height": 210
   ```
   5. Now launch your application and your new widget appears. If not, do any errors appear in the developer tools?
-  
+
   ![simple-graphic](./simple-graphic.png)
