@@ -37,4 +37,4 @@ function(declare, BaseWidget, SimpleMarkerSymbol, Graphic) {
  
 5. Now launch your application and your new widget appears. If not, do any errors appear in the developer tools?
 
- ![simple-graphic](./simple-graphic.png)
+ ![simple-graphic](./simple-graphic.PNG)
