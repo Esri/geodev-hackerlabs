@@ -11,7 +11,7 @@ In this lab you will create a custom widget for Web AppBuilder.
 function(declare, BaseWidget, SimpleMarkerSymbol, Graphic) {
   var clazz = declare([BaseWidget], {
     templateString: '<div><input type="button" value="click me to add a graphic!" data-dojo-attach-event="click:_addGraphic"></div>',
-	//Add a point and center
+	//Add a point at center of extent
     _addGraphic: function(){
       var centerPoint = this.map.extent.getCenter();
       var symbol = SimpleMarkerSymbol();
@@ -37,4 +37,4 @@ function(declare, BaseWidget, SimpleMarkerSymbol, Graphic) {
  
 5. Now launch your application and your new widget appears. If not, do any errors appear in the developer tools?
 
-  ![simple-graphic](./simple-graphic.png)
+ ![simple-graphic](./simple-graphic.png)
