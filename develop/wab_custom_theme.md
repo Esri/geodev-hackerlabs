@@ -75,12 +75,13 @@ In this lab you will add a custom theme to Web AppBuilder and style the Geocoder
   "license": "http://www.apache.org/licenses/LICENSE-2.0"
 }
 
+
 ```
 
 3. Click the styles\blue\style.css and update the CSS to add a light blue theme.
 
-```CSS
 
+```CSS
 .jimu-main-bgcolor{
   background-color: #27a4d2;
 }
@@ -127,8 +128,8 @@ In this lab you will add a custom theme to Web AppBuilder and style the Geocoder
 .jimu-widget-header-controller .icon-node.jimu-state-selected{
   background-color: #8db8b9 !important;
 }
-
 ```
+
 
 4. Click config.json in BrightTheme\layouts\default to add the geocoder custom widget to the header controller. Modify the existing uri at line 14. 
 
