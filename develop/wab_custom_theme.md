@@ -79,7 +79,7 @@ In this lab you will add a custom theme to Web AppBuilder and style the Geocoder
 
 3. Click the styles\blue\style.css and update the CSS.
 
-```css
+```CSS
 
 .jimu-main-bgcolor{
   background-color: #27a4d2;
