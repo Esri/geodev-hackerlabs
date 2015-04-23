@@ -78,54 +78,54 @@ In this lab you will add a custom theme to Web AppBuilder and style the Geocoder
 
 3. Click the styles\blue\style.css and update the CSS to add a light blue theme.
 
-```CSS
-.jimu-main-bgcolor{
-  background-color: #27a4d2;
-}
-.jimu-widget-header-controller .jimu-drop-menu{
-  background-color: #27a4d2;
-}
-.jimu-widget-header-controller .jimu-drop-menu .menu-item {
-	border-top: 1px solid #abcecf;
-}
-.jimu-header-more-popup {
-	background-color: #abcecf;
-}
-.jimu-header-more-popup .icon-node {
-	background-color: #27a4d2;
-}
-.jimu-header-more-popup .close {
-	background-color: #abcecf;
-}
-.jimu-header-more-popup .close-inner {
-	background-color: #27a4d2;
-}
-.jimu-preload-widget-icon-panel>.title,
-.jimu-foldable-panel>.title,
-.jimu-title-panel>.title{
-  background-color: #27a4d2;
-}
-
-.jimu-widget-header-controller .subtitle{
-  color: #e8e7e6;
-}
-
-.jimu-widget-header-controller .links .link{
-  color: #e8e7e6;
-}
-
-.jimu-widget-header-controller .signin-section .link{
-  color: #ffffff;
-}
-
-.jimu-widget-header-controller .icon-node{
-  border-right: 1px solid #abcecf;
-}
-
-.jimu-widget-header-controller .icon-node.jimu-state-selected{
-  background-color: #8db8b9 !important;
-}
-```
+	```CSS
+	.jimu-main-bgcolor{
+	  background-color: #27a4d2;
+	}
+	.jimu-widget-header-controller .jimu-drop-menu{
+	  background-color: #27a4d2;
+	}
+	.jimu-widget-header-controller .jimu-drop-menu .menu-item {
+		border-top: 1px solid #abcecf;
+	}
+	.jimu-header-more-popup {
+		background-color: #abcecf;
+	}
+	.jimu-header-more-popup .icon-node {
+		background-color: #27a4d2;
+	}
+	.jimu-header-more-popup .close {
+		background-color: #abcecf;
+	}
+	.jimu-header-more-popup .close-inner {
+		background-color: #27a4d2;
+	}
+	.jimu-preload-widget-icon-panel>.title,
+	.jimu-foldable-panel>.title,
+	.jimu-title-panel>.title{
+	  background-color: #27a4d2;
+	}
+	
+	.jimu-widget-header-controller .subtitle{
+	  color: #e8e7e6;
+	}
+	
+	.jimu-widget-header-controller .links .link{
+	  color: #e8e7e6;
+	}
+	
+	.jimu-widget-header-controller .signin-section .link{
+	  color: #ffffff;
+	}
+	
+	.jimu-widget-header-controller .icon-node{
+	  border-right: 1px solid #abcecf;
+	}
+	
+	.jimu-widget-header-controller .icon-node.jimu-state-selected{
+	  background-color: #8db8b9 !important;
+	}
+	```
 
 
 4. Click config.json in BrightTheme\layouts\default to add the geocoder custom widget to the header controller. Modify the existing uri at line 14. 
