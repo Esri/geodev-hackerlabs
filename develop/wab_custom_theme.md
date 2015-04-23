@@ -172,4 +172,4 @@ In this lab you will add a custom theme to Web AppBuilder and style the Geocoder
 	containerWidth -= 280//280 width of the geocoder plus margin
 	```
 
-8. Create a new application using the NMGIC web app with the Bright Theme and add StreetView Widget to the Header Controller.
+8. Create a new application using the NMGIC web map with the Bright Theme and add the StreetView Widget to the Header Controller.
