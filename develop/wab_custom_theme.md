@@ -142,7 +142,7 @@ In this lab you will add a custom theme to Web AppBuilder and style the Geocoder
 	     "version": "1.2"
 	```
 
-5. Click Widgets\HeaderController\Widget.js to add some space for the geocoder in the header controller. Find the _calcContainerAndEmptyWidth method and add a containerWidth. 
+5. Click Widgets\HeaderController\Widget.js to add some space for the geocoder in the header controller. Find the _calcContainerAndEmptyWidth method and add a containerWidth -=280. 
 
 	```javascript
 	containerWidth -= 280//280 width of the geocoder plus margin
