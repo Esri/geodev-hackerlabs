@@ -69,7 +69,7 @@ In this lab you will add a custom theme to Web AppBuilder and style the Geocoder
   ],
   "version": "1.3",
   "wabVersion": "1.2",
-  "author": "Dmartinez",
+  "author": "enter your name",
   "description": "",
   "copyright": "",
   "license": "http://www.apache.org/licenses/LICENSE-2.0"
@@ -77,3 +77,4 @@ In this lab you will add a custom theme to Web AppBuilder and style the Geocoder
 
 ```
 
+3.
