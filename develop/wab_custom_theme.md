@@ -1,6 +1,6 @@
 ### Web AppBuilder Custom Theme
 
-In this lab you will add a custom theme to Web AppBuilder and style the Geocoder widget.
+In this lab you will add a custom theme to Web AppBuilder and style the Geocoder Widget.
 
 1. [Download the Bright Theme] (wab/BrightTheme.zip?raw=true) unzip and copy the folder to the themes directory(e.g. webappbuilder\client\stemapp\themes)
 
@@ -129,7 +129,7 @@ In this lab you will add a custom theme to Web AppBuilder and style the Geocoder
 
 4. [Download GeocoderCustom] (wab/GeocoderCustom.zip?raw=true) unzip and copy the folder to the widgets directory(e.g., webappbuilder\client\stemapp\widgets).
 
-5. Click GeocoderCustom/css/style and update the CSS to give the geocoder a white background with no border and a rounded 
+5. Click GeocoderCustom/css/style and update the CSS to give the geocoder a white background with no border and a rounded edge.
 
 	```CSS
 	.jimu-widget-geocodercustom{
@@ -152,7 +152,7 @@ In this lab you will add a custom theme to Web AppBuilder and style the Geocoder
 	  	border: none;
 	}
 	```
-6. Click config.json in BrightTheme\layouts\default to add the geocoder custom widget to the header controller. Modify the existing uri at line 14. 
+6. Click config.json in BrightTheme\layouts\default to add the Geocoder Custom Widget to the Header Controller. Modify the existing uri at line 14. 
 
 	```json
 	{
@@ -172,4 +172,4 @@ In this lab you will add a custom theme to Web AppBuilder and style the Geocoder
 	containerWidth -= 280//280 width of the geocoder plus margin
 	```
 
-8. Create a new application in Web AppBuilder with the Bright Theme.
+8. Create a new application using the NMGIC web app with the Bright Theme and add StreetView Widget to the Header Controller.
