@@ -72,6 +72,7 @@ These labs illustrate how to use ArcGIS app builders, templates and APIs to buil
  * [Setup Development Environment](./develop/wab_ide_install.md)
  * [Add a Custom Theme](./develop/wab_custom_theme.md)
  * [Add a Custom Widget](./develop/wab_custom_widget.md)
+ * [Add a Custom Configurable Widget](./develop/wab_config_widget.md)
  * [Deploy to ArcGIS Online](./develop/wab_deploy.md)
 
 ## Issues
