@@ -1,6 +1,6 @@
 ### Web AppBuilder Configurable Widget
 
-In this lab you will add a configurable widget to Web AppBuilder.
+In this lab you will add a configurable Widget to Web AppBuilder.
 
 1. [Download StreetView Widget] (wab/StreetView.zip?raw=true) unzip it and copy the folder to the widgets directory for Web AppBuilder(e.g., webappbuilder\client\stemapp\widgets).
 
