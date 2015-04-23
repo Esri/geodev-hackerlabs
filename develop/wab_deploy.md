@@ -9,14 +9,20 @@ In this exercise, you will:
 
 1. On the Web AppBuilder homepage [http://[server]:3344/webappbuilder/](http://[server]:3344/webappbuilder/), click the three dots on the righthand side of the custom application you’d like to share and choose `Export as Template`
 
+![export template](./wab_export.png)
+
 2. In the next dialog, use the `+` to select individual options you want to make configurable for webmap authors later and then click `Export`
 
 3. Give the template a name, tags, description and save it in your folder of choice
+
+![save template](./wab_save_dialog.png)
 
 4. Choose `click here` to see the item details page for your new template and use the ‘share’ button to share with an appropriate group.
   * If you have not yet configured ArcGIS Online to surface custom templates to webmap authors it will be necessary to follow the steps below.
 
 5. Click `Groups` (in the top lefthand corner of most ArcGIS Online pages) and choose `Create a Group`.  Fill in the appropriate details and share the Group within your organization.
+
+![export template](./wab_group.png)
 
 6. In the `Map` tab of the Organization’s settings (available to administrators from Home > Edit Settings), choose this new group from the dropdown.
 
