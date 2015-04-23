@@ -127,29 +127,9 @@ In this lab you will add a custom theme to Web AppBuilder and style the Geocoder
 	}
 	```
 
+4. [Download GeocoderCustom] (wab/GeocoderCustom.zip?raw=true) unzip and copy the folder to the widgets directory(e.g., webappbuilder\client\stemapp\widgets).
 
-4. Click config.json in BrightTheme\layouts\default to add the geocoder custom widget to the header controller. Modify the existing uri at line 14. 
-
-	```json
-	{
-	      "uri": "widgets/GeocoderCustom/Widget",
-	      "positionRelativeTo": "browser",
-	      "position": {
-	        "right": 15,
-	        "top": 5
-	      },
-	     "style":{"z-index":1000},
-	     "version": "1.2"
-	```
-
-5. Click Widgets\HeaderController\Widget.js to add some space for the geocoder in the header controller. Find the _calcContainerAndEmptyWidth method and add a containerWidth -=280. 
-
-	```javascript
-	containerWidth -= 280//280 width of the geocoder plus margin
-	```
-6. [Download GeocoderCustom] (wab/GeocoderCustom.zip?raw=true) unzip and copy the folder to the widgets directory(e.g., webappbuilder\client\stemapp\widgets).
-
-7. Click GeocoderCustom/css/style and update the CSS to give the geocoder a white background with no border and a rounded 
+5. Click GeocoderCustom/css/style and update the CSS to give the geocoder a white background with no border and a rounded 
 
 	```CSS
 	.jimu-widget-geocodercustom{
@@ -172,3 +152,24 @@ In this lab you will add a custom theme to Web AppBuilder and style the Geocoder
 	  	border: none;
 	}
 	```
+6. Click config.json in BrightTheme\layouts\default to add the geocoder custom widget to the header controller. Modify the existing uri at line 14. 
+
+	```json
+	{
+	      "uri": "widgets/GeocoderCustom/Widget",
+	      "positionRelativeTo": "browser",
+	      "position": {
+	        "right": 15,
+	        "top": 5
+	      },
+	     "style":{"z-index":1000},
+	     "version": "1.2"
+	```
+
+7. Click Widgets\HeaderController\Widget.js to add some space for the geocoder in the header controller. Find the _calcContainerAndEmptyWidth method and add a containerWidth -=280. 
+
+	```javascript
+	containerWidth -= 280//280 width of the geocoder plus margin
+	```
+
+8. Create a new application in Web AppBuilder with the Bright Theme.
