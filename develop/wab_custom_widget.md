@@ -4,7 +4,7 @@ In this lab you will create a custom widget for Web AppBuilder.
 
 1. Click the widgets folder (e.g., webappbuilder\server\apps\1) for your existing application.
 
-2. [Download Simple Graphic zip] (resources/wab/SimpleGraphic.zip)> unzip it and copy the folder to the widgets directory.
+2. [Download Simple Graphic zip] (wab/SimpleGraphic.zip) and unzip it and copy the folder to the widgets directory.
 
 3. Click SimpleGraphic folder>click Widget.js, update the function definition and extend the BaseWidget class: 
  ```javascript
