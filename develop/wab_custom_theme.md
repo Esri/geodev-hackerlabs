@@ -74,8 +74,6 @@ In this lab you will add a custom theme to Web AppBuilder and style the Geocoder
   "copyright": "",
   "license": "http://www.apache.org/licenses/LICENSE-2.0"
 }
-
-
 ```
 
 3. Click the styles\blue\style.css and update the CSS to add a light blue theme.
