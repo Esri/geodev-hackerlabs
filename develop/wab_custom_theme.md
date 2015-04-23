@@ -2,7 +2,7 @@
 
 In this lab you will add a custom theme to Web AppBuilder and style the Geocoder widget.
 
-1. [Download the Bright Theme] (wab/BrightTheme.zip?raw=true)unzip and copy the folder to the themes directory(e.g. webappbuilder\client\stemapp\themes)
+1. [Download the Bright Theme] (wab/BrightTheme.zip?raw=true) unzip and copy the folder to the themes directory(e.g. webappbuilder\client\stemapp\themes)
 
 2. Click the manifest.json to describe the theme's content and update the JSON:
 	```json
@@ -126,7 +126,6 @@ In this lab you will add a custom theme to Web AppBuilder and style the Geocoder
   background-color: #8db8b9 !important;
 }
 ```
-
 
 4. Click config.json in BrightTheme\layouts\default to add the geocoder custom widget to the header controller. Modify the existing uri at line 14. 
 
