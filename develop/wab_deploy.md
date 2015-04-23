@@ -3,8 +3,8 @@
 Now that you have a customized Web AppBuilder application running on your own web server, we can make it available for other webmap authors in our Organization to take advantage of as well.
 
 In this exercise, you will:
-* **Register your local application as an ArcGIS Online ‘Item’**
-* **Create a new group to share the item with**
+* **Register your local application as an ArcGIS Online Item**
+* **Create a new group to share the item**
 * **Ensure that ArcGIS Online is using content from this group when displaying templates**
 
 1. On the Web AppBuilder homepage [http://[server]:3344/webappbuilder/](http://[server]:3344/webappbuilder/), click the three dots on the righthand side of the custom application you’d like to share and choose `Export as Template`
