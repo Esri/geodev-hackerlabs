@@ -81,7 +81,7 @@ Please log all issues [here](https://github.com/Esri/geodev-hackerlabs/issues).
 
 ## Data and Terms of Use
 
-Please see [www.civicapps.org](), [developer.trimet.org/gis]() and [http://www.portlandoregon.gov/bts]() for the data terms of use.
+Please see [www.civicapps.org](http://www.civicapps.org/), [developer.trimet.org/gis](developer.trimet.org/gis) and [http://www.portlandoregon.gov/bts](http://www.portlandoregon.gov/bts) for the data terms of use.
 
 ## Licensing
 Copyright 2015 Esri
