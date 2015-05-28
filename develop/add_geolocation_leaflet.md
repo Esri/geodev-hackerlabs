@@ -4,7 +4,7 @@ In this lab, you will add basic geolocation functionality to an Esri Leaflet app
 
 1. Click [starter_map_leaflet.html](src/starter_map_leaflet.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
 
-2. Add a function to get the current geolocation position from the Geolocation API:
+2. Add a function to get the current geolocation position from the [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation):
 
   ```javascript
   
