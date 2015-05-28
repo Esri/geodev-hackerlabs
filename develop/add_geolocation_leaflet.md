@@ -1,4 +1,4 @@
-###Add Geolocation with Esri Leaflet
+###Add Geolocation to an Esri Leaflet map
 
 In this lab, you will add basic geolocation functionality to an Esri Leaflet application.
 
