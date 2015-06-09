@@ -62,6 +62,8 @@ These labs illustrate how to use ArcGIS app builders, templates and APIs to buil
  * [Feature Layer Search](./develop/feature_layer_search_jsapi.md)
  * [Client-side Buffering](./develop/geometry_engine_buffer_jsapi.md)
  * [Smart Mapping](./develop/smartmapping_color_renderer_jsapi.md)
+ * [Using HTML5 to Query](./develop/html5_query.md)
+
 * Esri-Leaflet
  * [Build a Starter Map](./develop/build_starter_map_leaflet.md)
  * [Add Feature Layers](./develop/add_feature_layers_leaflet.md)
