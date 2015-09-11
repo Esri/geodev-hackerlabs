@@ -17,9 +17,9 @@ In this lab you will add neighborhood polygons and enrich them with population d
   1. Click `Select Variables` and `Search` and select the following:
 
     ```
-    Population > 2014 Total Population (Esri)
-    Income > 2014 Average Household Income (Esri)
-    Age > 2014 Median Age (Esri)
+    Population > 2015 Total Population (Esri)
+    Income > 2015 Average Household Income (Esri)
+    Age > 2015 Median Age (Esri)
     ```
 
     ```HINT: After you select each variable, click `Back` to select each variable and `Apply` when you are done.```
