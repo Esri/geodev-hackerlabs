@@ -20,7 +20,7 @@ In this lab, you will add a feature layer to an Esri Leaflet application.
 		L.esri.basemapLayer('DarkGray').addTo(map);
 
 		 // ADD the rail lines here
-		L.esri.featureLayer('http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Lines_Styled/FeatureServer/0').addTo(map);
+		L.esri.featureLayer({ url: 'http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Lines_Styled/FeatureServer/0'}).addTo(map);
 
 	</script>
 	```
