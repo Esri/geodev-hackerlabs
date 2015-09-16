@@ -7,7 +7,7 @@ You will add an interactive slider and a feedback label to the UI that will be u
 1. Click [starter_map_jsapi.html](src/starter_map_jsapi.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
 
 2. In `JSBin` > `HTML`, add the buffer UI `div` element and its contents:
- 
+
     ```html
     <body>
       <!-- ADD new div for the buffer range UI -->
@@ -15,10 +15,10 @@ You will add an interactive slider and a feedback label to the UI that will be u
         <div id="bufferSlider"></div>
         <div id="bufferDistance">1</div>
       </div>
-       
+
       <div id="mapDiv"></div>
     </body>
-    ``` 
+    ```
 
 3. At the top of the page, add CSS to the main `style` tag to display the buffer range UI:
 
@@ -40,7 +40,7 @@ You will add an interactive slider and a feedback label to the UI that will be u
         padding: 10px;
         background-color: rgba(0,0,0,0.2);
       }
-      
+
       #bufferDistance {
         color: white;
         font-family: sans-serif;
@@ -58,10 +58,10 @@ You will add an interactive slider and a feedback label to the UI that will be u
 4. Add a reference to a Dojo CSS Theme (`claro`), and configure the `body` tag to use it:
 
     ```HTML
-    <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.13/esri/css/esri.css">
+    <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.14/esri/css/esri.css">
 
     <!-- ADD a link to the Claro Dojo theme's CSS -->
-    <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.13/dijit/themes/claro/claro.css">
+    <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.14/dijit/themes/claro/claro.css">
 
     ...
 
@@ -89,7 +89,7 @@ You will add an interactive slider and a feedback label to the UI that will be u
       function(Map,GraphicsLayer,FeatureLayer,geometryEngineAsync,Graphic,graphicsUtils,
                SimpleFillSymbol,SimpleLineSymbol,Color,
                HorizontalSlider,dom) {
-        ... 
+        ...
     ```
 
 6. Add a `FeatureLayer` for the Rail Stops and a `GraphicsLayer` to display the calculated buffers. Optionally modify the map to initialize at zoom level `12`:
@@ -104,13 +104,13 @@ You will add an interactive slider and a feedback label to the UI that will be u
         zoom: 12,
         basemap: "dark-gray"
       });
-    
+
       // ADD Create layers and add them to the map
       var bufferLayer = new GraphicsLayer(),
           stopsLayer = new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0", {
             mode: FeatureLayer.MODE_SNAPSHOT
           });
-    
+
       map.addLayers([bufferLayer, stopsLayer]);
     ```
 
@@ -120,7 +120,7 @@ You will add an interactive slider and a feedback label to the UI that will be u
     // ADD Create a symbol to display the buffers
     var bufferDistance = 0.5,
         bufferSymbol = new SimpleFillSymbol(SimpleFillSymbol.STYLE_SOLID,
-                         new SimpleLineSymbol(SimpleLineSymbol.STYLE_SOLID, new Color([110,110,110]), 1), 
+                         new SimpleLineSymbol(SimpleLineSymbol.STYLE_SOLID, new Color([110,110,110]), 1),
                        new Color([0,100,255,0.4]));
 
     // ADD A function to buffer the Rail Stops
@@ -168,7 +168,7 @@ You will add an interactive slider and a feedback label to the UI that will be u
       bufferStops(bufferDistance);
     });
     ```
-       
+
 9. In JSBin, run the app > Drag or click on the slider at the top-right to pick a buffer size in Miles. When dragging, buffer will not be calculated until you finish dragging.
 
 Your app should look something like this:
@@ -177,7 +177,7 @@ Your app should look something like this:
 
 ###Extras
 * Explore the functions available in the [Geometry Engine](https://developers.arcgis.com/javascript/jsapi/esri.geometry.geometryengine-amd.html).
-* Look at the [FeatureLayer documentation](https://developers.arcgis.com/javascript/jsapi/featurelayer-amd.html) to explore what the `FeatureLayer.MODE_SNAPSHOT` setting means. Notice how it's used with the `update-end` event to calculate the initial buffer. 
+* Look at the [FeatureLayer documentation](https://developers.arcgis.com/javascript/jsapi/featurelayer-amd.html) to explore what the `FeatureLayer.MODE_SNAPSHOT` setting means. Notice how it's used with the `update-end` event to calculate the initial buffer.
 * Change the order the layers are added to the map.
 * Change the symbol used for the buffer display.
 * In the code above, we specify that the buffer distance [unit parameter](https://developers.arcgis.com/javascript/jsapi/esri.geometry.geometryengine-amd.html#geodesicbuffer) to `geodesicBuffer` is `Miles` by using the code `9035`. Explore other codes [here](http://resources.arcgis.com/en/help/arcobjects-cpp/componenthelp/index.html#/esriSRUnitType_Constants/000w00000042000000/) and [here](http://resources.arcgis.com/en/help/arcobjects-cpp/componenthelp/index.html#/esriSRUnit2Type_Constants/000w00000041000000/).
