@@ -68,9 +68,11 @@ These labs illustrate how to use ArcGIS app builders, templates and APIs to buil
  * [Build a Starter Map](./develop/build_starter_map_leaflet.md)
  * [Add Feature Layers](./develop/add_feature_layers_leaflet.md)
  * [Add Geolocation](./develop/add_geolocation_leaflet.md)
+
 * Bootstrap
  * [Build a Starter Bootstrap Map](./develop/build_starter_map_bootstrap.md)
  * [Add Navbar and Menu](./develop/add_navbar_menu_bootstrap.md)
+
 * Web AppBuilder Developer Edition
  * [Setup Development Environment](./develop/wab_ide_install.md)
  * [Add a Custom Theme](./develop/wab_custom_theme.md)
@@ -80,7 +82,7 @@ These labs illustrate how to use ArcGIS app builders, templates and APIs to buil
 
 ## Issues
 
-Please log all issues [here](https://github.com/Esri/geodev-hackerlabs/issues).
+Have a question?  Notice a problem?  Please let us know [here](https://github.com/Esri/geodev-hackerlabs/issues)!
 
 ## Data and Terms of Use
 
