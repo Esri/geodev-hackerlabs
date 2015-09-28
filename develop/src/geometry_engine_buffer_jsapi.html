@@ -5,8 +5,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.13/esri/css/esri.css">
-  <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.13/dijit/themes/claro/claro.css">
+  <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.14/esri/css/esri.css">
+  <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.14/dijit/themes/claro/claro.css">
 
   <style>
     html,body,#mapDiv {
@@ -14,7 +14,7 @@
       margin:0;
       height:100%;
     }
-    
+
     #bufferUI {
       position: absolute;
       top: 20px;
@@ -24,7 +24,7 @@
       padding: 10px;
       background-color: rgba(0,0,0,0.2);
     }
-    
+
     #bufferDistance {
       color: white;
       font-family: sans-serif;
@@ -38,7 +38,7 @@
     }
   </style>
 
-  <script src="http://js.arcgis.com/3.13compact/"></script>
+  <script src="http://js.arcgis.com/3.14compact/"></script>
 
   <script>
     var map;
@@ -63,24 +63,23 @@
           zoom: 12,
           basemap: "dark-gray"
         });
-      
+
         var bufferLayer = new GraphicsLayer(),
             stopsLayer = new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0", {
               mode: FeatureLayer.MODE_SNAPSHOT
             });
-      
-        map.addLayers([bufferLayer, stopsLayer]);
 
+        map.addLayers([bufferLayer, stopsLayer]);
 
         var bufferDistance = 0.5,
             bufferSymbol = new SimpleFillSymbol(SimpleFillSymbol.STYLE_SOLID,
-                             new SimpleLineSymbol(SimpleLineSymbol.STYLE_SOLID, new Color([110,110,110]), 1), 
+                             new SimpleLineSymbol(SimpleLineSymbol.STYLE_SOLID, new Color([110,110,110]), 1),
                            new Color([0,100,255,0.4]));
 
         function bufferStops(miles) {
           var stopGeoms = graphicsUtils.getGeometries(stopsLayer.graphics);
           geometryEngineAsync.union(stopGeoms).then(function (stops) {
-            geometryEngineAsync.geodesicBuffer(stops, miles, 9035).then(function (totalBuffer) {
+            geometryEngineAsync.geodesicBuffer(stops, miles, 'miles').then(function (totalBuffer) {
               bufferLayer.clear();
               bufferLayer.add(new Graphic(totalBuffer, bufferSymbol));
             });
@@ -112,7 +111,6 @@
         stopsLayer.on('update-end', function() {
           bufferStops(bufferDistance);
         });
-
       }
     );
   </script>
