@@ -25,14 +25,16 @@ function(declare, BaseWidget, SimpleMarkerSymbol, Graphic) {
   ```
   
 4. Click the config.json file associated with the application and add the uri
-  to include the widget on line 72.
+  to include the widget. You could simply replace the Scalebar widget with the JSON below. 
   ```json
+  {
   "uri": "widgets/SimpleGraphic/Widget",
         "position": {
           "left": 55,
           "top": 45,
           "width": 250,
           "height": 210
+   },
   ```
  
 5. Now launch your application and your new widget appears. If not, do any errors appear in the developer tools?
