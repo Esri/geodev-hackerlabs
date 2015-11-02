@@ -4,14 +4,14 @@ In this lab we'll write an [ArcGIS API for Javascript](https://developers.arcgis
 
 1. Copy the contents of [locate-query-1.html](src/locate-query-1.html) into a new `.html` file on your own machine and open it via `http://` protocol in your browser.
 
-> Don't have a local web server running?<br>
-> You can find information to help you set one up [**here**](https://gist.github.com/jgravois/5e73b56fa7756fd00b89).
+    > Don't have a local web server running?<br>
+    > You can find information to help you set one up [**here**](https://gist.github.com/jgravois/5e73b56fa7756fd00b89).
 
-![step-1](./html5_query_step_1.png)
+    ![step-1](./html5_query_step_1.png)
 
 2. Listen for the appropriate [event](https://developers.arcgis.com/javascript/jsapi/locatebutton-amd.html#event-locate) to retrieve the current user's location (once it's available).
 
-![step-2](./html5_query_step_2.png)
+    ![step-2](./html5_query_step_2.png)
 
 3. Include a [QueryTask](https://developers.arcgis.com/javascript/jsapi/querytask-amd.html) to pass the user location in a request to an Esri service that hosts [US Census Block Groups](http://sampleserver6.arcgisonline.com/arcgis/rest/services/Census/MapServer/1).
 
