@@ -11,7 +11,7 @@ In this lab you will create a custom widget for Web AppBuilder.
 4. [Download Simple Graphic zip] (wab/SimpleGraphic.zip?raw=true) unzip it and copy the folder to the widgets directory.
 
 5. Click SimpleGraphic folder>click Widget.js, update the function definition and extend the BaseWidget class: 
- ```javascript
+     ```javascript
 function(declare, BaseWidget, SimpleMarkerSymbol, Graphic) {
   var clazz = declare([BaseWidget], {
     templateString: '<div><input type="button" value="click me to add a graphic!" data-dojo-attach-event="click:_addGraphic"></div>',
@@ -23,20 +23,20 @@ function(declare, BaseWidget, SimpleMarkerSymbol, Graphic) {
       var myGraphic = new Graphic(centerPoint, symbol);
       this.map.graphics.add(myGraphic);
     }
-  });
-
-  		
-  ```
-  
+  });	
+    ```
 6. Click the config.json file associated with the application and add the uri
   to include the widget on line 72.
+  
   ```json
+  {
   "uri": "widgets/SimpleGraphic/Widget",
         "position": {
           "left": 55,
           "top": 45,
           "width": 250,
           "height": 210
+   },
   ```
  
 7. Now launch your application and your new widget appears. If not, do any errors appear in the developer tools?
