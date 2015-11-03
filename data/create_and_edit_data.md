@@ -35,7 +35,7 @@ In this lab you will create a new point feature service and add data to it.
 
 6. Zoom to Portland, USA.
 
-7. Click `Edit` the select `New Feature` then hover your mouse over the map. Click on the map to add some points to the feature layer dataset. Make sure you add field values to the popup window.
+7. Click `Edit` then select `New Feature` then hover your mouse over the map. Click on the map to add some points to the feature layer dataset. Make sure you add field values to the popup window.
 
 ###Extras 
 * Explore editing by moving some points and updating the field data.

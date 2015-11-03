@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.13/esri/css/esri.css">
+  <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.14/esri/css/esri.css">
   <style>
     html,body,#mapDiv {
       padding:0;
@@ -14,11 +14,11 @@
     }
   </style>
 
-  <script src="http://js.arcgis.com/3.13compact/"></script>
+  <script src="http://js.arcgis.com/3.14compact/"></script>
   <script>
     var map;
     require(["esri/map",
-             "esri/layers/FeatureLayer", 
+             "esri/layers/FeatureLayer",
              "dojo/domReady!"],
       function(Map, FeatureLayer) {
         map = new Map("mapDiv", {
@@ -32,7 +32,7 @@
         var featureLayer2 = new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Lines_Styled/FeatureServer/0");
 
         var featureLayer3 = new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0");
-        
+
         map.addLayer(featureLayer1);
         map.addLayer(featureLayer2);
         map.addLayer(featureLayer3);

@@ -152,7 +152,7 @@ In this lab you will add a custom theme to Web AppBuilder and style the Geocoder
 	  	border: none;
 	}
 	```
-6. Click config.json in BrightTheme\layouts\default to add the Geocoder Custom Widget to the Header Controller. Modify the existing uri at titled "widgets/Geocoder/Widget at line 14. 
+6. Click config.json in BrightTheme\layouts\default to add the Geocoder Custom Widget to the Header Controller. Modify the existing uri "widgets/Geocoder/Widget at line 14. 
 
 	```json
 	{
@@ -167,7 +167,7 @@ In this lab you will add a custom theme to Web AppBuilder and style the Geocoder
 	```
 
 7. Click Widgets\HeaderController\Widget.js to add some space for the geocoder in the header controller. Find the _calcContainerAndEmptyWidth method and at the end of the if statement for (containerWidth < this.iconwidth * 2)
-   add containerWidth -=280 (Line 678) . 
+   add containerWidth -= 280 (Line 678) . 
 
 	```javascript
 	containerWidth -= 280//280 width of the geocoder plus margin

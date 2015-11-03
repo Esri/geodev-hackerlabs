@@ -2,12 +2,16 @@
 
 In this lab you will create a custom widget for Web AppBuilder.
 
-1. Click the widgets folder (e.g., webappbuilder\server\apps\1) for your existing application.
+1. Create a new app in Web App Builder. Give it a title Portland Neighborhoods WAB App and click Ok.
 
-2. [Download Simple Graphic zip] (wab/SimpleGraphic.zip?raw=true) unzip it and copy the folder to the widgets directory.
+2. Click Map and choose Web Map. Select public and search for Portland Bike Map. Select OK and click save.
 
-3. Click SimpleGraphic folder>click Widget.js, update the function definition and extend the BaseWidget class: 
- ```javascript
+3. Click the widgets folder (e.g., webappbuilder\server\apps\1) for the application you just created.
+
+4. [Download Simple Graphic zip] (wab/SimpleGraphic.zip?raw=true) unzip it and copy the folder to the widgets directory.
+
+5. Click SimpleGraphic folder>click Widget.js, update the function definition and extend the BaseWidget class: 
+     ```javascript
 function(declare, BaseWidget, SimpleMarkerSymbol, Graphic) {
   var clazz = declare([BaseWidget], {
     templateString: '<div><input type="button" value="click me to add a graphic!" data-dojo-attach-event="click:_addGraphic"></div>',
@@ -19,13 +23,11 @@ function(declare, BaseWidget, SimpleMarkerSymbol, Graphic) {
       var myGraphic = new Graphic(centerPoint, symbol);
       this.map.graphics.add(myGraphic);
     }
-  });
-
-  		
-  ```
+  });	
+    ```
+6. Click the config.json file associated with the application and add the uri
+  to include the widget on line 72.
   
-4. Click the config.json file associated with the application and add the uri
-  to include the widget. You could simply replace the Scalebar widget with the JSON below. 
   ```json
   {
   "uri": "widgets/SimpleGraphic/Widget",
@@ -37,6 +39,6 @@ function(declare, BaseWidget, SimpleMarkerSymbol, Graphic) {
    },
   ```
  
-5. Now launch your application and your new widget appears. If not, do any errors appear in the developer tools?
+7. Now launch your application and your new widget appears. If not, do any errors appear in the developer tools?
 
  ![simple-graphic](./simple-graphic.PNG)

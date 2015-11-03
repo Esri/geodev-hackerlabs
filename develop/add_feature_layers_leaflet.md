@@ -8,7 +8,7 @@ In this lab, you will add a feature layer to an Esri Leaflet application.
 
 	```
 	<!-- Load Esri Leaflet Renderers -->
-	<script src="//cdn-geoweb.s3.amazonaws.com/esri-leaflet-renderers/0.0.1-beta.3/esri-leaflet-renderers.js"></script>
+	<script src="//cdn.jsdelivr.net/leaflet.esri.renderers/1.0.0/esri-leaflet-renderers.js"></script>
 
 	```
 
@@ -20,7 +20,7 @@ In this lab, you will add a feature layer to an Esri Leaflet application.
 		L.esri.basemapLayer('DarkGray').addTo(map);
 
 		 // ADD the rail lines here
-		L.esri.featureLayer('http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Lines_Styled/FeatureServer/0').addTo(map);
+		L.esri.featureLayer({ url: 'http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Lines_Styled/FeatureServer/0'}).addTo(map);
 
 	</script>
 	```

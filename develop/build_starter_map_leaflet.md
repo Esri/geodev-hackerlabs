@@ -21,7 +21,7 @@ If you are new to Esri-Leafet you can get the examples and API documentation [he
       <script src="//cdn.jsdelivr.net/leaflet/0.7.3/leaflet.js"></script>
 
       <!-- Load Esri Leaflet from CDN -->
-      <script src="//cdn-geoweb.s3.amazonaws.com/esri-leaflet/1.0.0-rc.6/esri-leaflet.js"></script>
+      <script src="//cdn.jsdelivr.net/leaflet.esri/1.0.0/esri-leaflet.js"></script>
 
       <style>
         body {margin:0;padding:0;}
