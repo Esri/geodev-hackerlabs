@@ -68,6 +68,8 @@ These labs illustrate how to use ArcGIS app builders, templates and APIs to buil
  * [Build a Starter Map](./develop/build_starter_map_leaflet.md)
  * [Add Feature Layers](./develop/add_feature_layers_leaflet.md)
  * [Add Geolocation](./develop/add_geolocation_leaflet.md)
+ * [Use Geolocation to Query](./develop/locate_query_leaflet.md)
+ * [Use Geolocation (and turf) to Query](locate_turf_leaflet.md)
 
 * Bootstrap
  * [Build a Starter Bootstrap Map](./develop/build_starter_map_bootstrap.md)
