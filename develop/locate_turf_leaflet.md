@@ -25,13 +25,11 @@ Add [US Census Block Groups](http://sampleserver6.arcgisonline.com/arcgis/rest/s
 
 first, create a turf [`point`](http://turfjs.org/static/docs/module-turf_point.html) object and pass it the users location).
 
-next, use [`featureLayer.eachFeature()`](http://esri.github.io/esri-leaflet/api-reference/layers/feature-layer.html) to loop through the polygons in the map and compare each one with your GeoJSON point to see which one is [`inside`](http://turfjs.org/static/docs/module-turf_inside.html) (protip:copyright:: you'll need a `<script>` tag in your app pointing at turf's [cdn](http://turfjs.org/) for this).
+next, loop through the polygons in the map and compare each one with your GeoJSON point to see which one is [`inside`](http://turfjs.org/static/docs/module-turf_inside.html) (protip:copyright:: you'll need a `<script>` tag in your app pointing at turf's [cdn](http://turfjs.org/) for this).
 
 > ### 5. Now we just need to draw the one we got back and pan the map.
 
-Update the symbology of the match using [`feautreLayer.setFeatureStyle()`](http://esri.github.io/esri-leaflet/api-reference/layers/feature-layer.html).
-
-Lastly, [update the current extent](http://leafletjs.com/reference.html#map-fitbounds) of the map using the bounds of the feature of interest.
+Last, lets refresh the symbology of the features in the map to make sure the match is displayed [`feautreLayer.set()`](http://esri.github.io/esri-leaflet/api-reference/layers/feature-layer.html).
 
 ![step-4](./html5_query_step_4_leaflet.png)
 
