@@ -23,9 +23,9 @@ Add [US Census Block Groups](http://sampleserver6.arcgisonline.com/arcgis/rest/s
 
 > ### 4. Use [turf](http://turfjs.org/) to see which census block the user is inside.
 
-first, create a turf [`point`](http://turfjs.org/static/docs/module-turf_point.html) object and pass it the users location).
+first, create a turf [`point`](http://turfjs.org/static/docs/module-turf_point.html) object and pass it the users location.
 
-next, loop through the polygons in the map and compare each one with your GeoJSON point to see which one is [`inside`](http://turfjs.org/static/docs/module-turf_inside.html) (protip:copyright:: you'll need a `<script>` tag in your app pointing at turf's [cdn](http://turfjs.org/) for this).
+next, loop through the polygons in the map and compare each one with the user location to see which one its [`inside`](http://turfjs.org/static/docs/module-turf_inside.html) (protip:copyright:: you'll need a `<script>` tag in your app pointing at turf's [cdn](http://turfjs.org/) for this).
 
 > ### 5. Now we just need to draw the one we got back and pan the map.
 
