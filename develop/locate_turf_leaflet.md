@@ -29,7 +29,7 @@ next, loop through the polygons in the map and compare each one with the user lo
 
 > ### 5. Now we just need to draw the one we got back and pan the map.
 
-Last, lets refresh the symbology of the features in the map to make sure the match is displayed [`featureLayer.setStyle()`](http://esri.github.io/esri-leaflet/api-reference/layers/feature-layer.html).
+Last, lets refresh the symbology of the features in the map to make sure the match is displayed using [`featureLayer.setStyle()`](http://esri.github.io/esri-leaflet/api-reference/layers/feature-layer.html).
 
 ![step-4](./html5_query_step_4_leaflet.png)
 
