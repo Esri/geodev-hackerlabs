@@ -7,27 +7,25 @@ In this exercise, you will:
 * **Create a new group to share the item**
 * **Ensure that ArcGIS Online is using content from this group when displaying templates**
 
-1. On the Web AppBuilder homepage [http://[server]:3344/webappbuilder/](http://[server]:3344/webappbuilder/), click the three dots on the righthand side of the custom application you’d like to share and choose `Export as Template`
+1. On the Web AppBuilder homepage [http://[server]:3344/webappbuilder/](http://[server]:3344/webappbuilder/), click `Edit` for the application you would like to export as template.
 
-![export template](./wab_export.png)
+2. In the `Theme` tab click the `^` to the right of the Saved button > `Export As Template` and select the individual options you want to make configurable for webmap authors later and then click `Export` > `Export to My Organization`.
 
-2. In the next dialog, use the `+` to select individual options you want to make configurable for webmap authors later and then click `Export`
+  ![export template](./wab_export.png)
 
-3. Give the template a name, tags, description and save it in your folder of choice
+3. Give the template a name, tags, description and save it in your folder of choice and click `OK`.
+    
+  * If you have not configured ArcGIS Online to share custom templates you will see the following message below. Proceed to step 4. 
+  * If you have configured ArcGIS Online to share custom templates Click `here` and proceed to step 7.  
 
-![save template](./wab_save_dialog.png)
+  ![succesful export template](./wab_exporttemplate.PNG)
 
-4. Choose `click here` to see the item details page for your new template and use the ‘share’ button to share with an appropriate group.
-  * If you have not yet configured ArcGIS Online to surface custom templates to webmap authors it will be necessary to follow the steps below.
+4.  Click `item` to view your template > `Groups` (in the top lefthand corner of most ArcGIS Online pages) and choose `Create a Group`.  Fill in the appropriate details and share the Group within your organization.
+  
+  ![export template](./wab_group.png)
 
-5. Click `Groups` (in the top lefthand corner of most ArcGIS Online pages) and choose `Create a Group`.  Fill in the appropriate details and share the Group within your organization.
+5. Click `My Organization` > `Edit Settings` > `Map` and in the `Web App Templates` choose the new group from the dropdown and click `Save`.
 
-![export template](./wab_group.png)
+6. Share your new template with this group.
 
-6. In the `Map` tab of the Organization’s settings (available to administrators from Home > Edit Settings), choose this new group from the dropdown.
-
-7. Afterwards, share your new template with this group.  (This would also be a good opportunity to confirm that it appears to webmap authors as a configurable template when they share their own maps).
-
-
-### Extras
- * Use your new custom template to share a new webmap in ArcGIS Online.
+7. Test your template in the Map Viewer by creating an application with this configurable template.

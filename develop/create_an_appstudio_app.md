@@ -2,136 +2,44 @@
 
 [AppStudio for ArcGIS](http://www.esri.com/landing-pages/appstudio) allows you to easily build native apps from existing web maps and templates for Android, iOS, Window, Mac OS X and Linux. You can also build custom apps from scratch with Qt/QML. Visit the [help](http://doc.arcgis.com/en/appstudio/) for more information.
 
-In this lab, you will use AppStudio to build an iOS and an Android native app from a single webmap.
+In this lab, you will use AppStudio to build a native app from a single webmap.
 
 
-__Install AppBuilder__
+1. Click [this link](https://appstudio.arcgis.com/create.html) to go to the AppStudio website. 
 
+2. Scroll down to the Map Viewer section and click `start with this template`. 
 
-1. Click [this link](http://doc.arcgis.com/en/appstudio/) to go to the AppStudio download site. 
+3. Sign in with your ArcGIS developer or Organization account.
 
-2. Sign in with your ArcGIS developer or Organization account.
+4. Download [the images] (https://onedrive.live.com/redir?resid=C6391DBDAAFC7209!29697&authkey=!ABHcU1LSk7LrIFw&ithint=folder%2c) you are going to use to build this app.
 
-3. Click `AppStudio for ArcGIS` > `Download Software` and install the software. Or better yet, install locally if you have access to the installation files.
+5. Enter in a title for your app. For the `Thumbail` image use the beerthumbail_200.png.
 
- NOTE: The files are 250-500+ MB so please be patient for it to download.
+6. For the `Background Image` use the beerbackground1024.jpg).
 
+7. For the `App Icon` use the beer_glass_icon_256.png and in the `Background Color` enter in #12142b and click `Save`. 
 
-__Build an App from the MapViewer Template__
+8. Click ` Map Viewer Setting` and for the `Start Background Image` use beerbackground1024.jpg. Click `Start Button` and use brewerybutton.png. 
 
+9. Click `Set` > and in search type `geodev breweries` > click the `Breweries in Oregon` webmap > click `OK` > `Save and Finish`.
 
-1. Start the `AppStudio` application.
+10. To view your app before you build the binaries for your plaform of choice you can use AppStudio Player for ArcGIS in iOS or Android. If you have a device that supports one of these operating systems go ahead and download it from the App Store or Google Play.
 
-2. Click `Wizard` and double-click `MapViewer` to download the template.
+ * If you don't have an iOS or Android go to step 12.
 
-3. Click `MapViewer` again to build a new app. Set the following properties:
+11. Open AppStudio Player and `Sign In` to view your apps. Select the app you just created and select `Yes` to download the selected app to your device. Once the download is complete click `OK`. Select the app again and you now have that app running in AppStudio Player.  
 
- ```
- Title: Portland MapViewer
- Summary: Portland MapViewer
- Description: Portland MapViewer
- Map gallery query: id:<your web map id>
+12. You can also view your application on your desktop before you build the binaries. Click [this link] (http://appstudio.arcgis.com/download.html) to download AppStudio for ArcGIS Desktop edition.
 
- NOTE: If you don't have a webmap, use id: 27970d32436a446dabb3c71cf949115e.
- ```
- * Click `Check Query` to ensure you are pointing at a valid map.
- 
- * Click `Create App` > `Ok`.
+13. Open AppStudio for ArcGIS on your desktop and click `Sign In`. Click the thumbnail icon for your app and select `Yes` to download the selected app to your computer. After the download completes double click your app and now have that app running in AppStudio Player. 
 
-4. Click `Player` or double-click `Portland MapViewer` to run the app locally.
+__You are now ready to deploy your native app__ 
 
 
-__Upload to ArcGIS Online__
+1. Click [this link](https://appstudio.arcgis.com/) to go to the AppStudio website. 
 
+2. Click `Sign In` > click `My Apps` > click your app > click `Build App` > select the plaforms you want to build your app for `(e.g., Windows x86(32 bit) or Mac OS)` > click `Build`.
 
-1. In AppStudio, click `Upload` at the top and then `Sign in`. Use your ArcGIS for Developers or Organization account.
+3. Once the build is completed. Click `Download` to install your app.
 
-2. Click `Add` > `OK`. This uploads the definition of your app to ArcGIS Online.
-
-3. Close the `Upload` app.
-
-3. In your Web Browser, log in to your organization.
-
-4. Click `My Content` > `<your login>` > `Portland MapViewer` to verify your app was uploaded. 
-
-
-__Test with the Player__
-
-
-1. On your computer, start and run `Player` (outside of AppStudio). You should see the apps you have downloaded locally.
-
-2. `Sign In` to your ArcGIS for Developers or Organization account. Now you should see your uploaded apps too.
-
-3. `Double click` on the apps to run them. 
-
-4. Use the gallery to select and run different apps. 
-
-
-###Extras
-
-
-__Explore the Sample Applications__
-
-
-1. In AppStudio, login with your ArcGIS for Developers or Organization account.
-
-2. Click `Search` > `All Apps` > `Groups` > `Sample Apps`.
-
-3. Double click a few of the apps and download them locally.
-
-4. Double click any of the apps to run them.
-
-5. Explore the source code.
-
-
-__Update App Settings__
-
-1. Download [this image](http://esri.github.io/geodev-hackerlabs/resources/pdxbackground.jpeg) for the background.
-
-2. In AppStudio, click `Portland MapViewer` > `Settings` > `Properties` and set the property:
-
- ```
- startBackground: assets/pdxbackground.jpeg
- ```
-
-3. Click `Apply` > `Close` window.
-
-
-__Explore the Project Source__
-
-
-1. In AppStudio, click the `Portland MapViewer` and the `Folder` at the top. This should open your project files.
-
-2. Explore the project files that were created.
-
-3. Click `Qt` to bring up the Qt editor.
-
-4. Explore the structure of the project.
-
-
-__Make Native Apps__
-
-
-1. In AppStudio, click `Make` > `Cloud`.
-
-2. Select `Android` and `iOS`.
-
-3. Click `Request Build` and login to your ArcGIS for Developers or Organization account.
-
-4. Close the `Make` app.
-
-Your build is being processed. You will be notified by email from `AppFactory` when the build has started and when it is finished. In the meantime, go to the next step to explore the project.
-
-
-__Check the App Deployments__
-
-
-When you receive the final build email, proceed with these steps.
-
-1. In a Web Browser, login to your ArcGIS Developers or Organization account.
-
-2. Click `My Content` > `My Apps` and you should see:
- * PortlandMapViewer.ipa
- * PortlandMapViewer.apk
-
-
+* You can find all your app builds in your ArcGIS Developers or Organization account under `My Content` > `My Apps`.
