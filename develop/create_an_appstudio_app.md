@@ -15,7 +15,7 @@ In this lab, you will use AppStudio to build a native app from a single webmap.
 
 5. Enter in a title for your app. For the `Thumbail` image use the beerthumbail_200.png.
 
-6. For the `Background Image` use the beerbackground1024.jpg).
+6. For the `Background Image` use the beerbackground1024.jpg.
 
 7. For the `App Icon` use the beer_glass_icon_256.png and in the `Background Color` enter in #12142b and click `Save`. 
 
