@@ -8,9 +8,17 @@
 
 Sign up for an [ArcGIS Developer subscription](https://developers.arcgis.com/en/sign-up/).
 
+The subscription allows you to:
+* Upload/Import data
+* Create new services
+* Store maps and other content online
+* Perform spatial analysis
+
+> If you already have an Organizational account, that will work too.  You **cannot** use a [free public account](https://geonet.esri.com/groups/geodev/blog/2014/10/15/help-i-cant-get-into-developersarcgiscom).
+
 ## Labs
 
-The labs are divided into modules that you can complete in any order. Choose ones you want to learn, and skip those you already know. You can bring your own data or use tutorial data that we provide. Use web maps of your own or build a new one during the lab. If you want to code, dig into APIs and SDKs from Esri and compatible open source libraries. If not, you can still build highly customized production-ready apps using Esri's templates and builders.  When you're done, don't forget to [share your work](#want-to-share-your-work)!
+The labs are divided into modules that you can complete in any order and at your own pace. Choose ones you want to learn, and skip those you already know. You can bring your own data or use tutorial data that we provide. Use web maps of your own or build a new one during the lab. If you want to code, dig into APIs and SDKs from Esri and compatible open source libraries. If not, you can still build highly customized production-ready apps using Esri's templates and builders.  When you're done, don't forget to [share your work](#want-to-share-your-work)!
 
 ### Data
 

@@ -1,1 +1,1 @@
-A list of the tutorials for this section can be found [here](../README.md#design).
+A list of the **Design Labs** can be found [*here*](../README.md#design).
