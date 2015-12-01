@@ -10,4 +10,4 @@ In this lab you will add a configurable Widget to Web AppBuilder.
 
 4. Click `Save`>`Launch` to test the widget.
 
-__Important: You must obtain either an API Key or a Client ID before you deploy this widget. [Obtain Google API Key/Client ID] (https://developers.google.com/maps/documentation/javascript/get-api-key).__ 
+__Important: You must [obtain either an API Key or a Client ID](https://developers.google.com/maps/documentation/javascript/get-api-key) before you deploy this widget.__ 
