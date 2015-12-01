@@ -14,11 +14,13 @@ The subscription allows you to:
 * Store maps and other content online
 * Perform spatial analysis
 
-> If you already have an Organizational account, that will work too.  You **cannot** use a [free public account](https://geonet.esri.com/groups/geodev/blog/2014/10/15/help-i-cant-get-into-developersarcgiscom).
+> Note: ArcGIS Organizational accounts will work too, but you **cannot** use a [free public account](https://geonet.esri.com/groups/geodev/blog/2014/10/15/help-i-cant-get-into-developersarcgiscom).
+
+If you're brand new to ArcGIS, we recommend that you sign into [ArcGIS.com](https://www.arcgis.com) using your new account and explore or take a look at the help to learn how to do things like [make your first map](http://doc.arcgis.com/en/arcgis-online/create-maps/make-your-first-map.htm).
 
 ## Labs
 
-The labs are divided into modules that you can complete in any order and at your own pace. Choose ones you want to learn, and skip those you already know. You can bring your own data or use tutorial data that we provide. Use web maps of your own or build a new one during the lab. If you want to code, dig into APIs and SDKs from Esri and compatible open source libraries. If not, you can still build highly customized production-ready apps using Esri's templates and builders.  When you're done, don't forget to [share your work](#want-to-share-your-work)!
+The labs are divided into modules that you can complete in any order and at your own pace. Choose ones you want to learn, and skip those you already know. You can bring your own data or use what we provide. You can use web maps of your own or build a new one during the lab. If you want to code, dig into APIs and SDKs from Esri and compatible open source libraries. If not, you can still build highly customized production-ready apps using Esri's templates and builders.  When you're done, don't forget to [share your work](#want-to-share-your-work)!
 
 ### Data
 
@@ -54,6 +56,7 @@ These labs illustrate how to use ArcGIS app builders, templates and APIs to buil
  * [Create a Template App](./develop/create_a_template_app.md)
  * [Create a Web Map App](./develop/create_a_web_map_app.md)
  * [Create an AppStudio App](./develop/create_an_appstudio_app.md)
+
 * JS API
  * [Build a Starter Map](./develop/build_starter_map_jsapi.md)
  * [Add Feature Layers](./develop/add_feature_layers_jsapi.md)
