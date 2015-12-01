@@ -6,20 +6,13 @@ A place to learn how to build geo apps with the ArcGIS Platform.
 
 ## Getting Started
 
-Follow these steps to prepare for the labs.
-
-1. Sign up for an [ArcGIS Developer subscription](https://developers.arcgis.com/en/sign-up/).
-2. Login to [ArcGIS Online](http://arcgis.com).
- * Search for `Geodev Hackerlabs Share` > `Search Groups`.
- * Uncheck `Only search in my account/organization`.
- * Join the group.
-3. Sign up for a GitHub account if you don't have one.
+Sign up for an [ArcGIS Developer subscription](https://developers.arcgis.com/en/sign-up/).
 
 ## Labs
 
-The labs can be completed in any order. You can use the default data but we encourage you to import and use your own data throughout. Don't forget to share your maps and apps with the [Geodev Hackerlabs Share](http://www.arcgis.com/home/group.html?owner=al_geodev&title=Geodev%20Hackerlabs%20Share) group.
+The labs are divided into modules that you can complete in any order. Choose ones you want to learn, and skip those you already know. You can bring your own data or use tutorial data that we provide. Use web maps of your own or build a new one during the lab. If you want to code, dig into APIs and SDKs from Esri and compatible open source libraries. If not, you can still build highly customized production-ready apps using Esri's templates and builders.  When you're done, don't forget to [share your work](#want-to-share-your-work)!
 
-### 1. Data
+### Data
 
 These labs show you how to use ArcGIS Online to manage all of your data in the cloud. All maps, layers and services referred to as `items`. All items contain metadata. With ArcGIS Online you can import datasets, share them, explore the REST API, enrich your data with social-economic information, perform spatial analyses and much, much more.
 
@@ -34,7 +27,7 @@ These labs show you how to use ArcGIS Online to manage all of your data in the c
 * [Filter Data](/data/filter_data.md)
 * [Create Authenticated Traffic Layer](./data/create_authenticated_traffic_layer.md)
 
-### 2. Design
+### Design
 
 These labs illustrate how to use the Map viewer to create and style web maps. You can create new maps, select different basemaps, search for layers, use smart mapping to change symbol styles, style popups, label data, show/hide fields, filter data, save layers, create new layers and more. Creating a web map with great cartography is important as it serves as the foundation for building better mapping applications.
 
@@ -44,7 +37,7 @@ These labs illustrate how to use the Map viewer to create and style web maps. Yo
 * [Smart Mapping - Proportional Styling](./design/smart_mapping_proportional.md)
 * [Save a Layer](./design/save_a_layer.md)
 
-### 3. Develop
+### Develop
 
 These labs illustrate how to use ArcGIS app builders, templates and APIs to build custom mapping apps. You can use your web maps with the Web AppBuilder to create an HTML5 responsive app or AppStudio to build and deploy a native app for iOS and Android. Or you can just build a custom app from the ground up with the ArcGIS JS API, Esri-Leaflet or the ArcGIS Runtime APIs.
 
@@ -65,7 +58,7 @@ These labs illustrate how to use ArcGIS app builders, templates and APIs to buil
  * [Using HTML5 to Query](./develop/html5_query.md)
 
 * JS API 4 Beta 2
- * [Build a Starter 3D Map](./develop/build_a_starter_3Dmap_jsapi4b2.md) 
+ * [Build a Starter 3D Map](./develop/build_a_starter_3Dmap_jsapi4b2.md)
 
 * Esri-Leaflet
  * [Build a Starter Map](./develop/build_starter_map_leaflet.md)
@@ -84,9 +77,19 @@ These labs illustrate how to use ArcGIS app builders, templates and APIs to buil
  * [Add a Custom Configurable Widget](./develop/wab_config_widget.md)
  * [Deploy to ArcGIS Online](./develop/wab_deploy.md)
 
-## Issues
+## Want to share your work?
 
-Have a question?  Notice a problem?  Please let us know [here](https://github.com/Esri/geodev-hackerlabs/issues)!
+1. Login to [ArcGIS Online](http://arcgis.com).
+ * Search for `Geodev Hackerlabs Share` > `Search Groups`.
+ * Uncheck `Only search in my account/organization`.
+ * Join the group.
+ * Share your own items.
+
+## Want to help?
+
+1. [Sign up](https://github.com/join) for a GitHub account (if you don't already have one).
+2. Let us know what works for you and what doesn't in [an issue](https://github.com/Esri/geodev-hackerlabs/issues/new)
+3. If you're already savvy with [git](https://git-scm.com/) (or want an excuse to start learning), feel free to fork the repo and send us a pull request!  There is lots on the web to help you get started, but we especially like the stuff [here](https://guides.github.com/).
 
 ## Data and Terms of Use
 
