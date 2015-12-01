@@ -6,8 +6,8 @@ In this lab you will add a configurable Widget to Web AppBuilder.
 
 2. Open Web AppBuilder in the browser and create a new app.
 
-3. Click Widget>Header Controller set the widgets in this controller>click here to add widget>click Google Street View>click OK twice.
+3. Click `Widget` > `Header Controller set the widgets in this controller`> click `here to add widget`> click `Google Street View`> click `OK`> remove the API key for testing purposes> click `OK`.
 
-4. Click Save>Launch.
+4. Click `Save`>`Launch` to test the widget.
 
-
+__Important: You must [obtain either an API Key or a Client ID](https://developers.google.com/maps/documentation/javascript/get-api-key) before you deploy this widget.__ 
