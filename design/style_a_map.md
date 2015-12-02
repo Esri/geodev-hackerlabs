@@ -38,7 +38,7 @@ In this lab you will use the styling capabilities of the viewer to make your map
 
 6. Click on `Neighborhoods` > `Change Style` and set the following:
  
- 	1. `Choose an attribute to show: COLALI`
+ 	1. `Choose an attribute to show: COALIT`
  	
  	2. `Select a drawing Style` > `Options`
   	
