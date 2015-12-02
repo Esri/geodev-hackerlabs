@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
+    <title>VectorTileLayer sample</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/3.15/esri/css/esri.css">
+    <style>
+        html,
+        body,
+        #map {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <script src="https://js.arcgis.com/3.15/"></script>
+    <script>
+        require([
+            "esri/map",
+            "esri/layers/VectorTileLayer",
+            "dojo/domReady!"
+        ], function(Map, VectorTileLayer) {
+
+            var map = new Map("map", {
+                center: [2.3508, 48.8567], // longitude, latitude
+                zoom: 10
+            });
+
+            //The URL referenced in the constructor may point to a style url JSON (as in this sample)
+            //or directly to a vector tile service
+            var vtlayer = new VectorTileLayer("https://www.arcgis.com/sharing/rest/content/items/f96366254a564adda1dc468b447ed956/resources/styles/root.json");
+            map.addLayer(vtlayer);
+        });
+    </script>
+</head>
+<body>
+<div id="map"></div>
+</body>
+</html>
