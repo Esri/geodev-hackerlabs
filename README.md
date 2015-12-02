@@ -67,6 +67,7 @@ These labs illustrate how to use ArcGIS app builders, templates and APIs to buil
  * [Client-side Buffering](./develop/geometry_engine_buffer_jsapi.md)
  * [Smart Mapping](./develop/smartmapping_color_renderer_jsapi.md)
  * [Using HTML5 to Query](./develop/html5_query.md)
+ * [Build Map with Vector Tiles](./develop/build_map_with_vectortilelayer.md)
 
 * JS API 4 Beta 2
  * [Build a Starter 3D Map](./develop/build_a_starter_3Dmap_jsapi4b2.md)
