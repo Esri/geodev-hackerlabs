@@ -36,12 +36,12 @@ In the steps below you're going to change the color for a couple of layers in th
 	
 		```
 
-	```json
+		```json
 			"source-layer": "Water area",
       		"paint": {
         			"fill-outline-color": "#a6deff",
         			"fill-color": "#a6deff"
-	```    
+		```    
 	
 	2. Land area: change the `fill-color` from `#ededed` to `#dfffd9`.
 
