@@ -1,6 +1,6 @@
 ###Customize Vector Map
 
-Esri has introduced a new set of vector basemaps (now in beta release). There are several benefits to vector basemaps including high-res displays, smaller and easier to update, but perhaps the greatest benefit is the ability to customize the look and feel of the basemaps.
+Esri has introduced a new set of vector basemaps (now in beta release). There are several benefits to vector basemaps including high-res displays, smaller and easier to update and the ability to customize the look and feel of the basemaps.
 
 In this lab you will customize a vector basemap from an existing tile layer and then publish the updated style as a new tile layer.
 
