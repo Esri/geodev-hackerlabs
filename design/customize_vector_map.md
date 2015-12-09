@@ -43,7 +43,7 @@ In the steps below you're going to change the color for a couple of layers in th
         			"fill-color": "#a6deff"
 	```    
 	
-2. Land: change the `fill-color` from `#ededed` to `#dfffd9`.
+	2. Land: change the `fill-color` from `#ededed` to `#dfffd9`.
 
 ```json
    		"source-layer": "Land",
