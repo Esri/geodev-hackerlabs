@@ -29,14 +29,13 @@ In the steps below you're going to change the color for a couple of layers in th
 	
   	 1. Background, water, and marine bodies: use the find and replace tool to find `#cfcfd4` and replace with `#a6deff`. This approach is recommended because these layers appear multiple times in the map style for different zoom levels.  
 
-Background
 ```json
 		"type": "background",
       	"paint": {
         "background-color": "#a6deff"
 	
 ```
-Water Area
+
 ```json
 		"source-layer": "Water area",
       	"paint": {
@@ -60,13 +59,12 @@ Water Area
 ```	
 	4. Admin0 and Admin1 forest or park areas: change the `fill-color` from `#e4e8e4` to `#9cb297`.
 
-Admin0
 ```json
 		"source-layer": "Admin0 forest or park",
       	"paint": {
         	"fill-color": "#9cb297"
 ```	
-Admin1
+
 ```json
 		"source-layer": "Admin1 forest or park",
       	"paint": {
