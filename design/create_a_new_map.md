@@ -22,7 +22,7 @@ In this lab you will create a new map from existing layers that have been alread
 
 		NOTE: Do not select the `xxx_Styled` layers.
 
-	2. Clikc `Add` to add each layer to the map.
+	2. Click `Add` to add each layer to the map.
 
 	3. Click `Done Adding Layers`.
  
