@@ -31,18 +31,19 @@ In the steps below you're going to change the color for a couple of layers in th
 
 	```json
 			"type": "background",
-      			"paint": {
+      		"paint": {
         			"background-color": "#a6deff"
 	
 	```
 
-```json
-		"source-layer": "Water area",
-      	"paint": {
-        	"fill-outline-color": "#a6deff",
-        	"fill-color": "#a6deff"
-```    
-	2. Land: change the `fill-color` from `#ededed` to `#dfffd9`.
+	```json
+			"source-layer": "Water area",
+      		"paint": {
+        			"fill-outline-color": "#a6deff",
+        			"fill-color": "#a6deff"
+	```    
+	
+2. Land: change the `fill-color` from `#ededed` to `#dfffd9`.
 
 ```json
    		"source-layer": "Land",
