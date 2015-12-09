@@ -29,12 +29,12 @@ In the steps below you're going to change the color for a couple of layers in th
 	
   	 1. Background, water, and marine bodies: use the find and replace tool to find `#cfcfd4` and replace with `#a6deff`. This approach is recommended because these layers appear multiple times in the map style for different zoom levels.  
 
-```json
-		"type": "background",
-      	"paint": {
-        "background-color": "#a6deff"
+	```json
+			"type": "background",
+      			"paint": {
+        			"background-color": "#a6deff"
 	
-```
+	```
 
 ```json
 		"source-layer": "Water area",
