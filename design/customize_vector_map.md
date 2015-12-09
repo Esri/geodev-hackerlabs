@@ -45,39 +45,43 @@ In the steps below you're going to change the color for a couple of layers in th
 	
 	2. Land: change the `fill-color` from `#ededed` to `#dfffd9`.
 
-```json
-   		"source-layer": "Land",
-      	"paint": {
-        	"fill-color": "#dfffd9"
-```	
+	```json
+   			"source-layer": "Land",
+      		"paint": {
+        		"fill-color": "#dfffd9"
+	```	
+	
 	3. Urban area: change the `fill-color` from `#e8e8e8` to `#d5e3ca`.
 
-```json
-		"source-layer": "Urban area",
-      	"maxzoom": 12,
-      	"paint": {
-        	"fill-color": "#d5e3ca"
-```	
+	```json
+			"source-layer": "Urban area",
+      			"maxzoom": 12,
+      		"paint": {
+        		"fill-color": "#d5e3ca"
+	```
+	
 	4. Admin0 and Admin1 forest or park areas: change the `fill-color` from `#e4e8e4` to `#9cb297`.
 
-```json
-		"source-layer": "Admin0 forest or park",
-      	"paint": {
-        	"fill-color": "#9cb297"
-```	
+	```json
+			"source-layer": "Admin0 forest or park",
+      		"paint": {
+        		"fill-color": "#9cb297"
+	```	
 
-```json
-		"source-layer": "Admin1 forest or park",
-      	"paint": {
-        	"fill-color": "#9cb297"	
-```	
+	```json
+			"source-layer": "Admin1 forest or park",
+      		"paint": {
+        		"fill-color": "#9cb297"	
+	```	
+
 	5. Park or farming areas: change the `fill-color` from `#e4e8e4` to `#929991` and `Save` the file.
 
-```json
-		"source-layer": "Park or farming",
-      	"paint": {
-        	"fill-color": "#929991"
-```
+	```json
+			"source-layer": "Park or farming",
+      		"paint": {
+        		"fill-color": "#929991"
+	```
+	
 8. Go to [arcgis.com](http://www.arcgis.com) and login if necessary. Click `My Content` > click the `Light Green Canvas` tile layer > click `UPDATE` > `Choose File` > select the `root.json` file > `UPDATE ITEM`.
 
 9. To see the changes, click `OPEN` > `Add layer to new map`.  
