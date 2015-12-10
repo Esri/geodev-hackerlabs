@@ -27,7 +27,7 @@ In this lab you will customize a vector basemap from an existing tile layer and 
 7. Open the `root.json` style you downloaded in a text editor. The `root.json` file controls the map style. 
 In the steps below you're going to change the color for a couple of layers in the map.
 	
-	1. Background, water, and marine bodies: use the find and replace tool to find `#cfcfd4` and replace with `#a6deff`. This approach is recommended because these layers appear multiple times in the map style for different zoom levels.  
+	1. Background, water, and marine areas: use the find and replace tool to find `#cfcfd4` and replace with `#a6deff`. This approach is recommended because these layers appear multiple times in the map style for different zoom levels.  
 
 		```json
 			"type": "background",
@@ -43,7 +43,7 @@ In the steps below you're going to change the color for a couple of layers in th
         			"fill-color": "#a6deff"
 		```    
 	
-	2. Land area: change the `fill-color` from `#ededed` to `#dfffd9`.
+	2. Land: change the `fill-color` from `#ededed` to `#dfffd9`.
 
 		```json
    			"source-layer": "Land",
@@ -74,7 +74,7 @@ In the steps below you're going to change the color for a couple of layers in th
         		"fill-color": "#9cb297"	
 		```	
 
-	5. Park or farming areas: change the `fill-color` from `#e4e8e4` to `#929991` and `Save` the file.
+	5. Park or farming: change the `fill-color` from `#e4e8e4` to `#929991` and `Save` the file.
 
 		```json
 			"source-layer": "Park or farming",
