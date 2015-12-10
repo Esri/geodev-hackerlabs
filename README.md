@@ -45,7 +45,7 @@ These labs illustrate how to use the Map viewer to create and style web maps. Yo
 * [Style a Map](./design/style_a_map.md)
 * [Style Popups](./design/style_popups.md)
 * [Smart Mapping - Proportional Styling](./design/smart_mapping_proportional.md)
-* [Customize Vector Map](./design/customize_vector_map.md)
+* [Customize Vector Basemap](./design/customize_vector_map.md)
 * [Save a Layer](./design/save_a_layer.md)
 
 ### Develop

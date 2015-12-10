@@ -21,7 +21,7 @@ In this lab, you will use AppStudio to build a native app from a single webmap.
 
 8. Click ` Map Viewer Setting` and for the `Start Background Image` use beerbackground1024.jpg. Click `Start Button` and use brewerybutton.png. 
 
-9. Click `Set` > and in search type `geodev breweries` > click the `Breweries in Oregon` webmap > click `OK` > `Save and Finish`.
+9. Click `Set` > and in search type `geodev breweries colorado` > click the `Breweries in Colorado` webmap > click `OK` > `Save and Finish`.
 
 10. To view your app before you build the binaries for your plaform of choice you can use AppStudio Player for ArcGIS in iOS or Android. If you have a device that supports one of these operating systems go ahead and download it from the App Store or Google Play.
 
