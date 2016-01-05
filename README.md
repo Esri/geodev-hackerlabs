@@ -6,7 +6,7 @@
 
 ## Getting Started
 
-Sign up for an [ArcGIS Developer subscription](https://developers.arcgis.com/en/sign-up/).
+Sign up for a free [ArcGIS Developer subscription](https://developers.arcgis.com/en/sign-up/).
 
 The subscription allows you to:
 * Upload/Import data
