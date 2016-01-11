@@ -6,17 +6,16 @@
 
 ## Getting Started
 
-Sign up for a free [ArcGIS Developer subscription](https://developers.arcgis.com/en/sign-up/).
+Sign up for a free [ArcGIS Developer subscription](https://developers.arcgis.com/en/sign-up/) to complete the labs. The subscription allows you to download software, register apps, import data, create new services, store maps and other content, perform spatial analysis and much, much more.
 
-The subscription allows you to:
-* Upload/Import data
-* Create new services
-* Store maps and other content online
-* Perform spatial analysis
+> Note: ArcGIS Organizational accounts can also be used but a [free public account](https://geonet.esri.com/groups/geodev/blog/2014/10/15/help-i-cant-get-into-developersarcgiscom) cannot be used.
 
-> Note: ArcGIS Organizational accounts will work too, but you **cannot** use a [free public account](https://geonet.esri.com/groups/geodev/blog/2014/10/15/help-i-cant-get-into-developersarcgiscom).
+## Resources
+If you're brand new to ArcGIS, we recommend that you use your **new developer account** to sign into to [ArcGIS.com](https://www.arcgis.com) to learn how to [make your first map](http://doc.arcgis.com/en/arcgis-online/create-maps/make-your-first-map.htm), and [developers.arcgis.com](http://developers.arcgis.com) to learn how to manage apps. Here are a few other important links:
 
-If you're brand new to ArcGIS, we recommend that you sign into [ArcGIS.com](https://www.arcgis.com) using your new account and explore or take a look at the help to learn how to do things like [make your first map](http://doc.arcgis.com/en/arcgis-online/create-maps/make-your-first-map.htm).
+* [ArcGIS for Developers](http://developers.arcgis.com)
+* [ArcGIS Maps and Apps Gallery](http://arcgis.com)
+* [Hackerlab Slides on Slides.com](http://slides.com/alaframboise/geodev-hackerlabs/live#/)
 
 ## Labs
 
