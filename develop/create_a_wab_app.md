@@ -31,7 +31,7 @@ In this lab, you will build a simple WAB app.
 
 8. Click `Launch` to test the application.
 
-###Extras
+###Bonus
 * Click `Previews` to test the app at different screen sizes.
 * Scan the QR code to view the app on your mobile device.
 * Try adding and configuring different themes and widgets.

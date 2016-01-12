@@ -31,7 +31,7 @@ In the end your app should look something like this:
 * [Select features within a two minute drive time](https://developers.arcgis.com/javascript/jssamples/fl_selection.html)
 * [Query data without a map](https://developers.arcgis.com/javascript/jssamples/query_nomap.html)
 
-### Extras
+### Bonus
 > are you thirsty for more?
 
 * pan/zoom the map to the [extent](https://developers.arcgis.com/javascript/jsapi/polygon-amd.html#getextent) of the census block being drawn.

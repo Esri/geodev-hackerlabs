@@ -82,5 +82,5 @@ Your app should look something like this:
  * [Code](https://github.com/Esri/geodev-hackerlabs/blob/gh-pages/develop/src/starter_map_bootstrap.html)
  * [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/starter_map_bootstrap.html)
 
-###Extras
+###Bonus
 * Explore [bootstrap](http://getbootstrap.com).

@@ -17,4 +17,4 @@ In this lab you will use the styling capabilities of the viewer to make your map
 
 
 
-###Extras
+###Bonus

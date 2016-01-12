@@ -43,7 +43,7 @@ In the end, hopefully your app will look *kinda, sorta* like [**this**](http://b
 * [esri leaflet API reference](http://esri.github.io/esri-leaflet/api-reference/)
 * [esri leaflet samples](http://esri.github.io/esri-leaflet/examples/)
 
-### Extras
+### Bonus
 > are you thirsty for more?
 
 * add some custom styling to the census block thats drawn

@@ -34,5 +34,5 @@ In this lab, you will build a simple Template app.
 
 6. Click `Open` > `View Application` to test-drive your app.
 
-###Extras
+###Bonus
 * Go back to the app and try to change and save some of the template settings.

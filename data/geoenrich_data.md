@@ -44,7 +44,7 @@ In this lab you will add neighborhood polygons and enrich them with population d
 
 Your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=d84b33d813144e9eafae55bfe6c09b4d).
 
-###Extras
+###Bonus
 * Explore some of the other enrichment fields available.
 * Perform different types of geoenrichment analyses.
 * Style the map to use some of the other fields.

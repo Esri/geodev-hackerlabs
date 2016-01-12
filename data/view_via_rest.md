@@ -30,5 +30,5 @@ In this lab you will explore services via the REST API.
 
 7. Click `Query (GET)`
 
-###Extras
+###Bonus
 * Explore the REST API by trying a number of different queries and different return formats.

@@ -74,6 +74,6 @@ In this lab you will style popups by formatting fields and adding charts.
 
 Your popups should look similar to the popups in [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=27970d32436a446dabb3c71cf949115e).
 
-###Extras
+###Bonus
 * Try adding different types of charts to the Neighborhoods layer popups.
 * Try changing the order of the fields.

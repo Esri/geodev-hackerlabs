@@ -38,7 +38,7 @@ In this lab you will focus in on Rail Stops on the Blue Line and generate buffer
 
 Your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=39efc42b4920454a8241663e7764d6d5). See how buffers were only calculated for stations on the B (Blue) line.
 
-###Extras 
+###Bonus 
 
 * Try filtering by `TYPE`, `is` and selecting `Unique` from the Value radio buttons. What happens to the text box?
 * See if you can show only Rail Stops that are under construction (`STATUS` `is not` `Existing`).
@@ -48,6 +48,6 @@ Your map should look something like [this map](http://www.arcgis.com/home/webmap
     * `STATUS` `is` `Existing`, or 
     * `STATUS` `is not` `Existing`.
 
-###More Extras
+###More Bonus
 
 * You can click `Details` > `PDX Rail Stops Styled` > `Save Layer` to save this filtered "view" on the layer to your `My Content` space in your account. Perhaps name it `PDX Blue Line Stops`. This new item will point to the same unfiltered data source, but when added to the ArcGIS Online Map Viewer, will automatically filter according to the saved definitions. You can share these items with colleagues and users as a great way for them to bring focused content from a larger dataset into their own maps.

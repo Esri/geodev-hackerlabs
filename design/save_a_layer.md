@@ -30,5 +30,5 @@ In this lab you will style and save a layer to your account.
 
 8. Go to `My Contents` to view the layer.
 
-###Extras
+###Bonus
 * View your layer's metadata via REST to verify the changes have been persisted. See (View Via REST)[./data/view via rest.md] for help.

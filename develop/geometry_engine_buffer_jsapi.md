@@ -175,7 +175,7 @@ Your app should look something like this:
 * [Code](src/geometry_engine_buffer_jsapi.html)
 * [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/geometry_engine_buffer_jsapi.html)
 
-###Extras
+###Bonus
 * Explore the functions available in the [Geometry Engine](https://developers.arcgis.com/javascript/jsapi/esri.geometry.geometryengine-amd.html).
 * Look at the [FeatureLayer documentation](https://developers.arcgis.com/javascript/jsapi/featurelayer-amd.html) to explore what the `FeatureLayer.MODE_SNAPSHOT` setting means. Notice how it's used with the `update-end` event to calculate the initial buffer.
 * Change the order the layers are added to the map.

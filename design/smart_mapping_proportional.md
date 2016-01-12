@@ -30,7 +30,7 @@ In this lab you will see how we can display population totals as a population de
 
 Your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=138d5976b3874ffa9ae56c3c2a32fcd4).
 
-###Extras
+###Bonus
 
 * In the `Change Style` > `Counts and Amounts` > `Options` panel:
   * Drag the sliders up and down the color-ramp to see how the visualization changes to highlight extremes or just deviations from the mean.

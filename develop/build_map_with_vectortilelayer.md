@@ -54,7 +54,7 @@ If you would like to read up on the details of how a vector tile layer works her
 
 2. The JSBin `Output` panel should show dark gray background with a light bluer road network overlayed on top.
 
-###Extras
+###Bonus
 
 * Modify the opacity of the VectorTileLayer as an option in the constructor.
 * Run the code locally on your machine. Eventually if your app gets larger you'll want to migrate it from JSBin to your desktop.
