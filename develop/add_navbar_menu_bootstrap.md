@@ -70,7 +70,7 @@ In this lab, you will add navbars and menus to a bootstrap map app to change bas
 	```
 	...
 
-		<script src="//js.arcgis.com/3.13compact"></script>
+		<script src="//js.arcgis.com/3.15compact"></script>
 	    <script>
 	      require(["application/bootstrapmap", "dojo/domReady!"], 
 	        function(BootstrapMap) {
