@@ -17,11 +17,11 @@ If you are new to Esri-Leafet you can get the examples and API documentation [he
       <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
       <!-- Load Leaflet from CDN-->
-      <link rel="stylesheet" href="//cdn.jsdelivr.net/leaflet/0.7.3/leaflet.css" />
-      <script src="//cdn.jsdelivr.net/leaflet/0.7.3/leaflet.js"></script>
+      <link rel="stylesheet" href="//cdn.leafletjs.com/leaflet/v1.0.0-beta.2/leaflet.css" />
+      <script src="//cdn.leafletjs.com/leaflet/v1.0.0-beta.2/leaflet.js"></script>
 
       <!-- Load Esri Leaflet from CDN -->
-      <script src="//cdn.jsdelivr.net/leaflet.esri/1.0.2/esri-leaflet.js"></script>
+      <script src="//cdn.jsdelivr.net/leaflet.esri/2.0.0-beta.7/esri-leaflet.js"></script>
 
       <style>
         body {margin:0;padding:0;}

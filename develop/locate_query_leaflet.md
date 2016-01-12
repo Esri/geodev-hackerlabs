@@ -19,7 +19,7 @@ Use Leaflet's built in [method](http://leafletjs.com/reference.html#map-set-meth
 
 > ### 3. Then we ask our ArcGIS service which census block they're inside of.
 
-Create an [`L.esri.Tasks.query`](http://esri.github.io/esri-leaflet/api-reference/tasks/query.html) object and pass it the user's location.  afterwards you'll be able to fire a request to an Esri service that hosts [US Census Block Groups](http://sampleserver6.arcgisonline.com/arcgis/rest/services/Census/MapServer/1) to see which block the person is inside.
+Create an [`L.esri.query`](http://esri.github.io/esri-leaflet/api-reference/tasks/query.html) object and pass it the user's location.  afterwards you'll be able to fire a request to an Esri service that hosts [US Census Block Groups](http://sampleserver6.arcgisonline.com/arcgis/rest/services/Census/MapServer/1) to see which block the person is inside.
 
 > ### 4. ... and draw the right one.
 

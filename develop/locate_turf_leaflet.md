@@ -1,6 +1,6 @@
 # Use HTML5 location, esri leaflet and turf to query a feature service
 
-In this lab we'll write a [Leaflet](https://leafletjs.com) application that uses [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) to glean a user's location and display the census block they happen to be inside.
+In this lab we'll write a [Leaflet](https://leafletjs.com) application that uses [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) to glean a user's location and then take advantage of Turf to figure out what census block they happen to be inside.
 
 > ### 1. First lets get our development environment set up.
 
@@ -19,7 +19,7 @@ Use Leaflet's built in [method](http://leafletjs.com/reference.html#map-set-meth
 
 > ### 3. Lets add census blocks to the map too (but not draw them *yet*).
 
-Add [US Census Block Groups](http://sampleserver6.arcgisonline.com/arcgis/rest/services/Census/MapServer/1) to the map in a [`L.esri.Layers.featureLayer`](http://esri.github.io/esri-leaflet/api-reference/layers/feature-layer.html) and make sure the symbology is transparent (for now).
+Add [US Census Block Groups](http://sampleserver6.arcgisonline.com/arcgis/rest/services/Census/MapServer/1) to the map in a [`L.esri.featureLayer`](http://esri.github.io/esri-leaflet/api-reference/layers/feature-layer.html) and make sure the symbology is transparent (for now).
 
 > ### 4. Use [turf](http://turfjs.org/) to see which census block the user is inside.
 
@@ -33,9 +33,7 @@ Last, lets refresh the symbology of the features in the map to make sure the mat
 
 ![step-4](./html5_query_step_4_leaflet.png)
 
-In the end, hopefully your app will look *kinda, sorta* like:
-
-> ##### [**this**](http://bl.ocks.org/jgravois/89a3781d01b2bf747cef)
+In the end, hopefully your app will look *kinda, sorta* like [**this**](http://bl.ocks.org/jgravois/89a3781d01b2bf747cef).
 
 ---
 ### Resources
@@ -49,6 +47,6 @@ In the end, hopefully your app will look *kinda, sorta* like:
 > are you thirsty for more?
 
 * add some custom styling to the census block thats drawn
-* display a popup with its ID when someone clicks on it
-* symbolize the actual user location
-* use [Geoenrichment](https://developers.arcgis.com/en/features/geo-enrichment/) and display the total population of the census block
+* display a popup with information about the census block
+* symbolize the actual user location on the map
+* use [Geoenrichment](https://developers.arcgis.com/en/features/geo-enrichment/) to query/display the total population of the census block
