@@ -15,7 +15,8 @@ If you're brand new to ArcGIS, we recommend that you use your **new developer ac
 
 * [ArcGIS for Developers](http://developers.arcgis.com)
 * [ArcGIS Maps and Apps Gallery](http://arcgis.com)
-* [Hackerlab Slides on Slides.com](http://slides.com/alaframboise/geodev-hackerlabs/live#/)
+* [Esri Open Source Projects](http://esri.github.io)
+* [Hackerlab Slides](http://slides.com/alaframboise/geodev-hackerlabs/live#/)
 
 ## Labs
 
@@ -44,8 +45,9 @@ These labs illustrate how to use the Map viewer to create and style web maps. Yo
 * [Style a Map](./design/style_a_map.md)
 * [Style Popups](./design/style_popups.md)
 * [Smart Mapping - Proportional Styling](./design/smart_mapping_proportional.md)
-* [Customize Vector Basemap](./design/customize_vector_map.md)
 * [Save a Layer](./design/save_a_layer.md)
+* [Vector Basemaps](./design/vector_basemaps.md)
+* [Customize Vector Basemap](./design/customize_vector_map.md)
 
 ### 3. Develop
 
