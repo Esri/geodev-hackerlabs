@@ -27,7 +27,7 @@ In this lab you will add a feature layer to an ArcGIS API for JavaScript applica
     });
 
     // ADD a feature layer
-    var featureLayer = new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Lines_Styled/FeatureServer/0");
+    var featureLayer = new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods/FeatureServer/0");
 
     map.addLayer(featureLayer);
   ```
@@ -35,10 +35,5 @@ In this lab you will add a feature layer to an ArcGIS API for JavaScript applica
 4. Confirm that the JSBin `Output` panel shows a map with rail lines.
 
 Your app should look something like this:
-* [Code](src/add_feature_layers_jsapi.html)
-* [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/add_feature_layers_jsapi.html)
-
-###Bonus
-* Add a [Rail Stops feature layer](http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0) to the map,
- and then add a [Neighborhoods feature layer](http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Styled/FeatureServer/0).
-* Ensure the layers are ordered with polygons on the bottom, lines and then points on top.
+* [Code](src/add_feature_layer_jsapi.html)
+* [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/add_feature_layer_jsapi.html)

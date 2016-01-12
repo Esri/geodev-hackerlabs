@@ -27,15 +27,9 @@
           basemap: "dark-gray"
         });
 
-        var featureLayer1 = new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods/FeatureServer/0");
+        var featureLayer = new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods/FeatureServer/0");
 
-        var featureLayer2 = new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Lines_Styled/FeatureServer/0");
-
-        var featureLayer3 = new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0");
-
-        map.addLayer(featureLayer1);
-        map.addLayer(featureLayer2);
-        map.addLayer(featureLayer3);
+        map.addLayer(featureLayer);
 
       }
     );

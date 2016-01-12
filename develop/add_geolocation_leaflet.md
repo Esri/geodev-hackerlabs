@@ -40,5 +40,5 @@ Your app should run like this one:
 * [Code](src/add_geolocation_leaflet.html)
 * [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/add_geolocation_leaflet.html)
 
-###Extras
+###Bonus
 * Modify the app so that it follows along on a mobile device using [`Geolocation.watchPosition()`](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/watchPosition).

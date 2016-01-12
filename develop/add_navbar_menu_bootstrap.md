@@ -70,7 +70,7 @@ In this lab, you will add navbars and menus to a bootstrap map app to change bas
 	```
 	...
 
-		<script src="//js.arcgis.com/3.13compact"></script>
+		<script src="//js.arcgis.com/3.15compact"></script>
 	    <script>
 	      require(["application/bootstrapmap", "dojo/domReady!"], 
 	        function(BootstrapMap) {
@@ -137,6 +137,6 @@ Your app should look something like this:
  * [Code](https://github.com/Esri/geodev-hackerlabs/blob/gh-pages/develop/src/add_navbar_menu_bootstrap.html)
  * [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/add_navbar_menu_bootstrap.html)
 
-###Extras
+###Bonus
 * Explore [bootstrap](http://getbootstrap.com).
 * Change the menu dropdown behavior/location.

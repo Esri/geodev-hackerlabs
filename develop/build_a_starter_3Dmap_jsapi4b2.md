@@ -49,7 +49,7 @@ visit the [Get started with SceneView](https://developers.arcgis.com/javascript/
 
 2. The JSBin `Output` panel should show a 3D view of earth that you can rotate around.
 
-###Extras
+###Bonus
 
 * Experiment with different basemaps such as `topo` or `gray`.
 * Run the code locally on your machine. Eventually if your app gets larger you'll want to migrate it from JSBin to your desktop.

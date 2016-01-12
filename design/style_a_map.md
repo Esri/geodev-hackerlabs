@@ -54,7 +54,7 @@ In this lab you will use the styling capabilities of the viewer to make your map
 
 Your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=27970d32436a446dabb3c71cf949115e)
 
-###Extras
+###Bonus
 * Try using some of the other advanced features of the `Change Style` tools.
 * Style the layers using different attributes. 
 * Save out different maps for different attributes and styles used.

@@ -46,6 +46,6 @@ Your app should look something like this:
  * [Code](https://github.com/Esri/geodev-hackerlabs/blob/gh-pages/develop/src/web_map_app_jsapi.html)
  * [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/web_map_app_jsapi.html)
 
-###Extras
+###Bonus
 * Use the esri/dijit/Legend to add a legend to the upper right of the app. Apply CSS to style the legend.
 * Use the esri/dijit/Scalebar to add a scalebar to lower left of the app.

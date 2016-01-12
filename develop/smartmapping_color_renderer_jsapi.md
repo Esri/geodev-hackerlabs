@@ -183,7 +183,7 @@ Your app should look something like this:
 * [Code](src/smartmapping_color_renderer_jsapi.html)
 * [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/smartmapping_color_renderer_jsapi.html)
 
-###Extras
+###Bonus
 * When the Neighborhood layer first loads, you can see the default symbology inherited from the layer before Smart Mapping kicks in and updates the symbology appropriately. Try using the `visible` parameter when creating the `FeatureLayer` to initially hide the layer, and the `show()` method to display it only once the renderer has been created.
 * Try extending the list of basemaps to include other basemaps. See the `Map` [constructor](https://developers.arcgis.com/javascript/jsapi/map-amd.html#map1) for valid values.
 * Try using different `themes` when calling `smartMapping.createColorRenderer()` and see how it affects the symbology that's chosen. See the `createColorRenderer()` [documentation](https://developers.arcgis.com/javascript/jsapi/esri.renderers.smartmapping-amd.html#createcolorrenderer) for more info.

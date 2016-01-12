@@ -15,7 +15,7 @@ visit the [Build your first mapping application](https://developers.arcgis.com/j
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.14/esri/css/esri.css">
+    <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.15/esri/css/esri.css">
     <style>
       html,body,#mapDiv {
         padding:0;
@@ -24,7 +24,7 @@ visit the [Build your first mapping application](https://developers.arcgis.com/j
       }
     </style>
 
-    <script src="http://js.arcgis.com/3.14compact/"></script>
+    <script src="http://js.arcgis.com/3.15compact/"></script>
 
     <script>
       var map;
@@ -49,7 +49,7 @@ visit the [Build your first mapping application](https://developers.arcgis.com/j
 
 2. The JSBin `Output` panel should show a dark-grey map centered on Portland, Oregon.
 
-###Extras
+###Bonus
 
 * Experiment with different basemaps such as `topo` or `gray`.
 * Run the code locally on your machine. Eventually if your app gets larger you'll want to migrate it from JSBin to your desktop.

@@ -32,7 +32,7 @@ Your map should look something like [this map](http://www.arcgis.com/home/webmap
 
 **Note:** This service consumes more credits than most, so use it sparingly!
 
-###Extras 
+###Bonus 
 
 * Add a 0.5 Mile Buffer to the map (or see [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=b9327ec156fc43ea91f4722d557ed2ec)) and explore how 0.5 Mile Walk Distance and 0.5 Mile Buffer compare.
 * Use the `Show credits` link to see how the service cost would vary as you add more times or distances (separated by spaces) to the `Measure` parameters. For example, try `0.5 1` or `0.5 1 2` and compare to the cost from step 9 above.

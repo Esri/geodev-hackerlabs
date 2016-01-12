@@ -96,6 +96,6 @@ Your app should look something like this:
 * [Code](src/neighborhood_search_jsapi.html)
 * [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/neighborhood_search_jsapi.html)
 
-###Extras
+###Bonus
 * Add a [Rail Stops feature layer](http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0) to the Search widget.
 * Customize the popup's CSS. Hint: see the [Search with customization](https://developers.arcgis.com/javascript/jssamples/search_customized.html) sample.

@@ -73,7 +73,7 @@ Your app should look something like this:
 * [Code](src/simple_search_jsapi.html)
 * [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/simple_search_jsapi.html)
 
-###Extras
+###Bonus
 
 * Change the number of search suggestions to `3` and type "Portland metro" in to the search box.  Hint: check the Search `options` in the [Search API reference](https://developers.arcgis.com/javascript/jsapi/search-amd.html).
 * Listen for the `search-results` event and then clear the search box.

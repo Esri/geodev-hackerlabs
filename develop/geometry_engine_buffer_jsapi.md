@@ -58,10 +58,10 @@ You will add an interactive slider and a feedback label to the UI that will be u
 4. Add a reference to a Dojo CSS Theme (`claro`), and configure the `body` tag to use it:
 
     ```HTML
-    <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.14/esri/css/esri.css">
+    <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.15/esri/css/esri.css">
 
     <!-- ADD a link to the Claro Dojo theme's CSS -->
-    <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.14/dijit/themes/claro/claro.css">
+    <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.15/dijit/themes/claro/claro.css">
 
     ...
 
@@ -175,7 +175,7 @@ Your app should look something like this:
 * [Code](src/geometry_engine_buffer_jsapi.html)
 * [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/geometry_engine_buffer_jsapi.html)
 
-###Extras
+###Bonus
 * Explore the functions available in the [Geometry Engine](https://developers.arcgis.com/javascript/jsapi/esri.geometry.geometryengine-amd.html).
 * Look at the [FeatureLayer documentation](https://developers.arcgis.com/javascript/jsapi/featurelayer-amd.html) to explore what the `FeatureLayer.MODE_SNAPSHOT` setting means. Notice how it's used with the `update-end` event to calculate the initial buffer.
 * Change the order the layers are added to the map.

@@ -34,6 +34,6 @@ In this lab you will create a new map from existing layers that have been alread
 
 7. Explore the data by clicking on the map.
 
-###Extras 
+###Bonus 
 * Use the map viewer to try to improve the layer names in the TOC. 
 * Go to the [style_a_map.md]() lab to improve the symbols.

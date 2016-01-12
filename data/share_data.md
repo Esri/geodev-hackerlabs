@@ -16,6 +16,6 @@ NOTE: If you don't have any data items in your account, go to [Import Data](./im
 
 4. Select `Share` and explore the sharing options then share your data.
 
-###Extras
+###Bonus
 * You can also share items to groups. Use ArcGIS Online to search for groups that have shared items.
 
