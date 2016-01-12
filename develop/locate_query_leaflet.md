@@ -1,6 +1,6 @@
 # Use HTML5 location and esri leaflet to query a feature service
 
-In this lab we'll write a [Leaflet](https://leafletjs.com) application that uses [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) to glean a user's location and then let loose the clientside geospatial library turf on some census blocks to find out which one the user happens to be inside.
+In this lab we'll write a [Leaflet](https://leafletjs.com) application that uses [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) to glean a user's location and then fire off a spatial query to an Esri service of US Census Blocks to find out which one our end user happens to be inside.
 
 > ### 1. First lets get our development environment set up.
 
@@ -27,10 +27,7 @@ Add the feature that is retrieved to the map using Leaflet's [`L.geoJSON`](http:
 
 ![step-4](./html5_query_step_4_leaflet.png)
 
-In the end, hopefully your app will look *kinda, sorta* like:
-
-> ### [**this**](http://bl.ocks.org/jgravois/a4a93d907f3aaf3f7340)
-
+In the end, hopefully your app will look *kinda, sorta* like [**this**](http://bl.ocks.org/jgravois/a4a93d907f3aaf3f7340).
 ---
 ### Resources
 
@@ -42,7 +39,7 @@ In the end, hopefully your app will look *kinda, sorta* like:
 > are you thirsty for more?
 
 * add some custom styling to the census block thats drawn
-* display a popup with its ID when someone clicks on it
-* symbolize the actual user location
-* use [Geoenrichment](https://developers.arcgis.com/en/features/geo-enrichment/) and display the total population of the census block
+* display a popup with information about the census block
+* symbolize the actual user location on the map
+* use [Geoenrichment](https://developers.arcgis.com/en/features/geo-enrichment/) to query/display the total population of the census block
 * [refactor the logic](locate_turf_leaflet.md) to use turf to query census block geometries locally instead

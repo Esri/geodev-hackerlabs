@@ -21,7 +21,7 @@ If you are new to Esri-Leafet you can get the examples and API documentation [he
       <script src="//cdn.jsdelivr.net/leaflet/0.7.3/leaflet.js"></script>
 
       <!-- Load Esri Leaflet from CDN -->
-      <script src="//cdn.jsdelivr.net/leaflet.esri/1.0.0/esri-leaflet.js"></script>
+      <script src="//cdn.jsdelivr.net/leaflet.esri/1.0.2/esri-leaflet.js"></script>
 
       <style>
         body {margin:0;padding:0;}
@@ -42,9 +42,9 @@ If you are new to Esri-Leafet you can get the examples and API documentation [he
 
     ```
 
-2. Run the app and you should see a dark-grey map centered on Portland, Oregon.
+2. Run the app and you should see a dark gray map centered on Portland, Oregon.
 
 ###Extras
 
-* Experiment with different basemaps such as `topo` or `grey`.
+* Experiment with different basemaps such as [`Topographic`](http://esri.github.io/esri-leaflet/api-reference/layers/basemap-layer.html) or [`Gray`](http://esri.github.io/esri-leaflet/api-reference/layers/basemap-layer.html).
 * Run the code locally on your machine. Eventually if your app gets larger you'll want to migrate it from JSBin to your desktop.
