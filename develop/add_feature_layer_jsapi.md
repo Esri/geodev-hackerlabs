@@ -27,7 +27,7 @@ In this lab you will add a feature layer to an ArcGIS API for JavaScript applica
     });
 
     // ADD a feature layer
-    var featureLayer = new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/Enriched%20PDX_Neighborhoods/FeatureServer/0");
+    var featureLayer = new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods/FeatureServer/0");
 
     map.addLayer(featureLayer);
   ```
