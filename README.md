@@ -49,7 +49,7 @@ These labs illustrate how to use the Map viewer to create and style web maps. Yo
 * [Save a Layer](./design/save_a_layer.md)
 * [Vector Basemaps](./design/vector_basemaps.md)
 * [Customize Vector Basemap](./design/customize_vector_map.md)
-* [CODE: Add a styled layer to an app](./develop/add_feature_layers_jsapi.md)
+* [CODE: Add a styled layer with JSON to an app](./develop/style_feature_layers_json_jsapi.md)
 
 ### 3. Develop
 
