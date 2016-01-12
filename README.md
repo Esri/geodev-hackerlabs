@@ -36,6 +36,7 @@ These labs show you how to use ArcGIS Online to manage all of your data in the c
 * [Create Walk Areas](./data/create_walk_areas.md)
 * [Filter Data](/data/filter_data.md)
 * [Create Authenticated Traffic Layer](./data/create_authenticated_traffic_layer.md)
+* [CODE: Add a layer to an app](./develop/add_feature_layer_jsapi.md)
 
 ### 2. Design
 
@@ -48,6 +49,7 @@ These labs illustrate how to use the Map viewer to create and style web maps. Yo
 * [Save a Layer](./design/save_a_layer.md)
 * [Vector Basemaps](./design/vector_basemaps.md)
 * [Customize Vector Basemap](./design/customize_vector_map.md)
+* [CODE: Add a styled layer to an app](./develop/add_feature_layers_jsapi.md)
 
 ### 3. Develop
 
