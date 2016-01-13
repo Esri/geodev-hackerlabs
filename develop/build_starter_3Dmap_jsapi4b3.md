@@ -13,15 +13,15 @@ visit the [Get started with SceneView](https://developers.arcgis.com/javascript/
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Basic 3D map - 4.0 beta 2</title></p>
+    <title>Basic 3D map - 4.0 beta 3</title></p>
     <style>
         html, body {
             padding: 0;
             margin: 0;
         }
     </style>
-    <link rel="stylesheet" href="https://js.arcgis.com/4.0beta2/esri/css/main.css">
-    <script src="https://js.arcgis.com/4.0beta2/"></script>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.0beta3/esri/css/main.css">
+    <script src="https://js.arcgis.com/4.0beta3/"></script>
     <script>
         require([
             "esri/Map",
@@ -48,6 +48,10 @@ visit the [Get started with SceneView](https://developers.arcgis.com/javascript/
    ```
 
 2. The JSBin `Output` panel should show a 3D view of earth that you can rotate around.
+
+Your app should look something like this:
+
+ * [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/starter_3Dmap_jsapi4b3.html)
 
 ###Bonus
 
