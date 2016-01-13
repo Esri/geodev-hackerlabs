@@ -75,8 +75,8 @@ These labs illustrate how to use ArcGIS app builders, templates and APIs to buil
  * [Smart Mapping](./develop/smartmapping_color_renderer_jsapi.md)
  * [Using HTML5 to Query](./develop/html5_query.md)
 
-* JS API 4 Beta 2
- * [Build a Starter 3D Map](./develop/build_a_starter_3Dmap_jsapi4b3.md)
+* JS API 4 Beta 3
+ * [Build a Starter 3D Map](./develop/starter_3Dmap_jsapi4b3.md)
 
 * Esri-Leaflet
  * [Build a Starter Map](./develop/build_starter_map_leaflet.md)
