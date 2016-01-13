@@ -16,7 +16,7 @@ If you're brand new to ArcGIS, we recommend that you use your **new developer ac
 * [ArcGIS for Developers](http://developers.arcgis.com)
 * [ArcGIS Maps and Apps Gallery](http://arcgis.com)
 * [Esri Open Source Projects](http://esri.github.io)
-* [Hackerlab Slides](http://slides.com/alaframboise/geodev-hackerlabs/live#/)
+* [Hackerlab Slides](http://slides.com/alaframboise/geodev-hackerlabs)
 
 ## Labs
 
