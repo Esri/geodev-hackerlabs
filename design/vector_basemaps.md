@@ -20,7 +20,7 @@ NOTE: Feel free to use your own map too!
 		esri_vector tiles
 		```
 		
-	2. Click `Add` and experiment with adding and removing a number of the following layers.
+	2. Click on the name of the vector tile (DO NOT USE ADD) > `World Street Map (Night)` > Use as basemap > and experiment with adding and removing the following layers.
  		
  		```
  		World Street Map
@@ -34,10 +34,4 @@ NOTE: Feel free to use your own map too!
 
 	3. Click `Done Adding Layers`.
  
-4. To hide the old basemap, in the table of contents, hover over the original basemap (e.g. Dark Gray Canvas) > `More Options` > `Transparency` > 100% and close the dialog.
-
-NOTE: This is how we have to do it for now! ;)
-
-5. Now toggle the vector tile layers on and off until you find the one you like best.
-
-6. Save your map.
+5. Save your map.
