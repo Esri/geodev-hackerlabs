@@ -65,6 +65,7 @@ These labs illustrate how to use ArcGIS app builders, templates and APIs to buil
  * [Build a Starter Map](./develop/build_starter_map_jsapi.md)
  * [Add Feature Layer](./develop/add_feature_layer_jsapi.md)
  * [Add Feature Layers](./develop/add_feature_layers_jsapi.md)
+ * [Add Vector Tile Basemap](./develop/add_vector_tile_basemap_jsapi.md)
  * [Style Feature Layers](./develop/style_feature_layers_jsapi.md)
  * [Style Feature Layers with JSON](./develop/style_feature_layers_json_jsapi.md)
  * [Add GeoJSON Layer](./develop/add_geojson_layer_jsapi.md)
@@ -73,7 +74,6 @@ These labs illustrate how to use ArcGIS app builders, templates and APIs to buil
  * [Client-side Buffering](./develop/geometry_engine_buffer_jsapi.md)
  * [Smart Mapping](./develop/smartmapping_color_renderer_jsapi.md)
  * [Using HTML5 to Query](./develop/html5_query.md)
- * [Build Map with Vector Tiles](./develop/build_map_with_vectortilelayer.md)
 
 * JS API 4 Beta 2
  * [Build a Starter 3D Map](./develop/build_a_starter_3Dmap_jsapi4b2.md)

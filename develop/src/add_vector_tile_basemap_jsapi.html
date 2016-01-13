@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS API Starter App</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.15/esri/css/esri.css">
+  <style>
+    html,body,#mapDiv {
+      padding:0;
+      margin:0;
+      height:100%;
+    }
+  </style>
+
+  <script src="http://js.arcgis.com/3.15compact/"></script>
+  <script>
+    var map;
+    require(["esri/map",
+              "esri/layers/VectorTileLayer",
+             "dojo/domReady!"],
+      function(Map, VectorTileLayer) {
+        map = new Map("mapDiv", {
+          center: [-122.68, 45.52],
+          zoom: 10
+          //basemap: "dark-gray" // Do not set a basemap
+        });
+
+        // You can reference vector tiles by root.json url or service url. 
+        // See all vector tile items here: http://www.arcgis.com/home/search.html?q=owner:esri_vector
+        
+        var vtlayer = new VectorTileLayer("https://www.arcgis.com/sharing/rest/content/items/f96366254a564adda1dc468b447ed956/resources/styles/root.json");
+
+        map.addLayer(vtlayer);
+      }
+    );
+  </script>
+</head>
+
+<body>
+  <div id="mapDiv"></div>
+</body>
+</html>
