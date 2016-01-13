@@ -49,6 +49,10 @@ visit the [Get started with SceneView](https://developers.arcgis.com/javascript/
 
 2. The JSBin `Output` panel should show a 3D view of earth that you can rotate around.
 
+Your app should look something like this:
+
+ * [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/starter_3Dmap_jsapi4b3.html)
+
 ###Bonus
 
 * Experiment with different basemaps such as `topo` or `gray`.
