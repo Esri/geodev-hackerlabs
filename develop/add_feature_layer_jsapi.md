@@ -37,3 +37,8 @@ In this lab you will add a feature layer to an ArcGIS API for JavaScript applica
 Your app should look something like this:
 * [Code](src/add_feature_layer_jsapi.html)
 * [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/add_feature_layer_jsapi.html)
+
+###Bonus
+* Try swapping ```PDX_Neighborhoods``` with ```PDX_Neighborhoods_Styled``` or any of your services that have been styled earlier!  
+
+e.g. var featureLayer = new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods/FeatureServer/0");
