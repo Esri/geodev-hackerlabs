@@ -41,4 +41,4 @@ Your app should look something like this:
 ###Bonus
 * Try swapping ```PDX_Neighborhoods``` with ```PDX_Neighborhoods_Styled``` or any of your services that have been styled earlier!  
 
-e.g. var featureLayer = new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods/FeatureServer/0");
+e.g. var featureLayer = new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Styled/FeatureServer/0");

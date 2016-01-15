@@ -1,6 +1,6 @@
 ###Create a new 3D Scene
 
-The easiest way to style a scene is to use the [Scene Viewer](http://doc.arcgis.com/en/arcgis-online/use-maps/view-maps.htm).
+The easiest way to style a scene is to use the [Scene Viewer](http://doc.arcgis.com/en/arcgis-online/use-maps/view-scenes.htm).
 
 In this lab you will use the new styling capabilities of the scene viewer to make your map more meaningful in 3D.
 
@@ -57,3 +57,5 @@ In this lab you will use the new styling capabilities of the scene viewer to mak
   5. Click `Done`.
  
 4. Save your scene.
+
+Your scene should look something like [this](http://edn.maps.arcgis.com/home/webscene/viewer.html?webscene=48403313d9bf4a39a2ca0fc4851b758e).

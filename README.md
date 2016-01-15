@@ -58,9 +58,9 @@ These labs illustrate how to use the Map viewer to create and style web maps. Yo
 These labs illustrate how to use ArcGIS app builders, templates and APIs to build custom mapping apps. You can use your web maps with the Web AppBuilder to create an HTML5 responsive app or AppStudio to build and deploy a native app for iOS and Android. Or you can just build a custom app from the ground up with the ArcGIS JS API, Esri-Leaflet or the ArcGIS Runtime APIs.
 
 * Web Map Apps
- * [Create a Web AppBuilder App](./develop/create_a_wab_app.md)
  * [Create a Template App](./develop/create_a_template_app.md)
- * [Create a Web Map App](./develop/create_a_web_map_app.md)
+ * [Create a Web AppBuilder App](./develop/create_a_wab_app.md)
+ * [Create a Web Map JS API App](./develop/create_a_web_map_app.md)
  * [Create an AppStudio App](./develop/create_an_appstudio_app.md)
 
 * JS API
@@ -132,5 +132,5 @@ limitations under the License.
 
 A copy of the license is available in the repository's [LICENSE](./license.txt) file.
 
-[](Esri Tags: ArcGIS Web Mapping Leaflet AppBuilder)
+[](Esri Tags: ArcGIS Web Mapping Leaflet AppBuilder Hackerlabs Labs JavaScript)
 [](Esri Language: JavaScript)
