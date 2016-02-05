@@ -2,12 +2,9 @@
 
 In this lab we'll write a [Leaflet](https://leafletjs.com) application that uses [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) to glean a user's location and then fire off a spatial query to an Esri service of US Census Blocks to find out which one our end user happens to be inside.
 
-> ### 1. First lets get our development environment set up.
+> ### 1. First, lets get our [development environment](setup_dev_env.md) set up.
 
-Copy the example from our [starter map exercise](build_starter_map_leaflet.md) into a new `.html` file on your own machine and open it via `http://` protocol in your browser. (somewhere like http://0.0.0.0/myveryownmap.html)
-
-> Do you have a local web server running?<br>
-> If not, you can find information about setting one up [**here**](https://gist.github.com/jgravois/5e73b56fa7756fd00b89).
+For this exercise, we'll use the complete example from the conclusion of our [starter map](build_starter_map_leaflet.md) exercise as our jumping off point.
 
 ![step-1](./html5_query_step_1_leaflet.png)
 

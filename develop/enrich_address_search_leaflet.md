@@ -2,12 +2,9 @@
 
 In this lab we'll write a [Leaflet](https://leafletjs.com) application that uses Esri [GeoEnrichment](https://developers.arcgis.com/en/features/geo-enrichment/) services to provide demographic context when users search for an address.
 
-> ### 1. Lets get our development environment set up.
+> ### 1. Lets get our [development environment](setup_dev_env.md) set up.
 
-Copy the example from our [Add Feature Layers Esri Leaflet exercise](add_feature_layers_leaflet.md) into a new `.html` file on your own machine and open it via `http://` protocol in your browser. (somewhere like http://0.0.0.0/myveryownmap.html)
-
-> Do you have a local web server running?<br>
-> If not, you can find information about setting one up [**here**](https://gist.github.com/jgravois/5e73b56fa7756fd00b89).
+For this exercise, we'll use the complete example from the conclusion of our [Add Feature Layers](add_feature_layers_leaflet.md) exercise as our jumping off point.
 
 ![step-1](./html5_query_step_1_leaflet.png)
 
