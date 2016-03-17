@@ -70,6 +70,8 @@ These labs illustrate how to use the Map viewer to create and style web maps. Yo
 * [Create a new 3D Scene](./design/create_a_new_3d_scene.md)
 * [CODE: Add a styled layer to an app - Bonus](./develop/add_feature_layer_jsapi.md)
 * [CODE: Style a layer with JSON](./develop/style_feature_layers_json_jsapi.md)
+* [CODE: Style a layer with a renderer](./develop/style_feature_layers_jsapi.md)
+* [CODE: Add a vector tiled basemap](./develop/add_vector_tile_basemap_jsapi.md)
 
 ### 3. Develop
 
