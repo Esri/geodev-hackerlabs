@@ -6,9 +6,9 @@
 
 ## Welcome
 
-Welcome to the Geodev Hackerlabs. This respository contains short labs that step you through the process of developing applications with the [ArcGIS Online Platform](http://www.arcgis.com). This process focuses mostly on using online accounts and services and does not require the installation or use of desktop software for most labs.
+Welcome to the Geodev Hackerlabs. This respository contains short labs that step you through the process of developing applications with [ArcGIS](http://www.arcgis.com). This process focuses mostly on using online accounts and services and does not require the installation or use of desktop software for most labs.
 
-The general process involves three steps:
+The process generally involves three steps and the labs are broken down into the following sections:
 
 1. Data - prepare data for your apps with [ArcGIS Online](http://www.arcgis.com)
 2. Design - style layers and maps for your apps [ArcGIS Online Map and Scene Viewer](http://www.arcgis.com)
@@ -18,15 +18,11 @@ The general process involves three steps:
 
 To get started you need to:
 
-1. Sign up for a free [ArcGIS Developer subscription](https://developers.arcgis.com/en/sign-up/). The subscription allows you to download software, register apps, import data, create new services, store maps and other content, perform spatial analysis and more. If you have an ArcGIS Organizational account, you can use that as well.
+1. Sign up for a free [ArcGIS Developer subscription](https://developers.arcgis.com/en/sign-up/). With the subscription you candownload software, register apps, import data, create new services, store maps and other content, perform spatial analysis and more. If you have an ArcGIS Organizational account, you can use that as well, but please note that [Free public accounts](https://geonet.esri.com/groups/geodev/blog/2014/10/15/help-i-cant-get-into-developersarcgiscom) cannot be used.
 
-> Note: Please note that [Free public accounts](https://geonet.esri.com/groups/geodev/blog/2014/10/15/help-i-cant-get-into-developersarcgiscom) cannot be used.
-
-2. Start the labs - The labs are divided into modules that you can complete in at your own pace. Choose ones you want to complete, and skip those you already know. You can bring your own data or use what we provide. If you want to code, dig into APIs and SDKs from Esri and compatible open source libraries. If not, you can still build highly customized production-ready apps using Esri's templates and builders.  
+2. Start the labs - The labs are divided into modules that you can complete at your own pace. Choose ones you want to complete, and skip those you already know. You can bring your own data or use what we provide. If you want to code, dig into APIs and SDKs from Esri and compatible open source libraries. If not, you can still build highly customized production-ready apps using Esri's templates and builders. You might also find it helpful to follow along through the [Hackerlab Slides](http://slides.com/alaframboise/geodev-hackerlabs).  
 
 3. Share your work - This is 100% optional, but as you are going through, feel free to [share your work](#want-to-share-your-work) with others participants!
-
-> You might also find it helpful to follow along through the [Hackerlab Slides](http://slides.com/alaframboise/geodev-hackerlabs).
 
 ## Resources
 If you're brand new to ArcGIS, we recommend that you use your **new developer account** to sign into to [ArcGIS.com](https://www.arcgis.com) to learn how to [make your first map](http://doc.arcgis.com/en/arcgis-online/create-maps/make-your-first-map.htm), and [developers.arcgis.com](http://developers.arcgis.com) to learn how to manage apps. Here are a few other important links:
@@ -37,6 +33,8 @@ If you're brand new to ArcGIS, we recommend that you use your **new developer ac
 * [Esri Open Source Projects](http://esri.github.io)
 
 ## Labs
+
+Feel free to follow along with the [Hackerlab Slides](http://slides.com/alaframboise/geodev-hackerlabs) or just jump in and get started.
 
 ### 1. Data
 
