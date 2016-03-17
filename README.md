@@ -1,6 +1,6 @@
 # geodev-hackerlabs
 
-> A place to learn how to build geo apps with the ArcGIS Platform.
+A place to learn how to build geo apps with ArcGIS.
 
 ## Welcome
 
@@ -16,16 +16,16 @@ The process generally involves three steps and the labs are broken down into the
 
 ## Getting Started
 
-To get started you need to:
+Here's how to get started:
 
-1. Sign up for a free [ArcGIS Developer subscription](https://developers.arcgis.com/en/sign-up/). With the subscription you candownload software, register apps, import data, create new services, store maps and other content, perform spatial analysis and more. If you have an ArcGIS Organizational account, you can use that as well, but please note that [Free public accounts](https://geonet.esri.com/groups/geodev/blog/2014/10/15/help-i-cant-get-into-developersarcgiscom) cannot be used.
+1. **Sign up for a free [ArcGIS Developer subscription](https://developers.arcgis.com/en/sign-up/)** - With the subscription you candownload software, register apps, import data, create new services, store maps and other content, perform spatial analysis and more. If you have an ArcGIS Organizational account, you can use that as well, but please note that [Free public accounts](https://geonet.esri.com/groups/geodev/blog/2014/10/15/help-i-cant-get-into-developersarcgiscom) cannot be used.
 
-2. Start the labs - The labs are divided into modules that you can complete at your own pace. Choose ones you want to complete, and skip those you already know. You can bring your own data or use what we provide. If you want to code, dig into APIs and SDKs from Esri and compatible open source libraries. If not, you can still build highly customized production-ready apps using Esri's templates and builders. You might also find it helpful to follow along through the [Hackerlab Slides](http://slides.com/alaframboise/geodev-hackerlabs).  
+2. **Start the labs** - The labs are divided into three sections that you can complete at your own pace. You can follow them in order or just choose the ones you want to complete. You can use the data we provide or use your own. If you want to code, dig into APIs and SDKs from Esri and compatible open source libraries. If not, you can still build highly customized production-ready apps using Esri's templates and builders. You might also find it helpful to follow along with the [Hackerlab Slides](http://slides.com/alaframboise/geodev-hackerlabs).  
 
-3. Share your work - This is 100% optional, but as you are going through, feel free to [share your work](#want-to-share-your-work) with others participants!
+3. **Share your work** - This is 100% optional, but as you are going through, feel free to [share your work](#want-to-share-your-work) with others participants!
 
 ## Resources
-If you're brand new to ArcGIS, we recommend that you use your **new developer account** to sign into to [ArcGIS.com](https://www.arcgis.com) to learn how to [make your first map](http://doc.arcgis.com/en/arcgis-online/create-maps/make-your-first-map.htm), and [developers.arcgis.com](http://developers.arcgis.com) to learn how to manage apps. Here are a few other important links:
+If you're brand new to ArcGIS, we recommend that you use your **new developer account** to sign into to [ArcGIS.com](https://www.arcgis.com) to learn how to [make your first map](http://doc.arcgis.com/en/arcgis-online/create-maps/make-your-first-map.htm), and [developers.arcgis.com](http://developers.arcgis.com) to learn how to manage apps. Here are a few important links:
 
 * [ArcGIS for Developers](http://developers.arcgis.com)
 * [ArcGIS Online Maps and Apps](http://arcgis.com)
@@ -34,9 +34,7 @@ If you're brand new to ArcGIS, we recommend that you use your **new developer ac
 
 ## Labs
 
-To get started, feel free to follow along with the [Hackerlab Slides](http://slides.com/alaframboise/geodev-hackerlabs) or just jump in and get started. 
-
-The labs use three open datasets from the City of Portland: 1) Rail Stops, 2) Rail Lines, and 3) Neighboorhoods, but feel free to use your data.
+To get started, feel free to follow along with the [Hackerlab Slides](http://slides.com/alaframboise/geodev-hackerlabs) or just jump in and get started. The labs use three open datasets from the City of Portland: 1) Rail Stops, 2) Rail Lines, and 3) Neighboorhoods, but feel free to use your own data too.
 
 The goal is to build a Portland Neighborhoods explorer app.
 
