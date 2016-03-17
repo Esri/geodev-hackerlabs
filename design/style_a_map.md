@@ -8,39 +8,39 @@ In this lab you will use the styling capabilities of the viewer to make your map
 
 1. Go to [arcgis.com](http://www.arcgis.com) and login. Check `Keep me signed in`.
 
-2. Click on [this link](http://www.arcgis.com/home/webmap/viewer.html?webmap=df0da19116934be89ac5f7379172c24e) to load the unstyled map.
+2. Click on [this link](http://www.arcgis.com/home/webmap/viewer.html?webmap=df0da19116934be89ac5f7379172c24e) to load the unstyled map or use your own unstyled map.
 
 3. Click `Save As` to save your own version of the map. Optionally `Share` > `Everyone`.
 
 4. Click on `Rail Stops` > `Change Style` and set the following:
 	
-	1. Choose an attribute to show: Type
+	1. 1 - Choose an attribute to show: `Type`
  	
- 	2. Select a drawing Style
+ 	2. 2 - Types (Unique Symbols) > `Options`
   	
-  		* Click the `rainbow` at the top change the outline of all Stops symbols to white.
+  		* Click the `rainbow` at the top and change the outline of all Stops symbols to white, 1px.
   	
-  		* Ok
+  		* Click Ok > Ok
  	
  	3. Done
 
 5. Click on `Rail Lines` > `Change Style` and set the following:
  	
- 	1. `Choose an attribute to show: Type`
+  1. 1 - Choose an attribute to show: `Type`
+  
+  2. 2 - Types (Unique Symbols) > `Options`
  	
- 	2. `Select a drawing Style` > `Options`
-  	
   		* Click the `rainbow` at the top change the line width of all Lines to 3px.
   	
-  		* Ok
+  		* Ok > Ok
  	
  	3. Done
 
 6. Click on `Neighborhoods` > `Change Style` and set the following:
  
- 	1. `Choose an attribute to show: COALIT`
- 	
- 	2. `Select a drawing Style` > `Options`
+  1. 1 - Choose an attribute to show: `COALIT`
+  
+  2. 2 - Types (Unique Symbols) > `Options`
   	
   		* Change the transparency to 50%.
   	
