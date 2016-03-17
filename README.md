@@ -18,7 +18,7 @@ The process generally involves three steps and the labs are broken down into the
 
 Here's how to get started:
 
-1. **Sign up for a free [ArcGIS Developer subscription](https://developers.arcgis.com/en/sign-up/)** - With the subscription you candownload software, register apps, import data, create new services, store maps and other content, perform spatial analysis and more. If you have an ArcGIS Organizational account, you can use that as well, but please note that [Free public accounts](https://geonet.esri.com/groups/geodev/blog/2014/10/15/help-i-cant-get-into-developersarcgiscom) cannot be used.
+1. **Sign up for a free [ArcGIS Developer subscription](https://developers.arcgis.com/en/sign-up/)** - With the subscription you can download software, register apps, import data, create new services, store maps and other content, perform spatial analysis and more. If you have an ArcGIS Organizational account, you can use that as well, but please note that [Free public accounts](https://geonet.esri.com/groups/geodev/blog/2014/10/15/help-i-cant-get-into-developersarcgiscom) cannot be used.
 
 2. **Start the labs** - The labs are divided into three sections that you can complete at your own pace. You can follow them in order or just choose the ones you want to complete. You can use the data we provide or use your own. If you want to code, dig into APIs and SDKs from Esri and compatible open source libraries. If not, you can still build highly customized production-ready apps using Esri's templates and builders. You might also find it helpful to follow along with the [Hackerlab Slides](http://slides.com/alaframboise/geodev-hackerlabs).  
 
