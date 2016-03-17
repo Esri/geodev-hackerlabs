@@ -2,8 +2,6 @@
 
 > A place to learn how to build geo apps with the ArcGIS Platform.
 
-![Steps](./geodev-hackerlabs-apps.png)
-
 ## Welcome
 
 Welcome to the Geodev Hackerlabs. This respository contains short labs that step you through the process of developing applications with [ArcGIS](http://www.arcgis.com). This process focuses mostly on using online accounts and services and does not require the installation or use of desktop software for most labs.
@@ -13,6 +11,8 @@ The process generally involves three steps and the labs are broken down into the
 1. Data - prepare data for your apps with [ArcGIS Online](http://www.arcgis.com)
 2. Design - style layers and maps for your apps [ArcGIS Online Map and Scene Viewer](http://www.arcgis.com)
 3. Develop - consume layers and maps in your apps [ArcGIS Templates, Builders and APIs](http://developers.arcgis.com)
+
+![Process](./arcgis-process.png)
 
 ## Getting Started
 
@@ -34,7 +34,13 @@ If you're brand new to ArcGIS, we recommend that you use your **new developer ac
 
 ## Labs
 
-Feel free to follow along with the [Hackerlab Slides](http://slides.com/alaframboise/geodev-hackerlabs) or just jump in and get started.
+To get started, feel free to follow along with the [Hackerlab Slides](http://slides.com/alaframboise/geodev-hackerlabs) or just jump in and get started. 
+
+The labs use three open datasets from the City of Portland: 1) Rail Stops, 2) Rail Lines, and 3) Neighboorhoods, but feel free to use your data.
+
+The goal is to build a Portland Neighborhoods explorer app.
+
+![Steps](./geodev-hackerlabs-apps.png)
 
 ### 1. Data
 
