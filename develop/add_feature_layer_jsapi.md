@@ -32,7 +32,7 @@ In this lab you will add a feature layer to an ArcGIS API for JavaScript applica
     map.addLayer(featureLayer);
   ```
 
-4. Confirm that the JSBin `Output` panel shows a map with rail lines.
+4. Confirm that the JSBin `Output` panel shows a map with neighborhoods.
 
 Your app should look something like this:
 * [Code](src/add_feature_layer_jsapi.html)

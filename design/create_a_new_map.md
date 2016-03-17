@@ -17,7 +17,7 @@ In this lab you will create a new map from existing layers that have been alread
 		```
 		PDX_Rail_Lines (by al_geodev)
 		PDX_Rail_Stops (by al_geodev)
-		PDX_Neighborhoods (by al_geodev)
+		PDX_Neighborhoods_Enriched (by al_geodev)
 		```
 
 		NOTE: Do not select the `xxx_Styled` layers.
