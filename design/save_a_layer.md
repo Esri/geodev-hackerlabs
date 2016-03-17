@@ -6,7 +6,7 @@ In this lab you will style and save a layer to your account.
 
 ###Steps
 
-1. Go to [arcgis.com](http://www.arcgis.com) and login. Check `Keep me signed in`.
+1. Go to [arcgis.com](http://www.arcgis.com) and login.  
 
 2. Click `MAP`.
 
@@ -16,7 +16,7 @@ In this lab you will style and save a layer to your account.
 
 5. Click `PDX Neighborhoods` > `Copy`. This creates a new Layer Item in your account.
 
-6. Change the extent of the map and style the layer. See [Style a Map](./style a map.md) for help.
+6. Change the extent of the map and style the layer as desired. See [Style a Map](./style a map.md) for help on styling.
 
 7. Click `PDX Neighborhoods Copy` > `Save layer`. Set the following properties:
 
@@ -28,7 +28,7 @@ In this lab you will style and save a layer to your account.
  Done
  ```
 
-8. Go to `My Contents` to view the layer.
+8. Go to `My Contents` to view the layer with the symbology.
 
 ###Bonus
-* View your layer's metadata via REST to verify the changes have been persisted. See (View Via REST)[./data/view via rest.md] for help.
+* View your layer's metadata via REST to verify the changes have been persisted. See [View Via REST](./data/view via rest.md) for help.

@@ -6,7 +6,7 @@ In this lab you will create a new map from existing layers that have been alread
 
 ###Steps
 
-1. Go to [arcgis.com](http://www.arcgis.com) and login. Check `Keep me signed in`.
+1. Go to [arcgis.com](http://www.arcgis.com) and login.  
 
 2. Click `MAP`.
 
@@ -26,11 +26,11 @@ In this lab you will create a new map from existing layers that have been alread
 
 	3. Click `Done Adding Layers`.
  
-4. Drag to reorder the layers so that the `PDX_Neighborhoods` is on the bottom.
+4. Drag to reorder the layers so that the `PDX Neighborhoods Enriched` is on the bottom.
 
 5. Choose a new basemap.
 
-6. Save your map. With the default styles, your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=df0da19116934be89ac5f7379172c24e).
+6. Save your map. With the default styles, your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=c8cd4b6f2d724c99be9a2d14fb31603e).
 
 7. Explore the data by clicking on the map.
 

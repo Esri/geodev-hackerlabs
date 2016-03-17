@@ -7,7 +7,7 @@ In this lab you will use the new styling capabilities of the scene viewer to mak
 ###Steps
 
 
-1. Go to [arcgis.com](http://www.arcgis.com) and login. Check `Keep me signed in`.
+1. Go to [arcgis.com](http://www.arcgis.com) and login.  
 
 2. Click `Scene`.
 

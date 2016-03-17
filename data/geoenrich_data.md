@@ -6,7 +6,7 @@ In this lab you will add neighborhood polygons and enrich them with population d
 
 ###Steps
 
-1. Go to [arcgis.com](http://www.arcgis.com) and login. Check `Keep me signed in`.
+1. Go to [arcgis.com](http://www.arcgis.com) and login.  
 
 2. Use ArcGIS Online to find the `PDX Neighborhoods by al_geodev` layer or just click [this link](http://www.arcgis.com/home/item.html?id=cc1d37e67e934a93b489ca4d82b07d9c).
 

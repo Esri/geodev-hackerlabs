@@ -6,7 +6,7 @@ In this lab you will create a new point feature service and add data to it.
 
 ###Steps
 
-1. Go to [developers.arcgis.com](http://developers.arcgis.com) and login. Check `Keep me signed in`.
+1. Go to [developers.arcgis.com](http://developers.arcgis.com) and login.  
 
 2. Click the `Hosted Data` icon > `New Feature Service` to create a new dataset. 
 

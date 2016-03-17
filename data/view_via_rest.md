@@ -6,7 +6,7 @@ In this lab you will explore services via the REST API.
 
 ###Steps
 
-1. Go to [arcgis.com](http://www.arcgis.com) and login. Check `Keep me signed in`.
+1. Go to [arcgis.com](http://www.arcgis.com) and login.  
 
 2. Click `My Content`.
 

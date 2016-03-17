@@ -6,29 +6,27 @@ In this lab you will see how we can display population totals as a population de
 
 ###Steps
 
-1. Go to [www.arcgis.com](https://www.arcgis.com) and login. Check `Keep me signed in`.
+1. Go to [www.arcgis.com](https://www.arcgis.com) and login.  
 
-2. Use ArcGIS Online to find the `PDX_Neighborhoods_Styled` layer by `al_geodev` or just click [this link](http://www.arcgis.com/home/item.html?id=a77a0ed75b0245dea165c31be5906edc).
+2. Click [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=6f1f04e49536466fa4a631afcd0141c5) and open it in the Map Viewer. Or just continue using your own map from the last step.
 
-3. Click `Open` > `Add layer to new map`.
+3. Click `PDX Neighborhoods Enriched` > `Change Style`.
 
-4. Click `PDX Neighborhoods Styled` > `Change Style`.
-
-    1. Choose to show `TOTAL POPULATION` in the drop-down. 
+    1. 1. Choose to show `Total Population` in the drop-down. 
 
     Notice how the neighborhoods are automatically re-styled.
   
-    2. Click `Options` on `Counts and Amounts`.
+    2. 2. Click `Options` on `Counts and Amounts`.
   
-    3. In the `Divided by` dropdown, select `AREA`. 
+    3. In the `Divided by` dropdown, select `Area`. 
 
-    See how many of the neighborhoods that were previously highlighted fade slightly to maintain focus on densely populated neighborhoods. Note, the `AREA` values are in Square Miles.
+    See how many of the neighborhoods that were previously highlighted fade slightly to maintain focus on densely populated neighborhoods. Note, the `Area` values are in Square Miles.
   
     4. Click `OK`.
   
     5. Click `DONE`.
 
-Your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=138d5976b3874ffa9ae56c3c2a32fcd4).
+Your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=6dd14f639f784ff692327d8f4b3eb00a).
 
 ###Bonus
 
