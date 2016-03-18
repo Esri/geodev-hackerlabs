@@ -15,8 +15,8 @@ In this lab you will create a new map from existing layers that have been alread
 	1. Search for:
 
 		```
-		PDX_Rail_Lines (by al_geodev)
 		PDX_Rail_Stops (by al_geodev)
+		PDX_Rail_Lines (by al_geodev)
 		PDX_Neighborhoods_Enriched (by al_geodev)
 		```
 
@@ -26,7 +26,7 @@ In this lab you will create a new map from existing layers that have been alread
 
 	3. Click `Done Adding Layers`.
  
-4. Drag to reorder the layers so that the `PDX Neighborhoods Enriched` is on the bottom.
+4. Drag to reorder the layers so that `PDX Rail Stops` is on top, `PDX Rail Lines` is next and `PDX Neighborhoods Enriched` is on the bottom.
 
 5. Choose a new basemap.
 

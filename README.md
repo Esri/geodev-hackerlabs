@@ -27,16 +27,17 @@ Here's how to get started:
 ## Resources
 If you're brand new to ArcGIS, we recommend that you use your **new developer account** to sign into to [ArcGIS.com](https://www.arcgis.com) to learn how to [make your first map](http://doc.arcgis.com/en/arcgis-online/create-maps/make-your-first-map.htm), and [developers.arcgis.com](http://developers.arcgis.com) to learn how to manage apps. Here are a few important links:
 
-* [ArcGIS for Developers](http://developers.arcgis.com)
-* [ArcGIS Online Maps and Apps](http://arcgis.com)
-* [ArcGIS Online Help](http://doc.arcgis.com/en/arcgis-online/)
-* [Esri Open Source Projects](http://esri.github.io)
+* [ArcGIS for Developers - Account, Documentation, Samples, Apps, Downloads](http://developers.arcgis.com)
+* [Esri Open Source Projects - More source code](http://esri.github.io)
+* [ArcGIS Online Maps and Apps - Map Viewer, My Content, Item Management](http://arcgis.com)
+* [ArcGIS Online Help - Documentation and Tutorials](http://doc.arcgis.com/en/arcgis-online/)
+* [jsBin - Interactive JS coding](http://jsbin.com)
 
 ## Labs
 
-To get started, feel free to follow along with the [Hackerlab Slides](http://slides.com/alaframboise/geodev-hackerlabs) or just jump in and get started. The labs use three open datasets from the City of Portland: 1) Rail Stops, 2) Rail Lines, and 3) Neighboorhoods, but feel free to use your own data too.
+To get started, go to the [Hackerlab Slides](http://slides.com/alaframboise/geodev-hackerlabs) and follow along or just jump into the labs below. The labs use three open datasets from the City of Portland: 1) Rail Stops, 2) Rail Lines, and 3) Neighboorhoods, but feel free to use your own data too.
 
-The goal is to build a Portland Neighborhoods explorer app.
+The goal is to use ArcGIS to build a Portland Neighborhoods app.
 
 ![Steps](./geodev-hackerlabs-apps.png)
 
