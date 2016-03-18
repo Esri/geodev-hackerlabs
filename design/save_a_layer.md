@@ -37,8 +37,9 @@ In your web browser, paste in this url. Identify the `renderer` section.
 
 ```
 https://www.arcgis.com/sharing/rest/content/items/d07ec497291b470f9038d3759838f51f/data
-
 ```
 
 NOTE: Replace the item ID above with yours.
+
+If you would like to format the response, try [this JSON Editor tool](http://http://www.jsoneditoronline.org/).
 
