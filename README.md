@@ -62,6 +62,7 @@ Tools
 * [Extract Walkable Neighborhoods](./data/extract_walkable_neighborhoods.md)
 * [Filter Data](/data/filter_data.md)
 * [Create Authenticated Traffic Layer](./data/create_authenticated_traffic_layer.md)
+
 Code
 * [Add a layer to an app](./develop/add_feature_layer_jsapi.md)
 * [GeometryEngine Buffering](./develop/geometry_engine_buffer_jsapi.md)
@@ -79,6 +80,7 @@ Tools
 * [Vector Basemaps](./design/vector_basemaps.md)
 * [Customize Vector Basemap](./design/customize_vector_map.md)
 * [Create a new 3D Scene](./design/create_a_new_3d_scene.md)
+
 Code
 * [Add a styled layer to an app - Bonus](./develop/add_feature_layer_jsapi.md)
 * [Style a layer with JSON](./develop/style_feature_layers_json_jsapi.md)
