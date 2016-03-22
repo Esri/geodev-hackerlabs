@@ -20,7 +20,7 @@ Here's how to get started:
 
 1. **Sign up for a free [ArcGIS Developer subscription](https://developers.arcgis.com/en/sign-up/)** - Your subscription allows you to download software, register apps, import data, create new services, store maps, perform spatial analysis and more. If you already have an [ArcGIS Organizational subscription](http://www.arcgis.com/features/plans/pricing.html), you can use that too, but please note that [free public accounts](https://geonet.esri.com/groups/geodev/blog/2014/10/15/help-i-cant-get-into-developersarcgiscom) will not work.
 
-2. **Start the labs** - You can complete the labs in order or just pick and choose the ones you want to do. It will be easiest to use the data we provide, but you feel free to substitute with your own data and augment the steps where necessary. 
+2. **Start the labs** - You can complete the labs in order or just pick and choose the ones you want to do. It will be easiest to use the data provided (Portland open data), but you feel free to substitute with your own data and augment the steps where necessary. 
 
 3. **Share your work** - This is 100% optional, but as you are going through, feel free to [share your work](#want-to-share-your-work) with others participants!
 
@@ -42,7 +42,7 @@ The labs start from ground-zero and work through the Data - Design - Develop pro
 
 Let's get started!
 
-> You might find it helpful to follow along with the [Hackerlab Slides](http://slides.com/alaframboise/geodev-hackerlabs).
+> For additional guidance, you might find it helpful to follow along with the [Hackerlab Slides](http://slides.com/alaframboise/geodev-hackerlabs).
 
 ![Steps](./geodev-hackerlabs-apps.png)
 
@@ -50,6 +50,7 @@ Let's get started!
 
 These labs show you how to use ArcGIS Online to import, create and manage data in the cloud. All maps, layers and services referred to as `items`. All items contain metadata. With ArcGIS Online you can import datasets, share them, explore the REST API, enrich your data with social-economic information, perform spatial analyses and much, much more.
 
+Tools
 * [Import Data](./data/import_data.md)
 * [Create and Edit Data](./data/create_and_edit_data.md)
 * [Share Data](./data/share_data.md)
@@ -58,14 +59,18 @@ These labs show you how to use ArcGIS Online to import, create and manage data i
 * [GeoEnrich Data](./data/geoenrich_data.md)
 * [Create Buffers](/data/create_buffers.md)
 * [Create Walk Areas](./data/create_walk_areas.md)
+* [Extract Walkable Neighborhoods](./data/extract_walkable_neighborhoods.md)
 * [Filter Data](/data/filter_data.md)
 * [Create Authenticated Traffic Layer](./data/create_authenticated_traffic_layer.md)
-* [CODE: Add a layer to an app](./develop/add_feature_layer_jsapi.md)
-
+Code
+* [Add a layer to an app](./develop/add_feature_layer_jsapi.md)
+* [GeometryEngine Buffering](./develop/geometry_engine_buffer_jsapi.md)
+ 
 ### 2. Design
 
 These labs illustrate how to use ArcGIS Online and the Map viewer to create and style web maps. You can create new maps, select different basemaps, search for layers, use smart mapping to change symbol styles, style popups, label data, show/hide fields, filter data, save layers, create new layers and more. Creating a web map with great cartography is important as it serves as the foundation for building better mapping applications.
 
+Tools
 * [Create a New Web Map](./design/create_a_new_map.md)
 * [Style a Web Map](./design/style_a_map.md)
 * [Style Popups](./design/style_popups.md)
@@ -74,10 +79,11 @@ These labs illustrate how to use ArcGIS Online and the Map viewer to create and 
 * [Vector Basemaps](./design/vector_basemaps.md)
 * [Customize Vector Basemap](./design/customize_vector_map.md)
 * [Create a new 3D Scene](./design/create_a_new_3d_scene.md)
-* [CODE: Add a styled layer to an app - Bonus](./develop/add_feature_layer_jsapi.md)
-* [CODE: Style a layer with JSON](./develop/style_feature_layers_json_jsapi.md)
-* [CODE: Style a layer with a renderer](./develop/style_feature_layers_jsapi.md)
-* [CODE: Add a vector tiled basemap](./develop/add_vector_tile_basemap_jsapi.md)
+Code
+* [Add a styled layer to an app - Bonus](./develop/add_feature_layer_jsapi.md)
+* [Style a layer with JSON](./develop/style_feature_layers_json_jsapi.md)
+* [Style a layer with a renderer](./develop/style_feature_layers_jsapi.md)
+* [Add a vector tiled basemap](./develop/add_vector_tile_basemap_jsapi.md)
 
 ### 3. Develop
 

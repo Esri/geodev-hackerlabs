@@ -8,11 +8,13 @@ In this lab you will take rail stations and buffer them by half a mile to get an
 
 1. Go to [www.arcgis.com](https://www.arcgis.com) and login.  
 
-2. Use ArcGIS Online to find the `PDX_Rail_Stops_Styled` layer by `al_geodev` or just click [this link](http://www.arcgis.com/home/item.html?id=4acaaab6e79949328a8b2c39a593899e).
+2. Use `Search` > `Search for Layers` to find the `PDX_Rail_Stops` layer by `al_geodev`.
 
-3. Click `Open` > `Add layer to new map`.
+3. Click `Open` > `Add layer to new map`. 
 
-4. Click `PDX Rail Stops Styled` > `Perform Analysis` > `Use Proximity` > `Create Buffers`.
+> NOTE: If you are having difficulty finding it, just click [this link](http://www.arcgis.com/home/item.html?id=a0a71aeb0e9443399dc8c5bbf9ba980e).
+
+4. Click `PDX Rail Stops` > `Perform Analysis` > `Use Proximity` > `Create Buffers`.
 
 	1. Choose to buffer by `Distance` and set the size to `0.5` `Miles`.
 
@@ -26,7 +28,9 @@ In this lab you will take rail stations and buffer them by half a mile to get an
 
 5. Drag the `PDX Rail Stops` layer to the top of the layers list.
 
-Your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=aa3e5b4e656f49af9e9ca893ed1c610e).
+6. Save your map.
+
+> Your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=aa3e5b4e656f49af9e9ca893ed1c610e).
 
 ###Bonus 
 
