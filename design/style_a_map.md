@@ -6,17 +6,17 @@ In this lab you will use the styling capabilities of the viewer to make your map
 
 ###Steps
 
-1. Go to [arcgis.com](http://www.arcgis.com) and login. Check `Keep me signed in`.
+1. Go to [arcgis.com](http://www.arcgis.com) and login.  
 
-2. Click on [this link](http://www.arcgis.com/home/webmap/viewer.html?webmap=df0da19116934be89ac5f7379172c24e) to load the unstyled map or use your own unstyled map.
+2. Click on [this link](http://www.arcgis.com/home/webmap/viewer.html?webmap=c8cd4b6f2d724c99be9a2d14fb31603e) to load the unstyled map. Or use your own unstyled map.
 
 3. Click `Save As` to save your own version of the map. Optionally `Share` > `Everyone`.
 
-4. Click on `Rail Stops` > `Change Style` and set the following:
+4. Click on `PDX Rail Stops` > `Change Style` and set the following:
 	
-	1. 1 - Choose an attribute to show: `Type`
+	1. 1. Choose an attribute to show: `Type`
  	
- 	2. 2 - Types (Unique Symbols) > `Options`
+ 	2. 2. Types (Unique Symbols) > `Options`
   	
   		* Click the `rainbow` at the top and change the outline of all Stops symbols to white, 1px.
   	
@@ -24,7 +24,7 @@ In this lab you will use the styling capabilities of the viewer to make your map
  	
  	3. Done
 
-5. Click on `Rail Lines` > `Change Style` and set the following:
+5. Click on `PDX Rail Lines` > `Change Style` and set the following:
  	
   1. 1 - Choose an attribute to show: `Type`
   
@@ -36,7 +36,7 @@ In this lab you will use the styling capabilities of the viewer to make your map
  	
  	3. Done
 
-6. Click on `Neighborhoods` > `Change Style` and set the following:
+6. Click on `PDX Neighborhoods Enriched` > `Change Style` and set the following:
  
   1. 1 - Choose an attribute to show: `COALIT`
   
@@ -52,7 +52,7 @@ In this lab you will use the styling capabilities of the viewer to make your map
 
 8. Save your map.
 
-Your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=27970d32436a446dabb3c71cf949115e)
+Your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=b5fd4aa210ac42f6b86cf5f7a0c989cf)
 
 ###Bonus
 * Try using some of the other advanced features of the `Change Style` tools.

@@ -6,9 +6,9 @@ In this lab you will style popups by formatting fields and adding charts.
 
 ###Steps
 
-1. Go to [arcgis.com](http://www.arcgis.com) and login. Check `Keep me signed in`.
+1. Go to [arcgis.com](http://www.arcgis.com) and login.  
 
-2. Click [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=b9f905e51b154ab6a38ed33e93cfef0a) and open it in the Map Viewer. 
+2. Click [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=b5fd4aa210ac42f6b86cf5f7a0c989cf) and open it in the Map Viewer. Or just continue using your own map from the last step.
 
 3. Click `Save` > `Save As` to save your own copy of the map.
 
@@ -72,7 +72,7 @@ In this lab you will style popups by formatting fields and adding charts.
 
 8. Save your map and test the popups.
 
-Your popups should look similar to the popups in [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=27970d32436a446dabb3c71cf949115e).
+Your popups should look similar to the popups in [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=6f1f04e49536466fa4a631afcd0141c5).
 
 ###Bonus
 * Try adding different types of charts to the Neighborhoods layer popups.

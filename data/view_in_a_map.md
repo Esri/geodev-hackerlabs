@@ -6,7 +6,7 @@ In this lab you will add your own layers and some existing publicly available la
 
 ###Steps
 
-1. Go to [arcgis.com](http://www.arcgis.com) and login. Check `Keep me signed in`.
+1. Go to [arcgis.com](http://www.arcgis.com) and login.  
 
 2. Click `My Content`.
 

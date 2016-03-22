@@ -8,7 +8,7 @@ NOTE: If you don't have any data items in your account, go to [Import Data](./im
 
 ###Steps
 
-1. Go to [arcgis.com](http://www.arcgis.com) and login. Check `Keep me signed in`.
+1. Go to [arcgis.com](http://www.arcgis.com) and login.  
 
 2. Click `My Content`.
 

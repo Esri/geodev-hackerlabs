@@ -6,29 +6,40 @@ In this lab you will style and save a layer to your account.
 
 ###Steps
 
-1. Go to [arcgis.com](http://www.arcgis.com) and login. Check `Keep me signed in`.
+1. Go to [arcgis.com](http://www.arcgis.com) and login.  
 
 2. Click `MAP`.
 
 3. Click `Add` > `Search for Layers` > `In: ArcGIS Online`.
 
-4. Search for `PDX Neighborhoods` by (al_geodev) and add this layer.
+4. Search for `PDX Neighborhoods Enriched` by (al_geodev) and add this layer.
 
-5. Click `PDX Neighborhoods` > `Copy`. This creates a new Layer Item in your account.
+5. Click `PDX Neighborhoods Enriched` > `Copy`. This creates a new Layer Item in your account.
 
-6. Change the extent of the map and style the layer. See [Style a Map](./style a map.md) for help.
+6. Change the extent of the map and style the layer as desired. See [Style a Map](./style a map.md) for help on styling.
 
-7. Click `PDX Neighborhoods Copy` > `Save layer`. Set the following properties:
+7. Click `PDX Neighborhoods Enriched Copy` > `Save layer`. Set the following properties:
 
  ```
- * Title: PDX Neighborhoods Copy
+ * Title: PDX Neighborhoods Enriched Copy
  * Tags: PDX Neighborhoods
  * Summary: PDX Neighborhoods Copy
  * Save In Folder: <your account>
  Done
  ```
 
-8. Go to `My Contents` to view the layer.
+8. Go to `My Contents` to view the layer with the symbology.
 
 ###Bonus
-* View your layer's metadata via REST to verify the changes have been persisted. See (View Via REST)[./data/view via rest.md] for help.
+* View the layer's symbology as JSON by accessing it via the REST API. 
+
+In your web browser, paste in this url. Identify the `renderer` section.
+
+```
+https://www.arcgis.com/sharing/rest/content/items/d07ec497291b470f9038d3759838f51f/data
+```
+
+NOTE: Replace the item ID above with yours.
+
+If you would like to format the response, try [this JSON Editor tool](http://http://www.jsoneditoronline.org/).
+

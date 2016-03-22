@@ -6,7 +6,7 @@ In this lab you will focus in on Rail Stops on the Blue Line and generate buffer
 
 ###Steps
 
-1. Go to [www.arcgis.com](https://www.arcgis.com) and login. Check `Keep me signed in`.
+1. Go to [www.arcgis.com](https://www.arcgis.com) and login.  
 
 2. Use ArcGIS Online to find the `PDX_Rail_Stops_Styled` layer by `al_geodev` or just click [this link](http://www.arcgis.com/home/item.html?id=4acaaab6e79949328a8b2c39a593899e).
 

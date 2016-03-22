@@ -2,13 +2,11 @@
 
 In this lab you will apply custom styling to a feature layer using the JSON Drawing Info stored with the feature service.
 
-1. Go to [arcgis.com](http://www.arcgis.com) and login.
+1. Click [this layer](http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Styled/FeatureServer/0) and copy the Drawing Info JSON. You will use this to style your layer below.
 
-2. Click [this layer](http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Styled/FeatureServer/0) and copy the Drawing Info JSON. You will use this to apply to the renderer.
+2. Click [starter_map_jsapi.html](src/starter_map_jsapi.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
 
-3. Click [starter_map_jsapi.html](src/starter_map_jsapi.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
-
-4. In `JSBin` > `HTML`, update the `require` statement and function definition:
+3. In `JSBin` > `HTML`, update the `require` statement and function definition:
 
   ```javascript
   require(["esri/map",
@@ -19,7 +17,7 @@ In this lab you will apply custom styling to a feature layer using the JSON Draw
       ...
   ```
 
-5. Now add a new `FeatureLayer` with the JSON to style it:
+4. Now add a new `FeatureLayer` with the JSON to style the featurelayer:
 
   ```javascript
   function(Map, FeatureLayer, JsonUtils) {

@@ -6,7 +6,7 @@ In this lab you will create a new map from existing layers that have been alread
 
 ###Steps
 
-1. Go to [arcgis.com](http://www.arcgis.com) and login. Check `Keep me signed in`.
+1. Go to [arcgis.com](http://www.arcgis.com) and login.  
 
 2. Click `MAP`.
 
@@ -15,8 +15,8 @@ In this lab you will create a new map from existing layers that have been alread
 	1. Search for:
 
 		```
-		PDX_Rail_Lines (by al_geodev)
 		PDX_Rail_Stops (by al_geodev)
+		PDX_Rail_Lines (by al_geodev)
 		PDX_Neighborhoods_Enriched (by al_geodev)
 		```
 
@@ -26,14 +26,25 @@ In this lab you will create a new map from existing layers that have been alread
 
 	3. Click `Done Adding Layers`.
  
-4. Drag to reorder the layers so that the `PDX_Neighborhoods` is on the bottom.
+4. Drag to reorder the layers so that `PDX Rail Stops` is on top, `PDX Rail Lines` is next and `PDX Neighborhoods Enriched` is on the bottom.
 
-5. Choose a new basemap.
+5. Choose the `Light Gray` basemap.
 
-6. Save your map. With the default styles, your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=df0da19116934be89ac5f7379172c24e).
+6. Explore the default data by clicking on the map.
 
-7. Explore the data by clicking on the map.
+7. Save your map. With the default styles, your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=c8cd4b6f2d724c99be9a2d14fb31603e).
 
-###Bonus 
-* Use the map viewer to try to improve the layer names in the TOC. 
-* Go to the [style_a_map.md]() lab to improve the symbols.
+8. Go to `My Contents` to view the item for this map.
+
+###Bonus
+* View the webmap contents as JSON by accessing it via the REST API. 
+
+In your web browser, paste in this url. Identify the `renderer` section.
+
+```
+https://www.arcgis.com/sharing/rest/content/items/c8cd4b6f2d724c99be9a2d14fb31603e/data
+```
+
+NOTE: Replace the item ID above with yours.
+
+If you would like to format the response, try [this JSON Editor tool](http://http://www.jsoneditoronline.org/).

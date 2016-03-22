@@ -6,7 +6,7 @@ In this lab we will look at how to pre-authenticate the traffic layer so it can 
 
 ###Steps
 
-1. Go to [arcgis.com](http://www.arcgis.com) and login. Check `Keep me signed in`.
+1. Go to [arcgis.com](http://www.arcgis.com) and login.  
 
 2. Go to `My Content`.
 

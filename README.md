@@ -1,16 +1,16 @@
-# geodev-hackerlabs
+# ArcGIS Geodev Hackerlabs
 
 A place to learn how to build geo apps with ArcGIS.
 
 ## Welcome
 
-Welcome to the Geodev Hackerlabs. This respository contains short labs that step you through the process of developing applications with [ArcGIS](http://www.arcgis.com). This process focuses mostly on using online accounts and services and does not require the installation or use of desktop software for most labs.
+Welcome to the Geodev Hackerlabs. This respository contains short labs that step you through the process of developing applications with [ArcGIS](http://www.arcgis.com). This process focuses on using online accounts and services and does not require the installation or use of desktop software for most of the labs.
 
-The process generally involves three steps and the labs are broken down into the following sections:
+The development process involves three steps:
 
 1. Data - prepare data for your apps with [ArcGIS Online](http://www.arcgis.com)
-2. Design - style layers and maps for your apps [ArcGIS Online Map and Scene Viewer](http://www.arcgis.com)
-3. Develop - consume layers and maps in your apps [ArcGIS Templates, Builders and APIs](http://developers.arcgis.com)
+2. Design - style layers and maps for your apps with the [ArcGIS Online Map and Scene Viewer](http://www.arcgis.com)
+3. Develop - consume layers and maps in your apps with [ArcGIS Templates, Builders and APIs](http://developers.arcgis.com)
 
 ![Process](./arcgis-process.png)
 
@@ -20,29 +20,33 @@ Here's how to get started:
 
 1. **Sign up for a free [ArcGIS Developer subscription](https://developers.arcgis.com/en/sign-up/)** - With the subscription you can download software, register apps, import data, create new services, store maps and other content, perform spatial analysis and more. If you have an ArcGIS Organizational account, you can use that as well, but please note that [Free public accounts](https://geonet.esri.com/groups/geodev/blog/2014/10/15/help-i-cant-get-into-developersarcgiscom) cannot be used.
 
-2. **Start the labs** - The labs are divided into three sections that you can complete at your own pace. You can follow them in order or just choose the ones you want to complete. You can use the data we provide or use your own. If you want to code, dig into APIs and SDKs from Esri and compatible open source libraries. If not, you can still build highly customized production-ready apps using Esri's templates and builders. You might also find it helpful to follow along with the [Hackerlab Slides](http://slides.com/alaframboise/geodev-hackerlabs).  
+2. **Start the labs** - The labs are divided into three sections that you can complete at your own pace. You can follow them in order or just choose the ones you want to complete. You can use the data we provide or use your own. If you want to code, dig into APIs and SDKs from Esri or the open source projects. If not, you can still build apps using Esri's templates and builders. You might find it helpful to follow the [Hackerlab Slides](http://slides.com/alaframboise/geodev-hackerlabs) that help to guide you through the labs.  
 
 3. **Share your work** - This is 100% optional, but as you are going through, feel free to [share your work](#want-to-share-your-work) with others participants!
 
 ## Resources
-If you're brand new to ArcGIS, we recommend that you use your **new developer account** to sign into to [ArcGIS.com](https://www.arcgis.com) to learn how to [make your first map](http://doc.arcgis.com/en/arcgis-online/create-maps/make-your-first-map.htm), and [developers.arcgis.com](http://developers.arcgis.com) to learn how to manage apps. Here are a few important links:
 
-* [ArcGIS for Developers](http://developers.arcgis.com)
-* [ArcGIS Online Maps and Apps](http://arcgis.com)
-* [ArcGIS Online Help](http://doc.arcgis.com/en/arcgis-online/)
-* [Esri Open Source Projects](http://esri.github.io)
+Here are the web resources you will need for the labs.
+
+* [ArcGIS for Developers - Account, Documentation, Samples, Apps, Downloads](http://developers.arcgis.com)
+* [Esri Open Source Projects - More source code](http://esri.github.io)
+* [ArcGIS Online Maps and Apps - Map Viewer, My Content, Item Management](http://arcgis.com)
+* [ArcGIS Online Help - Documentation and Tutorials](http://doc.arcgis.com/en/arcgis-online/)
+* [jsBin - Interactive JS coding](http://jsbin.com)
+
+> If you are brand new to ArcGIS, we recommend that you use your **new developer account** to sign into to [ArcGIS.com](https://www.arcgis.com) to learn how to [make your first map](http://doc.arcgis.com/en/arcgis-online/create-maps/make-your-first-map.htm), and [developers.arcgis.com](http://developers.arcgis.com) to learn how to create and manage apps.
 
 ## Labs
 
-To get started, feel free to follow along with the [Hackerlab Slides](http://slides.com/alaframboise/geodev-hackerlabs) or just jump in and get started. The labs use three open datasets from the City of Portland: 1) Rail Stops, 2) Rail Lines, and 3) Neighboorhoods, but feel free to use your own data too.
+The labs start from ground-zero and work through the Data - Design - Develop process. In this example we will use Portland open data, but feel free to use your own data to build your own custom apps and solutions.
 
-The goal is to build a Portland Neighborhoods explorer app.
+To get started, follow along with the **[Hackerlab Slides](http://slides.com/alaframboise/geodev-hackerlabs)** or just jump into the labs below.
 
 ![Steps](./geodev-hackerlabs-apps.png)
 
 ### 1. Data
 
-These labs show you how to use ArcGIS Online to manage all of your data in the cloud. All maps, layers and services referred to as `items`. All items contain metadata. With ArcGIS Online you can import datasets, share them, explore the REST API, enrich your data with social-economic information, perform spatial analyses and much, much more.
+These labs show you how to use ArcGIS Online to import, create and manage your data in the cloud. All maps, layers and services referred to as `items`. All items contain metadata. With ArcGIS Online you can import datasets, share them, explore the REST API, enrich your data with social-economic information, perform spatial analyses and much, much more.
 
 * [Import Data](./data/import_data.md)
 * [Create and Edit Data](./data/create_and_edit_data.md)
@@ -58,18 +62,20 @@ These labs show you how to use ArcGIS Online to manage all of your data in the c
 
 ### 2. Design
 
-These labs illustrate how to use the Map viewer to create and style web maps. You can create new maps, select different basemaps, search for layers, use smart mapping to change symbol styles, style popups, label data, show/hide fields, filter data, save layers, create new layers and more. Creating a web map with great cartography is important as it serves as the foundation for building better mapping applications.
+These labs illustrate how to use ArcGIS Online and the Map viewer to create and style web maps. You can create new maps, select different basemaps, search for layers, use smart mapping to change symbol styles, style popups, label data, show/hide fields, filter data, save layers, create new layers and more. Creating a web map with great cartography is important as it serves as the foundation for building better mapping applications.
 
 * [Create a New Map](./design/create_a_new_map.md)
 * [Style a Map](./design/style_a_map.md)
 * [Style Popups](./design/style_popups.md)
 * [Smart Mapping - Proportional Styling](./design/smart_mapping_proportional.md)
-* [Save a Layer](./design/save_a_layer.md)
+* [Copy and save a Layer](./design/save_a_layer.md)
 * [Vector Basemaps](./design/vector_basemaps.md)
 * [Customize Vector Basemap](./design/customize_vector_map.md)
 * [Create a new 3D Scene](./design/create_a_new_3d_scene.md)
 * [CODE: Add a styled layer to an app - Bonus](./develop/add_feature_layer_jsapi.md)
 * [CODE: Style a layer with JSON](./develop/style_feature_layers_json_jsapi.md)
+* [CODE: Style a layer with a renderer](./develop/style_feature_layers_jsapi.md)
+* [CODE: Add a vector tiled basemap](./develop/add_vector_tile_basemap_jsapi.md)
 
 ### 3. Develop
 

@@ -6,11 +6,9 @@ In this lab you will swap your basemap with a your favorite vector basemap.
 
 ###Steps
 
-1. Go to [arcgis.com](http://www.arcgis.com) and login. Click `Map`.
+1. Go to [arcgis.com](http://www.arcgis.com) and login.
 
-2. Click [this link](http://www.arcgis.com/home/webmap/viewer.html?webmap=27970d32436a446dabb3c71cf949115e) 
-
-NOTE: Feel free to use your own map too!
+2. Click on [this link](http://www.arcgis.com/home/webmap/viewer.html?webmap=6dd14f639f784ff692327d8f4b3eb00a) to load a map. Or use your own map.
 
 3. Click `Add` to add a vector tile > `Search for Layers` > `In: ArcGIS Online`.
 
@@ -20,18 +18,24 @@ NOTE: Feel free to use your own map too!
 		esri_vector tiles
 		```
 		
-	2. Click on the name of the vector tile (DO NOT USE ADD) > `World Street Map (Night)` > Use as basemap > and experiment with adding and removing the following layers.
- 		
- 		```
- 		World Street Map
- 		World Street Map (Night)
- 		World Navigation Map
- 		World Topographic Map
- 		Dark Gray Canvas
- 		Light Gray Canvas
- 		...
- 		```
+	2. Click on `World Street Map (Night)` (DO NOT CLICK ADD!) > ```Add to Map```.
 
 	3. Click `Done Adding Layers`.
  
-5. Save your map.
+4. Save your map.
+
+Your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=11e2285a131540f792c58565db996b4b)
+
+###Bonus
+
+Experiment with adding and removing other vector tile layers as basemaps.
+ 		
+	```
+	World Street Map
+	World Street Map (Night)
+	World Navigation Map
+	World Topographic Map
+	Dark Gray Canvas
+	Light Gray Canvas
+	...
+	```
