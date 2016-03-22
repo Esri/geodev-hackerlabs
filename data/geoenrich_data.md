@@ -8,9 +8,11 @@ In this lab you will add neighborhood polygons and enrich them with population d
 
 1. Go to [arcgis.com](http://www.arcgis.com) and login.  
 
-2. Use ArcGIS Online to find the `PDX Neighborhoods by al_geodev` layer or just click [this link](http://www.arcgis.com/home/item.html?id=cc1d37e67e934a93b489ca4d82b07d9c).
+2. Use `Search` > `Search for Layers` to find the `PDX Neighborhoods` layer by `al_geodev`.
 
-3. Click `Open` > `Add layer to new map`.
+3. Click `Open` > `Add layer to new map`. 
+
+> NOTE: If you are having difficulty finding it, just click [this link](http://www.arcgis.com/home/item.html?id=cc1d37e67e934a93b489ca4d82b07d9c).
 
 4. Click `PDX Neighborhoods` > `Perform Analyses` > `Data Enrichment` > `Enrich Layer`.
 
@@ -42,7 +44,7 @@ In this lab you will add neighborhood polygons and enrich them with population d
 
 8. Save your map.
 
-Your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=d84b33d813144e9eafae55bfe6c09b4d).
+> Your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=93cd156deb3e49abb7e48bf1b202cc61).
 
 ###Bonus
 * Explore some of the other enrichment fields available.

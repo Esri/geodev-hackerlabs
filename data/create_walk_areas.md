@@ -8,11 +8,13 @@ In this lab you will take rail stations and see what's within half a mile's walk
 
 1. Go to [www.arcgis.com](https://www.arcgis.com) and login.  
 
-2. Use ArcGIS Online to find the `PDX_Rail_Stops_Styled` layer by `al_geodev` or just click [this link](http://www.arcgis.com/home/item.html?id=4acaaab6e79949328a8b2c39a593899e).
+2. Use `Search` > `Search for Layers` to find the `PDX_Rail_Stops` layer by `al_geodev`.
 
-3. Click `Open` > `Add layer to new map`.
+3. Click `Open` > `Add layer to new map`. 
 
-4. Click `PDX Rail Stops Styled` > `Perform Analysis` > `Use Proximity` > `Create Drive-Time Areas`.
+> NOTE: If you are having difficulty finding it, just click [this link](http://www.arcgis.com/home/item.html?id=a0a71aeb0e9443399dc8c5bbf9ba980e).
+
+4. Click `PDX Rail Stops` > `Perform Analysis` > `Use Proximity` > `Create Drive-Time Areas`.
 
 	1. Choose `Walking Distance` and set the size to `0.5` `Miles`.
 
@@ -28,7 +30,7 @@ In this lab you will take rail stations and see what's within half a mile's walk
 
 5. Drag the `PDX Rail Stops` layer to the top of the layers list.
 
-Your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=5bd7a5da276042edbee8171edb2d03d4).
+> Your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=5bd7a5da276042edbee8171edb2d03d4).
 
 **Note:** This service consumes more credits than most, so use it sparingly!
 

@@ -8,11 +8,13 @@ In this lab you will focus in on Rail Stops on the Blue Line and generate buffer
 
 1. Go to [www.arcgis.com](https://www.arcgis.com) and login.  
 
-2. Use ArcGIS Online to find the `PDX_Rail_Stops_Styled` layer by `al_geodev` or just click [this link](http://www.arcgis.com/home/item.html?id=4acaaab6e79949328a8b2c39a593899e).
+2. Use `Search` > `Search for Layers` to find the `PDX_Rail_Stops` layer by `al_geodev`.
 
-3. Click `Open` > `Add layer to new map`.
+3. Click `Open` > `Add layer to new map`. 
 
-4. Click `PDX Rail Stops Styled` > `Filter`. Note you have two dropdowns and a text field. The text field has 3 radio buttons below it.
+> NOTE: If you are having difficulty finding it, just click [this link](http://www.arcgis.com/home/item.html?id=a0a71aeb0e9443399dc8c5bbf9ba980e).
+
+4. Click `PDX Rail Stops` > `Filter`. Note you have two dropdowns and a text field. The text field has 3 radio buttons below it.
 
 	1. Pick `LINE` in the first dropdown.
 	
@@ -22,7 +24,7 @@ In this lab you will focus in on Rail Stops on the Blue Line and generate buffer
 	
 	4. Click `Apply Filter`.
 
-5. Click `PDX Rail Stops Styled` > `Perform Analysis` > `Use Proximity` > `Create Buffers`.
+5. Click `PDX Rail Stops` > `Perform Analysis` > `Use Proximity` > `Create Buffers`.
 
 	1. Choose to buffer by `Distance` and set the size to `1` `Miles`.
 
@@ -36,7 +38,7 @@ In this lab you will focus in on Rail Stops on the Blue Line and generate buffer
 
 6. Drag the `PDX Rail Stops` layer to the top of the layers list.
 
-Your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=39efc42b4920454a8241663e7764d6d5). See how buffers were only calculated for stations on the B (Blue) line.
+> Your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=39efc42b4920454a8241663e7764d6d5). See how buffers were only calculated for stations on the B (Blue) line.
 
 ###Bonus 
 
@@ -50,4 +52,4 @@ Your map should look something like [this map](http://www.arcgis.com/home/webmap
 
 ###More Bonus
 
-* You can click `Details` > `PDX Rail Stops Styled` > `Save Layer` to save this filtered "view" on the layer to your `My Content` space in your account. Perhaps name it `PDX Blue Line Stops`. This new item will point to the same unfiltered data source, but when added to the ArcGIS Online Map Viewer, will automatically filter according to the saved definitions. You can share these items with colleagues and users as a great way for them to bring focused content from a larger dataset into their own maps.
+* You can click `Details` > `PDX Rail Stops` > `Save Layer` to save this filtered "view" on the layer to your `My Content` space in your account. Perhaps name it `PDX Blue Line Stops`. This new item will point to the same unfiltered data source, but when added to the ArcGIS Online Map Viewer, will automatically filter according to the saved definitions. You can share these items with colleagues and users as a great way for them to bring focused content from a larger dataset into their own maps.
