@@ -37,7 +37,8 @@ In this lab you will create a new map from existing layers that have been alread
 8. Go to `My Contents` to view the item for this map.
 
 ###Bonus
-* View the webmap contents as JSON by accessing it via the REST API. 
+
+View the JSON for the web map by using the REST API to access the item in your account.
 
 In your web browser, paste in this url. Identify the `renderer` section.
 
@@ -47,4 +48,4 @@ https://www.arcgis.com/sharing/rest/content/items/c8cd4b6f2d724c99be9a2d14fb3160
 
 NOTE: Replace the item ID above with yours.
 
-If you would like to format the response, try [this JSON Editor tool](http://http://www.jsoneditoronline.org/).
+If you would like to format the response, try [this JSON Editor tool](http://www.jsoneditoronline.org/).

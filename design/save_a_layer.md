@@ -31,7 +31,8 @@ In this lab you will style and save a layer to your account.
 8. Go to `My Contents` to view the layer with the symbology.
 
 ###Bonus
-* View the layer's symbology as JSON by accessing it via the REST API. 
+
+View the JSON for the layer by using the REST API to access the item in your account.
 
 In your web browser, paste in this url. Identify the `renderer` section.
 
