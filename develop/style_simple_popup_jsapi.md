@@ -1,76 +1,63 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>JS API Simple Popup</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+###Style a Layer Popup
 
-  <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.15/esri/css/esri.css">
-  <style>
-    html,body,#mapDiv {
-      padding:0;
-      margin:0;
-      height:100%;
-    }
-  </style>
+In this lab you will use code to style a popup.
 
-  <script src="http://js.arcgis.com/3.15compact/"></script>
-  <script>
-    var map;
-    require(["esri/map",
-             "esri/layers/FeatureLayer",
-             "esri/dijit/PopupTemplate",
-             "esri/renderers/jsonUtils",
-             "dojo/domReady!"],
-      function(Map, FeatureLayer, PopupTemplate, JsonUtils) {
-        map = new Map("mapDiv", {
-          center: [-122.68, 45.52],
-          zoom: 10,
-          basemap: "dark-gray"
-        });
-      
-      var popupTemplate = new PopupTemplate({
-        title: "Neighborhoods",
-        // Fields
-        fieldInfos: [
-          { fieldName: "TOTPOP_CY", visible: true, format: { places: 0 } },
-          { fieldName: "AVGHINC_CY", visible: true, format: { places: 0 } },
-          { fieldName: "MEDAGE_CY", visible: true, format: { places: 0 } },
-          { fieldName: "AREA", visible: true, format: { places: 2 } }
-        ],
-        // Charts
-        mediaInfos: [
-          {
-            title: "Demographics",
-            type: "piechart",
-            value: { 
-              fields: [ 
-                "TOTPOP_CY", 
-                "AVGHINC_CY", 
-              ] 
-            }
-          }
-        ]
-      });
-      
-      var featureLayer = new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Enriched/FeatureServer/0", 
+1. Click [starter_map_jsapi.html](src/starter_map_jsapi.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
+
+2. In `JSBin` > `HTML`, update the `require` statement and function definition:
+
+  ```javascript
+  require(["esri/map",
+          "esri/layers/FeatureLayer",
+          "esri/dijit/PopupTemplate",
+          "dojo/domReady!"],
+      function(Map, FeatureLayer, PopupTemplate) {
+      ...
+  ```
+
+4. Now add create a new PopupTemple with the popup template style desired:
+
+  ```javascript
+  function(Map, FeatureLayer, PopupTemplate) {
+    map = new Map("mapDiv", {
+      center: [-122.68, 45.52],
+      zoom: 10,
+      basemap: "dark-gray"
+    });
+
+    var popupTemplate = new PopupTemplate({
+      title: "Neighborhoods",
+      // Fields
+      fieldInfos: [
+        { fieldName: "TOTPOP_CY", visible: true, format: { places: 0 } },
+        { fieldName: "AVGHINC_CY", visible: true, format: { places: 0 } },
+        { fieldName: "MEDAGE_CY", visible: true, format: { places: 0 } },
+        { fieldName: "AREA", visible: true, format: { places: 2 } }
+      ],
+      // Charts
+      mediaInfos: [
         {
-          outFields: ["*"],
-          infoTemplate: popupTemplate
+          title: "Demographics",
+          type: "piechart",
+          value: { 
+            fields: [ 
+              "TOTPOP_CY", 
+              "AVGHINC_CY", 
+            ] 
+          }
         }
-      );
+      ]
+    });
 
-      var renderer = JsonUtils.fromJson(  {"visualVariables":[{"type":"colorInfo","field":"TOTPOP_CY","normalizationField":"AREA","stops":[{"value":1280,"color":[116,77,48,255],"label":"< 1,280"},{"value":3212,"color":[175,107,47,255],"label":null},{"value":5144,"color":[214,146,83,255],"label":"5,144"},{"value":7076,"color":[235,195,154,255],"label":null},{"value":9008,"color":[255,245,230,255],"label":"> 9,008"}]},{"type":"sizeInfo","target":"outline","expression":"view.scale","stops":[{"size":2,"value":42474},{"size":1,"value":132730},{"size":0.5,"value":530919},{"size":0,"value":1061838}]}],"authoringInfo":{"visualVariables":[{"type":"colorInfo","minSliderValue":0,"maxSliderValue":17654.51572245626,"theme":"high-to-low"}]},"type":"classBreaks","field":"TOTPOP_CY","minValue":-9007199254740991,"classBreakInfos":[{"symbol":{"color":[170,170,170,255],"outline":{"color":[153,153,153,128],"width":0.75,"type":"esriSLS","style":"esriSLSSolid"},"type":"esriSFS","style":"esriSFSSolid"},"classMaxValue":9007199254740991}],"normalizationType":"esriNormalizeByField","normalizationField":"AREA"});
-        
-        featureLayer.setRenderer(renderer);
-   
-        map.addLayer(featureLayer);
-      }
-    );
-  </script>
-</head>
+5. Now add the template to the feature layer and add the featurelayer to the map.
 
-<body>
-  <div id="mapDiv"></div>
-</body>
-</html>
+    var featureLayer = new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Enriched/FeatureServer/0");
+    
+    map.addLayer(featureLayer);
+  ```
+
+6. Confirm that the JSBin `Output` panel shows styled popups when you click on the neighborhoods.
+
+Your app should look something like this:
+* [Code](src/style_simple_popup_jsapi.html)
+* [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/style_simple_popup_jsapi.html)
