@@ -27,7 +27,7 @@ In this lab you will apply custom styling to a feature layer using the JSON Draw
       basemap: "dark-gray"
     });
 
-    var featureLayer = new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods/FeatureServer/0");
+    var featureLayer = new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Enriched/FeatureServer/0");
     
     // This should be the same as the JSON that you copied earilier
 
