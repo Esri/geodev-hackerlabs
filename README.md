@@ -60,7 +60,7 @@ Tools
 * [Create Buffers](/data/create_buffers.md)
 * [Create Walk Areas](./data/create_walk_areas.md)
 * [Extract Walkable Neighborhoods](./data/extract_walkable_neighborhoods.md)
-* [Filter Data](/data/filter_data.md)
+* [Filter Data](./data/filter_data.md)
 * [Create Authenticated Traffic Layer](./data/create_authenticated_traffic_layer.md)
 
 Code
@@ -82,8 +82,9 @@ Tools
 * [Create a new 3D Scene](./design/create_a_new_3d_scene.md)
 
 Code
-* [Add a styled layer to an app - Bonus](./develop/add_feature_layer_jsapi.md)
+* [Add a styled layer to an app - Bonus section](./develop/add_feature_layer_jsapi.md)
 * [Style a layer with JSON](./develop/style_feature_layers_json_jsapi.md)
+* [Style a layer popup](./develop/style_simple_popup_jsapi.md)
 * [Style a layer with a renderer](./develop/style_feature_layers_jsapi.md)
 * [Add a vector tiled basemap](./develop/add_vector_tile_basemap_jsapi.md)
 
