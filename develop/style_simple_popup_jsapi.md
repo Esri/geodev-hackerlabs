@@ -48,9 +48,10 @@ In this lab you will use code to style a popup.
         }
       ]
     });
-
+  ```
 5. Now add the template to the feature layer and add the featurelayer to the map.
 
+  ```javascript
     var featureLayer = new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Enriched/FeatureServer/0");
     
     map.addLayer(featureLayer);
