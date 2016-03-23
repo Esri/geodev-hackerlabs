@@ -52,7 +52,12 @@ In this lab you will use code to style a popup.
 5. Now add the template to the feature layer and add the featurelayer to the map.
 
   ```javascript
-    var featureLayer = new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Enriched/FeatureServer/0");
+    var featureLayer = new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Enriched/FeatureServer/0", 
+      {
+        outFields: ["*"],
+        infoTemplate: popupTemplate
+      }
+    );
     
     map.addLayer(featureLayer);
   ```
@@ -62,3 +67,6 @@ In this lab you will use code to style a popup.
 Your app should look something like this:
 * [Code](src/style_simple_popup_jsapi.html)
 * [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/style_simple_popup_jsapi.html)
+
+Bonus
+* Combine the code from the last lab with this one so the features are styled along with the popup.
