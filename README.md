@@ -4,7 +4,7 @@ A place to learn how to build geo apps with ArcGIS.
 
 ## Welcome
 
-This respository contains short labs that step you through the process of developing applications with [ArcGIS](http://www.arcgis.com). The process described here makes use of ArcGIS Online accounts and services, and does not require the installation of desktop software for most of the labs. 
+This repository contains short labs that step you through the process of developing applications with [ArcGIS](http://www.arcgis.com). The process described here makes use of ArcGIS Online accounts and services, and does not require the installation of desktop software for most of the labs. 
 
 The process involves three steps:
 
