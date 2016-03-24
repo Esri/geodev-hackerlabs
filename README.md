@@ -48,9 +48,11 @@ Let's get started!
 
 ### 1. Data
 
-These labs show you how to use ArcGIS Online to import, create and manage data in the cloud. All maps, layers and services referred to as `items`. All items contain metadata. With ArcGIS Online you can import datasets, share them, explore the REST API, enrich your data with social-economic information, perform spatial analyses and much, much more.
+Creating and importing data interactively is a fast and effective way to prepare data for prototype apps or for production-level apps that you plan to develop in the future.
 
-Tools
+These labs illsustrate how to import, create and manage data using the [ArcGIS Online](http://arcgis.com) and [ArcGIS for Developers](http://developers.arcgis.com) website and tools. You will also use the map viewer to perform data enrichment, the process of adding social demographic information to a dataset, and spatial analyses, the process of creating new data based on spatial critria. You will also explore the feature service REST endpoints and use them in a simple web app to access and display spatial data. 
+
+ArcGIS Online and Developer Tools
 * [Import Data](./data/import_data.md)
 * [Create and Edit Data](./data/create_and_edit_data.md)
 * [Share Data](./data/share_data.md)
@@ -69,7 +71,9 @@ Code
  
 ### 2. Design
 
-These labs illustrate how to use ArcGIS Online and the Map viewer to create and style web maps. You can create new maps, select different basemaps, search for layers, use smart mapping to change symbol styles, style popups, label data, show/hide fields, filter data, save layers, create new layers and more. Creating a web map with great cartography is important as it serves as the foundation for building better mapping applications.
+Creating web maps with great cartography is one of the most important steps to building effective mapping applications. Styling maps interactively can also be huge time-saver in app development.
+
+In these labs you will use [ArcGIS Online](http://arcgis.com) and the map viewer to create and style web maps. You will create new maps, explore basemaps, search for layers, use smart mapping to change symbol styles, style popups, label data, show/hide fields, filter data, and more. You will also learn how to save web maps and featurelayers and use the JSON to achieve the same rich cartographic and popup experiences in your own custom apps.
 
 Tools
 * [Create a New Web Map](./design/create_a_new_map.md)
@@ -90,7 +94,9 @@ Code
 
 ### 3. Develop
 
-These labs illustrate how to use ArcGIS app builders, templates and APIs to build custom mapping apps. You can use your web maps with the Web AppBuilder to create an HTML5 responsive app or AppStudio to build and deploy a native app for iOS and Android. Or you can just build a custom app from the ground up with the ArcGIS JS API, Esri-Leaflet or the ArcGIS Runtime APIs.
+One of the easiest ways to build a map app is to start from web map.
+
+In these labs you will use the ArcGIS Web App Builder, App Templates and APIs to build custom mapping apps. You will use the web maps with the Web AppBuilder to create an HTML5 responsive app or AppStudio to build and deploy a native app for iOS and Android. Or you can just build a custom app from the ground up with the ArcGIS JS API, Esri-Leaflet or the ArcGIS Runtime APIs.
 
 * Web Map Apps
  * [Create a Template App](./develop/create_a_template_app.md)

@@ -29,9 +29,9 @@ In this lab you will use code to style a popup.
       title: "Neighborhoods",
       // Fields
       fieldInfos: [
-        { fieldName: "TOTPOP_CY", visible: true, format: { places: 0 } },
-        { fieldName: "AVGHINC_CY", visible: true, format: { places: 0 } },
-        { fieldName: "MEDAGE_CY", visible: true, format: { places: 0 } },
+        { fieldName: "TOTPOP_CY", label: "Total Population", visible: true, format: { places: 0 } },
+        { fieldName: "AVGHINC_CY", label: "Average Income", visible: true, format: { places: 0 } },
+        { fieldName: "MEDAGE_CY", label: "Median Age", visible: true, format: { places: 0 } },
         { fieldName: "AREA", visible: true, format: { places: 2 } }
       ],
       // Charts
