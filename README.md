@@ -120,6 +120,7 @@ In these labs you will use the ArcGIS Web App Builder, App Templates and APIs to
 
 * JS API 4 Beta 3
  * [Build a Starter 3D Map](./develop/build_starter_3Dmap_jsapi4b3.md)
+ * [Extrude data as Polygons in 3D](./develop/extrude_polygon_3d_jsapi4b3.md)
 
 * Esri-Leaflet
  * [Build a Starter Map](./develop/build_starter_map_leaflet.md)
