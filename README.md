@@ -32,7 +32,7 @@ Here are the resources you will use for the labs.
 * [Esri Open Source Projects - More source code](http://esri.github.io)
 * [ArcGIS Online Maps and Apps - Map Viewer, My Content, Item Management](http://arcgis.com)
 * [ArcGIS Online Help - Documentation and Tutorials](http://doc.arcgis.com/en/arcgis-online/)
-* [jsBin - Interactive JS coding](http://jsbin.com)
+* [JS Bin - Interactive JS coding](http://jsbin.com)
 
 > NOTE: If you are brand new to ArcGIS, we recommend that you use your developer account to sign into [developers.arcgis.com](http://developers.arcgis.com) to familiarize yourself with the site and then sign into [ArcGIS.com](https://www.arcgis.com) to learn how to [create your first map](http://doc.arcgis.com/en/arcgis-online/create-maps/make-your-first-map.htm).
 
@@ -120,6 +120,7 @@ In these labs you will use the Configurable App Templates, the ArcGIS Web App Bu
 
 * JS API 4 Beta 3
  * [Build a Starter 3D Map](./develop/build_starter_3Dmap_jsapi4b3.md)
+ * [Extrude data as Polygons in 3D](./develop/extrude_polygon_3d_jsapi4b3.md)
 
 * Esri-Leaflet
  * [Build a Starter Map](./develop/build_starter_map_leaflet.md)
@@ -158,7 +159,7 @@ In these labs you will use the Configurable App Templates, the ArcGIS Web App Bu
 Please see [www.civicapps.org](http://www.civicapps.org/), [developer.trimet.org/gis](developer.trimet.org/gis) and [http://www.portlandoregon.gov/bts](http://www.portlandoregon.gov/bts) for the data terms of use.
 
 ## Licensing
-Copyright 2015 Esri
+Copyright 2016 Esri
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
