@@ -1,6 +1,6 @@
 # ArcGIS Geodev Hackerlabs
 
-A place to learn how to build geo apps with ArcGIS.
+A place to learn how to build geo apps with the ArcGIS platform.
 
 ## Welcome
 
