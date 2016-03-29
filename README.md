@@ -103,7 +103,7 @@ In these labs you will use the Configurable App Templates, the ArcGIS Web App Bu
  * [Create a Web AppBuilder App](./develop/create_a_wab_app.md)
  * [Create a JS API 3.x App](./develop/create_a_web_map_app.md)
  * [Create a Esri Leaflet App](./develop/add_feature_layers_leaflet.md)
- * [Create a JS API 4.x - Calcite App](./develop/calcite-maps-apps.md)
+ * [Create a JS API 4.x - Calcite Maps App](./develop/create-calcite-maps-app.md)
  * [Create an AppStudio App](./develop/create_an_appstudio_app.md)
 
 * JS API
