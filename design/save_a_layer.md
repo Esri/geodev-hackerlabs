@@ -30,11 +30,11 @@ In this lab you will style and save a layer to your account.
 
 8. Go to `My Contents` to view the layer with the symbology.
 
+Your map should look something like [this map](http://edn.maps.arcgis.com/home/webmap/viewer.html?webmap=43b55908ff1142678e1c6d3701f69695).
+
 ###Bonus
 
-View the JSON for the layer by using the REST API to access the item in your account.
-
-In your web browser, paste in this url. Identify the `renderer` section.
+* View the JSON for the layer by using the REST API to access the item in your account. In your web browser, paste in this url. Identify the `renderer` section.
 
 ```
 https://www.arcgis.com/sharing/rest/content/items/d07ec497291b470f9038d3759838f51f/data

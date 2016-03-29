@@ -33,7 +33,7 @@ In this lab, you will load a map by a `WebmapID` in a custom JavaScript app. Fee
 	    	], function(Map, arcgisUtils) {
 
 		    	// ADD this to create the map from the webmapid
-				arcgisUtils.createMap("27970d32436a446dabb3c71cf949115e", "mapDiv").then(function(response) {
+				arcgisUtils.createMap("7186a92406194797aa518c06c189a71f", "mapDiv").then(function(response) {
 					map = response.map;
 				});
 

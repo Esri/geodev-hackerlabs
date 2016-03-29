@@ -1,6 +1,6 @@
 # ArcGIS Geodev Hackerlabs
 
-A place to learn how to build geo apps with ArcGIS.
+A place to learn how to build geo apps with the ArcGIS platform.
 
 ## Welcome
 
@@ -75,7 +75,7 @@ Creating web maps with great cartography is one of the most important steps to b
 
 In these labs you will use [ArcGIS Online](http://arcgis.com) and the map viewer to create and style web maps. You will create new maps, explore basemaps, search for layers, use smart mapping to change symbol styles, style popups, label data, show/hide fields, filter data, and more. You will also learn how to save web maps and featurelayers and use the JSON to achieve the same rich cartographic and popup experiences in your own custom apps.
 
-Tools
+ArcGIS Online Tools
 * [Create a New Web Map](./design/create_a_new_map.md)
 * [Style a Web Map](./design/style_a_map.md)
 * [Style Popups](./design/style_popups.md)

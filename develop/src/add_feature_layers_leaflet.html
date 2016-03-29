@@ -1,25 +1,46 @@
 <html>
 <head>
-    <meta charset=utf-8 />
-    <title>Esri-Leaflet Starter App</title>
-    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <meta charset=utf-8 />
+  <title>Esri-Leaflet Starter App</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
-    <!-- Load Leaflet from CDN-->
-    <link rel="stylesheet" href="//cdn.leafletjs.com/leaflet/v1.0.0-beta.2/leaflet.css" />
-    <script src="//cdn.leafletjs.com/leaflet/v1.0.0-beta.2/leaflet.js"></script>
+  <!-- Load Leaflet from CDN-->
+  <link rel="stylesheet" href="//cdn.leafletjs.com/leaflet/v1.0.0-beta.2/leaflet.css" />
+  <script src="//cdn.leafletjs.com/leaflet/v1.0.0-beta.2/leaflet.js"></script>
 
-    <!-- Load Esri Leaflet from CDN -->
-    <script src="//cdn.jsdelivr.net/leaflet.esri/2.0.0-beta.7/esri-leaflet.js"></script>
+  <!-- Load Esri Leaflet from CDN -->
+  <script src="//cdn.jsdelivr.net/leaflet.esri/2.0.0-beta.8/esri-leaflet.js"></script>
 
-    <!-- Load Esri Leaflet Renderers -->
-    <script src="//cdn.jsdelivr.net/leaflet.esri.renderers/2.0.0/esri-leaflet-renderers.js"></script>
+  <!-- Load Esri Leaflet Renderers -->
+  <script src="//cdn.jsdelivr.net/leaflet.esri.renderers/2.0.1/esri-leaflet-renderers.js"></script>
 
-    <style>
-        body {margin:0;padding:0;}
-        #map {position: absolute;top:0;bottom:0;right:0;left:0;}
-    </style>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Helvetica;
+    }
+    #map {
+      position: absolute;
+      top: 43px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+    #title {
+      display: inline-block;
+      width: 100%;
+      padding: 10px;
+      font-size: 20px;
+      background-color: #843520;
+      color: #f8f8f8;
+    }
+
+  </style>
 </head>
 <body>
+
+<div id="title">2015 Portland Population Density - Esri-Leaflet</div>
 
 <div id="map"></div>
 
@@ -30,13 +51,13 @@
     // Load layers in order
     map.createPane('neighborhoods');
     L.esri.featureLayer({
-      url: 'http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Styled/FeatureServer/0',
+      url: 'http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Enriched_Styled/FeatureServer/0',
       pane: 'neighborhoods'
     }).addTo(map);
 
     // Panes are added to the map in order - this pane will be sit on top of 'neighborhoods'
     map.createPane('rail');
-    L.esri.featureLayer({
+    var fl = L.esri.featureLayer({
       url: 'http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Lines_Styled/FeatureServer/0',
       pane: 'rail'
     }).addTo(map);
@@ -46,6 +67,7 @@
       url: 'http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0',
       pane: 'stops'
     }).addTo(map);
+
 </script>
 
 </body>
