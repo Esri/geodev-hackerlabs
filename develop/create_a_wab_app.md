@@ -44,6 +44,8 @@ In this lab, you will build a simple WAB app.
 
 9. Click `Launch` to test the application.
 
+Your app should look something like [this](http://edn.maps.arcgis.com/apps/webappviewer/index.html?id=53ee22673c5c4f5bb543e18a7dd1f277).
+
 ###Bonus
 * Scan the QR code to view the app on your mobile device.
 * Try adding and configuring different themes and widgets.

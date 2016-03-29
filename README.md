@@ -8,9 +8,9 @@ This repository contains short labs that step you through the process of develop
 
 The process involves three steps:
 
-1. Data - Preparing data for your apps with [ArcGIS Online](http://www.arcgis.com).
-2. Design - Styling layers and maps for your apps with the [ArcGIS Online Map and Scene Viewer](http://www.arcgis.com).
-3. Develop - consuming layers and maps in your apps with [ArcGIS Templates, Builders and APIs](http://developers.arcgis.com).
+1. Data - Prepare data for your apps with [ArcGIS Online](http://www.arcgis.com).
+2. Design - Style layers and maps for your apps with the [ArcGIS Online Map and Scene Viewer](http://www.arcgis.com).
+3. Develop - Consume maps and layers in your apps with [ArcGIS Templates, Builders and APIs](http://developers.arcgis.com).
 
 ![Process](./arcgis-process.png)
 
@@ -96,12 +96,14 @@ Code
 
 One of the easiest ways to build a map app is to start from web map.
 
-In these labs you will use the ArcGIS Web App Builder, App Templates and APIs to build custom mapping apps. You will use the web maps with the Web AppBuilder to create an HTML5 responsive app or AppStudio to build and deploy a native app for iOS and Android. Or you can just build a custom app from the ground up with the ArcGIS JS API, Esri-Leaflet or the ArcGIS Runtime APIs.
+In these labs you will use the Configurable App Templates, the ArcGIS Web App Builder, and the APIs to build custom mapping apps. You will use the web maps with the Web AppBuilder to create an HTML5 responsive app or AppStudio to build and deploy a native app for iOS and Android. Or you can just build a custom app from the ground up with the ArcGIS JS API, Esri-Leaflet or the ArcGIS Runtime APIs.
 
 * Web Map Apps
- * [Create a Template App](./develop/create_a_template_app.md)
+ * [Create a Configurable Template App](./develop/create_a_template_app.md)
  * [Create a Web AppBuilder App](./develop/create_a_wab_app.md)
- * [Create a Web Map JS API App](./develop/create_a_web_map_app.md)
+ * [Create a JS API 3.x App](./develop/create_a_web_map_app.md)
+ * [Create a Esri Leaflet App](./develop/add_feature_layers_leaflet.md)
+ * [Create a JS API 4.x - Calcite Maps App](./develop/create-calcite-maps-app.md)
  * [Create an AppStudio App](./develop/create_an_appstudio_app.md)
 
 * JS API

@@ -2,7 +2,7 @@
 
 You can use the [ArcGIS API for JavaScript](https://developers.arcgis.com/javascript/jsapi/) to easily load web maps built with the Map Viewer. The advantage to using this approach is that the map will contain all of the pre-defined settings you configured in the Map Viewer. e.g. Layer Styles, Popups, Refresh Rate.
 
-In this lab, you will load a map by a `WebmapID` in a custom JavaScript app. Feel free to visit [this tutorial](https://developers.arcgis.com/javascript/jshelp/intro_agstemplate_amd.html) for more information.
+In this lab, you will use the ArcGIS JS 3.x API to load a map by a `WebmapID` in a custom JavaScript app. Feel free to visit [this tutorial](https://developers.arcgis.com/javascript/jshelp/intro_agstemplate_amd.html) for more information.
 
 1. Click [starter_map_jsapi.html](src/starter_map_jsapi.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
 

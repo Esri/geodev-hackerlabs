@@ -51,6 +51,8 @@ In this lab, you will build a simple Template app.
 
 6. Click `Open` > `View Application` to test-drive your app.
 
+Your app should look something like [this](http://edn.maps.arcgis.com/apps/PublicInformation/index.html?appid=09ed800aca42450c89278c3c6a3815dc).
+
 ###Bonus
 * Go back to the app and try to change and save some of the template settings.
 * View the JSON for the web app by using the REST API to access the item in your account. Try formatting the JSON with try [this JSON Editor tool](http://www.jsoneditoronline.org/).
