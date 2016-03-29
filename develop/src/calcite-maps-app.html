@@ -29,7 +29,7 @@
 
   <!-- Navbar -->
 
-  <nav class="navbar navbar-fixed-top navbar-text-light calcite-dark-blue-75">
+  <nav class="navbar navbar-fixed-top navbar-text-light calcite-dark-red-75">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false">
@@ -42,7 +42,7 @@
           <span class="esri-icon esri-icon-map-pin"></span>
         </a>
         <div class="navbar-info">
-          <div class="navbar-title text-overflow">2015 Portland Population Density</div>
+          <div class="navbar-title text-overflow">2015 Portland Population Density - ArcGIS JS 4.0</div>
           <div class="navbar-subtitle text-overflow">Explore were people are living in downtown neighborhoods</div> 
         </div>
       </div>
@@ -77,16 +77,16 @@
         
       <!-- Info Panel -->
       
-       <div id="panelInfo" class="panel panel-default collapse in">
+       <div id="panelInfo" class="panel panel-default collapse">
           <div id="headingInfo" class="panel-heading" role="tab">
               <div class="panel-title">
-                  <a class="panel-toggle" role="button" data-toggle="collapse" href="#collapseInfo" data-parent="#panelAccordion" aria-expanded="true" aria-controls="collapseInfo"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Population Density</a>
+                  <a class="panel-toggle" role="button" data-toggle="collapse" href="#collapseInfo" data-parent="#panelAccordion" aria-expanded="true" aria-controls="collapseInfo"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Population</a>
                   <a class="panel-close" role="button" data-toggle="collapse" data-target="#panelInfo"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>  
               </div>
           </div>
-          <div id="collapseInfo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingInfo">
+          <div id="collapseInfo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingInfo">
               <div class="panel-body">
-                <p>Area / population</p>
+                <!--p>Area / population</p-->
                 <div id="legendDiv"></div>
               </div>
           </div>
@@ -133,10 +133,12 @@
     var app, searchWidgetNav, searchWidgetPanel;
     require(["esri/Map",
       "esri/layers/FeatureLayer",
+      "esri/renderers/Renderer",
       "esri/layers/VectorTileLayer",
       "esri/PopupTemplate",
       "esri/views/MapView",
       "esri/widgets/Search",
+      "esri/tasks/Locator",
       "esri/widgets/Legend",
       "esri/core/watchUtils",
       "dojo/query",
@@ -150,11 +152,11 @@
       // Calcite-maps
       "calcite-maps/calcitemaps",
       "dojo/domReady!"
-    ], function(Map, FeatureLayer, VectorTileLayer, PopupTemplate, MapView, Search, Legend, watchUtils, query) {
+    ], function(Map, FeatureLayer, Renderer, VectorTileLayer, PopupTemplate, MapView, Search, Locator, Legend, watchUtils, query) {
         
       // App
       app = {
-        scale: 250000,
+        zoom: 11,
         center: [-122.657, 45.533],
         basemap: "", // use vector tile layer
         featureLayer: null,
@@ -179,14 +181,14 @@
       map.add(lyr);
 
       // Layers
-      app.featureLayer = addLayer(map, "http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Enriched_Styled/FeatureServer/0", 0.65, "{NAME}", "<b>Population:</b> {TOTPOP_CY}<br><b>Average Income:</b> {AVGHINC_CY}<br><b>Median Age:</b> {MEDAGE_CY}<br><b>Area:</b> {AREA} sq mi");
-      // addLayer(map, "http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Lines_Styled/FeatureServer/0", 1.0);
-      // addLayer(map, "http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0", 1.0);
+      app.featureLayer = addLayer(map, "http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Enriched_Styled/FeatureServer/0", null, 0.75, "{NAME}", "<b>Population:</b> {TOTPOP_CY}<br><b>Average Income:</b> {AVGHINC_CY}<br><b>Median Age:</b> {MEDAGE_CY}<br><b>Area:</b> {AREA} sq mi");
+      addLayer(map, "http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Lines_Styled/FeatureServer/0", null, 1.0);
+      addLayer(map, "http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0", null, 1.0);
 
       app.mapView = new MapView({
         container: "mapViewDiv",
         map: map,
-        scale: app.scale,
+        zoom: app.zoom,
         center: app.center,
         padding: app.viewPadding,
         ui: {
@@ -223,21 +225,40 @@
       function createSearchWidget(parentId) {
         var search = new Search({
           viewModel: {
+            allPlaceholder: "Search by name",
             view: app.mapView,
             highlightEnabled: false,
-            popupEnabled: false,
-            showPopupOnSelect: false
+            popupEnabled: true,
+            showPopupOnSelect: true,
+            searchingAllEnabled: true
           }
           }, parentId);
+        
+        var sources = search.viewModel.sources.slice();
+  
+        sources.push({
+          featureLayer: new FeatureLayer({
+            url: "http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Enriched_Styled/FeatureServer/0",
+            outFields: ["*"]
+          }),
+          searchFields: ["NAME"],
+          displayField: "Neighborhoods",
+          exactMatch: false,
+          outFields: ["*"],
+          name: "Neighborhoods",
+          placeholder: "example: Old Town"
+        });
+        search.viewModel.sources = sources;
         search.startup();
         return search;
       }
       
-      function addLayer(map, url, opacity, popupTitle, popupContent) {
+      function addLayer(map, url, renderer, opacity, popupTitle, popupContent) {
         var lyr = new FeatureLayer({
           url: url,
           outFields: ["*"],
-          opacity: opacity
+          opacity: opacity,
+          renderer: renderer
         });
         lyr.then(function(e){
           lyr.set({
