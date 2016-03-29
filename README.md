@@ -32,7 +32,7 @@ Here are the web resources you will need for the labs.
 * [Esri Open Source Projects - More source code](http://esri.github.io)
 * [ArcGIS Online Maps and Apps - Map Viewer, My Content, Item Management](http://arcgis.com)
 * [ArcGIS Online Help - Documentation and Tutorials](http://doc.arcgis.com/en/arcgis-online/)
-* [jsBin - Interactive JS coding](http://jsbin.com)
+* [JS Bin - Interactive JS coding](http://jsbin.com)
 
 > If you are brand new to ArcGIS, we recommend that you use your developer account to sign into [developers.arcgis.com](http://developers.arcgis.com) to explore all of the resources above and then sign into [ArcGIS.com](https://www.arcgis.com) to learn how to [create your first map](http://doc.arcgis.com/en/arcgis-online/create-maps/make-your-first-map.htm).
 
@@ -50,7 +50,7 @@ Let's get started!
 
 Creating and importing data interactively is a fast and effective way to prepare data for prototype apps or for production-level apps that you plan to develop in the future.
 
-These labs illsustrate how to import, create and manage data using the [ArcGIS Online](http://arcgis.com) and [ArcGIS for Developers](http://developers.arcgis.com) website and tools. You will also use the map viewer to perform data enrichment, the process of adding social demographic information to a dataset, and spatial analyses, the process of creating new data based on spatial critria. You will also explore the feature service REST endpoints and use them in a simple web app to access and display spatial data. 
+These labs illustrate how to import, create and manage data using the [ArcGIS Online](http://arcgis.com) and [ArcGIS for Developers](http://developers.arcgis.com) website and tools. You will also use the map viewer to perform data enrichment, the process of adding social demographic information to a dataset, and spatial analyses, the process of creating new data based on spatial criteria. You will also explore the feature service REST endpoints and use them in a simple web app to access and display spatial data. 
 
 ArcGIS Online and Developer Tools
 * [Import Data](./data/import_data.md)
@@ -159,7 +159,7 @@ In these labs you will use the ArcGIS Web App Builder, App Templates and APIs to
 Please see [www.civicapps.org](http://www.civicapps.org/), [developer.trimet.org/gis](developer.trimet.org/gis) and [http://www.portlandoregon.gov/bts](http://www.portlandoregon.gov/bts) for the data terms of use.
 
 ## Licensing
-Copyright 2015 Esri
+Copyright 2016 Esri
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
