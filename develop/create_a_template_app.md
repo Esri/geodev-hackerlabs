@@ -51,14 +51,13 @@ In this lab, you will build a simple Template app.
 
 6. Click `Open` > `View Application` to test-drive your app.
 
-NOTE: You can get the source code for the public information template [here](https://github.com/Esri/public-information-map-template-js).
-
 ###Bonus
 * Go back to the app and try to change and save some of the template settings.
-* View the JSON for the web app by using the REST API to access the item in your account. In your web browser, paste in this url. Try formatting the JSON with try [this JSON Editor tool](http://www.jsoneditoronline.org/).
+* View the JSON for the web app by using the REST API to access the item in your account. Try formatting the JSON with try [this JSON Editor tool](http://www.jsoneditoronline.org/).
 
-```
-https://www.arcgis.com/sharing/rest/content/items/09ed800aca42450c89278c3c6a3815dc/data
-```
+ ```
+ https://www.arcgis.com/sharing/rest/content/items/09ed800aca42450c89278c3c6a3815dc/data
+ ```
 
-NOTE: Replace the item ID above with yours.
+ NOTE: Replace the item ID above with yours.
+* Get the source code for the public information template [here](https://github.com/Esri/public-information-map-template-js).
