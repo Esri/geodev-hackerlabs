@@ -1,6 +1,6 @@
 ###Add feature layers with Esri Leaflet
 
-In this lab, you will add a feature layer to an Esri Leaflet application.
+In this lab, you will add featurelayers to an Esri Leaflet application.
 
 1. Click [starter_map_leaflet.html](src/starter_map_leaflet.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
 
