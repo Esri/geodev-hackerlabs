@@ -4,35 +4,61 @@ You can use any of the [Configurable App Templates](http://www.arcgis.com/home/g
 
 In this lab, you will build a simple Template app.
 
+1. Click [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=7186a92406194797aa518c06c189a71f) to open the map in the Map Viewer. If you have your own map, you can try to use that too.
 
-1. Click [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=27970d32436a446dabb3c71cf949115e) to open the map in the Map Viewer. If you have your own map, you can try to use that too.
+2. Click `Share` > `Create a Web App` > `Configurable Apps`.
 
-2. Click `Share` > `Make a Web Application` > `Configurable Apps`.
+3. Search for the `Public Information` template and select `Create App`.
 
-3. Find and select `Public Information` and set the following properties:
+4. set the following properties:
 
  ```
- Title: Portland Neighborhoods Template App
- Tags: Portland, Map, Template App
- Summary: Portland neighborhood map built with the Public Information Template
+ Title: 2015 Portland Population Density
+ Tags: Portland, Map, Population, Density,Template App
+ Summary: Portland population map built with the Public Information Template
  ```
 
- Click `Save and Publish` to launch the configuration page.
+ Click `Done` to launch the configuration page.
 
 4. Change the following properties:
 
  ```
- Swipe Layer: Neighborhoods
- Enable Modal Dialog: True
-  Dialog Title: Portland Neighborhoods
+ Choose Swipe Layer: Population Density
+ Details: 
+  Application Title: 2015 Portland Population Density
+  Application Summary: 2015 Portland Population Density
+ Configuration Options:
+  Uncheck Enable Basemap Toggle
+ Splash Screen: 
+  Check Enable Dialog Modal
+  Dialog Title: 2015 Portland Population Density Map
   Dialog Content: Welcome to Portland! Explore neighborhoods and where people live.
  Twitter Options
-  Search Keyword: Food
+  Check Enable Twitter Layer
+  Search Keyword: train
+ Webcams.travel Options
+  Check Enable Webcams Layer
+ NOTE: Disable other layers
+ Search Settings:
+  Name: Neighborhoods
+  Check Enable Suggestions
+  Field: Name
+  Search Fields: Name
+  Click save
  ```
 
- Click `Save` > `Done`.
+ Click `Save and View` > `Close`.
 
 6. Click `Open` > `View Application` to test-drive your app.
 
+NOTE: You can get the source code for the public information template [here](https://github.com/Esri/public-information-map-template-js).
+
 ###Bonus
 * Go back to the app and try to change and save some of the template settings.
+* View the JSON for the web app by using the REST API to access the item in your account. In your web browser, paste in this url. Try formatting the JSON with try [this JSON Editor tool](http://www.jsoneditoronline.org/).
+
+```
+https://www.arcgis.com/sharing/rest/content/items/09ed800aca42450c89278c3c6a3815dc/data
+```
+
+NOTE: Replace the item ID above with yours.
