@@ -4,13 +4,13 @@ A place to learn how to build geo apps with the ArcGIS platform.
 
 ## Welcome
 
-This repository contains short labs that step you through the process of developing applications with [ArcGIS](http://www.arcgis.com). The process described here makes use of ArcGIS Online accounts and services, and does not require the installation of desktop software for most of the labs. 
+This repository contains short labs that step you through the process of developing applications with [ArcGIS](http://www.arcgis.com). The process described here uses [ArcGIS Online](http://www.arcgis.com) and [ArcGIS for Developers](http://developers.arcgis.com) accounts, tools and services, and does not require the installation of desktop software for most labs. 
 
 The process involves three steps:
 
 1. Data - Prepare data for your apps with [ArcGIS Online](http://www.arcgis.com).
-2. Design - Style layers and maps for your apps with the [ArcGIS Online Map and Scene Viewer](http://www.arcgis.com).
-3. Develop - Consume maps and layers in your apps with [ArcGIS Templates, Builders and APIs](http://developers.arcgis.com).
+2. Design - Style maps and layers for your apps with the [ArcGIS Online Map and Scene Viewer](http://www.arcgis.com).
+3. Develop - Use maps and layers in your apps with [ArcGIS templates, builders and APIs](http://developers.arcgis.com).
 
 ![Process](./arcgis-process.png)
 
@@ -18,15 +18,15 @@ The process involves three steps:
 
 Here's how to get started:
 
-1. **Sign up for a free [ArcGIS Developer subscription](https://developers.arcgis.com/en/sign-up/)** - Your subscription allows you to download software, register apps, import data, create new services, store maps, perform spatial analysis and more. If you already have an [ArcGIS Organizational subscription](http://www.arcgis.com/features/plans/pricing.html), you can use that too, but please note that [free public accounts](https://geonet.esri.com/groups/geodev/blog/2014/10/15/help-i-cant-get-into-developersarcgiscom) will not work.
+1. **Sign up for a free** [ArcGIS Developer subscription](https://developers.arcgis.com/en/sign-up/) - Your subscription allows you to download software, register apps, import data, create new services, store maps, perform spatial analysis and more. If you already have an [ArcGIS Organizational subscription](http://www.arcgis.com/features/plans/pricing.html) you can use that too, but please note that [free public accounts](https://geonet.esri.com/groups/geodev/blog/2014/10/15/help-i-cant-get-into-developersarcgiscom) will not work.
 
 2. **Start the labs** - You can complete the labs in order or just pick and choose the ones you want to do. It will be easiest to use the data provided (Portland open data), but you feel free to substitute with your own data and augment the steps where necessary. 
 
-3. **Share your work** - This is 100% optional, but as you are going through, feel free to [share your work](#want-to-share-your-work) with others participants!
+3. **Share your work** - This is 100% optional, but as you are going through, feel free to share your work with others in this [ArcGIS Online Group](#want-to-share-your-work)!
 
 ## Resources
 
-Here are the web resources you will need for the labs.
+Here are the resources you will use for the labs.
 
 * [ArcGIS for Developers - Account, Documentation, Samples, Apps, Downloads](http://developers.arcgis.com)
 * [Esri Open Source Projects - More source code](http://esri.github.io)
@@ -34,23 +34,21 @@ Here are the web resources you will need for the labs.
 * [ArcGIS Online Help - Documentation and Tutorials](http://doc.arcgis.com/en/arcgis-online/)
 * [jsBin - Interactive JS coding](http://jsbin.com)
 
-> If you are brand new to ArcGIS, we recommend that you use your developer account to sign into [developers.arcgis.com](http://developers.arcgis.com) to explore all of the resources above and then sign into [ArcGIS.com](https://www.arcgis.com) to learn how to [create your first map](http://doc.arcgis.com/en/arcgis-online/create-maps/make-your-first-map.htm).
+> NOTE: If you are brand new to ArcGIS, we recommend that you use your developer account to sign into [developers.arcgis.com](http://developers.arcgis.com) to familiarize yourself with the site and then sign into [ArcGIS.com](https://www.arcgis.com) to learn how to [create your first map](http://doc.arcgis.com/en/arcgis-online/create-maps/make-your-first-map.htm).
 
 ## Labs
 
-The labs start from ground-zero and work through the Data - Design - Develop process. In this case we use Portland open data, but feel free to use your own to build your own custom solutions.
+The labs start from ground-zero and work through the Data - Design - Develop process. In this case we use Portland open data, but feel free to use your own data to work through and build your own custom solutions. You might find it helpful to follow along with the [Hackerlab Slides](http://slides.com/alaframboise/geodev-hackerlabs).
 
-Let's get started!
-
-> For additional guidance, you might find it helpful to follow along with the [Hackerlab Slides](http://slides.com/alaframboise/geodev-hackerlabs).
+Let's get started! 
 
 ![Steps](./geodev-hackerlabs-apps.png)
 
 ### 1. Data
 
-Creating and importing data interactively is a fast and effective way to prepare data for prototype apps or for production-level apps that you plan to develop in the future.
+Creating and importing data interactively is a fast and effective way to prepare data for both prototype and production app development.
 
-These labs illsustrate how to import, create and manage data using the [ArcGIS Online](http://arcgis.com) and [ArcGIS for Developers](http://developers.arcgis.com) website and tools. You will also use the map viewer to perform data enrichment, the process of adding social demographic information to a dataset, and spatial analyses, the process of creating new data based on spatial critria. You will also explore the feature service REST endpoints and use them in a simple web app to access and display spatial data. 
+In these labs you will import, create and manage data using the [ArcGIS Online](http://arcgis.com) and [ArcGIS for Developers](http://developers.arcgis.com) website and tools. You will also use the map viewer to perform data enrichment, the process of adding social demographic information to a dataset, and spatial analyses, the process of creating new data based on spatial critria. You will also explore the feature service REST endpoints and use them in a simple web app to access and display spatial data. 
 
 ArcGIS Online and Developer Tools
 * [Import Data](./data/import_data.md)
@@ -94,7 +92,7 @@ Code
 
 ### 3. Develop
 
-One of the easiest ways to build a map app is to start from web map.
+One of the easiest ways to build an ArcGIS map app is to start with a web map.
 
 In these labs you will use the Configurable App Templates, the ArcGIS Web App Builder, and the APIs to build custom mapping apps. You will use the web maps with the Web AppBuilder to create an HTML5 responsive app or AppStudio to build and deploy a native app for iOS and Android. Or you can just build a custom app from the ground up with the ArcGIS JS API, Esri-Leaflet or the ArcGIS Runtime APIs.
 
