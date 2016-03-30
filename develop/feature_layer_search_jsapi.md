@@ -16,7 +16,7 @@ In this lab it will search against the neighborhood polygon layer.
             "esri/InfoTemplate",
             "dojo/domReady!"],
       // Add Search alias
-      function(Map,Search) {
+      function(Map,Search,FeatureLayer,InfoTemplate) {
         ... 
     ```
 
