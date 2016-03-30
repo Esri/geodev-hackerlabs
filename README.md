@@ -65,7 +65,7 @@ ArcGIS Online and Developer Tools
 
 Code
 * [Add a layer to an app](./develop/add_feature_layer_jsapi.md)
-* [GeometryEngine Buffering](./develop/geometry_engine_buffer_jsapi.md)
+* [GeometryEngine Buffering](./develop/geometry_engine_fixed_buffer_jsapi.md)
  
 ### 2. Design
 
@@ -114,7 +114,8 @@ In these labs you will use the Configurable App Templates, the ArcGIS Web App Bu
  * [Add GeoJSON Layer](./develop/add_geojson_layer_jsapi.md)
  * [Simple Search](./develop/simple_search_jsapi.md)
  * [Feature Layer Search](./develop/feature_layer_search_jsapi.md)
- * [Client-side Buffering](./develop/geometry_engine_buffer_jsapi.md)
+ * [Client-side Buffering](./develop/geometry_engine_fixed_buffer_jsapi.md)
+ * [Client-side Buffering with UI](./develop/geometry_engine_buffer_jsapi.md)
  * [Smart Mapping](./develop/smartmapping_color_renderer_jsapi.md)
  * [Using HTML5 to Query](./develop/html5_query.md)
 

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Buffer Stops with GeometryEngine</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.15/esri/css/esri.css">
+  <style>
+    html,body,#mapDiv {
+      padding:0;
+      margin:0;
+      height:100%;
+    }
+  </style>
+
+  <script src="http://js.arcgis.com/3.15compact/"></script>
+
+  <script>
+    var map;
+    var bufferDistance = 0.5;
+    require(["esri/map",
+             "esri/layers/GraphicsLayer",
+             "esri/layers/FeatureLayer",
+             "esri/geometry/geometryEngineAsync",
+             "esri/graphic",
+             "esri/graphicsUtils",
+             "esri/symbols/SimpleFillSymbol",
+             "esri/Color",
+             "dojo/domReady!"],
+      function(Map,
+               GraphicsLayer,FeatureLayer,
+               geometryEngineAsync,
+               Graphic,graphicsUtils,
+               SimpleFillSymbol,Color) {
+
+        map = new Map("mapDiv", {
+          center: [-122.68, 45.52],
+          zoom: 12,
+          basemap: "dark-gray"
+        });
+
+        var bufferLayer = new GraphicsLayer(),
+            stopsLayer = new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0", {
+              mode: FeatureLayer.MODE_SNAPSHOT
+            });
+
+        map.addLayers([bufferLayer, stopsLayer]);
+
+        var bufferSymbol = new SimpleFillSymbol(SimpleFillSymbol.STYLE_SOLID, undefined,
+                           new Color([0,100,255,0.4]));
+
+        map.on('click', function bufferStopsLayer() {
+          var stopGeoms = graphicsUtils.getGeometries(stopsLayer.graphics);
+          geometryEngineAsync.union(stopGeoms).then(function (stops) {
+            geometryEngineAsync.geodesicBuffer(stops, bufferDistance, 'miles').then(function (totalBuffer) {
+              bufferLayer.clear();
+              bufferLayer.add(new Graphic(totalBuffer, bufferSymbol));
+            });
+          });
+        });
+      }
+    );
+  </script>
+</head>
+
+<body>
+  <div id="mapDiv"></div>
+</body>
+</html>
