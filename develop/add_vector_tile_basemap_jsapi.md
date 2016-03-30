@@ -19,7 +19,7 @@ In this lab you will add a vector tile layer to an ArcGIS API for JavaScript app
 3. Now add a new `VectorTileLayer` to the map:
 
   ```javascript
-  function(Map, FeatureLayer) {
+  function(Map, VectorTileLayer) {
     map = new Map("mapDiv", {
       center: [-122.68, 45.52],
       zoom: 10
@@ -34,7 +34,7 @@ In this lab you will add a vector tile layer to an ArcGIS API for JavaScript app
     map.addLayer(vtlayer);
  ```
 
-4. Confirm that the JSBin `Output` panel shows the vectoor tiles.
+4. Confirm that the JSBin `Output` panel shows the vector tiles.
 
 Your app should look something like this:
 * [Code](src/add_vector_tile_basemap_jsapi.html)
