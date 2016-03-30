@@ -21,7 +21,8 @@ In this lab, you will create a simple reponsive map that uses bootstrap-map-js.
 			  /* Set the responsive map size here */
 			  #mapDiv {
 			    min-height:100px; 
-			    max-height:1000px; 
+			    max-height:1000px;
+			  }
 			</style>
 		</head>
 		<body>
