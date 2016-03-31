@@ -27,7 +27,7 @@ In this lab you will add a vector tile layer to an ArcGIS API for JavaScript app
     });
 
     //The URL referenced in the constructor may point to a style JSON object in ArcGIS Online or directly to a vector tile service.
-    var vtlayer = new VectorTileLayer("https://www.arcgis.com/sharing/rest/content/items/f96366254a564adda1dc468b447ed956/resources/styles/root.json");
+    var vtlayer = new VectorTileLayer("https://www.arcgis.com/sharing/rest/content/items/51acb8875f86482e82cb2ae24155b362/resources/styles/root.json");
 
     map.addLayer(vtlayer);
  ```
@@ -35,5 +35,5 @@ In this lab you will add a vector tile layer to an ArcGIS API for JavaScript app
 4. Confirm that the JSBin `Output` panel shows the vector tiles.
 
 Your app should look something like this:
-* [Code](src/add_vector_tile_basemap_jsapi.html)
-* [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/add_vector_tile_basemap_jsapi.html)
+* [Code](src/add_vector_tile_layer_jsapi.html)
+* [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/add_vector_tile_layer_jsapi.html)
