@@ -1,4 +1,4 @@
-###Add a vector tile layer basemap
+###Add a vector tile layer
 
 In this lab you will add a vector tile layer to an ArcGIS API for JavaScript application. 
 
@@ -11,7 +11,7 @@ In this lab you will add a vector tile layer to an ArcGIS API for JavaScript app
            // ADD module
            "esri/layers/VectorTileLayer", 
            "dojo/domReady!"],
-    // ADD FeatureLayer reference
+    // ADD VectorTileLayer reference
     function(Map, VectorTileLayer) {
       ...
   ```
@@ -22,13 +22,11 @@ In this lab you will add a vector tile layer to an ArcGIS API for JavaScript app
   function(Map, VectorTileLayer) {
     map = new Map("mapDiv", {
       center: [-122.68, 45.52],
-      zoom: 10
+      zoom: 11
       //basemap: "dark-gray" Do not add basemap!
     });
 
-    // You can reference vector tiles by root.json url or service url. 
-    // See all vector tile items here: http://www.arcgis.com/home/search.html?q=owner:esri_vector
-    
+    //The URL referenced in the constructor may point to a style JSON object in ArcGIS Online or directly to a vector tile service.
     var vtlayer = new VectorTileLayer("https://www.arcgis.com/sharing/rest/content/items/f96366254a564adda1dc468b447ed956/resources/styles/root.json");
 
     map.addLayer(vtlayer);

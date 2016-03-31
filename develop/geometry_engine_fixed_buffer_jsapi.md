@@ -50,7 +50,7 @@ In this lab you will use the GeometryEngine to buffer around Rail Stops in the b
       map.addLayers([bufferLayer, stopsLayer]);
     ```
 
-4. Create functions to update the UI and generate a buffer:
+4. Create a buffer symbol and a function to calculate and display a buffer:
 
     ```javascript
     // ADD Create a symbol to display the buffers
