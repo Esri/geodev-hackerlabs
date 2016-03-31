@@ -88,7 +88,7 @@ Code
 * [Style a layer with JSON](./develop/style_feature_layers_json_jsapi.md)
 * [Style a layer popup](./develop/style_simple_popup_jsapi.md)
 * [Style a layer with a renderer](./develop/style_feature_layers_jsapi.md)
-* [Add a vector tiled basemap](./develop/add_vector_tile_basemap_jsapi.md)
+* [Add a vector tiled layer](./develop/add_vector_tile_layer_jsapi.md)
 
 ### 3. Develop
 
@@ -108,7 +108,7 @@ In these labs you will use the Configurable App Templates, the ArcGIS Web App Bu
  * [Build a Starter Map](./develop/build_starter_map_jsapi.md)
  * [Add Feature Layer](./develop/add_feature_layer_jsapi.md)
  * [Add Feature Layers](./develop/add_feature_layers_jsapi.md)
- * [Add Vector Tile Basemap](./develop/add_vector_tile_basemap_jsapi.md)
+ * [Add Vector Tile Layer](./develop/add_vector_tile_layer_jsapi.md)
  * [Style Feature Layers](./develop/style_feature_layers_jsapi.md)
  * [Style Feature Layers with JSON](./develop/style_feature_layers_json_jsapi.md)
  * [Add GeoJSON Layer](./develop/add_geojson_layer_jsapi.md)
