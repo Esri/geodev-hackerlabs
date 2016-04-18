@@ -15,7 +15,7 @@ In this lab, you will create a simple reponsive map that uses bootstrap-map-js.
 
 			<!-- CSS for Bootstrap, ArcGIS and Bootstrap-map-js -->
 			<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" media="screen">
-			<link rel="stylesheet" type="text/css" href="//js.arcgis.com/3.15/esri/css/esri.css">   
+			<link rel="stylesheet" type="text/css" href="//js.arcgis.com/3.16/esri/css/esri.css">   
 			<link rel="stylesheet" type="text/css" href="http://esri.github.io/bootstrap-map-js/src/css/bootstrapmap.css">   
 			<style>
 			  /* Set the responsive map size here */
@@ -59,7 +59,7 @@ In this lab, you will create a simple reponsive map that uses bootstrap-map-js.
 		            }]
 		        };
 		    </script>
-		    <script src="//js.arcgis.com/3.15compact"></script>
+		    <script src="//js.arcgis.com/3.16compact"></script>
 		    <script>
 		      require(["application/bootstrapmap", "dojo/domReady!"], 
 		        function(BootstrapMap) {

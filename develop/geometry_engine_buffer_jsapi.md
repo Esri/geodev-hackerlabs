@@ -58,10 +58,10 @@ You will add an interactive slider and a feedback label to the UI that will be u
 4. Add a reference to a Dojo CSS Theme (`claro`), and configure the `body` tag to use it:
 
     ```HTML
-    <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.15/esri/css/esri.css">
+    <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.16/esri/css/esri.css">
 
     <!-- ADD a link to the Claro Dojo theme's CSS -->
-    <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.15/dijit/themes/claro/claro.css">
+    <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.16/dijit/themes/claro/claro.css">
 
     ...
 
