@@ -114,6 +114,7 @@ In these labs you will use the Configurable App Templates, the ArcGIS Web App Bu
  * [Add GeoJSON Layer](./develop/add_geojson_layer_jsapi.md)
  * [Simple Search](./develop/simple_search_jsapi.md)
  * [Feature Layer Search](./develop/feature_layer_search_jsapi.md)
+ * [Query Feature Layer](./develop/query_feature_layer_jsapi.md)
  * [Client-side Buffering](./develop/geometry_engine_fixed_buffer_jsapi.md)
  * [Client-side Buffering with UI](./develop/geometry_engine_buffer_jsapi.md)
  * [Smart Mapping](./develop/smartmapping_color_renderer_jsapi.md)
