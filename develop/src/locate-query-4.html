@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
   <title>Locate Button</title>
-  <link rel="stylesheet" href="//js.arcgis.com/3.16/esri/css/esri.css">
+  <link rel="stylesheet" href="https://js.arcgis.com/3.16/esri/css/esri.css">
   <style>
     html, body, #map {
       padding:0;
@@ -18,7 +18,7 @@
       z-index: 50;
     }
   </style>
-  <script src="//js.arcgis.com/3.16/"></script>
+  <script src="https://js.arcgis.com/3.16/"></script>
   <script>
     var map;
 
@@ -49,7 +49,7 @@
       }, "LocateButton");
       geoLocate.startup();
 
-      var queryTask = new QueryTask("http://sampleserver6.arcgisonline.com/arcgis/rest/services/Census/MapServer/1");
+      var queryTask = new QueryTask("https://sampleserver6.arcgisonline.com/arcgis/rest/services/Census/MapServer/1");
 
       var query = new Query();
       query.returnGeometry = true;
