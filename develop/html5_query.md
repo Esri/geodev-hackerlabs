@@ -9,6 +9,8 @@ In this lab we'll write an [ArcGIS API for Javascript](https://developers.arcgis
 
     ![step-1](./html5_query_step_1.png)
 
+    > because of security rules introduced in Chrome 50 (on [4/20/2016](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only)), it is mandatory to configure https in order to take advantage of HTML5 location when you move your website into production.
+
 2. Listen for the appropriate [event](https://developers.arcgis.com/javascript/jsapi/locatebutton-amd.html#event-locate) to retrieve the current user's location (once it's available).
 
     ![step-2](./html5_query_step_2.png)
@@ -21,7 +23,7 @@ In this lab we'll write an [ArcGIS API for Javascript](https://developers.arcgis
 
 In the end your app should look something like this:
 * [Code](src/locate-query-4.html)
-* [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/locate-query-4.html)
+* [Live App](https://esri.github.io/geodev-hackerlabs/develop/src/locate-query-4.html)
 
 ---
 ### Resources

@@ -4,6 +4,8 @@ In this lab we'll write a [Leaflet](https://leafletjs.com) application that uses
 
 > ### 1. First, lets get our [development environment](setup_dev_env.md) set up.
 
+> because of security rules introduced in Chrome 50 (on [4/20/2016](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only)), it is mandatory to configure https in order to take advantage of HTML5 location when you move your website into production.
+
 For this exercise, we'll use the complete example from the conclusion of our [starter map](build_starter_map_leaflet.md) exercise as our jumping off point.
 
 ![step-1](./html5_query_step_1_leaflet.png)
@@ -16,7 +18,7 @@ Use Leaflet's built in [method](http://leafletjs.com/reference.html#map-set-meth
 
 > ### 3. Lets add census blocks to the map too (but not draw them *yet*).
 
-Add [US Census Block Groups](http://sampleserver6.arcgisonline.com/arcgis/rest/services/Census/MapServer/1) to the map in a [`L.esri.featureLayer`](http://esri.github.io/esri-leaflet/api-reference/layers/feature-layer.html) and make sure the symbology is transparent (for now).
+Add [US Census Block Groups](https://sampleserver6.arcgisonline.com/arcgis/rest/services/Census/MapServer/1) to the map in a [`L.esri.featureLayer`](http://esri.github.io/esri-leaflet/api-reference/layers/feature-layer.html) and make sure the symbology is transparent (for now).
 
 > ### 4. Use [turf](http://turfjs.org/) to see which census block the user is inside.
 
@@ -30,7 +32,7 @@ Last, lets refresh the symbology of the features in the map to make sure the mat
 
 ![step-4](./html5_query_step_4_leaflet.png)
 
-In the end, hopefully your app will look *kinda, sorta* like [**this**](http://bl.ocks.org/jgravois/89a3781d01b2bf747cef).
+In the end, hopefully your app will look *kinda, sorta* like [**this**](https://bl.ocks.org/jgravois/89a3781d01b2bf747cef).
 
 ---
 ### Resources
