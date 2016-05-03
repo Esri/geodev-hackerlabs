@@ -10,7 +10,7 @@ In this lab you will create a custom widget for Web AppBuilder.
 
 4. [Download Simple Graphic zip] (wab/SimpleGraphic.zip?raw=true) unzip it and copy the folder to the widgets directory.
 
-5. Edit SimpleGraphic folder>click Widget.js, update the function definition and extend the BaseWidget class: 
+5. Click SimpleGraphic folder and edit Widget.js, update the function definition and extend the BaseWidget class: 
      ```javascript
 function(declare, BaseWidget, SimpleMarkerSymbol, Graphic) {
   var clazz = declare([BaseWidget], {
