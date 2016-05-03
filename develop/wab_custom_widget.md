@@ -2,15 +2,15 @@
 
 In this lab you will create a custom widget for Web AppBuilder.
 
-1. Create a new app in Web App Builder. Give it a title Portland Neighborhoods WAB App and click Ok.
+1. Create a New Default (2D)app in Web App Builder. Give it a title `Custom Widget App` and click Ok.
 
-2. Click Map and choose Web Map. Select public and search for Portland Bike Map. Select OK and click save.
+2. Click the Plateau Theme and click save.
 
-3. Click the widgets folder (e.g., webappbuilder\server\apps\1) for the application you just created.
+3. Click the widgets folder (e.g., webappbuilder\server\apps\1\widgets) for the application you just created.
 
 4. [Download Simple Graphic zip] (wab/SimpleGraphic.zip?raw=true) unzip it and copy the folder to the widgets directory.
 
-5. Click SimpleGraphic folder>click Widget.js, update the function definition and extend the BaseWidget class: 
+5. Edit SimpleGraphic folder>click Widget.js, update the function definition and extend the BaseWidget class: 
      ```javascript
 function(declare, BaseWidget, SimpleMarkerSymbol, Graphic) {
   var clazz = declare([BaseWidget], {
@@ -25,8 +25,8 @@ function(declare, BaseWidget, SimpleMarkerSymbol, Graphic) {
     }
   });	
     ```
-6. Click the config.json file associated with the application and add the uri
-  to include the widget on line 72.
+6. Click the config.json file associated with the application (e.g., webappbuilder\server\apps\1) and add the uri
+  to include the widget in the widget array. Insert the JSON after line 40. 
   
   ```json
   {
@@ -37,9 +37,13 @@ function(declare, BaseWidget, SimpleMarkerSymbol, Graphic) {
       "width": 250,
       "height": 210
     }
-  }
+  },
   ```
  
-7. Now launch your application and your new widget appears. If not, do any errors appear in the developer tools?
+7. Now launch your application and click the bookmark icon and test the widget. If the widget does not appear, do any errors appear in the developer tools?
 
  ![simple-graphic](./simple-graphic.PNG)
+ 
+ Your code should look like this:
+ * [Widget](src/simplegraphic_widget.js)
+ * [Config](src/simplegraphic_config.json)
