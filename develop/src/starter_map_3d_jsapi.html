@@ -20,18 +20,17 @@
   <script>
     var map, view;
     require(["esri/Map",
-             "esri/views/MapView",
+             "esri/views/SceneView",
              "dojo/domReady!"], 
-      function(Map, MapView) {
+      function(Map, SceneView) {
         map = new Map({
           basemap: "dark-gray"
         });
-
-        view = new MapView({
-          container: "viewDiv",
-          map: map,
-          center: [-122.68, 45.52],
-          zoom: 10
+        view = new SceneView({
+          container: "viewDiv",  
+          map: map,  
+          scale: 50000000,  
+          center: [-101.17, 21,78] 
         });
       }
     );

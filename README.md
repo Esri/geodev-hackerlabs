@@ -106,6 +106,11 @@ In these labs you will use the Configurable App Templates, the ArcGIS Web App Bu
 
 * JS API
  * [Build a Starter Map](./develop/build_starter_map_jsapi.md)
+ * [Build a Starter 3D Map](./develop/build_starter_map_3d_jsapi.md)
+ * [Extrude data as Polygons in 3D](./develop/extrude_polygon_3d_jsapi4b3.md)
+
+* JS API 3
+ * [Build a Starter Map](./develop/build_starter_map_jsapi3.md)
  * [Add Feature Layer](./develop/add_feature_layer_jsapi.md)
  * [Add Feature Layers](./develop/add_feature_layers_jsapi.md)
  * [Add Vector Tile Layer](./develop/add_vector_tile_layer_jsapi.md)
@@ -119,10 +124,6 @@ In these labs you will use the Configurable App Templates, the ArcGIS Web App Bu
  * [Client-side Buffering with UI](./develop/geometry_engine_buffer_jsapi.md)
  * [Smart Mapping](./develop/smartmapping_color_renderer_jsapi.md)
  * [Using HTML5 to Query](./develop/html5_query.md)
-
-* JS API 4 Beta 3
- * [Build a Starter 3D Map](./develop/build_starter_3Dmap_jsapi4b3.md)
- * [Extrude data as Polygons in 3D](./develop/extrude_polygon_3d_jsapi4b3.md)
 
 * Esri-Leaflet
  * [Build a Starter Map](./develop/build_starter_map_leaflet.md)
