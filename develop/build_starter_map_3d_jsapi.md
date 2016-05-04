@@ -1,13 +1,13 @@
-###Build a starter map
+###Build a starter 3D map
 
-This lab covers the basics for creating a basic starter mapping application.
-The starter map simply loads a default base map, and centers and zooms it in in a [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html).
-If you are new to ArcGIS and need a full set of instructions on building a basic mapping application
-visit the [Getting Started with MapView](https://developers.arcgis.com/javascript/latest/sample-code/get-started-mapview/index.html) tutorial.
+This lab covers the basics for creating a basic starter 3D mapping application.
+The starter map simply loads a default base map and centers it.
+If you are new to ArcGIS and need a full set of instructions on building a basic 3D mapping application
+visit the [Get started with SceneView](https://developers.arcgis.com/javascript/beta/sample-code/get-started-sceneview/index.html) tutorial.
 
 1. Copy and paste the code below into a new [jsbin.com](http://jsbin.com).
 
-```html
+```html 
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,18 +30,17 @@ visit the [Getting Started with MapView](https://developers.arcgis.com/javascrip
   <script>
     var map, view;
     require(["esri/Map",
-             "esri/views/MapView",
+             "esri/views/SceneView",
              "dojo/domReady!"], 
-      function(Map, MapView) {
+      function(Map, SceneView) {
         map = new Map({
           basemap: "dark-gray"
         });
-
-        view = new MapView({
-          container: "viewDiv",
-          map: map,
-          center: [-122.68, 45.52],
-          zoom: 10
+        view = new SceneView({
+          container: "viewDiv",  
+          map: map,  
+          scale: 50000000,  
+          center: [-101.17, 21,78] 
         });
       }
     );
@@ -53,7 +52,11 @@ visit the [Getting Started with MapView](https://developers.arcgis.com/javascrip
 </html>
 ```
 
-2. The JSBin `Output` panel should show a dark-grey map centered on Portland, Oregon.
+2. The JSBin `Output` panel should show a 3D view of earth that you can rotate around.
+
+Your app should look something like this:
+
+ * [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/starter_3Dmap_jsapi4b3.html)
 
 ###Bonus
 
