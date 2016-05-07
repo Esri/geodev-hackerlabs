@@ -4,7 +4,7 @@ In this lab you will use a QueryTask to query data from a feature layer.
 
 You will create a simple widget in the UI to change the query selection.
 
-1. Click [starter_map_jsapi.html](src/starter_map_jsapi.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
+1. Click [starter_map_jsapi3.html](src/starter_map_jsapi3.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
 
 2. In `JSBin` > `HTML`, add the query drop-down menue UI `div` element and its contents:
 

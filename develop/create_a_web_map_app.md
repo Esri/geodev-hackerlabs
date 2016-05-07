@@ -4,7 +4,7 @@ You can use the [ArcGIS API for JavaScript](https://developers.arcgis.com/javasc
 
 In this lab, you will use the ArcGIS JS 3.x API to load a map by a `WebmapID` in a custom JavaScript app. Feel free to visit [this tutorial](https://developers.arcgis.com/javascript/jshelp/intro_agstemplate_amd.html) for more information.
 
-1. Click [starter_map_jsapi.html](src/starter_map_jsapi.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
+1. Click [starter_map_jsapi3.html](src/starter_map_jsapi3.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
 
 2. In `JSBin` > `HTML`, update the `require` statement and function definition:
 
