@@ -15,7 +15,7 @@ In this lab you will swap your basemap with a your favorite vector basemap.
 	1. Search for:
 
 		```
-		esri_vector tiles
+		owner:esri_vector -mature
 		```
 		
 	2. Click on `World Street Map (Night)` (DO NOT CLICK ADD!) > ```Add to Map```.
