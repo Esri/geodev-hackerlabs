@@ -13,10 +13,10 @@ In this lab you will customize a vector basemap from an existing tile layer and 
 	1. Search for:
 
 		```
-		esri vector basemap light gray
+		owner:esri_vector gray -mature
 		```
 		
-	2. Click `Add` to add each layer to the map > click `Done Adding Layers`.
+	2. Click `Add` to add the `Light Gray Canvas` layer to the map > click `Done Adding Layers`.
  
 4. In the table of contents, hover over the selected layer and click `More Options` > `Copy`.
 
