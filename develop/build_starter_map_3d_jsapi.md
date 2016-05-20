@@ -56,7 +56,7 @@ visit the [Get started with SceneView](https://developers.arcgis.com/javascript/
 
 Your app should look something like this:
 
- * [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/starter_3Dmap_jsapi4b3.html)
+ * [Live App](https://esri.github.io/geodev-hackerlabs/develop/src/starter_map_3d_jsapi.html)
 
 ###Bonus
 
