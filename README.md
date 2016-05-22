@@ -97,7 +97,7 @@ One of the easiest ways to build an ArcGIS map app is to start with a web map.
 In these labs you will use the Configurable App Templates, the ArcGIS Web App Builder, and the APIs to build custom mapping apps. You will use the web maps with the Web AppBuilder to create an HTML5 responsive app or AppStudio to build and deploy a native app for iOS and Android. Or you can just build a custom app from the ground up with the ArcGIS JS API, Esri-Leaflet or the ArcGIS Runtime APIs.
 
 * Web Map Apps
- * [Create a Configurable Template App](./develop/webmap_apps/create_a_webmapp_app_template.md)
+ * [Create a Configurable Template App](./develop/webmap_apps/create_a_webmap_app_template.md)
  * [Create a Web AppBuilder App](./develop/webmap_apps/create_a_webmap_app_wab.md)
  * [Create a JS API 3.x App](./develop/webmap_apps/create_a_webmap_app_jsapi3.md)
  * [Create a Esri Leaflet App](./develop/leaflet/add_feature_layer_leaflet.md)
