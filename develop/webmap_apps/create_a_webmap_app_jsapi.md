@@ -4,7 +4,7 @@ You can use the [ArcGIS API for JavaScript](https://developers.arcgis.com/javasc
 
 In this lab, you will use the ArcGIS JS 3.x API to load a map by a `WebmapID` in a custom JavaScript app. Feel free to visit [this tutorial](https://developers.arcgis.com/javascript/jshelp/intro_agstemplate_amd.html) for more information.
 
-1. Click [starter_map_jsapi3.html](src/starter_map_jsapi3.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
+1. Click [starter_map_jsapi3.html](../jsapi3/src/starter_map_jsapi3.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
 
 2. In `JSBin` > `HTML`, update the `require` statement and function definition:
 
@@ -43,8 +43,8 @@ In this lab, you will use the ArcGIS JS 3.x API to load a map by a `WebmapID` in
   	```
 
 Your app should look something like this:
- * [Code](https://github.com/Esri/geodev-hackerlabs/blob/gh-pages/develop/src/create_a_web_map_app_jsapi.html)
- * [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/create_a_web_map_app_jsapi.html)
+ * [Code](src/create_a_webmap_app_jsapi.html)
+ * [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/create_a_webmap_app_jsapi.html)
 
 ###Bonus
 * Use the esri/dijit/Legend to add a legend to the upper right of the app. Apply CSS to style the legend.
