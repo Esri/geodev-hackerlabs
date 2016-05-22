@@ -11,18 +11,18 @@ In this exercise, you will:
 
 2. In the `Theme` tab click the `^` to the right of the Saved button > `Export As Template` and select the individual options you want to make configurable for webmap authors later and then click `Export` > `Export to My Organization`.
 
-  ![export template](./wab_export.png)
+  ![export template](wab_deploy/step_2.png)
 
 3. Give the template a name, tags, description and save it in your folder of choice and click `OK`.
     
   * If you have not configured ArcGIS Online to share custom templates you will see the following message below. Proceed to step 4. 
   * If you have configured ArcGIS Online to share custom templates Click `here` and proceed to step 7.  
 
-  ![succesful export template](./wab_exporttemplate.PNG)
+  ![succesful export template](wab_deploy/step_3.png)
 
 4.  Click `item` to view your template > `Groups` (in the top lefthand corner of most ArcGIS Online pages) and choose `Create a Group`.  Fill in the appropriate details and share the Group within your organization.
   
-  ![export template](./wab_group.png)
+  ![export template](wab_deploy/step_4.png)
 
 5. Click `My Organization` > `Edit Settings` > `Map` and in the `Web App Templates` choose the new group from the dropdown and click `Save`.
 

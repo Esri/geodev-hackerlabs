@@ -133,10 +133,10 @@ In these labs you will use the Configurable App Templates, the ArcGIS Web App Bu
  * [Use Geolocation (and turf) to Query](./develop/leaflet/html5_location_turf_leaflet.md)
 
 * Web AppBuilder Developer Edition
- * [Setup Development Environment](./develop/wab_ide_install.md)
- * [Add a Custom Widget](./develop/wab_custom_widget.md)
- * [Add a Custom Configurable Widget](./develop/wab_config_widget.md)
- * [Deploy to ArcGIS Online](./develop/wab_deploy.md)
+ * [Setup Development Environment](./develop/wab/wab_ide_install.md)
+ * [Add a Custom Widget](./develop/wab/wab_custom_widget.md)
+ * [Add a Custom Configurable Widget](./develop/wab/wab_config_widget.md)
+ * [Deploy to ArcGIS Online](./develop/wab/wab_deploy.md)
 
 ## Want to share your work?
 
