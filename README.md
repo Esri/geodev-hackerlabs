@@ -110,7 +110,7 @@ In these labs you will use the Configurable App Templates, the ArcGIS Web App Bu
  * [Extrude data as Polygons in 3D](./develop/jsapi/extrude_polygon_3d_jsapi.md)
 
 * JS API 3
- * [Build a Starter Map](./develop/jsapi3/starter_map_jsapi3.md)
+ * [Build a Starter Map](./develop/jsapi3/starter_map_jsapi.md)
  * [Add Feature Layer](./develop/jsapi3/add_feature_layer_jsapi.md)
  * [Add Vector Tile Layer](./develop/jsapi3/add_vector_tile_layer_jsapi.md)
  * [Style Feature Layers](./develop/jsapi3/style_feature_layer_jsapi.md)
