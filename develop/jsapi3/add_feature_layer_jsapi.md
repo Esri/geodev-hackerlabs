@@ -35,8 +35,8 @@ In this lab you will add a feature layer to an ArcGIS API for JavaScript applica
 4. Confirm that the JSBin `Output` panel shows a map with rail lines.
 
 Your app should look something like this:
-* [Code](src/add_feature_layers_jsapi.html)
-* [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/add_feature_layers_jsapi.html)
+* [Code](src/add_feature_layer_jsapi.html)
+* [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi3/src/add_feature_layer_jsapi.html)
 
 ###Bonus
 * Add a [Rail Stops feature layer](http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0) to the map,

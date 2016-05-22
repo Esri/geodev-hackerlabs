@@ -181,7 +181,7 @@ A continuous color ramp renderer will be used, and the color ramp will be automa
 
 Your app should look something like this:
 * [Code](src/smartmapping_color_renderer_jsapi.html)
-* [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/smartmapping_color_renderer_jsapi.html)
+* [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi3/src/smartmapping_color_renderer_jsapi.html)
 
 ###Bonus
 * When the Neighborhood layer first loads, you can see the default symbology inherited from the layer before Smart Mapping kicks in and updates the symbology appropriately. Try using the `visible` parameter when creating the `FeatureLayer` to initially hide the layer, and the `show()` method to display it only once the renderer has been created.

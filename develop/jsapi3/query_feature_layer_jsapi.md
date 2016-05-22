@@ -142,4 +142,4 @@ You will create a simple widget in the UI to change the query selection.
 
 Your app should look something like this:
 * [Code](src/query_feature_layer_jsapi.html)
-* [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/query_feature_layer_jsapi.html)
+* [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi3/src/query_feature_layer_jsapi.html)

@@ -93,8 +93,8 @@ In this lab it will search against the neighborhood polygon layer.
 The app should highlight and zoom into the neighborhood polygon, and a popup should also be displayed.
 
 Your app should look something like this:
-* [Code](src/neighborhood_search_jsapi.html)
-* [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/neighborhood_search_jsapi.html)
+* [Code](src/feature_layer_search_jsapi.html)
+* [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi3/src/feature_layer_search_jsapi.html)
 
 ###Bonus
 * Add a [Rail Stops feature layer](http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0) to the Search widget.

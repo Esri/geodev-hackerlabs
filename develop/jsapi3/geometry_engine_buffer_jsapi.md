@@ -173,7 +173,7 @@ You will add an interactive slider and a feedback label to the UI that will be u
 
 Your app should look something like this:
 * [Code](src/geometry_engine_buffer_jsapi.html)
-* [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/geometry_engine_buffer_jsapi.html)
+* [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi3/src/geometry_engine_buffer_jsapi.html)
 
 ###Bonus
 * Explore the functions available in the [Geometry Engine](https://developers.arcgis.com/javascript/jsapi/esri.geometry.geometryengine-amd.html).

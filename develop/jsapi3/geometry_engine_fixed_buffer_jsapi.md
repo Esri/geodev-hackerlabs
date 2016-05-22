@@ -73,7 +73,7 @@ In this lab you will use the GeometryEngine to buffer around Rail Stops in the b
 
 Your app should look something like this:
 * [Code](src/geometry_engine_fixed_buffer_jsapi.html)
-* [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/geometry_engine_fixed_buffer_jsapi.html)
+* [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi3/src/geometry_engine_fixed_buffer_jsapi.html)
 
 ###Bonus
 * Make the buffer amount a top-level JavaScript variable and use the browser's interactive console to modify it between clicks.

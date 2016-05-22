@@ -66,7 +66,7 @@ In this lab you will use code to style a popup.
 
 Your app should look something like this:
 * [Code](src/style_simple_popup_jsapi.html)
-* [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/style_simple_popup_jsapi.html)
+* [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi3/src/style_simple_popup_jsapi.html)
 
 Bonus
 * Combine the code from the last lab with this one so the features are styled along with the popup.

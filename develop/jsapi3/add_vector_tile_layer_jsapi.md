@@ -36,4 +36,4 @@ In this lab you will add a vector tile layer to an ArcGIS API for JavaScript app
 
 Your app should look something like this:
 * [Code](src/add_vector_tile_layer_jsapi.html)
-* [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/add_vector_tile_layer_jsapi.html)
+* [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi3/src/add_vector_tile_layer_jsapi.html)

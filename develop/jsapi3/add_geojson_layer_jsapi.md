@@ -54,5 +54,5 @@ In this lab you'll learn an easy way to load GeoJSON directly into your ArcGIS m
 
 Your app should look something like this:
 * [Code](src/add_geojson_layer_jsapi.html)
-* [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/add_geojson_layer_jsapi.html)
+* [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi3/src/add_geojson_layer_jsapi.html)
 

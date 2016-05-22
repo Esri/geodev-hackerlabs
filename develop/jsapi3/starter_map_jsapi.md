@@ -49,6 +49,10 @@ visit the [Build your first mapping application](https://developers.arcgis.com/j
 
 2. The JSBin `Output` panel should show a dark-grey map centered on Portland, Oregon.
 
+Your app should look something like this:
+ * [Code](src/starter_map_jsapi.html)
+ * [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi3/src/starter_map_jsapi.html)
+
 ###Bonus
 
 * Experiment with different basemaps such as `topo` or `gray`.
