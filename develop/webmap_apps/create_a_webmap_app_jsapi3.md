@@ -43,8 +43,8 @@ In this lab, you will use the ArcGIS JS 3.x API to load a map by a `WebmapID` in
   	```
 
 Your app should look something like this:
- * [Code](src/create_a_webmap_app_jsapi.html)
- * [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/create_a_webmap_app_jsapi.html)
+ * [Code](src/create_a_webmap_app_jsapi3.html)
+ * [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/create_a_webmap_app_jsapi3.html)
 
 ###Bonus
 * Use the esri/dijit/Legend to add a legend to the upper right of the app. Apply CSS to style the legend.
