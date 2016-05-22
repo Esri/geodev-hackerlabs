@@ -64,8 +64,8 @@ ArcGIS Online and Developer Tools
 * [Create Authenticated Traffic Layer](./data/create_authenticated_traffic_layer.md)
 
 Code
-* [Add a layer to an app](./develop/add_feature_layer_jsapi.md)
-* [GeometryEngine Buffering](./develop/geometry_engine_fixed_buffer_jsapi.md)
+* [Add a layer to an app](./develop/jsapi3/add_feature_layer_jsapi.md)
+* [GeometryEngine Buffering](./develop/jsapi3/geometry_engine_fixed_buffer_jsapi.md)
  
 ### 2. Design
 
@@ -84,11 +84,11 @@ ArcGIS Online Tools
 * [Create a new 3D Scene](./design/create_a_new_3d_scene.md)
 
 Code
-* [Add a styled layer to an app - Bonus section](./develop/add_feature_layer_jsapi.md)
-* [Style a layer with JSON](./develop/style_feature_layers_json_jsapi.md)
-* [Style a layer popup](./develop/style_simple_popup_jsapi.md)
-* [Style a layer with a renderer](./develop/style_feature_layers_jsapi.md)
-* [Add a vector tiled layer](./develop/add_vector_tile_layer_jsapi.md)
+* [Add a styled layer to an app - Bonus section](./develop/jsapi3/add_feature_layer_jsapi.md)
+* [Style a layer with JSON](./develop/jsapi3/style_feature_layer_json_jsapi.md)
+* [Style a layer popup](./develop/jsapi3/style_simple_popup_jsapi.md)
+* [Style a layer with a renderer](./develop/jsapi3/style_feature_layer_jsapi.md)
+* [Add a vector tiled layer](./develop/jsapi3/add_vector_tile_layer_jsapi.md)
 
 ### 3. Develop
 
@@ -97,45 +97,40 @@ One of the easiest ways to build an ArcGIS map app is to start with a web map.
 In these labs you will use the Configurable App Templates, the ArcGIS Web App Builder, and the APIs to build custom mapping apps. You will use the web maps with the Web AppBuilder to create an HTML5 responsive app or AppStudio to build and deploy a native app for iOS and Android. Or you can just build a custom app from the ground up with the ArcGIS JS API, Esri-Leaflet or the ArcGIS Runtime APIs.
 
 * Web Map Apps
- * [Create a Configurable Template App](./develop/create_a_template_app.md)
- * [Create a Web AppBuilder App](./develop/create_a_wab_app.md)
- * [Create a JS API 3.x App](./develop/create_a_web_map_app.md)
- * [Create a Esri Leaflet App](./develop/add_feature_layers_leaflet.md)
- * [Create a JS API 4.x - Calcite Maps App](./develop/create_calcite_maps_app.md)
- * [Create an AppStudio App](./develop/create_an_appstudio_app.md)
+ * [Create a Configurable Template App](./develop/webmap_apps/create_a_webmapp_app_template.md)
+ * [Create a Web AppBuilder App](./develop/webmap_apps/create_a_webmap_app_wab.md)
+ * [Create a JS API 3.x App](./develop/webmap_apps/create_a_webmap_app_jsapi3.md)
+ * [Create a Esri Leaflet App](./develop/leaflet/add_feature_layer_leaflet.md)
+ * [Create a JS API 4.x - Calcite Maps App](./develop/jsapi/calcite_maps_app_jsapi.md)
+ * [Create an AppStudio App](./develop/webmap_apps/create_a_webmap_app_appstudio.md)
 
 * JS API
- * [Build a Starter Map](./develop/build_starter_map_jsapi.md)
- * [Build a Starter 3D Map](./develop/build_starter_map_3d_jsapi.md)
- * [Extrude data as Polygons in 3D](./develop/extrude_polygon_3d_jsapi4b3.md)
+ * [Build a Starter Map](./develop/jsapi/starter_map_jsapi.md)
+ * [Build a Starter 3D Map](./develop/jsapi/starter_map_3d_jsapi.md)
+ * [Extrude data as Polygons in 3D](./develop/jsapi/extrude_polygon_3d_jsapi.md)
 
 * JS API 3
- * [Build a Starter Map](./develop/build_starter_map_jsapi3.md)
- * [Add Feature Layer](./develop/add_feature_layer_jsapi.md)
- * [Add Feature Layers](./develop/add_feature_layers_jsapi.md)
- * [Add Vector Tile Layer](./develop/add_vector_tile_layer_jsapi.md)
- * [Style Feature Layers](./develop/style_feature_layers_jsapi.md)
- * [Style Feature Layers with JSON](./develop/style_feature_layers_json_jsapi.md)
- * [Add GeoJSON Layer](./develop/add_geojson_layer_jsapi.md)
- * [Simple Search](./develop/simple_search_jsapi.md)
- * [Feature Layer Search](./develop/feature_layer_search_jsapi.md)
- * [Query Feature Layer](./develop/query_feature_layer_jsapi.md)
- * [Client-side Buffering](./develop/geometry_engine_fixed_buffer_jsapi.md)
- * [Client-side Buffering with UI](./develop/geometry_engine_buffer_jsapi.md)
- * [Smart Mapping](./develop/smartmapping_color_renderer_jsapi.md)
- * [Using HTML5 to Query](./develop/html5_query.md)
+ * [Build a Starter Map](./develop/jsapi3/starter_map_jsapi3.md)
+ * [Add Feature Layer](./develop/jsapi3/add_feature_layer_jsapi.md)
+ * [Add Vector Tile Layer](./develop/jsapi3/add_vector_tile_layer_jsapi.md)
+ * [Style Feature Layers](./develop/jsapi3/style_feature_layer_jsapi.md)
+ * [Style Feature Layers with JSON](./develop/jsapi3/style_feature_layer_json_jsapi.md)
+ * [Add GeoJSON Layer](./develop/jsapi3/add_geojson_layer_jsapi.md)
+ * [Simple Search](./develop/jsapi3/simple_search_jsapi.md)
+ * [Feature Layer Search](./develop/jsapi3/feature_layer_search_jsapi.md)
+ * [Query Feature Layer](./develop/jsapi3/query_feature_layer_jsapi.md)
+ * [Client-side Buffering](./develop/jsapi3/geometry_engine_fixed_buffer_jsapi.md)
+ * [Client-side Buffering with UI](./develop/jsapi3/geometry_engine_buffer_jsapi.md)
+ * [Smart Mapping](./develop/jsapi3/smartmapping_color_renderer_jsapi.md)
+ * [Using HTML5 to Query](./develop/jsapi3/html5_location_query_jsapi.md)
 
 * Esri-Leaflet
- * [Build a Starter Map](./develop/build_starter_map_leaflet.md)
- * [Add Feature Layers](./develop/add_feature_layers_leaflet.md)
- * [GeoEnrich address searches](./develop/enrich_address_search_leaflet.md)
- * [Add Geolocation](./develop/add_geolocation_leaflet.md)
- * [Use Geolocation to Query](./develop/locate_query_leaflet.md)
- * [Use Geolocation (and turf) to Query](./develop/locate_turf_leaflet.md)
-
-* Bootstrap
- * [Build a Starter Bootstrap Map](./develop/build_starter_map_bootstrap.md)
- * [Add Navbar and Menu](./develop/add_navbar_menu_bootstrap.md)
+ * [Build a Starter Map](./develop/leaflet/starter_map_leaflet.md)
+ * [Add Feature Layers](./develop/leaflet/add_feature_layer_leaflet.md)
+ * [GeoEnrich address searches](./develop/leaflet/enrich_address_search_leaflet.md)
+ * [Add Geolocation](./develop/leaflet/add_geolocation_leaflet.md)
+ * [Use Geolocation to Query](./develop/leaflet/html5_location_query_leaflet.md)
+ * [Use Geolocation (and turf) to Query](./develop/leaflet/html5_location_turf_leaflet.md)
 
 * Web AppBuilder Developer Edition
  * [Setup Development Environment](./develop/wab_ide_install.md)
