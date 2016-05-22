@@ -4,7 +4,7 @@ You can easily build apps with frameworks like Bootstrap with the [ArcGIS API fo
 
 To learn more about the Calcite Maps framework visit [this site](http://github.com/esri/calcite-maps).
 
-1. Click [starter_calcite_maps_app.html](src/starter_calcite_maps_app.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
+1. Click [starter_calcite_maps_app_jsapi.html](src/starter_calcite_maps_app_jsapi.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
 
 2. In `JSBin` > `HTML`, add the html for the `navbar`, `map container` and `panels`:
 
