@@ -2,7 +2,7 @@
 
 In this lab you will apply custom styling to a feature layer.
 
-1. Click [starter_map_jsapi3.html](src/starter_map_jsapi3.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
+1. Click [starter_map_jsapi.html](src/starter_map_jsapi.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
 
 2. In `JSBin` > `HTML`, update the `require` statement and function definition.
 

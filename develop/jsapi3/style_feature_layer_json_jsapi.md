@@ -4,7 +4,7 @@ In this lab you will apply custom styling to a feature layer using the JSON Draw
 
 1. Click [this layer](http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Styled/FeatureServer/0) and copy the Drawing Info JSON. You will use this to style your layer below.
 
-2. Click [starter_map_jsapi3.html](src/starter_map_jsapi3.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
+2. Click [starter_map_jsapi.html](src/starter_map_jsapi.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
 
 3. In `JSBin` > `HTML`, update the `require` statement and function definition:
 

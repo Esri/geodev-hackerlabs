@@ -2,7 +2,7 @@
 
 In this lab you'll learn an easy way to load GeoJSON directly into your ArcGIS map.
 
-1. Click [starter_map_jsapi3.html](src/starter_map_jsapi3.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
+1. Click [starter_map_jsapi.html](src/starter_map_jsapi.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
 
 2. In `JSBin` > `HTML`, load the [Esri Terraformer](https://github.com/Esri/Terraformer) libraries within in the `<head>` tag, anywhere before the main `<script>` tag.
 
