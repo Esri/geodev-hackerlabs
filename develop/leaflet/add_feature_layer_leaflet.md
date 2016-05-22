@@ -29,8 +29,8 @@ In this lab, you will add featurelayers to an Esri Leaflet application.
 4. Run and test the app.
 
 Your app should look something like this:
- * [Code](https://github.com/Esri/geodev-hackerlabs/blob/gh-pages/develop/src/add_feature_layers_leaflet.html)
- * [Live App](http://esri.github.io/geodev-hackerlabs/develop/src/add_feature_layers_leaflet.html)
+ * [Code](src/add_feature_layer_leaflet.html)
+ * [Live App](http://esri.github.io/geodev-hackerlabs/develop/leaflet/src/add_feature_layer_leaflet.html)
 
 ###Bonus
 * Add a [Rail Stops feature layer](http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0) to the map,
