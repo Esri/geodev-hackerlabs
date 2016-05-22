@@ -6,7 +6,7 @@ In this lab, you will add basic geolocation functionality to an Esri Leaflet app
 
 2. Add a function to get the current geolocation position from the [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation):
 
-> because of security rules introduced in Chrome 50 (on [4/20/2016](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only)), it is mandatory to configure https in order to take advantage of HTML5 location when you move your website into production.
+  > because of security rules introduced in Chrome 50 (on [4/20/2016](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only)), it is mandatory to configure https in order to take advantage of HTML5 location when you move your website into production.
 
   ```javascript
 
