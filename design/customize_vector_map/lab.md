@@ -88,4 +88,4 @@ In the steps below you're going to change the color for a couple of layers in th
 
 Your map should look like this:
 * [Live Map](http://www.arcgis.com/home/webmap/viewer.html?webmap=b66770c3ad184c6a8f68cba5c19addeb)
-* [Code](src/root_lightgreen.json) 
+* [Code](root_lightgreen.json) 

@@ -51,17 +51,17 @@ Creating and importing data interactively is a fast and effective way to prepare
 In these labs you will import, create and manage data using the [ArcGIS Online](http://arcgis.com) and [ArcGIS for Developers](http://developers.arcgis.com) website and tools. You will also use the map viewer to perform data enrichment, the process of adding social demographic information to a dataset, and spatial analyses, the process of creating new data based on spatial critria. You will also explore the feature service REST endpoints and use them in a simple web app to access and display spatial data. 
 
 ArcGIS Online and Developer Tools
-* [Import Data](./data/import_data.md)
-* [Create and Edit Data](./data/create_and_edit_data.md)
-* [Share Data](./data/share_data.md)
-* [View via REST](./data/view_via_rest.md)
-* [View in a Map](./data/view_in_a_map.md)
-* [GeoEnrich Data](./data/geoenrich_data.md)
-* [Create Buffers](/data/create_buffers.md)
-* [Create Walk Areas](./data/create_walk_areas.md)
-* [Extract Walkable Neighborhoods](./data/extract_walkable_neighborhoods.md)
-* [Filter Data](./data/filter_data.md)
-* [Create Authenticated Traffic Layer](./data/create_authenticated_traffic_layer.md)
+* [Import Data](./data/import_data/lab.md)
+* [Create and Edit Data](./data/create_and_edit_data/lab.md)
+* [Share Data](./data/share_data/lab.md)
+* [View via REST](./data/view_via_rest/lab.md)
+* [View in a Map](./data/view_in_a_map/lab.md)
+* [GeoEnrich Data](./data/geoenrich_data/lab.md)
+* [Create Buffers](/data/create_buffers/lab.md)
+* [Create Walk Areas](./data/create_walk_areas/lab.md)
+* [Extract Walkable Neighborhoods](./data/extract_walkable_neighborhoods/lab.md)
+* [Filter Data](./data/filter_data/lab.md)
+* [Create Authenticated Traffic Layer](./data/create_authenticated_traffic_layer/lab.md)
 
 Code
 * [Add a layer to an app](./develop/jsapi3/add_feature_layer/lab.md)
@@ -74,14 +74,14 @@ Creating web maps with great cartography is one of the most important steps to b
 In these labs you will use [ArcGIS Online](http://arcgis.com) and the map viewer to create and style web maps. You will create new maps, explore basemaps, search for layers, use smart mapping to change symbol styles, style popups, label data, show/hide fields, filter data, and more. You will also learn how to save web maps and featurelayers and use the JSON to achieve the same rich cartographic and popup experiences in your own custom apps.
 
 ArcGIS Online Tools
-* [Create a New Web Map](./design/create_a_new_map.md)
-* [Style a Web Map](./design/style_a_map.md)
-* [Style Popups](./design/style_popups.md)
-* [Smart Mapping - Proportional Styling](./design/smart_mapping_proportional.md)
-* [Copy and save a Layer](./design/save_a_layer.md)
-* [Vector Basemaps](./design/vector_basemaps.md)
-* [Customize Vector Basemap](./design/customize_vector_map.md)
-* [Create a new 3D Scene](./design/create_a_new_3d_scene.md)
+* [Create a New Web Map](./design/create_a_new_map/lab.md)
+* [Style a Web Map](./design/style_a_map/lab.md)
+* [Style Popups](./design/style_popups/lab.md)
+* [Smart Mapping - Proportional Styling](./design/smart_mapping_proportional/lab.md)
+* [Copy and save a Layer](./design/save_a_layer/lab.md)
+* [Vector Basemaps](./design/vector_basemaps/lab.md)
+* [Customize Vector Basemap](./design/customize_vector_map/lab.md)
+* [Create a new 3D Scene](./design/create_a_new_3d_scene/lab.md)
 
 Code
 * [Add a styled layer to an app - Bonus section](./develop/jsapi3/add_feature_layer/lab.md)

@@ -12,7 +12,7 @@ In this lab you will add your own layers and some existing publicly available la
 
 3. Click on a `feature layer` > `Open` > `Add layer to new map`.
 
- NOTE: If you don't have any layers in your account, go to [Import Data](./import data.md) first.
+ NOTE: If you don't have any layers in your account, go to [Import Data](../import_data/lab.md) first.
 
 4. Explore the data interactively by clicking on the features.
 

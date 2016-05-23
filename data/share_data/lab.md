@@ -4,7 +4,7 @@ You can use ArcGIS Online to control who can view your data items. Items can be 
 
 In this lab you will explore how to share layers.
 
-NOTE: If you don't have any data items in your account, go to [Import Data](./import_data.md) first.
+NOTE: If you don't have any data items in your account, go to [Import Data](../import_data/lab.md) first.
 
 ###Steps
 

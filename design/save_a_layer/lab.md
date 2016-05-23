@@ -16,7 +16,7 @@ In this lab you will style and save a layer to your account.
 
 5. Click `PDX Neighborhoods Enriched` > `Copy`. This creates a new Layer Item in your account.
 
-6. Change the extent of the map and style the layer as desired. See [Style a Map](./style a map.md) for help on styling.
+6. Change the extent of the map and style the layer as desired. See [Style a Map](../style_a_map/lab.md) for help on styling.
 
 7. Click `PDX Neighborhoods Enriched Copy` > `Save layer`. Set the following properties:
 
