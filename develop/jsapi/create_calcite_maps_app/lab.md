@@ -276,7 +276,7 @@ To learn more about the Calcite Maps framework visit [this site](http://github.c
 
 Your app should look something like this:
  * [Code](index.html)
- * [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi/calcite_maps_app/index.html)
+ * [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi/create_calcite_maps_app/index.html)
 
 ###Bonus
 * Use Calcite Maps styles to change the look and feel of the application.
