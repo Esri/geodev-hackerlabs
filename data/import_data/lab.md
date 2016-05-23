@@ -6,7 +6,7 @@ In this lab you will use [Add items](http://doc.arcgis.com/en/arcgis-online/shar
 
 ###Steps
 
-1. [Download](https://rawgit.com/Esri/geodev-hackerlabs/gh-pages/resources/pdx_data.zip) and unzip the data.
+1. [Download](pdx_data.zip?raw=true) and unzip the data.
 
 2. Go to [arcgis.com](http://www.arcgis.com) and login.
 
