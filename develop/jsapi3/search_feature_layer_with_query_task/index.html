@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Query Feature Layer</title>
+  <link rel="stylesheet" href="https://js.arcgis.com/3.16/esri/themes/calcite/dijit/calcite.css">
+  <link rel="stylesheet" href="https://js.arcgis.com/3.16/esri/themes/calcite/esri/esri.css">
+  <style>
+    html, body, #mapDiv {
+      margin: 0;
+      padding:0;
+      height: 100%;
+    }
+    .query-panel {
+      font: 14px gadget, sans-serif;
+      background-color: #fff;
+      position: absolute;
+      height: 7em;
+      right: 10px;
+      top: 10px;
+      padding: 10px;
+      border: 1px solid #01AAFF;
+      border-radius: 5px;
+      z-index: 10000;
+    }
+  </style>
+  <script src="https://js.arcgis.com/3.16compact/"></script>
+  <script>
+    require(["esri/map",
+             "esri/tasks/query",
+             "esri/tasks/QueryTask",
+             "esri/symbols/SimpleMarkerSymbol",
+             "esri/InfoTemplate",
+             "esri/Color",
+             "dojo/on",
+             "dojo/dom",
+             "dojo/domReady!"], 
+      function(Map, Query, QueryTask, SimpleMarkerSymbol, InfoTemplate, Color, on, dom) {
+
+        var map = new Map('mapDiv', {
+          basemap: 'streets-night-vector',
+          center: [-105.265, 40.014],
+          zoom: 12
+        });
+
+        var url = 'http://services.arcgis.com/RkjCp6A0cLN4ubJm/arcgis/rest/services/POIBoulder/FeatureServer/0',
+                  markerSymbol = new SimpleMarkerSymbol(SimpleMarkerSymbol.STYLE_CIRCLE, 11, null, new Color([0,255,0,0.7]));
+        var infoTemplate = new InfoTemplate("${NAME}", "Address : ${ADDRESS}<br/>Phone : ${PHONE}");
+
+        on(dom.byId('poicode'), 'change', function(e) {
+          var poicode = e.target.value;
+          if (poicode.length > 0) {
+            var queryTask = new QueryTask(url);
+            var query = new Query();
+            query.where = "DESCRIPTION = '" + poicode +"' AND CITY ='Boulder'";
+            query.outFields=["NAME", "ADDRESS","PHONE"];
+            query.returnGeometry = true;
+            queryTask.execute(query).then(QuerySuccess, QueryError);
+          }
+        });
+
+        function QuerySuccess(featureSet) {
+          map.graphics.clear();
+          map.infoWindow.hide();
+          var features = featureSet.features;
+          for (var i = 0; i < features.length; i++) {
+            var feature = features[i];
+            feature.setSymbol(markerSymbol);
+            feature.setInfoTemplate(infoTemplate);
+            map.graphics.add(feature);
+          }
+        }
+
+        function QueryError(error) {
+          console.error('An error ocurred in the query: ', error);
+        }
+
+      }
+    );
+  </script> 
+</head>
+<body class="calcite">      
+  <div id="mapDiv"></div>
+
+  <div class="query-panel">
+    <h4>Query a Feature Layer</h4>
+    <select id="poicode" name="poicode">
+      <option value="" selected="selected">Select a Category</option>
+      <option value="Restaurant">Restaurants</option>
+      <option value="Hotel">Hotels</option>
+      <option value="Bank">Banks</option>
+    </select>
+  </div>
+</body>
+</html>

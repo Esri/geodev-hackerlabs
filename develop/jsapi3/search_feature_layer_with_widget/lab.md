@@ -24,10 +24,10 @@ In this lab it will search against the neighborhood polygon layer.
  
     ```html
     <body>
-       <!-- ADD new div for the search widget -->
-       <div id="searchDiv"></div>
-       
-       <div id="mapDiv"></div>
+      <div id="mapDiv"></div>
+
+      <!-- ADD new div for the search widget -->
+      <div id="searchDiv"></div>
     </body>
     ``` 
 
@@ -35,25 +35,24 @@ In this lab it will search against the neighborhood polygon layer.
 
     ```CSS
     <style>
-        html,body,#mapDiv {
-            padding:0;
-            margin:0;
-            height:100%;
-        }
+      html,body,#mapDiv {
+        padding:0;
+        margin:0;
+        height:100%;
+      }
 
       /* ADD search widget styling */ 
       #searchDiv {
-         display: block;
-         position: absolute;
-         z-index: 2;
-         top: 20px;
-         left: 74px;
+        display: block;
+        position: absolute;
+        z-index: 2;
+        top: 20px;
+        left: 74px;
       }
     </style>
     ```
 
-5. Create the Search widget and add code to select features from the neighborhoods layer.
-
+5. Create the Search widget and start it up.
 
     ```javascript
     function(Map,Search) {
@@ -67,34 +66,39 @@ In this lab it will search against the neighborhood polygon layer.
       var search = new Search({
         map: map
       }, "searchDiv");
- 
-      // ADD this to retrieve the array of sources used by the Search widget and create a new source that searches against the neighborhood feature layer. "Sources" determines what is searchable within the search box. 
-      var sources = search.get("sources");
-      sources.push({
-          featureLayer: new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Styled/FeatureServer/0"),
-          name: "Neighborhood Search",
-          searchFields: ["NAME"],
-          displayField: "NAME",
-          exactMatch: false,
-          outFields: ["NAME","AVGHINC_CY","MEDAGE_CY"],
-          placeholder: "St. Johns",
-          enableSuggestions: true,
-          // Create an InfoTemplate for the popup
-          infoTemplate: new InfoTemplate("Neighborhood","Name: ${NAME}</br>Avg. Household Income $ ${AVGHINC_CY}</br>Median Age: ${MEDAGE_CY}")
-      });
 
-      // ADD this to set `sources` to use the new array and then startup the Search widget.
-      search.set("sources",sources);
       search.startup();
-    });
     ```
-       
-6. In JSBin, run the app > select the pulldown on the left-hand side of the search box > select `Neighborhood Search` from the pull down list > enter "St. John's".
-The app should highlight and zoom into the neighborhood polygon, and a popup should also be displayed.
+
+    At this point, the map will allow you to search against the default ArcGIS Online Geocoding Service. Give it a go. You can enter an address or point of interest (like `Providence Park` or `PDX`) or a geography (like `Oregon` or `USA`).
+
+6. Configure the Search Widget to also search against the Neighborhoods Feature Service. Insert the following code directly before the `search.startup()` line added above.
+
+    ```javascript
+    var sources = search.get("sources");
+
+    sources.push({
+      featureLayer: new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Styled/FeatureServer/0"),
+      name: "Neighborhood Search",
+      searchFields: ["NAME"],
+      displayField: "NAME",
+      exactMatch: false,
+      outFields: ["NAME","AVGHINC_CY","MEDAGE_CY"],
+      placeholder: "St. Johns",
+      enableSuggestions: true,
+
+      // Create an InfoTemplate for the popup
+      infoTemplate: new InfoTemplate("Neighborhood","Name: ${NAME}</br>Avg. Household Income $ ${AVGHINC_CY}</br>Median Age: ${MEDAGE_CY}")
+    });
+
+    search.set("sources",sources);
+    ```
+
+7. In JSBin, run the app > select the pulldown on the left-hand side of the search box > select `Neighborhood Search` from the pull down list > enter "St. John's". The app should highlight and zoom into the neighborhood polygon, and a popup should also be displayed.
 
 Your app should look something like this:
 * [Code](index.html)
-* [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi3/search_feature_layer/index.html)
+* [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi3/search_feature_layer_with_widget/index.html)
 
 ###Bonus
 * Add a [Rail Stops feature layer](http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0) to the Search widget.
