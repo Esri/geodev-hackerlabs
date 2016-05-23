@@ -65,7 +65,7 @@ ArcGIS Online and Developer Tools
 
 Code
 * [Add a layer to an app](./develop/jsapi3/add_feature_layer/lab.md)
-* [GeometryEngine Buffering](./develop/jsapi3/geometry_engine_fixed_buffer/lab.md)
+* [GeometryEngine Buffering](./develop/jsapi3/fixed_buffer_with_geometry_engine/lab.md)
  
 ### 2. Design
 
@@ -77,15 +77,15 @@ ArcGIS Online Tools
 * [Create a New Web Map](./design/create_a_new_map/lab.md)
 * [Style a Web Map](./design/style_a_map/lab.md)
 * [Style Popups](./design/style_popups/lab.md)
-* [Smart Mapping - Proportional Styling](./design/smart_mapping_proportional/lab.md)
+* [Smart Mapping - Proportional Styling](./design/style_map_layers_with_smart_mapping/lab.md)
 * [Copy and save a Layer](./design/save_a_layer/lab.md)
-* [Vector Basemaps](./design/vector_basemaps/lab.md)
+* [Vector Basemaps](./design/apply_vector_basemap/lab.md)
 * [Customize Vector Basemap](./design/customize_vector_map/lab.md)
 * [Create a new 3D Scene](./design/create_a_new_3d_scene/lab.md)
 
 Code
 * [Add a styled layer to an app - Bonus section](./develop/jsapi3/add_feature_layer/lab.md)
-* [Style a layer with JSON](./develop/jsapi3/style_feature_layer_json/lab.md)
+* [Style a layer with JSON](./develop/jsapi3/style_feature_layer_with_json/lab.md)
 * [Style a layer popup](./develop/jsapi3/style_simple_popup/lab.md)
 * [Style a layer with a renderer](./develop/jsapi3/style_feature_layer/lab.md)
 * [Add a vector tiled layer](./develop/jsapi3/add_vector_tile_layer/lab.md)
@@ -114,23 +114,23 @@ In these labs you will use the Configurable App Templates, the ArcGIS Web App Bu
  * [Add Feature Layer](./develop/jsapi3/add_feature_layer/lab.md)
  * [Add Vector Tile Layer](./develop/jsapi3/add_vector_tile_layer/lab.md)
  * [Style Feature Layers](./develop/jsapi3/style_feature_layer/lab.md)
- * [Style Feature Layers with JSON](./develop/jsapi3/style_feature_layer_json/lab.md)
+ * [Style Feature Layers with JSON](./develop/jsapi3/style_feature_layer_with_json/lab.md)
  * [Add GeoJSON Layer](./develop/jsapi3/add_geojson_layer/lab.md)
- * [Simple Search](./develop/jsapi3/simple_search/lab.md)
- * [Feature Layer Search](./develop/jsapi3/feature_layer_search/lab.md)
+ * [Simple Search](./develop/jsapi3/search/lab.md)
+ * [Feature Layer Search](./develop/jsapi3/search_feature_layer/lab.md)
  * [Query Feature Layer](./develop/jsapi3/query_feature_layer/lab.md)
- * [Client-side Buffering](./develop/jsapi3/geometry_engine_fixed_buffer/lab.md)
- * [Client-side Buffering with UI](./develop/jsapi3/geometry_engine_buffer/lab.md)
- * [Smart Mapping](./develop/jsapi3/smartmapping_color_renderer/lab.md)
- * [Using HTML5 to Query](./develop/jsapi3/html5_location_query/lab.md)
+ * [Client-side Buffering](./develop/jsapi3/fixed_buffer_with_geometry_engine/lab.md)
+ * [Client-side Buffering with UI](./develop/jsapi3/buffer_with_geometry_engine/lab.md)
+ * [Smart Mapping](./develop/jsapi3/style_feature_layer_with_smart_mapping/lab.md)
+ * [Using HTML5 to Query](./develop/jsapi3/query_with_html5_location/lab.md)
 
 * Esri-Leaflet
  * [Build a Starter Map](./develop/leaflet/starter_map/lab.md)
  * [Add Feature Layers](./develop/leaflet/add_feature_layer/lab.md)
  * [GeoEnrich address searches](./develop/leaflet/enrich_address_search/lab.md)
  * [Add Geolocation](./develop/leaflet/add_geolocation/lab.md)
- * [Use Geolocation to Query](./develop/leaflet/html5_location_query/lab.md)
- * [Use Geolocation (and turf) to Query](./develop/leaflet/html5_location_turf/lab.md)
+ * [Use Geolocation to Query](./develop/leaflet/query_with_html5_location/lab.md)
+ * [Use Geolocation (and turf) to Query](./develop/leaflet/query_with_html5_location_turf/lab.md)
 
 * Web AppBuilder Developer Edition
  * [Setup Development Environment](./develop/wab/ide_install/lab.md)

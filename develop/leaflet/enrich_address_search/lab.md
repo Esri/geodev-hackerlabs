@@ -38,5 +38,5 @@ In the end, hopefully your app will look *kinda, sorta* like [**this**](http://b
 > are you thirsty for more?
 
 * add some custom styling to the marker that you draw when an address match is found
-* [refactor the logic](../html5_location_turf/lab.md) to use turf to query the neighborhoods locally
+* [refactor the logic](../query_with_html5_location_turf/lab.md) to use turf to query the neighborhoods locally
 * use [Geoenrichment](https://developers.arcgis.com/en/features/geo-enrichment/) on the fly (and skip preprocessing the data)

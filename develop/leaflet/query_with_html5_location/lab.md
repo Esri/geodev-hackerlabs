@@ -41,4 +41,4 @@ In the end, hopefully your app will look *kinda, sorta* like [**this**](https://
 * display a popup with information about the census block
 * symbolize the actual user location on the map
 * use [Geoenrichment](https://developers.arcgis.com/en/features/geo-enrichment/) to query/display the total population of the census block
-* [refactor the logic](../html5_location_turf/lab.md) to use turf to query census block geometries locally instead
+* [refactor the logic](../query_with_html5_location_turf/lab.md) to use turf to query census block geometries locally instead

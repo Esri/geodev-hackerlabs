@@ -42,4 +42,4 @@ In this lab you will apply custom styling to a feature layer using the JSON Draw
 
 Your app should look something like this:
 * [Code](index.html)
-* [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi3/style_feature_layer_json/index.html)
+* [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi3/style_feature_layer_with_json/index.html)

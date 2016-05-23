@@ -71,7 +71,7 @@ In this lab you will add a basic search widget to your app.
     
 Your app should look something like this:
 * [Code](index.html)
-* [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi3/simple_search/index.html)
+* [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi3/search/index.html)
 
 ###Bonus
 
