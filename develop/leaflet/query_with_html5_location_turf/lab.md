@@ -6,7 +6,7 @@ In this lab we'll write a [Leaflet](https://leafletjs.com) application that uses
 
 > because of security rules introduced in Chrome 50 (on [4/20/2016](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only)), it is mandatory to configure https in order to take advantage of HTML5 location when you move your website into production.
 
-For this exercise, we'll use the complete example from the conclusion of our [starter map](../starter_map/lab.md) exercise as our jumping off point.
+For this exercise, we'll use the complete example from the conclusion of our [starter map](../create_starter_map/lab.md) exercise as our jumping off point.
 
 ![Step 1](step_1.png)
 

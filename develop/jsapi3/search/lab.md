@@ -2,7 +2,7 @@
 
 In this lab you will add a basic search widget to your app.
 
-1. Click [starter_map/index.html](../starter_map/index.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
+1. Click [create_starter_map/index.html](../create_starter_map/index.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
 
 2. In `JSBin` > `HTML`, update the `require` statement and function definition:
 

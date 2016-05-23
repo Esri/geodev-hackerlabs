@@ -58,7 +58,7 @@ visit the [Getting Started with MapView](https://developers.arcgis.com/javascrip
 Your app should look something like this:
 
  * [Code](index.html)
- * [Live App](https://esri.github.io/geodev-hackerlabs/develop/jsapi/starter_map/index.html)
+ * [Live App](https://esri.github.io/geodev-hackerlabs/develop/jsapi/create_starter_map/index.html)
 
 ###Bonus
 

@@ -105,12 +105,12 @@ In these labs you will use the Configurable App Templates, the ArcGIS Web App Bu
  * [Create an AppStudio App](./develop/webmap_apps/create_appstudio_app/lab.md)
 
 * JS API
- * [Build a Starter Map](./develop/jsapi/starter_map/lab.md)
- * [Build a Starter 3D Map](./develop/jsapi/starter_map_3d/lab.md)
+ * [Build a Starter Map](./develop/jsapi/create_starter_map/lab.md)
+ * [Build a Starter 3D Map](./develop/jsapi/create_starter_map_3d/lab.md)
  * [Extrude data as Polygons in 3D](./develop/jsapi/extrude_polygon_3d/lab.md)
 
 * JS API 3
- * [Build a Starter Map](./develop/jsapi3/starter_map/lab.md)
+ * [Build a Starter Map](./develop/jsapi3/create_starter_map/lab.md)
  * [Add Feature Layer](./develop/jsapi3/add_feature_layer/lab.md)
  * [Add Vector Tile Layer](./develop/jsapi3/add_vector_tile_layer/lab.md)
  * [Style Feature Layers](./develop/jsapi3/style_feature_layer/lab.md)
@@ -125,7 +125,7 @@ In these labs you will use the Configurable App Templates, the ArcGIS Web App Bu
  * [Using HTML5 to Query](./develop/jsapi3/query_with_html5_location/lab.md)
 
 * Esri-Leaflet
- * [Build a Starter Map](./develop/leaflet/starter_map/lab.md)
+ * [Build a Starter Map](./develop/leaflet/create_starter_map/lab.md)
  * [Add Feature Layers](./develop/leaflet/add_feature_layer/lab.md)
  * [GeoEnrich address searches](./develop/leaflet/enrich_address_search/lab.md)
  * [Add Geolocation](./develop/leaflet/add_geolocation/lab.md)

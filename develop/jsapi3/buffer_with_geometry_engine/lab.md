@@ -4,7 +4,7 @@ In this lab you will use the GeometryEngine to buffer around Rail Stops in the b
 
 You will add an interactive slider and a feedback label to the UI that will be used when changing the size of the buffer.
 
-1. Click [starter_map/index.html](../starter_map/index.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
+1. Click [create_starter_map/index.html](../create_starter_map/index.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
 
 2. In `JSBin` > `HTML`, add the buffer UI `div` element and its contents:
 

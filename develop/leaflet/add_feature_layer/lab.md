@@ -2,7 +2,7 @@
 
 In this lab, you will add featurelayers to an Esri Leaflet application.
 
-1. Open the [starter map](../starter_map/index.html) HTML and copy the contents to a new [jsbin.com](http://jsbin.com).
+1. Open the [starter map](../create_starter_map/index.html) HTML and copy the contents to a new [jsbin.com](http://jsbin.com).
 
 2. In `JSBin` > `HTML`, add the following plugin to draw the layer styles:
 

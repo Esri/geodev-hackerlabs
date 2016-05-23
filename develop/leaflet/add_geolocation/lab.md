@@ -2,7 +2,7 @@
 
 In this lab, you will add basic geolocation functionality to an Esri Leaflet application.
 
-1. Open the [starter map](../starter_map/index.html) HTML and copy the contents to a new [jsbin.com](http://jsbin.com).
+1. Open the [starter map](../create_starter_map/index.html) HTML and copy the contents to a new [jsbin.com](http://jsbin.com).
 
 2. Add a function to get the current geolocation position from the [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation):
 

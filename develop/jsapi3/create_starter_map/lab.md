@@ -51,7 +51,7 @@ visit the [Build your first mapping application](https://developers.arcgis.com/j
 
 Your app should look something like this:
  * [Code](index.html)
- * [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi3/starter_map/index.html)
+ * [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi3/create_starter_map/index.html)
 
 ###Bonus
 
