@@ -23,7 +23,7 @@ In this lab we'll write an [ArcGIS API for Javascript](https://developers.arcgis
 
 In the end your app should look something like this:
 * [Code](index.html)
-* [Live App](https://esri.github.io/geodev-hackerlabs/develop/jsapi3/search_feature_layer_with_html5_location/index.html)
+* [Live App](https://esri.github.io/geodev-hackerlabs/develop/jsapi3/search_with_html5_location/index.html)
 
 ---
 ### Resources

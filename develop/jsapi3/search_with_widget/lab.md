@@ -98,7 +98,7 @@ In this lab it will search against the neighborhood polygon layer.
 
 Your app should look something like this:
 * [Code](index.html)
-* [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi3/search_feature_layer_with_widget/index.html)
+* [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi3/search_with_widget/index.html)
 
 ###Bonus
 * Add a [Rail Stops feature layer](http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0) to the Search widget.
