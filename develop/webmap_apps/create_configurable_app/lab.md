@@ -1,6 +1,6 @@
-###Create an application using a Configurable Template
+###Create a Configurable App
 
-You can use any of the [Configurable App Templates](http://www.arcgis.com/home/gallery.html#c=esri&t=apps&o=modified&f=configurable) to build differnt types of focused HTML, CSS, JS apps. All apps are developed on top of an existing web map and are shared out as a web application. By default, these apps are stored and hosted in ArcGIS Online, but you can also download all of the code locally and host and customize them yourself.
+You can use any of the [Configurable Apps](http://www.arcgis.com/home/gallery.html#c=esri&t=apps&o=modified&f=configurable) to build differnt types of focused HTML, CSS, JS apps. All apps are developed on top of an existing web map and are shared out as a web application. By default, these apps are stored and hosted in ArcGIS Online, but you can also download all of the code locally and host and customize them yourself.
 
 In this lab, you will build a simple Template app.
 
@@ -14,8 +14,8 @@ In this lab, you will build a simple Template app.
 
  ```
  Title: 2015 Portland Population Density
- Tags: Portland, Map, Population, Density,Template App
- Summary: Portland population map built with the Public Information Template
+ Tags: Portland, Map, Population, Density,Configurable App
+ Summary: Portland population map built with the Public Information Configurable App
  ```
 
  Click `Done` to launch the configuration page.
@@ -54,7 +54,7 @@ In this lab, you will build a simple Template app.
 Your app should look something like [this](http://edn.maps.arcgis.com/apps/PublicInformation/index.html?appid=09ed800aca42450c89278c3c6a3815dc).
 
 ###Bonus
-* Go back to the app and try to change and save some of the template settings.
+* Go back to the app and try to change and save some of the configuration settings.
 * View the JSON for the web app by using the REST API to access the item in your account. Try formatting the JSON with try [this JSON Editor tool](http://www.jsoneditoronline.org/).
 
  ```
@@ -62,4 +62,4 @@ Your app should look something like [this](http://edn.maps.arcgis.com/apps/Publi
  ```
 
  NOTE: Replace the item ID above with yours.
-* Get the source code for the public information template [here](https://github.com/Esri/public-information-map-template-js).
+* Get the source code for the public information configurable app [here](https://github.com/Esri/public-information-map-template-js).
