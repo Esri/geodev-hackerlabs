@@ -97,12 +97,12 @@ One of the easiest ways to build an ArcGIS map app is to start with a web map.
 In these labs you will use the Configurable App Templates, the ArcGIS Web App Builder, and the APIs to build custom mapping apps. You will use the web maps with the Web AppBuilder to create an HTML5 responsive app or AppStudio to build and deploy a native app for iOS and Android. Or you can just build a custom app from the ground up with the ArcGIS JS API, Esri-Leaflet or the ArcGIS Runtime APIs.
 
 * Web Map Apps
- * [Create a Configurable Template App](./develop/webmap_apps/arcgis_online_template/lab.md)
- * [Create a Web AppBuilder App](./develop/webmap_apps/wab/lab.md)
- * [Create a JS API 3.x App](./develop/webmap_apps/jsapi3/lab.md)
+ * [Create a Configurable Template App](./develop/webmap_apps/create_configurable_app/lab.md)
+ * [Create a Web AppBuilder App](./develop/webmap_apps/create_web_appbuilder_app/lab.md)
+ * [Create a JS API 3.x App](./develop/webmap_apps/create_jsapi3_app/lab.md)
  * [Create a Esri Leaflet App](./develop/leaflet/add_feature_layer/lab.md)
  * [Create a JS API 4.x - Calcite Maps App](./develop/jsapi/calcite_maps_app/lab.md)
- * [Create an AppStudio App](./develop/webmap_apps/appstudio/lab.md)
+ * [Create an AppStudio App](./develop/webmap_apps/create_appstudio_app/lab.md)
 
 * JS API
  * [Build a Starter Map](./develop/jsapi/starter_map/lab.md)
@@ -133,10 +133,10 @@ In these labs you will use the Configurable App Templates, the ArcGIS Web App Bu
  * [Use Geolocation (and turf) to Query](./develop/leaflet/query_with_html5_location_turf/lab.md)
 
 * Web AppBuilder Developer Edition
- * [Setup Development Environment](./develop/wab/ide_install/lab.md)
- * [Add a Custom Widget](./develop/wab/custom_widget/lab.md)
- * [Add a Custom Configurable Widget](./develop/wab/config_widget/lab.md)
- * [Deploy to ArcGIS Online](./develop/wab/deploy/lab.md)
+ * [Setup Development Environment](./develop/wab/install_developer_edition_locally/lab.md)
+ * [Add a Custom Widget](./develop/wab/add_custom_widget_to_app/lab.md)
+ * [Add a Custom Configurable Widget](./develop/wab/add_configurable_widget/lab.md)
+ * [Deploy to ArcGIS Online](./develop/wab/deploy_to_arcgis_online/lab.md)
 
 ## Want to share your work?
 
