@@ -78,7 +78,7 @@ In this lab it will search against the neighborhood polygon layer but you can po
       searchWidget.sources = sources;
     ```
 
-5. In JSBin, run the app and type in "Downtown" or "St. John's". The app should highlight and zoom into the neighborhood polygon, and a popup should also be displayed with there field data.
+5. In JSBin, run the app and type in `Downtown` or `St. John's`. The app should highlight and zoom into the neighborhood polygon, and a popup should also be displayed with there field data.
 
 Your app should look something like this:
 * [Code](index.html)
