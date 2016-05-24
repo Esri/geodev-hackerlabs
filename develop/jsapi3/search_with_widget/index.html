@@ -12,7 +12,6 @@
       margin:0;
       height:100%;
     }
-
     #searchDiv {
       display: block;
       position: absolute;
@@ -37,13 +36,10 @@
           zoom: 10,
           basemap: "dark-gray"
         });
-
         var search = new Search({
           map: map
         }, "searchDiv");
-
         var sources = search.get("sources");
-
         sources.push({
           featureLayer: new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Styled/FeatureServer/0"),
           name: "Neighborhood Search",
@@ -53,13 +49,10 @@
           outFields: ["NAME","AVGHINC_CY","MEDAGE_CY"],
           placeholder: "St. Johns",
           enableSuggestions: true,
-
           // Create an InfoTemplate for the popup
           infoTemplate: new InfoTemplate("Neighborhood","Name: ${NAME}</br>Avg. Household Income $ ${AVGHINC_CY}</br>Median Age: ${MEDAGE_CY}")
         });
-
         search.set("sources",sources);
-
         search.startup();
       }
     );
