@@ -49,7 +49,7 @@ In this lab it will search against the neighborhood polygon layer but you can po
 
     At this point, the map will allow you to search against the default ArcGIS Online Geocoding Service. Give it a go. You can enter an address or point of interest (like `Providence Park` or `PDX`) or a geography (like `Oregon` or `USA`).
 
-4. Now configure the Search Widget to just search against the Neighborhoods Feature Service. Insert the following code directly before the `search.startup()` line added above.
+4. Now add the Neighborhoods Feature Service as a search source to the widget. This will allow you to search for different neighborhoods by the `Name` field. Also notice that a template is added for the popup to format the data nicely.
 
     ```javascript
       var searchWidget = new Search({
@@ -57,6 +57,7 @@ In this lab it will search against the neighborhood polygon layer but you can po
         allPlaceholder: "Neighborhood e.g. Downtown"
       });
 
+      // ADD sources here...
       var sources = [];
       
       sources.push({
@@ -77,7 +78,7 @@ In this lab it will search against the neighborhood polygon layer but you can po
       searchWidget.sources = sources;
     ```
 
-5. In JSBin, run the app and type in "Downtown" or "St. John's". The app should highlight and zoom into the neighborhood polygon, and a popup should also be displayed.
+5. In JSBin, run the app and type in "Downtown" or "St. John's". The app should highlight and zoom into the neighborhood polygon, and a popup should also be displayed with there field data.
 
 Your app should look something like this:
 * [Code](index.html)
