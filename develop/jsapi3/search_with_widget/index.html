@@ -1,75 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JS API Starter App</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>ArcGIS JS 4 Starter App</title>
 
-  <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.16/esri/css/esri.css">
+  <link rel="stylesheet" href="https://js.arcgis.com/4.0/esri/css/main.css">
+  
   <style>
-    html,body,#mapDiv {
-      padding:0;
-      margin:0;
-      height:100%;
-    }
-
-    #searchDiv {
-      display: block;
-      position: absolute;
-      z-index: 3;
-      top: 20px;
-      left: 74px;
+    html, body, #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
     }
   </style>
 
-  <script src="http://js.arcgis.com/3.16compact/"></script>
+  <script src="https://js.arcgis.com/4.0/"></script>
 
   <script>
-    var map;
-    require(["esri/map",
-             "esri/layers/FeatureLayer",
-             "esri/InfoTemplate",
-             "esri/dijit/Search",
-             "dojo/domReady!"],
-      function(Map,FeatureLayer,InfoTemplate,Search) {
-        map = new Map("mapDiv", {
-          center: [-122.68, 45.52],
-          zoom: 10,
-          basemap: "dark-gray"
-        });
+    require([
+      "esri/Map",
+      "esri/views/MapView",
+      "esri/widgets/Search",
+      "esri/layers/FeatureLayer",
+      "dojo/domReady!"
+    ], function(Map, MapView, Search, FeatureLayer) {
 
-        var search = new Search({
-          map: map
-        }, "searchDiv");
+      var map = new Map({
+        basemap: "dark-gray"
+      });
 
-        var sources = search.get("sources");
+      var view = new MapView({
+        container: "viewDiv",
+        map: map,
+        center: [-122.68, 45.52], // lon, lat
+        zoom: 10
+      });
 
-        sources.push({
-          featureLayer: new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Styled/FeatureServer/0"),
-          name: "Neighborhood Search",
-          searchFields: ["NAME"],
-          displayField: "NAME",
-          exactMatch: false,
-          outFields: ["NAME","AVGHINC_CY","MEDAGE_CY"],
-          placeholder: "St. Johns",
-          enableSuggestions: true,
+      var searchWidget = new Search({
+        view: view,
+        allPlaceholder: "Neighborhood e.g. Downtown",
+        searchAllEnabled: true
+      });
 
-          // Create an InfoTemplate for the popup
-          infoTemplate: new InfoTemplate("Neighborhood","Name: ${NAME}</br>Avg. Household Income $ ${AVGHINC_CY}</br>Median Age: ${MEDAGE_CY}")
-        });
+      var sources = [];
 
-        search.set("sources",sources);
+      sources.push(searchWidget.defaultSource);
+      
+      sources.push({
+        featureLayer: new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Styled/FeatureServer/0"),
+        name: "Neighborhood Search",
+        searchFields: ["NAME"],
+        displayField: "NAME",
+        exactMatch: false,
+        outFields: ["NAME","AVGHINC_CY","MEDAGE_CY","TOTPOP_CY"],
+        placeholder: "Neighborhood e.g. Downtown",
+        // Create a PopupTemplate to format data
+        popupTemplate: {
+          title: "{NAME}",
+          content: "Median Age: {MEDAGE_CY}</br>Average Household Income: {AVGHINC_CY}</br> Population: {TOTPOP_CY}"
+        }
+      });
 
-        search.startup();
-      }
-    );
+      searchWidget.sources = sources;
+
+      searchWidget.startup();
+
+      view.ui.add(searchWidget, {
+        position: "top-right"
+      });
+    });
   </script>
 </head>
 
 <body>
-  <div id="mapDiv"></div>
-
-  <!-- ADD new div for the search widget -->
-  <div id="searchDiv"></div>
+  <div id="viewDiv"></div>
 </body>
 </html>
