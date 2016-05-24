@@ -18,23 +18,25 @@
   <script src="https://js.arcgis.com/4.0/"></script>
 
   <script>
-    var map, view;
-    require(["esri/Map",
-             "esri/views/SceneView",
-             "dojo/domReady!"], 
-      function(Map, SceneView) {
-        map = new Map({
-          basemap: "dark-gray"
-        });
-        
-        view = new SceneView({
-          container: "viewDiv",  
-          map: map,  
-          scale: 50000000,  
-          center: [-101.17, 21,78] 
-        });
-      }
-    );
+    require([
+      "esri/Map",
+      "esri/views/SceneView",
+      "dojo/domReady!"
+    ], function(
+      Map, SceneView) {
+
+      var map = new Map({
+        basemap: "dark-gray"
+      });
+      
+      var view = new SceneView({
+        container: "viewDiv",  
+        map: map,  
+        scale: 50000000,  
+        center: [-101.17, 21,78] 
+      });
+
+    });
   </script>
 </head>
 <body>
