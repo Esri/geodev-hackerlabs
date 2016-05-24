@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+  <title>Locate Button</title>
+  <link rel="stylesheet" href="https://js.arcgis.com/3.16/esri/css/esri.css">
+  <style>
+    html, body, #map {
+      padding:0;
+      margin:0;
+      height:100%;
+    }
+    #LocateButton {
+      position: absolute;
+      top: 95px;
+      left: 20px;
+      z-index: 50;
+    }
+  </style>
+  <script src="https://js.arcgis.com/3.16/"></script>
+  <script>
+    var map;
+
+    require([
+      "esri/map",
+      "esri/dijit/LocateButton",
+      "esri/tasks/query",
+      "esri/tasks/QueryTask",
+      "esri/symbols/SimpleLineSymbol",
+      "esri/symbols/SimpleFillSymbol",
+      "esri/Color",
+      "dojo/domReady!"
+    ], function(
+      Map, LocateButton,
+      Query, QueryTask,
+      SimpleLineSymbol, SimpleFillSymbol,
+      Color
+    )  {
+
+      map = new Map("map", {
+        center: [-56.049, 38.485],
+        zoom: 3,
+        basemap: "streets"
+      });
+
+      geoLocate = new LocateButton({
+        map: map
+      }, "LocateButton");
+      geoLocate.startup();
+
+      var queryTask = new QueryTask("https://sampleserver6.arcgisonline.com/arcgis/rest/services/Census/MapServer/1");
+
+      var query = new Query();
+      query.returnGeometry = true;
+      query.outFields = ["*"];
+
+      var symbol = new SimpleFillSymbol(
+        SimpleFillSymbol.STYLE_NULL,
+        new SimpleLineSymbol(
+          SimpleLineSymbol.STYLE_DASHDOT,
+          new Color([255,0,0]),
+          2
+        ),
+        new Color([255,255,0,0.25])
+      );
+
+      geoLocate.on('locate', function(evt){
+        query.geometry = evt.graphic.geometry;
+        queryTask.execute(query, showResults);
+      });
+
+      function showResults(evt) {
+        var censusBlock = evt.features[0];
+        censusBlock.symbol = symbol;
+        map.graphics.add(censusBlock);
+      }
+
+      /* extra credit
+      1. customize census block symbology
+      2. zoom map to extent of census block
+      3. load census block when the page loads instead and use our new GeometryEngine for the query
+      4. use our Geoenrichment service to find out what the population density is
+      */
+
+    });
+  </script>
+</head>
+<body>
+  <div id="map" class="map">
+    <div id="LocateButton"></div>
+  </div>
+</body>
+</html>

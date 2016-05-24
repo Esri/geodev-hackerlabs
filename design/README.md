@@ -1,1 +1,1 @@
-A list of the **Design Labs** can be found [*here*](../README.md#design).
+A list of the **Design Labs** can be found [*here*](../README.md#2-design).

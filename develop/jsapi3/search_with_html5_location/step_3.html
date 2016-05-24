@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+  <title>Locate Button</title>
+  <link rel="stylesheet" href="//js.arcgis.com/3.16/esri/css/esri.css">
+  <style>
+    html, body, #map {
+      padding:0;
+      margin:0;
+      height:100%;
+    }
+    #LocateButton {
+      position: absolute;
+      top: 95px;
+      left: 20px;
+      z-index: 50;
+    }
+  </style>
+  <script src="//js.arcgis.com/3.16/"></script>
+  <script>
+    var map;
+
+    require([
+      "esri/map",
+      "esri/dijit/LocateButton",
+      "esri/tasks/query",
+      "esri/tasks/QueryTask",
+      "esri/Color",
+      "dojo/domReady!"
+    ], function(
+      Map, LocateButton,
+      Query, QueryTask,
+      Color
+    )  {
+
+      map = new Map("map", {
+        center: [-56.049, 38.485],
+        zoom: 3,
+        basemap: "streets"
+      });
+
+      geoLocate = new LocateButton({
+        map: map
+      }, "LocateButton");
+      geoLocate.startup();
+
+      var queryTask = new QueryTask("http://sampleserver6.arcgisonline.com/arcgis/rest/services/Census/MapServer/1");
+
+      var query = new Query();
+      query.returnGeometry = true;
+      query.outFields = ["*"];
+
+      geoLocate.on('locate', function(evt){
+        query.geometry = evt.graphic.geometry;
+        queryTask.execute(query, showResults);
+      });
+
+      function showResults() {
+        // draw the census block the user is inside
+      }
+
+    });
+  </script>
+</head>
+<body>
+  <div id="map" class="map">
+    <div id="LocateButton"></div>
+  </div>
+</body>
+</html>

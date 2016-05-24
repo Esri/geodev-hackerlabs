@@ -51,22 +51,22 @@ Creating and importing data interactively is a fast and effective way to prepare
 In these labs you will import, create and manage data using the [ArcGIS Online](http://arcgis.com) and [ArcGIS for Developers](http://developers.arcgis.com) website and tools. You will also use the map viewer to perform data enrichment, the process of adding social demographic information to a dataset, and spatial analyses, the process of creating new data based on spatial critria. You will also explore the feature service REST endpoints and use them in a simple web app to access and display spatial data.
 
 ArcGIS Online and Developer Tools
-* [Import Data](./data/import_data.md)
-* [Create and Edit Data](./data/create_and_edit_data.md)
-* [Share Data](./data/share_data.md)
-* [View via REST](./data/view_via_rest.md)
-* [View in a Map](./data/view_in_a_map.md)
-* [GeoEnrich Data](./data/geoenrich_data.md)
-* [Create Buffers](/data/create_buffers.md)
-* [Create Walk Areas](./data/create_walk_areas.md)
-* [Extract Walkable Neighborhoods](./data/extract_walkable_neighborhoods.md)
-* [Filter Data](./data/filter_data.md)
-* [Create Authenticated Traffic Layer](./data/create_authenticated_traffic_layer.md)
+* [Import Data](./data/import_data/lab.md)
+* [Create and Edit Data](./data/create_and_edit_data/lab.md)
+* [Share Data](./data/share_data/lab.md)
+* [View via REST](./data/view_via_rest/lab.md)
+* [View in a Map](./data/view_in_a_map/lab.md)
+* [GeoEnrich Data](./data/geoenrich_data/lab.md)
+* [Create Buffers](/data/create_buffers/lab.md)
+* [Create Walk Areas](./data/create_walk_areas/lab.md)
+* [Extract Walkable Neighborhoods](./data/extract_walkable_neighborhoods/lab.md)
+* [Filter Data](./data/filter_data/lab.md)
+* [Create Authenticated Traffic Layer](./data/create_authenticated_traffic_layer/lab.md)
 
 Code
-* [Add a layer to an app](./develop/add_feature_layer_jsapi.md)
-* [GeometryEngine Buffering](./develop/geometry_engine_fixed_buffer_jsapi.md)
-
+* [Add a layer to an app](./develop/jsapi3/add_feature_layer/lab.md)
+* [GeometryEngine Buffering](./develop/jsapi3/fixed_buffer_with_geometry_engine/lab.md)
+ 
 ### 2. Design
 
 Creating web maps with great cartography is one of the most important steps to building effective mapping applications. Styling maps interactively can also be huge time-saver in app development.
@@ -74,21 +74,21 @@ Creating web maps with great cartography is one of the most important steps to b
 In these labs you will use [ArcGIS Online](http://arcgis.com) and the map viewer to create and style web maps. You will create new maps, explore basemaps, search for layers, use smart mapping to change symbol styles, style popups, label data, show/hide fields, filter data, and more. You will also learn how to save web maps and featurelayers and use the JSON to achieve the same rich cartographic and popup experiences in your own custom apps.
 
 ArcGIS Online Tools
-* [Create a New Web Map](./design/create_a_new_map.md)
-* [Style a Web Map](./design/style_a_map.md)
-* [Style Popups](./design/style_popups.md)
-* [Smart Mapping - Proportional Styling](./design/smart_mapping_proportional.md)
-* [Copy and save a Layer](./design/save_a_layer.md)
-* [Vector Basemaps](./design/vector_basemaps.md)
-* [Customize Vector Basemap](./design/customize_vector_map.md)
-* [Create a new 3D Scene](./design/create_a_new_3d_scene.md)
+* [Create a New Web Map](./design/create_a_new_map/lab.md)
+* [Style a Web Map](./design/style_a_map/lab.md)
+* [Style Popups](./design/style_popups/lab.md)
+* [Smart Mapping - Proportional Styling](./design/style_map_layers_with_smart_mapping/lab.md)
+* [Copy and save a Layer](./design/save_a_layer/lab.md)
+* [Vector Basemaps](./design/apply_vector_basemap/lab.md)
+* [Customize Vector Basemap](./design/customize_vector_map/lab.md)
+* [Create a new 3D Scene](./design/create_a_new_3d_scene/lab.md)
 
 Code
-* [Add a styled layer to an app - Bonus section](./develop/add_feature_layer_jsapi.md)
-* [Style a layer with JSON](./develop/style_feature_layers_json_jsapi.md)
-* [Style a layer popup](./develop/style_simple_popup_jsapi.md)
-* [Style a layer with a renderer](./develop/style_feature_layers_jsapi.md)
-* [Add a vector tiled layer](./develop/add_vector_tile_layer_jsapi.md)
+* [Add a styled layer to an app - Bonus section](./develop/jsapi3/add_feature_layer/lab.md)
+* [Style a layer with JSON](./develop/jsapi3/style_feature_layer_with_json/lab.md)
+* [Style a layer popup](./develop/jsapi3/style_simple_popup/lab.md)
+* [Style a layer with a renderer](./develop/jsapi3/style_feature_layer/lab.md)
+* [Add a vector tiled layer](./develop/jsapi3/add_vector_tile_layer/lab.md)
 
 ### 3. Develop
 
@@ -97,51 +97,45 @@ One of the easiest ways to build an ArcGIS map app is to start with a web map.
 In these labs you will use the Configurable App Templates, the ArcGIS Web App Builder, and the APIs to build custom mapping apps. You will use the web maps with the Web AppBuilder to create an HTML5 responsive app or AppStudio to build and deploy a native app for iOS and Android. Or you can just build a custom app from the ground up with the ArcGIS JS API, Esri-Leaflet or the ArcGIS Runtime APIs.
 
 * Web Map Apps
- * [Create a Configurable Template App](./develop/create_a_template_app.md)
- * [Create a Web AppBuilder App](./develop/create_a_wab_app.md)
- * [Create a JS API 3.x App](./develop/create_a_web_map_app.md)
- * [Create a Esri Leaflet App](./develop/add_feature_layers_leaflet.md)
- * [Create a JS API 4.x - Calcite Maps App](./develop/create_calcite_maps_app.md)
- * [Create an AppStudio App](./develop/create_an_appstudio_app.md)
+ * [Create a Configurable App](./develop/webmap_apps/create_configurable_app/lab.md)
+ * [Create a Web AppBuilder App](./develop/webmap_apps/create_web_appbuilder_app/lab.md)
+ * [Create a JS API 3.x App](./develop/webmap_apps/create_jsapi3_app/lab.md)
+ * [Create a Esri Leaflet App](./develop/leaflet/add_feature_layer/lab.md)
+ * [Create a JS API 4.x - Calcite Maps App](./develop/jsapi/create_calcite_maps_app/lab.md)
+ * [Create an AppStudio App](./develop/webmap_apps/create_appstudio_app/lab.md)
 
 * JS API
- * [Build a Starter Map](./develop/build_starter_map_jsapi.md)
- * [Build a Starter 3D Map](./develop/build_starter_map_3d_jsapi.md)
- * [Extrude data as Polygons in 3D](./develop/extrude_polygon_3d_jsapi4b3.md)
+ * [Build a Starter Map](./develop/jsapi/create_starter_map/lab.md)
+ * [Build a Starter 3D Map](./develop/jsapi/create_starter_map_3d/lab.md)
+ * [Extrude data as Polygons in 3D](./develop/jsapi/extrude_polygon_3d/lab.md)
 
 * JS API 3
- * [Build a Starter Map](./develop/build_starter_map_jsapi3.md)
- * [Add Feature Layer](./develop/add_feature_layer_jsapi.md)
- * [Add Feature Layers](./develop/add_feature_layers_jsapi.md)
- * [Add Vector Tile Layer](./develop/add_vector_tile_layer_jsapi.md)
- * [Style Feature Layers](./develop/style_feature_layers_jsapi.md)
- * [Style Feature Layers with JSON](./develop/style_feature_layers_json_jsapi.md)
- * [Add GeoJSON Layer](./develop/add_geojson_layer_jsapi.md)
- * [Simple Search](./develop/simple_search_jsapi.md)
- * [Feature Layer Search](./develop/feature_layer_search_jsapi.md)
- * [Query Feature Layer](./develop/query_feature_layer_jsapi.md)
- * [Client-side Buffering](./develop/geometry_engine_fixed_buffer_jsapi.md)
- * [Client-side Buffering with UI](./develop/geometry_engine_buffer_jsapi.md)
- * [Smart Mapping](./develop/smartmapping_color_renderer_jsapi.md)
- * [Using HTML5 to Query](./develop/html5_query.md)
+ * [Build a Starter Map](./develop/jsapi3/create_starter_map/lab.md)
+ * [Add Feature Layer](./develop/jsapi3/add_feature_layer/lab.md)
+ * [Add Vector Tile Layer](./develop/jsapi3/add_vector_tile_layer/lab.md)
+ * [Style Feature Layers](./develop/jsapi3/style_feature_layer/lab.md)
+ * [Style Feature Layers with JSON](./develop/jsapi3/style_feature_layer_with_json/lab.md)
+ * [Add GeoJSON Layer](./develop/jsapi3/add_geojson_layer/lab.md)
+ * [Search with a Widget](./develop/jsapi3/search_with_widget/lab.md)
+ * [Search with a Query Task](./develop/jsapi3/search_with_query_task/lab.md)
+ * [Client-side Buffering](./develop/jsapi3/fixed_buffer_with_geometry_engine/lab.md)
+ * [Client-side Buffering with UI](./develop/jsapi3/buffer_with_geometry_engine/lab.md)
+ * [Smart Mapping](./develop/jsapi3/style_feature_layer_with_smart_mapping/lab.md)
+ * [Search with HTML5 Location](./develop/jsapi3/search_with_html5_location/lab.md)
 
 * Esri-Leaflet
- * [Build a Starter Map](./develop/build_starter_map_leaflet.md)
- * [Add Feature Layers](./develop/add_feature_layers_leaflet.md)
- * [GeoEnrich address searches](./develop/enrich_address_search_leaflet.md)
- * [Add Geolocation](./develop/add_geolocation_leaflet.md)
- * [Use Geolocation to Query](./develop/locate_query_leaflet.md)
- * [Use Geolocation (and turf) to Query](./develop/locate_turf_leaflet.md)
-
-* Bootstrap
- * [Build a Starter Bootstrap Map](./develop/build_starter_map_bootstrap.md)
- * [Add Navbar and Menu](./develop/add_navbar_menu_bootstrap.md)
+ * [Build a Starter Map](./develop/leaflet/create_starter_map/lab.md)
+ * [Add Feature Layers](./develop/leaflet/add_feature_layer/lab.md)
+ * [GeoEnrich address searches](./develop/leaflet/enrich_address_search/lab.md)
+ * [Add Geolocation](./develop/leaflet/add_geolocation/lab.md)
+ * [Use Geolocation to Query](./develop/leaflet/query_with_html5_location/lab.md)
+ * [Use Geolocation (and turf) to Query](./develop/leaflet/query_with_html5_location_turf/lab.md)
 
 * Web AppBuilder Developer Edition
- * [Setup Development Environment](./develop/wab_ide_install.md)
- * [Add a Custom Widget](./develop/wab_custom_widget.md)
- * [Add a Custom Configurable Widget](./develop/wab_config_widget.md)
- * [Deploy to ArcGIS Online](./develop/wab_deploy.md)
+ * [Setup Development Environment](./develop/wab/install_developer_edition_locally/lab.md)
+ * [Add a Custom Widget](./develop/wab/add_custom_widget_to_app/lab.md)
+ * [Add a Custom Configurable Widget](./develop/wab/add_configurable_widget/lab.md)
+ * [Deploy to ArcGIS Online](./develop/wab/deploy_to_arcgis_online/lab.md)
 
 ## Want to share your work?
 
