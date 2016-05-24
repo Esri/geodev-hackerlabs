@@ -11,17 +11,17 @@ visit the [Getting Started with MapView](https://developers.arcgis.com/javascrip
   <!DOCTYPE html>
   <html>
   <head>
-    <title>JS API Starter App</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>JS API Starter App</title>
 
     <link rel="stylesheet" href="https://js.arcgis.com/4.0/esri/css/main.css">
+
     <style>
       html, body, #viewDiv {
         padding: 0;
         margin: 0;
         height: 100%;
-        width: 100%;
       }
     </style>
 
@@ -32,8 +32,7 @@ visit the [Getting Started with MapView](https://developers.arcgis.com/javascrip
         "esri/Map",
         "esri/views/MapView",
         "dojo/domReady!"
-      ], function(
-        Map, MapView) {
+      ], function(Map, MapView) {
 
         var map = new Map({
           basemap: "dark-gray"
