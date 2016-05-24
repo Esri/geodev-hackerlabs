@@ -81,9 +81,8 @@ In this lab it will search against the neighborhood polygon layer but you can po
 
 Your app should look something like this:
 * [Code](index.html)
-* [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi3/search_with_widget/index.html)
+* [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi/search_with_widget/index.html)
 
 ###Bonus
 * Add the default world geocoder to the search widget as well.
 * Add a [Rail Stops feature layer](http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0) to the Search widget.
-* Customize the popup's CSS. Hint: see the [Search with customization](https://developers.arcgis.com/javascript/jssamples/search_customized.html) sample.
