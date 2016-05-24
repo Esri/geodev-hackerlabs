@@ -37,6 +37,7 @@
         zoom: 10
       });
 
+      // Create search widget
       var searchWidget = new Search({
         view: view,
         allPlaceholder: "Neighborhood e.g. Downtown",
@@ -44,9 +45,11 @@
       });
 
       var sources = [];
-
-      sources.push(searchWidget.defaultSource);
       
+      // Add default world geocoder source
+      sources.push(searchWidget.defaultSource);
+
+      // Add feature layer source to search
       sources.push({
         featureLayer: new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Styled/FeatureServer/0"),
         name: "Neighborhood Search",
@@ -64,8 +67,10 @@
 
       searchWidget.sources = sources;
 
+      // Initialize widget
       searchWidget.startup();
 
+      // Add widget to UI
       view.ui.add(searchWidget, {
         position: "top-right"
       });
