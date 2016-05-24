@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>ArcGIS JS 4 Starter App</title>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.0/esri/css/main.css">
+  
+  <style>
+    html, body, #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+    }
+  </style>
+
+  <script src="https://js.arcgis.com/4.0/"></script>
+
+  <script>
+    require([
+      "esri/Map",
+      "esri/views/MapView",
+      "esri/widgets/Search",
+      "esri/layers/FeatureLayer",
+      "dojo/domReady!"
+    ], function(Map, MapView, Search, FeatureLayer) {
+
+      var map = new Map({
+        basemap: "dark-gray"
+      });
+
+      var view = new MapView({
+        container: "viewDiv",
+        map: map,
+        center: [-122.68, 45.52], // lon, lat
+        zoom: 10
+      });
+
+      // Create search widget
+      var searchWidget = new Search({
+        view: view,
+        allPlaceholder: "Neighborhood e.g. Downtown",
+        searchAllEnabled: true
+      });
+
+      var sources = [];
+      
+      // Add default world geocoder source
+      sources.push(searchWidget.defaultSource);
+
+      // Add feature layer source to search
+      sources.push({
+        featureLayer: new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Styled/FeatureServer/0"),
+        name: "Neighborhood Search",
+        searchFields: ["NAME"],
+        displayField: "NAME",
+        exactMatch: false,
+        outFields: ["NAME","AVGHINC_CY","MEDAGE_CY","TOTPOP_CY"],
+        placeholder: "Neighborhood e.g. Downtown",
+        // Create a PopupTemplate to format data
+        popupTemplate: {
+          title: "{NAME}",
+          content: "Median Age: {MEDAGE_CY}</br>Average Household Income: {AVGHINC_CY}</br> Population: {TOTPOP_CY}"
+        }
+      });
+
+      searchWidget.sources = sources;
+
+      // Initialize widget
+      searchWidget.startup();
+
+      // Add widget to UI
+      view.ui.add(searchWidget, {
+        position: "top-right"
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div id="viewDiv"></div>
+</body>
+</html>
