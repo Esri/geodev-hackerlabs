@@ -28,23 +28,25 @@ visit the [Getting Started with MapView](https://developers.arcgis.com/javascrip
     <script src="https://js.arcgis.com/4.0/"></script>
 
     <script>
-      var map, view;
-      require(["esri/Map",
-               "esri/views/MapView",
-               "dojo/domReady!"], 
-        function(Map, MapView) {
-          map = new Map({
-            basemap: "dark-gray"
-          });
+      require([
+        "esri/Map",
+        "esri/views/MapView",
+        "dojo/domReady!"
+      ], function(
+        Map, MapView) {
 
-          view = new MapView({
-            container: "viewDiv",
-            map: map,
-            center: [-122.68, 45.52],
-            zoom: 10
-          });
-        }
-      );
+        var map = new Map({
+          basemap: "dark-gray"
+        });
+
+        var view = new MapView({
+          container: "viewDiv",
+          map: map,
+          center: [-122.68, 45.52],
+          zoom: 10
+        });
+
+      });
     </script>
   </head>
   <body>
