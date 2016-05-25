@@ -4,7 +4,7 @@ In this lab you will use a QueryTask to query data from a feature layer. A query
 
 1. Click [create_starter_map/index.html](../create_starter_map/index.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
 
-2. In `JSBin` > `HTML`, add the query drop-down menue UI `div` element and its contents:
+2. In `JSBin` > `HTML`, add the query select menu `div` element and the sql query options:
 
     ```html
       <body>
@@ -64,7 +64,7 @@ In this lab you will use a QueryTask to query data from a feature layer. A query
     ```javascript
     ...
 
-      // ADD functions...
+      // ADD query functions...
     
       getFeatures("TYPE = 'MAX'");
 
@@ -124,7 +124,7 @@ In this lab you will use a QueryTask to query data from a feature layer. A query
       }
     ```
 
-6. At the bottom, add code to add a select element to handle changing the sql string to make the query.
+6. At the bottom, add code and an event handler to add the select HTML element to the UI so you can change the SQL string for the query.
 
     ```javascript
     ...
