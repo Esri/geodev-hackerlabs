@@ -16,8 +16,7 @@ In this lab it will search against the neighborhood polygon layer but you can po
     "esri/widgets/Search",
     "esri/layers/FeatureLayer",
     "dojo/domReady!"
-  ], function(Map, MapView, Search, FeatureLayer) { /*** ADD ***/
-    ... 
+  ], function(Map, MapView, Search, FeatureLayer) { /*** ADD ***/ 
   ```
 
 3. Create the Search widget and add it to the `top-right` of the UI.
@@ -55,6 +54,7 @@ In this lab it will search against the neighborhood polygon layer but you can po
 
   ```javascript
     ...
+    
     var searchWidget = new Search({
       view: view,
       allPlaceholder: "Neighborhood e.g. Downtown"
