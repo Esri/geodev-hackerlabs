@@ -34,7 +34,6 @@ In this lab you will use a QueryTask to query data from a feature layer. A query
     "dojo/dom",
     "dojo/domReady!"
   ], function(Map, MapView, FeatureLayer, QueryTask, Query, SimpleMarkerSymbol, watchUtils, on, dom) { /*** ADD ***/
-      ...
   ```
 
 4. Now add the `QueryTask` and `Query` to select features from the PDX_Rail_Stops_Styled layer. Only return three fields from the layer.
@@ -67,7 +66,6 @@ In this lab you will use a QueryTask to query data from a feature layer. A query
 5. Next, add functions to execute the query task, get features, and then add them to the default graphics layer of the view. Notice that features will not be added until the view promise is ready.
 
   ```javascript
-
     /*** ADD ***/
 
     // Perform query when page loads
@@ -132,7 +130,6 @@ In this lab you will use a QueryTask to query data from a feature layer. A query
 6. Finally, add the select HTML element and an event handler so we can change the SQL string for the query.
 
   ```javascript
-
     /*** ADD ***/
 
     // Add select element to UI
