@@ -11,39 +11,41 @@ visit the [Get started with SceneView](https://developers.arcgis.com/javascript/
   <!DOCTYPE html>
   <html>
   <head>
-    <title>JS API Starter App</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>JS API 3D Starter App</title>
 
     <link rel="stylesheet" href="https://js.arcgis.com/4.0/esri/css/main.css">
+
     <style>
       html, body, #viewDiv {
         padding: 0;
         margin: 0;
         height: 100%;
-        width: 100%;
       }
     </style>
 
     <script src="https://js.arcgis.com/4.0/"></script>
 
     <script>
-      var map, view;
-      require(["esri/Map",
-               "esri/views/SceneView",
-               "dojo/domReady!"], 
-        function(Map, SceneView) {
-          map = new Map({
-            basemap: "dark-gray"
-          });
-          view = new SceneView({
-            container: "viewDiv",  
-            map: map,  
-            scale: 50000000,  
-            center: [-101.17, 21,78] 
-          });
-        }
-      );
+      require([
+        "esri/Map",
+        "esri/views/SceneView",
+        "dojo/domReady!"
+      ], function(Map, SceneView) {
+
+        var map = new Map({
+          basemap: "dark-gray"
+        });
+        
+        var view = new SceneView({
+          container: "viewDiv",
+          map: map,
+          center: [-101.17, 21,78],
+          scale: 50000000
+        });
+
+      });
     </script>
   </head>
   <body>
@@ -62,4 +64,5 @@ Your app should look something like this:
 ###Bonus
 
 * Experiment with different basemaps such as `topo` or `gray`.
+* Take a look at the bonus section for the [2D Starter Map](../create_starter_map/lab.md#bonus) and try the same only with the `SceneView` instead of the `MapView`.
 * Run the code locally on your machine. Eventually if your app gets larger you'll want to migrate it from JSBin to your desktop.
