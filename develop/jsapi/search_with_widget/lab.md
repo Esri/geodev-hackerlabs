@@ -12,6 +12,7 @@ In this lab it will search against the neighborhood polygon layer but you can po
     require([
       "esri/Map",
       "esri/views/MapView",
+      // ADD modules
       "esri/widgets/Search",
       "esri/layers/FeatureLayer",
       "dojo/domReady!"
