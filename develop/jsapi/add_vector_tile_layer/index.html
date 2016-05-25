@@ -25,6 +25,7 @@
       "dojo/domReady!"
     ], function(Map, MapView, VectorTileLayer) {
 
+      // Create an empty map with no basemap
       var map = new Map();
 
       var view = new MapView({
@@ -34,6 +35,7 @@
         zoom: 10
       });
 
+      // Create a new Vector Layer pointing at the style JSON.
       var tileLyr = new VectorTileLayer({
         url: "https://www.arcgis.com/sharing/rest/content/items/51acb8875f86482e82cb2ae24155b362/resources/styles/root.json"
       });
