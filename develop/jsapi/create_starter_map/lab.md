@@ -11,40 +11,41 @@ visit the [Getting Started with MapView](https://developers.arcgis.com/javascrip
   <!DOCTYPE html>
   <html>
   <head>
-    <title>JS API Starter App</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>JS API Starter App</title>
 
     <link rel="stylesheet" href="https://js.arcgis.com/4.0/esri/css/main.css">
+
     <style>
       html, body, #viewDiv {
         padding: 0;
         margin: 0;
         height: 100%;
-        width: 100%;
       }
     </style>
 
     <script src="https://js.arcgis.com/4.0/"></script>
 
     <script>
-      var map, view;
-      require(["esri/Map",
-               "esri/views/MapView",
-               "dojo/domReady!"], 
-        function(Map, MapView) {
-          map = new Map({
-            basemap: "dark-gray"
-          });
+      require([
+        "esri/Map",
+        "esri/views/MapView",
+        "dojo/domReady!"
+      ], function(Map, MapView) {
 
-          view = new MapView({
-            container: "viewDiv",
-            map: map,
-            center: [-122.68, 45.52],
-            zoom: 10
-          });
-        }
-      );
+        var map = new Map({
+          basemap: "dark-gray"
+        });
+
+        var view = new MapView({
+          container: "viewDiv",
+          map: map,
+          center: [-122.68, 45.52],
+          zoom: 10
+        });
+
+      });
     </script>
   </head>
   <body>
@@ -63,4 +64,29 @@ Your app should look something like this:
 ###Bonus
 
 * Experiment with different basemaps such as `topo` or `gray`.
+* Declare the `view` variable globally instead and open your browser's javascript console ([see some instructions here](https://www.wickedlysmart.com/hfjsconsole/)). You can then interactively control the view from your browser console by referring to the `view` global variable. Many browsers will autocomplete once you've typed `view.`. For example, change the view extent, center point, zoom level or scale. See [here](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) for some examples.
+
+  **Pro Tip:** If you're in a JS Bin, pop the Output into a separate window/tab to get direct access from the console.
+  ``` javascript
+  var view; // DECLARE the 'view' variable globally.
+
+  require([
+    "esri/Map",
+    "esri/views/MapView",
+    "dojo/domReady!"
+  ], function(
+    Map, MapView) {
+
+    ...
+
+    view = new MapView({ // REMOVE the 'var' so we're setting the new global 'view' variable.
+      container: "viewDiv",
+      map: map,
+      center: [-122.68, 45.52],
+      zoom: 10
+    });
+  ```
+  Try changing the map's basemap by drilling down through the `view.map` property. E.g. `view.map.basemap = "streets"`.
+
+  **Some advice:** You typically don't want to declare globals like this, but it's good to know how to do it for debugging and exploring the API. Plus you're learning about JavaScript variable scope!
 * Run the code locally on your machine. Eventually if your app gets larger you'll want to migrate it from JSBin to your desktop.
