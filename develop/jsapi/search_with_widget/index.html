@@ -46,10 +46,10 @@
 
       var sources = [];
       
-      // Add default world geocoder source
+      // Add the default world geocoder source
       sources.push(searchWidget.defaultSource);
 
-      // Add feature layer source to search
+      // Add the feature layer source to search
       sources.push({
         featureLayer: new FeatureLayer("http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Styled/FeatureServer/0"),
         name: "Neighborhood Search",
@@ -65,12 +65,13 @@
         }
       });
 
+      // Set the sources
       searchWidget.sources = sources;
 
-      // Initialize widget
+      // Initialize the widget
       searchWidget.startup();
 
-      // Add widget to UI
+      // Add widget to the UI
       view.ui.add(searchWidget, {
         position: "top-right"
       });
