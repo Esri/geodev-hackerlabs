@@ -19,23 +19,23 @@ In this lab you will add a vector tile layer to an ArcGIS API for JavaScript app
 3. Now we'll add a vector tiled layer. To do that, we modify the code that creates the Map to just create an empty map and we'll add the tiled layer later.
 
   ```javascript
-  ...
+    ...
 
-  /*** REPLACE ***/
+    /*** REPLACE ***/
 
-  // Create an empty map with no basemap
-  var map = new Map();
+    // Create an empty map with no basemap
+    var map = new Map();
 
-  ...
+    ...
 
-  /*** ADD ***/
+    /*** ADD ***/
 
-  // Create a new Vector Layer pointing at the style JSON.
-  var tileLyr = new VectorTileLayer({
-    url: "https://www.arcgis.com/sharing/rest/content/items/51acb8875f86482e82cb2ae24155b362/resources/styles/root.json"
-  });
+    // Create a new Vector Layer pointing at the style JSON.
+    var tileLyr = new VectorTileLayer({
+      url: "https://www.arcgis.com/sharing/rest/content/items/51acb8875f86482e82cb2ae24155b362/resources/styles/root.json"
+    });
 
-  map.add(tileLyr);
+    map.add(tileLyr);
  ```
 
 4. Confirm that the JSBin `Output` panel shows the vector tiles.
@@ -61,13 +61,13 @@ Your app should look something like this:
   and
 
   ```javascript
-  Layer.fromPortalItem({
-    portalItem: {
-      id: "51acb8875f86482e82cb2ae24155b362"   
-    }
-  }).then(function(lyr){
-    map.add(lyr);
-  });
+    Layer.fromPortalItem({
+      portalItem: {
+        id: "51acb8875f86482e82cb2ae24155b362"   
+      }
+    }).then(function(lyr){
+      map.add(lyr);
+    });
   ```
 
   **Promise Pattern:** You just used a _Promise_ to do something asynchronously. The JS API asked ArcGIS Online for details about the item with ID `51acb8875f86482e82cb2ae24155b362`. That took a round trip request to the ArcGIS.com servers. When the response came back, the JS API created the right type of layer as `lyr` and we added it to the map. Neat!
@@ -79,27 +79,27 @@ Your app should look something like this:
   With auto-casting, the JS API can make this quite convenient with something like this (where we auto-cast a `Basemap` object):
 
   ```javascript
-  var map = new Map({
-    basemap: { // Auto-casting a Basemap
-      baseLayers: [new VectorTileLayer({
-        id: "https://www.arcgis.com/sharing/rest/content/items/51acb8875f86482e82cb2ae24155b362/resources/styles/root.json"
-      })]  
-    }
-  });
+    var map = new Map({
+      basemap: { // Auto-casting a Basemap
+        baseLayers: [new VectorTileLayer({
+          id: "https://www.arcgis.com/sharing/rest/content/items/51acb8875f86482e82cb2ae24155b362/resources/styles/root.json"
+        })]  
+      }
+    });
   ```
 
   Or even (where we auto-cast a `PortalItem` and then a `Basemap` object):
 
   ```javascript
-  var map = new Map({
-    basemap: { // Auto-casting a Basemap
-      baseLayers: [new VectorTileLayer({
-        portalItem: { // Auto-casting a PortalItem
-          id: "51acb8875f86482e82cb2ae24155b362"   
-        }
-      })]  
-    }
-  });
+    var map = new Map({
+      basemap: { // Auto-casting a Basemap
+        baseLayers: [new VectorTileLayer({
+          portalItem: { // Auto-casting a PortalItem
+            id: "51acb8875f86482e82cb2ae24155b362"   
+          }
+        })]  
+      }
+    });
   ```
 
   **Auto-Casting:** You just saw a couple examples of auto-casting at work ([Basemap](https://developers.arcgis.com/javascript/latest/api-reference/esri-Basemap.html) and [PortalItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html)). As you look at samples, you'll probably see more. Simple JSON objects get turned into rich API objects. It makes working with the JS API quick and easy (you'll notice we didn't need to `require` the `Basemap` or `PortalItem` module for this to work.
