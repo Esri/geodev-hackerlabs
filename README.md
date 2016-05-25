@@ -65,7 +65,7 @@ ArcGIS Online and Developer Tools
 
 Code
 * [Add a layer to an app](./develop/jsapi3/add_feature_layer/lab.md)
-* [GeometryEngine Buffering](./develop/jsapi3/fixed_buffer_with_geometry_engine/lab.md)
+* [GeometryEngine Buffering](./develop/jsapi/buffer_with_geometry_engine/lab.md)
  
 ### 2. Design
 
@@ -108,6 +108,8 @@ In these labs you will use the Configurable App Templates, the ArcGIS Web App Bu
  * [Build a Starter Map](./develop/jsapi/create_starter_map/lab.md)
  * [Build a Starter 3D Map](./develop/jsapi/create_starter_map_3d/lab.md)
  * [Extrude data as Polygons in 3D](./develop/jsapi/extrude_polygon_3d/lab.md)
+ * [Client-side Buffering](./develop/jsapi/buffer_with_geometry_engine/lab.md)
+ * [Client-side Buffering with UI](./develop/jsapi/buffer_with_geometry_engine_and_slider/lab.md)
  * [Search with a Widget](./develop/jsapi/search_with_widget/lab.md)
  
 * JS API 3
@@ -118,8 +120,6 @@ In these labs you will use the Configurable App Templates, the ArcGIS Web App Bu
  * [Style Feature Layers with JSON](./develop/jsapi3/style_feature_layer_with_json/lab.md)
  * [Add GeoJSON Layer](./develop/jsapi3/add_geojson_layer/lab.md)
  * [Search with a Query Task](./develop/jsapi3/search_with_query_task/lab.md)
- * [Client-side Buffering](./develop/jsapi3/fixed_buffer_with_geometry_engine/lab.md)
- * [Client-side Buffering with UI](./develop/jsapi3/buffer_with_geometry_engine/lab.md)
  * [Smart Mapping](./develop/jsapi3/style_feature_layer_with_smart_mapping/lab.md)
  * [Search with HTML5 Location](./develop/jsapi3/search_with_html5_location/lab.md)
 
