@@ -4,42 +4,30 @@ In this lab you will add a feature layer to an ArcGIS API for JavaScript applica
 
 1. Click [create_starter_map/index.html](../create_starter_map/index.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
 
-2. In `JSBin` > `HTML`, update the `require` statement and function definition:
+2. In `JSBin` > `HTML`, update the `require` statement and `function` definition:
 
   ```javascript
   require([
     "esri/Map",
     "esri/views/MapView",
-    // ADD FeatureLayer module
+    /*** ADD ***/
     "esri/layers/FeatureLayer",
     "dojo/domReady!"
-    // ADD FeatureLayer reference
   ], function(Map, MapView, FeatureLayer) {
-  ...
   ```
 
 3. Now add the Styled Rail Lines to the map:
 
   ```javascript
-    ], function(Map, MapView, FeatureLayer) {
+  ...
 
-      var map = new Map({
-        basemap: "dark-gray"
-      });
+  /*** ADD ***/
 
-      var view = new MapView({
-        container: "viewDiv",
-        map: map,
-        center: [-122.68, 45.52],
-        zoom: 10
-      });
+  var featureLayer = new FeatureLayer({
+    url: "https://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Lines_Styled/FeatureServer/0"
+  });
 
-      // ADD Add a new FeatureLayer by referencing the service URL
-      var featureLayer = new FeatureLayer({
-        url: "https://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Lines_Styled/FeatureServer/0"
-      });
-
-      map.add(featureLayer);
+  map.add(featureLayer);
   ```
 
 4. Confirm that the JSBin `Output` panel shows a map with rail lines.

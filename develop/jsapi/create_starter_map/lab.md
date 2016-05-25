@@ -68,23 +68,23 @@ Your app should look something like this:
 
   **Pro Tip:** If you're in a JS Bin, pop the Output into a separate window/tab to get direct access from the console.
   ``` javascript
-    var view; // DECLARE the 'view' variable globally.
+  var view; // DECLARE the 'view' variable globally.
 
-    require([
-      "esri/Map",
-      "esri/views/MapView",
-      "dojo/domReady!"
-    ], function(
-      Map, MapView) {
+  require([
+    "esri/Map",
+    "esri/views/MapView",
+    "dojo/domReady!"
+  ], function(
+    Map, MapView) {
 
-      ...
+    ...
 
-      view = new MapView({ // REMOVE the 'var' so we're setting the new global 'view' variable.
-        container: "viewDiv",
-        map: map,
-        center: [-122.68, 45.52],
-        zoom: 10
-      });
+    view = new MapView({ // REMOVE the 'var' so we're setting the new global 'view' variable.
+      container: "viewDiv",
+      map: map,
+      center: [-122.68, 45.52],
+      zoom: 10
+    });
   ```
   Try changing the map's basemap by drilling down through the `view.map` property. E.g. `view.map.basemap = "streets"`.
 
