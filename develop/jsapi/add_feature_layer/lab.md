@@ -10,13 +10,15 @@ In this lab you will add a feature layer to an ArcGIS API for JavaScript applica
   require([
     "esri/Map",
     "esri/views/MapView",
-    "esri/layers/FeatureLayer", // ADD FeatureLayer module
+    // ADD FeatureLayer module
+    "esri/layers/FeatureLayer",
     "dojo/domReady!"
-  ], function(Map, MapView, FeatureLayer) { // ADD FeatureLayer reference
+    // ADD FeatureLayer reference
+  ], function(Map, MapView, FeatureLayer) {
   ...
   ```
 
-3. Now add a new `FeatureLayer` to the map:
+3. Now add the Styled Rail Lines to the map:
 
   ```javascript
     ], function(Map, MapView, FeatureLayer) {
@@ -32,7 +34,7 @@ In this lab you will add a feature layer to an ArcGIS API for JavaScript applica
         zoom: 10
       });
 
-      // ADD Create a feature layer and add it to the map
+      // ADD Add a new FeatureLayer by referencing the service URL
       var featureLayer = new FeatureLayer({
         url: "https://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Lines_Styled/FeatureServer/0"
       });
