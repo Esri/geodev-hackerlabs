@@ -18,7 +18,7 @@ In this lab you will use a QueryTask to query data from a feature layer. A query
       </body>
     ```
 
-3. Update the `require` statement and function definition:
+3. Update the `require` statement and `function` definition:
 
     ```javascript
     require([
@@ -33,19 +33,13 @@ In this lab you will use a QueryTask to query data from a feature layer. A query
       "dojo/on",
       "dojo/dom",
       "dojo/domReady!"
-    ], function(Map, MapView, FeatureLayer, QueryTask, Query, SimpleMarkerSymbol, watchUtils, on, dom) { // ADD references
+    ], function(Map, MapView, FeatureLayer, QueryTask, Query, SimpleMarkerSymbol, watchUtils, on, dom) { /*** ADD ***/
         ...
     ```
 
-4. Add the `QueryTask` and `Query` to select features from the PDX_Rail_Stops_Styled layer. Only return three fields from the layer.
+4. Now add the `QueryTask` and `Query` to select features from the PDX_Rail_Stops_Styled layer. Only return three fields from the layer.
 
     ```javascript
-      var view = new MapView({
-        container: "viewDiv",
-        map: map,
-        center: [-122.68, 45.52], // lon, lat
-        zoom: 10
-      });
 
       /*** ADD ***/
 
@@ -62,13 +56,13 @@ In this lab you will use a QueryTask to query data from a feature layer. A query
       });
     ```
 
-5. Create functions to execute the query task, get features, and then add them to the default graphics layer of the view. Notice that features are not added until the view promise is ready.
+5. Next, add functions to execute the query task, get features, and then add them to the default graphics layer of the view. Notice that features will not be added until the view promise is ready.
 
     ```javascript
-    ...
 
       /*** ADD ***/
  
+      // Perform query when page loads
       getFeatures("TYPE = 'MAX'");
 
       // Get features with sql clause
@@ -110,7 +104,7 @@ In this lab you will use a QueryTask to query data from a feature layer. A query
           }
         });
         // Set symbol and popup template
-        for (var i=0; i < features.length; i++) {
+        for (var i = 0; i < features.length; i++) {
           var feature = features[i];
           feature.symbol = symbol;
           feature.popupTemplate = {
@@ -127,21 +121,23 @@ In this lab you will use a QueryTask to query data from a feature layer. A query
       }
     ```
 
-6. At the bottom, add code and an event handler to add the select HTML element to the UI so you can change the SQL string for the query.
+6. Finally, add the select HTML element and an event handler so we can change the SQL string for the query.
 
     ```javascript
-    ...
 
       /*** ADD ***/
 
+      // Add select element to UI
       view.ui.add(dom.byId("queryDiv"), {
         position: "top-right"
       });
 
+      // Select a sql query
       on(dom.byId("queryDiv"), "change", function(e) {
         var sql = e.target.value;
         getFeatures(sql);
       })
+
 
     ```
 
