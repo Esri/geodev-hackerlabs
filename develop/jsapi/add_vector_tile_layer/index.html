@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-  <title>JS API 3D Starter App</title>
+  <title>Add Vector Tile Layer</title>
 
   <link rel="stylesheet" href="https://js.arcgis.com/4.0/esri/css/main.css">
 
@@ -20,20 +20,27 @@
   <script>
     require([
       "esri/Map",
-      "esri/views/SceneView",
+      "esri/views/MapView",
+      "esri/layers/VectorTileLayer",
       "dojo/domReady!"
-    ], function(Map, SceneView) {
+    ], function(Map, MapView, VectorTileLayer) {
 
-      var map = new Map({
-        basemap: "dark-gray"
-      });
-      
-      var view = new SceneView({
+      // Create an empty map with no basemap
+      var map = new Map();
+
+      var view = new MapView({
         container: "viewDiv",
         map: map,
-        center: [-101.17, 21,78],
-        scale: 50000000
+        center: [-122.68, 45.52],
+        zoom: 10
       });
+
+      // Create a new Vector Layer pointing at the style JSON.
+      var tileLyr = new VectorTileLayer({
+        url: "https://www.arcgis.com/sharing/rest/content/items/51acb8875f86482e82cb2ae24155b362/resources/styles/root.json"
+      });
+
+      map.add(tileLyr);
 
     });
   </script>
