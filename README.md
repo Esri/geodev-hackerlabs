@@ -116,7 +116,6 @@ In these labs you will use the Configurable App Templates, the ArcGIS Web App Bu
  * [Search with a Query Task](./develop/jsapi/search_with_query_task/lab.md)
  
 * JS API 3
- * [Build a Starter Map](./develop/jsapi3/create_starter_map/lab.md)
  * [Style Feature Layers](./develop/jsapi3/style_feature_layer/lab.md)
  * [Style Feature Layers with JSON](./develop/jsapi3/style_feature_layer_with_json/lab.md)
  * [Add GeoJSON Layer](./develop/jsapi3/add_geojson_layer/lab.md)
