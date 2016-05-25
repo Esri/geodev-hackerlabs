@@ -9,7 +9,7 @@ In this lab you will use a QueryTask to query data from a feature layer. A query
     ```html
       <body>
         <div id="viewDiv"></div>
-        <!-- ADD new div for the query UI -->
+        <!-- ADD -->
         <select id="queryDiv">
           <option selected>TYPE = 'MAX'</option>
           <option>TYPE = 'CR'</option>
@@ -24,7 +24,7 @@ In this lab you will use a QueryTask to query data from a feature layer. A query
     require([
       "esri/Map",
       "esri/views/MapView",
-      // ADD modules
+      /*** ADD ***/
       "esri/layers/FeatureLayer",
       "esri/tasks/QueryTask",
       "esri/tasks/support/Query",
@@ -47,11 +47,14 @@ In this lab you will use a QueryTask to query data from a feature layer. A query
         zoom: 10
       });
 
-      // ADD query task and query...
+      /*** ADD ***/
+
+      // Create query task to reference the PDX_Rail_Stops_Styled feature layer      
       var queryTask = new QueryTask({
         url: "http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0"
       });
 
+      // Only return three fields
       var query = new Query({
         returnGeometry: true,
         outFields: ["STATION", "LINE", "TYPE"],
@@ -64,8 +67,8 @@ In this lab you will use a QueryTask to query data from a feature layer. A query
     ```javascript
     ...
 
-      // ADD query functions...
-    
+      /*** ADD ***/
+ 
       getFeatures("TYPE = 'MAX'");
 
       // Get features with sql clause
@@ -128,6 +131,8 @@ In this lab you will use a QueryTask to query data from a feature layer. A query
 
     ```javascript
     ...
+
+      /*** ADD ***/
 
       view.ui.add(dom.byId("queryDiv"), {
         position: "top-right"
