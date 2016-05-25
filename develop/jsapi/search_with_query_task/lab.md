@@ -33,7 +33,7 @@ In this lab you will use a QueryTask to query data from a feature layer. A query
       "dojo/on",
       "dojo/dom",
       "dojo/domReady!"
-    ], function(Map, MapView, FeatureLayer, QueryTask, Query, SimpleMarkerSymbol, watchUtils, on, dom) {
+    ], function(Map, MapView, FeatureLayer, QueryTask, Query, SimpleMarkerSymbol, watchUtils, on, dom) { // ADD references
         ...
     ```
 
@@ -47,8 +47,7 @@ In this lab you will use a QueryTask to query data from a feature layer. A query
         zoom: 10
       });
 
-      // ADD query task
-
+      // ADD query task and query...
       var queryTask = new QueryTask({
         url: "http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0"
       });
@@ -60,11 +59,13 @@ In this lab you will use a QueryTask to query data from a feature layer. A query
       });
     ```
 
-5. Create functions to execute the query task, get features, and then add them to the default graphics layer of the view.
+5. Create functions to execute the query task, get features, and then add them to the default graphics layer of the view. Notice that features are not added until the view promise is ready.
 
     ```javascript
     ...
-      // ADD these functions
+
+      // ADD functions...
+    
       getFeatures("TYPE = 'MAX'");
 
       // Get features with sql clause
@@ -123,22 +124,20 @@ In this lab you will use a QueryTask to query data from a feature layer. A query
       }
     ```
 
-6. At the bottom, add code to handle changing the sql string to make the query.
+6. At the bottom, add code to add a select element to handle changing the sql string to make the query.
 
     ```javascript
     ...
-      // ADD these functions
 
-      // Select a sql query
+      view.ui.add(dom.byId("queryDiv"), {
+        position: "top-right"
+      });
+
       on(dom.byId("queryDiv"), "change", function(e) {
         var sql = e.target.value;
         getFeatures(sql);
       })
 
-      //Add select element to UI
-      view.ui.add(dom.byId("queryDiv"), {
-        position: "top-right"
-      });
     ```
 
 7. In JSBin, run the app > Select a category to query the feature layer. Click on any point to display the attribute data in a popup.
