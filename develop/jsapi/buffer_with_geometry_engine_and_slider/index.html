@@ -69,7 +69,7 @@
           zoom: 11
         });
 
-        // Add a layer to show the calculated buffer, and a layer for the buffer source data
+        // Add a layer to show the calculated buffer, and a layer for the buffer source data.
         var bufferLayer = new GraphicsLayer();
         var stopsLayer = new FeatureLayer({
           url : "http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0"
@@ -77,8 +77,9 @@
 
         map.addMany([bufferLayer, stopsLayer]);
 
-        // Configure the output buffer
+        // Configure the output buffer.
         var bufferDistance = 0.5;
+        // Define a symbol for displaying the buffer.
         var bufferSymbol = new SimpleFillSymbol({
           color: [0,100,255,0.4],
           style: "solid",
@@ -88,28 +89,31 @@
           }
         });
 
-        // Buffer the view's contents
+        // Buffer the view's contents by a number of miles.
         function bufferStops(miles) {
+          // Get the Layer View for the Stops Layer. This is how the layer is displayed
+          // in the Map View.
           view.whenLayerView(stopsLayer).then(function(stopsLayerView) {
-              stopsLayerView.queryFeatures().then(function(stopGraphics) {
-                // We need geometries, not graphics for the buffer operation
-                var stops = stopGraphics.map(function(stopGraphic) {
-                  return stopGraphic.geometry;
-                });
-                // Buffer and union all the points in the layer view
-                geometryEngineAsync.geodesicBuffer(stops, miles, "miles", true).then(function(totalBuffer) {
-                  // Display the buffer on the map.
-                  bufferLayer.removeAll();
-                  bufferLayer.add(new Graphic({
-                    geometry: totalBuffer[0],
-                    symbol: bufferSymbol
-                  }));
-                });
+            // Now get all the features already loaded to the browser
+            stopsLayerView.queryFeatures().then(function(stopFeatures) {
+              // A Feature is also a Graphic. But we need geometries for the buffer operation.
+              var stopGeometries = stopFeatures.map(function(stopGraphic) {
+                return stopGraphic.geometry;
               });
+              // Buffer and union all the points in the layer view.
+              geometryEngineAsync.geodesicBuffer(stopGeometries, miles, "miles", true).then(function(totalBuffer) {
+                // Display the unioned buffer on the map.
+                bufferLayer.removeAll();
+                bufferLayer.add(new Graphic({
+                  geometry: totalBuffer[0],
+                  symbol: bufferSymbol
+                }));
+              });
+            });
           });
         }
 
-        // Recalculate the buffers when the view's contents changes
+        // Recalculate the buffers whenever the view's contents changes.
         view.whenLayerView(stopsLayer).then(function(stopsLayerView) {
           stopsLayerView.watch("updating", function(isUpdating) {
             if (!isUpdating) {
@@ -118,7 +122,7 @@
           });
         });
 
-        // Create and update the Buffer Distance slider        
+        // A function to update range display text.
         function setBufferDisplay(newValue) {
           var roundedValue = parseFloat(newValue).toFixed(2),
               unit = roundedValue == 1.0?"mile":"miles";
@@ -126,6 +130,7 @@
           bufferDistance = roundedValue;
         }
       
+        // Create the Buffer Range slider.
         var slider = new HorizontalSlider({
           value: bufferDistance,
           minimum: 0.25,
@@ -140,6 +145,7 @@
           }
         }, "bufferSlider").startup();
       
+        // Initialize the range display text.
         setBufferDisplay(bufferDistance);
 
       });

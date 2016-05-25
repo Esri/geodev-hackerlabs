@@ -1,4 +1,4 @@
-###Client-side Buffer
+###Interactive Client-side Buffer
 
 In this lab you will use the GeometryEngine to buffer around Rail Stops in the browser.
 
@@ -6,11 +6,11 @@ You will add an interactive slider and a feedback label to the UI that will be u
 
 1. Click [create_starter_map/index.html](../create_starter_map/index.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
 
-2. In `JSBin` > `HTML`, add the buffer UI `div` element and its contents:
+2. Add some HTML to the `<body>` tag to display a Buffer Radius range slider and value:
 
   ```html
   <body>
-    <!-- ADD new div for the buffer range UI -->
+    <!-- ADD -->
     <div id="bufferUI">
       <div id="bufferSlider"></div>
       <div id="bufferDistance">1</div>
@@ -20,7 +20,7 @@ You will add an interactive slider and a feedback label to the UI that will be u
   </body>
   ```
 
-3. At the top of the page, add CSS to the main `style` tag to display the buffer range UI:
+3. At the top of the page, we'll set up some styling. Add some CSS to the existing `<style>` tag to display the buffer range UI.
 
   ```CSS
   <style>
@@ -30,7 +30,8 @@ You will add an interactive slider and a feedback label to the UI that will be u
         height:100%;
     }
 
-    /* ADD buffer slider styling */
+    /*** ADD ***/
+
     #bufferUI {
       position: absolute;
       top: 20px;
@@ -55,12 +56,26 @@ You will add an interactive slider and a feedback label to the UI that will be u
   </style>
   ```
 
-4. Update the `require` statement and function definition:
+  Also link to a standard Dojo Theme CSS file to style the Dojo Slider Widget, and update the `<body>` tag to make use of this theme. If you skip this the slider will function, but will look odd.
+
+  ```HTML
+  ...
+
+  <!-- ADD -->
+  <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/tundra/tundra.css">
+
+  ...
+
+  <!-- ADD -->
+  <body class="tundra">
+  ```
+
+4. Now we'll jump into the JavaScript. Update the `require` statement and `function` definition:
 
   ```javascript
   require(["esri/Map",
            "esri/views/MapView",
-           // ADD modules
+           /*** ADD ***/
            "esri/layers/GraphicsLayer",
            "esri/layers/FeatureLayer",
            "esri/Graphic",
@@ -69,101 +84,103 @@ You will add an interactive slider and a feedback label to the UI that will be u
            "dijit/form/HorizontalSlider",
            "dojo/dom",
            "dojo/domReady!"
-    // ADD module references
     ], function(Map, MapView, 
                 GraphicsLayer, FeatureLayer, Graphic, SimpleFillSymbol, geometryEngineAsync,
                 HorizontalSlider, dom) {
-    ...
   ```
 
-5. Add a `FeatureLayer` for the Rail Stops and a `GraphicsLayer` to display the calculated buffers. Optionally modify the map to initialize at zoom level `12`:
+5. Add a the Styled Rail Stops to the map. Also add a layer to display the calculated buffers (for this we'll use a `GraphicsLayer`).
 
   ```javascript
-  function(Map, MapView, GraphicsLayer, FeatureLayer, Graphic,
-           SimpleFillSymbol, SimpleLineSymbol,
-           geometryEngineAsync,
-           HorizontalSlider, dom) {
+  ...
 
-    var map = new Map({
-      basemap: "dark-gray"
-    });
+  var view = new MapView({
+    container: "viewDiv",
+    map: map,
+    center: [-122.68, 45.52],
+    zoom: 11
+  });
 
-    var view = new MapView({
-      container: "viewDiv",
-      map: map,
-      center: [-122.68, 45.52],
-      zoom: 11
-    });
+  /*** ADD ***/
 
-    // ADD Create layers and add them to the map
-    var bufferLayer = new GraphicsLayer();
-    var stopsLayer = new FeatureLayer({
-      url : "http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0"
-    });
+  // Add a layer to show the calculated buffer, and a layer for the buffer source data.
+  var bufferLayer = new GraphicsLayer();
+  var stopsLayer = new FeatureLayer({
+    url : "http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0"
+  });
 
-    map.addMany([bufferLayer, stopsLayer]);
+  map.addMany([bufferLayer, stopsLayer]);
   ```
 
-6. Create a buffer symbol and a variable to track the buffer size.
+6. Next, we'll define a variable to track the selected buffer range, and a symbol to define how buffers are drawn in the map.
 
   ```javascript
-    // ADD Create a symbol to display the buffers
-    var bufferDistance = 0.5;
-    var bufferSymbol = new SimpleFillSymbol({
-      color: [0,100,255,0.4],
-      style: "solid",
-      outline: {
-        color: [110,110,110],
-        width: 1
-      }
-    });
+  /*** ADD ***/
+
+  // Configure the output buffer.
+  var bufferDistance = 0.5;
+  // Define a symbol for displaying the buffer.
+  var bufferSymbol = new SimpleFillSymbol({
+    color: [0,100,255,0.4],
+    style: "solid",
+    outline: {
+      color: [110,110,110],
+      width: 1
+    }
+  });
   ```
 
-
-7. Create a function to generate a buffer and update the map.
+7. Create a function to generate a buffer for a specific range. Also make sure that function updates the map once the buffer has been generated. We'll call this function when the buffer range slider is moved.
 
   ```javascript
-  // ADD A function to buffer the Rail Stops
+  /*** ADD ***/
+
+  // Buffer the view's contents by a number of miles.
   function bufferStops(miles) {
+    // Get the Layer View for the Stops Layer. This is how the layer is displayed
+    // in the Map View.
     view.whenLayerView(stopsLayer).then(function(stopsLayerView) {
-
-        stopsLayerView.queryFeatures().then(function(stopGraphics) {
-
-          var stops = stopGraphics.map(function(stopGraphic) {
-            return stopGraphic.geometry;
-          });
-
-          geometryEngineAsync.geodesicBuffer(stops, miles, "miles", true).then(function(totalBuffer) {
-            bufferLayer.removeAll();
-            bufferLayer.add(new Graphic({
-              geometry: totalBuffer[0],
-              symbol: bufferSymbol
-            }));
-          });
-
+      // Now get all the features already loaded to the browser
+      stopsLayerView.queryFeatures().then(function(stopFeatures) {
+        // A Feature is also a Graphic. But we need geometries for the buffer operation.
+        var stopGeometries = stopFeatures.map(function(stopGraphic) {
+          return stopGraphic.geometry;
         });
-
+        // Buffer and union all the points in the layer view.
+        geometryEngineAsync.geodesicBuffer(stopGeometries, miles, "miles", true).then(function(totalBuffer) {
+          // Display the unioned buffer on the map.
+          bufferLayer.removeAll();
+          bufferLayer.add(new Graphic({
+            geometry: totalBuffer[0],
+            symbol: bufferSymbol
+          }));
+        });
+      });
     });
   }
   ```
 
-8. Be sure to update the buffer whenever the layer view's data changes
+8. Now hook into the layer view to ensure that if the displayed data ever changes that the buffer is udpated.
 
   ```javascript
-    // Recalculate the buffers when the view's contents changes
-    view.whenLayerView(stopsLayer).then(function(stopsLayerView) {
-      stopsLayerView.watch("updating", function(isUpdating) {
-        if (!isUpdating) {
-          bufferStops(bufferDistance);
-        }
-      });
+  /*** ADD ***/
+
+  // Recalculate the buffers whenever the view's contents changes.
+  view.whenLayerView(stopsLayer).then(function(stopsLayerView) {
+    stopsLayerView.watch("updating", function(isUpdating) {
+      if (!isUpdating) {
+        bufferStops(bufferDistance);
+      }
     });
+  });
   ```
 
-9. Create the Horizontal Slider and initialize the UI:
+9. Lastly we'll hook up and configure the Dojo slider used to specify the buffer range.
 
   ```javascript
-  // ADD A function to update the UI text
+  /*** ADD ***/
+
+  // A function to update range display text.
   function setBufferDisplay(newValue) {
     var roundedValue = parseFloat(newValue).toFixed(2),
         unit = roundedValue == 1.0?"mile":"miles";
@@ -171,8 +188,7 @@ You will add an interactive slider and a feedback label to the UI that will be u
     bufferDistance = roundedValue;
   }
 
-
-  // ADD Create a Dojo HorizontalSlider to control the buffer size. Set the slider to update the current buffer range display and also to generate a new buffer when the mouse is released.
+  // Create the Buffer Range slider.
   var slider = new HorizontalSlider({
     value: bufferDistance,
     minimum: 0.25,
@@ -187,26 +203,8 @@ You will add an interactive slider and a feedback label to the UI that will be u
     }
   }, "bufferSlider").startup();
 
-
-  // ADD Initialize the buffer UI and ensure that when the Rail Stops layer has initially loaded data, that a buffer is generated.
+  // Initialize the range display text.
   setBufferDisplay(bufferDistance);
-  stopsLayer.on('update-end', function() {
-    bufferStops(bufferDistance);
-  });
-  ```
-
-  Also include a CSS file to style the Dojo Slider Widget, and update the `<body>` tag to make use of it:
-
-  ```HTML
-  <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.16/esri/css/esri.css">
-
-  <!-- ADD a link to the Tundra Dojo theme's CSS -->
-  <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/tundra/tundra.css">
-
-  ...
-
-  <!-- ADD "claro" as the class of the body tag -->
-  <body class="tundra">
   ```
 
 10. In JSBin, run the app. Drag or click on the slider at the top-right to pick a buffer size in Miles. When dragging, buffer will not be calculated until you finish dragging.

@@ -42,7 +42,7 @@
           zoom: 12
         });
 
-        // Add a layer to show the calculated buffer, and a layer for the buffer source data
+        // Add a layer to show the calculated buffer, and a layer for the buffer source data.
         var bufferLayer = new GraphicsLayer();
         var stopsLayer = new FeatureLayer({
           url : "http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0"
@@ -50,8 +50,7 @@
 
         map.addMany([bufferLayer, stopsLayer]);
 
-        // Configure the output buffer
-        var bufferDistance = 0.5;
+        // Configure the output buffer.
         var bufferSymbol = new SimpleFillSymbol({
           color: [0,100,255,0.4],
           style: "solid",
@@ -66,13 +65,13 @@
           stopsLayerView.watch("updating", function(isUpdating) {
             if (!isUpdating) {
               stopsLayerView.queryFeatures().then(function(stopGraphics) {
-                // We need geometries, not graphics for the buffer operation
+                // We need geometries, not graphics for the buffer operation.
                 var stops = stopGraphics.map(function(stopGraphic) {
                   return stopGraphic.geometry;
                 });
-                // Buffer and union all the points in the layer view
-                geometryEngineAsync.geodesicBuffer(stops, bufferDistance, "miles", true).then(function(totalBuffer) {
-                  // Display the buffer on the map.
+                // Buffer and union all the points in the layer view.
+                geometryEngineAsync.geodesicBuffer(stops, 0.5, "miles", true).then(function(totalBuffer) {
+                  // Display the unioned buffer on the map.
                   bufferLayer.removeAll();
                   bufferLayer.add(new Graphic({
                     geometry: totalBuffer[0],
