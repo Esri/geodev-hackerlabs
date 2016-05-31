@@ -18,7 +18,7 @@ In this lab you will take rail stations and see what's within half a mile's walk
 
 4. Click `PDX Rail Stops` > `Perform Analysis` > `Use Proximity` > `Create Drive-Time Areas`.
 
-	a. Choose `Walking Distance` and set the size to `15` `Minutes`.
+	a. Choose `Walking Time` and set the size to `15` `Minutes`.
 
 	b. Select `Dissolve`.
 
