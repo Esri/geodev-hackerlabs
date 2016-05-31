@@ -21,4 +21,4 @@ In this lab you will add your own layers and some existing publicly available la
 6. Save your map. 
 
 ###Bonus
-* In the Map Viewer select `Add` > `Search for Layers` > `In: ArcGIS Online` to load other pre-existing layers into your map. HINT: Try searching for weather, rain or wind.
+* In the Map Viewer select `Add` > `Search for Layers` > `In: ArcGIS Online` to load other pre-existing layers into your map. HINT: Try searching for weather, rain or wind. You might try changing `In: My Organization` to `In: ArcGIS Online` to see more layers.
