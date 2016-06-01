@@ -37,7 +37,7 @@ In this lab you will add neighborhood polygons and enrich them with population d
   1. Set the following properties: 
 
     ```
-    Choose and attribute to show: 2014 Total Population
+    Choose and attribute to show: 2015 Total Population
     ```
 
   2. Done. 
