@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Style Popups</title>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.0/esri/css/main.css">
+
+  <style>
+    html, body, #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+    }
+  </style>
+
+  <script src="https://js.arcgis.com/4.0/"></script>
+
+  <script>
+    require([
+      "esri/Map",
+      "esri/views/MapView",
+      "esri/layers/FeatureLayer",
+      "esri/PopupTemplate",
+      "esri/renderers/ClassBreaksRenderer",
+      "dojo/domReady!"
+    ], function(Map, MapView, FeatureLayer, PopupTemplate, ClassBreaksRenderer) {
+
+      var map = new Map({
+        basemap: "dark-gray"
+      });
+
+      var view = new MapView({
+        container: "viewDiv",
+        map: map,
+        center: [-122.68, 45.52],
+        zoom: 10
+      });
+
+      var popupTemplate = new PopupTemplate({
+        title: "Neighborhoods",
+        // Fields
+        content: [{
+          type: "fields",
+          fieldInfos: [
+            { fieldName: "TOTPOP_CY", label: "Total Population", visible: true, format: { places: 0 } },
+            { fieldName: "AVGHINC_CY", label: "Average Income", visible: true, format: { places: 0 } },
+            { fieldName: "MEDAGE_CY", label: "Median Age", visible: true, format: { places: 0 } },
+            { fieldName: "AREA", visible: true, format: { places: 2 } }
+          ]
+        },
+        {
+          type: "media",
+          mediaInfos: [{
+            title: "Demographics",
+            type: "pie-chart",
+            value: { 
+              fields: [ 
+                "TOTPOP_CY", 
+                "AVGHINC_CY", 
+              ]
+            }
+          }]
+        }] 
+      });
+      
+      var renderer = ClassBreaksRenderer.fromJSON({"visualVariables":[{"type":"colorInfo","field":"TOTPOP_CY","normalizationField":"AREA","stops":[{"value":1280,"color":[116,77,48,255],"label":"< 1,280"},{"value":3212,"color":[175,107,47,255],"label":null},{"value":5144,"color":[214,146,83,255],"label":"5,144"},{"value":7076,"color":[235,195,154,255],"label":null},{"value":9008,"color":[255,245,230,255],"label":"> 9,008"}]},{"type":"sizeInfo","target":"outline","expression":"view.scale","stops":[{"size":2,"value":42474},{"size":1,"value":132730},{"size":0.5,"value":530919},{"size":0,"value":1061838}]}],"authoringInfo":{"visualVariables":[{"type":"colorInfo","minSliderValue":0,"maxSliderValue":17654.51572245626,"theme":"high-to-low"}]},"type":"classBreaks","field":"TOTPOP_CY","minValue":-9007199254740991,"classBreakInfos":[{"symbol":{"color":[170,170,170,255],"outline":{"color":[153,153,153,128],"width":0.75,"type":"esriSLS","style":"esriSLSSolid"},"type":"esriSFS","style":"esriSFSSolid"},"classMaxValue":9007199254740991}],"normalizationType":"esriNormalizeByField","normalizationField":"AREA"});
+
+      var featureLayer = new FeatureLayer({
+        url: "http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Enriched/FeatureServer/0",
+        outFields: ["*"],
+        popupTemplate: popupTemplate,
+        renderer: renderer
+      });
+
+      map.add(featureLayer);
+    });
+  </script>
+</head>
+<body>
+  <div id="viewDiv"></div>
+</body>
+</html>
