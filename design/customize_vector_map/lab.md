@@ -30,56 +30,56 @@ In the steps below you're going to change the color for a couple of layers in th
 	1. Background, water, and marine areas: use the find and replace tool to find `#cfcfd4` and replace with `#a6deff`. This approach is recommended because these layers appear multiple times in the map style for different zoom levels.  
 
     ```js
-				"type": "background",
-        "paint": {
-		      "background-color": "#a6deff"
-		```
+    "type": "background",
+    "paint": {
+	  "background-color": "#a6deff"
+	```
 
-		```js
-			"source-layer": "Water area",
-      		"paint": {
-        			"fill-outline-color": "#a6deff",
-        			"fill-color": "#a6deff"
-		```    
+    ```js
+    "source-layer": "Water area",
+    "paint": {
+        "fill-outline-color": "#a6deff",
+        "fill-color": "#a6deff"
+    ```    
 
 	2. Land: change the `fill-color` from `#ededed` to `#dfffd9`.
 
-		```js
-   			"source-layer": "Land",
-      		"paint": {
-        		"fill-color": "#dfffd9"
-		```
+    ```js
+    "source-layer": "Land",
+    "paint": {
+        "fill-color": "#dfffd9"
+    ```
 
 	3. Urban area: change the `fill-color` from `#e8e8e8` to `#d5e3ca`.
 
-		```js
-			"source-layer": "Urban area",
-      			"maxzoom": 12,
-      		"paint": {
-        		"fill-color": "#d5e3ca"
-		```
+    ```js
+    "source-layer": "Urban area",
+    "maxzoom": 12,
+    "paint": {
+       "fill-color": "#d5e3ca"
+    ```
 
 	4. Admin0 and Admin1 forest or park areas: change the `fill-color` from `#e4e8e4` to `#9cb297`.
 
-		```js
-			"source-layer": "Admin0 forest or park",
-      		"paint": {
-        		"fill-color": "#9cb297"
-		```
+    ```js
+    "source-layer": "Admin0 forest or park",
+    "paint": {
+        "fill-color": "#9cb297"
+    ```
 
-		```js
-			"source-layer": "Admin1 forest or park",
-      		"paint": {
-        		"fill-color": "#9cb297"
-		```
+    ```js
+    "source-layer": "Admin1 forest or park",
+    "paint": {
+        "fill-color": "#9cb297"
+    ```
 
 	5. Park or farming: change the `fill-color` from `#e4e8e4` to `#929991` and `Save` the file.
 
-		```js
-			"source-layer": "Park or farming",
-      		"paint": {
-        		"fill-color": "#929991"
-		```
+    ```js
+    "source-layer": "Park or farming",
+    "paint": {
+        "fill-color": "#929991"
+    ```
 
 7. Go to [arcgis.com](http://www.arcgis.com) and login if necessary. Click `My Content` > click the `Light Green Canvas` tile layer > click `UPDATE` > `Choose File` > select the `root.json` file > `UPDATE ITEM`.
 
