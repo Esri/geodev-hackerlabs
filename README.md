@@ -110,13 +110,13 @@ In these labs you will use the Configurable App Templates, the ArcGIS Web App Bu
  * [Extrude data as Polygons in 3D](./develop/jsapi/extrude_polygon_3d/lab.md)
  * [Add Feature Layer](./develop/jsapi/add_feature_layer/lab.md)
  * [Add Vector Tile Layer](./develop/jsapi/add_vector_tile_layer/lab.md)
- * [Style a layer with a renderer](./develop/jsapi/style_feature_layer/lab.md)
- * [Style a layer with JSON](./develop/jsapi/style_feature_layer_with_json/lab.md)
+ * [Style Feature Layer](./develop/jsapi/style_feature_layer/lab.md)
+ * [Style Feature Layer with JSON](./develop/jsapi/style_feature_layer_with_json/lab.md)
  * [Style a layer popup](./develop/jsapi/style_simple_popup/lab.md)
- * [Client-side Buffering](./develop/jsapi/buffer_with_geometry_engine/lab.md)
- * [Client-side Buffering with UI](./develop/jsapi/buffer_with_geometry_engine_and_slider/lab.md)
  * [Search with a Widget](./develop/jsapi/search_with_widget/lab.md)
  * [Search with a Query Task](./develop/jsapi/search_with_query_task/lab.md)
+ * [Client-side Buffering](./develop/jsapi/buffer_with_geometry_engine/lab.md)
+ * [Client-side Buffering with UI](./develop/jsapi/buffer_with_geometry_engine_and_slider/lab.md)
 
 The above labs all use the 4.x JS API. If you would rather learn about the 3.x JS API, check [here](./develop/jsapi3/README.md).
 
