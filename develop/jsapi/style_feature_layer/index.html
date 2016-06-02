@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Style Feature Layer</title>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.0/esri/css/main.css">
+
+  <style>
+    html, body, #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+    }
+  </style>
+
+  <script src="https://js.arcgis.com/4.0/"></script>
+
+  <script>
+    require([
+      "esri/Map",
+      "esri/views/MapView",
+      "esri/layers/FeatureLayer",
+      "esri/symbols/SimpleLineSymbol",
+      "esri/renderers/UniqueValueRenderer",
+      "dojo/domReady!"
+    ], function(Map, MapView, FeatureLayer, SimpleLineSymbol, UniqueValueRenderer) {
+
+      var map = new Map({
+        basemap: "dark-gray"
+      });
+
+      var view = new MapView({
+        container: "viewDiv",
+        map: map,
+        center: [-122.68, 45.52],
+        zoom: 10
+      });
+
+      var renderer = new UniqueValueRenderer({
+        field: "TYPE",
+        defaultSymbol: new SimpleLineSymbol()
+      });
+
+      renderer.addUniqueValueInfo("MAX",
+        new SimpleLineSymbol({
+          color: [96, 219, 34, 0.8]
+        })
+      );
+
+      renderer.addUniqueValueInfo("SC",
+        new SimpleLineSymbol({
+          color: [255, 255, 34, 0.8]
+        })
+      );
+
+      renderer.addUniqueValueInfo("MAX/SC",
+        new SimpleLineSymbol({
+          color: [238, 71, 71, 0.8]
+        })
+      );
+
+      renderer.addUniqueValueInfo("CR",
+        new SimpleLineSymbol({
+          color: [8, 197, 249, 1],
+          width: 4
+        })
+      );
+
+      var featureLayer = new FeatureLayer({
+        url: "https://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Lines/FeatureServer/0",
+        renderer: renderer 
+      });
+
+      map.add(featureLayer);
+    });
+  </script>
+</head>
+<body>
+  <div id="viewDiv"></div>
+</body>
+</html>
