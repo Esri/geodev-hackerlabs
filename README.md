@@ -86,7 +86,7 @@ ArcGIS Online Tools
 Code
 * [Add a styled layer to an app - Bonus section](./develop/jsapi/add_feature_layer/lab.md)
 * [Style a layer with JSON](./develop/jsapi/style_feature_layer_with_json/lab.md)
-* [Style a layer popup](./develop/jsapi3/style_simple_popup/lab.md)
+* [Style a layer popup](./develop/jsapi/style_simple_popup/lab.md)
 * [Style a layer with a renderer](./develop/jsapi/style_feature_layer/lab.md)
 * [Add a vector tiled layer](./develop/jsapi/add_vector_tile_layer/lab.md)
 
@@ -112,6 +112,7 @@ In these labs you will use the Configurable App Templates, the ArcGIS Web App Bu
  * [Add Vector Tile Layer](./develop/jsapi/add_vector_tile_layer/lab.md)
  * [Style a layer with a renderer](./develop/jsapi/style_feature_layer/lab.md)
  * [Style a layer with JSON](./develop/jsapi/style_feature_layer_with_json/lab.md)
+ * [Style a layer popup](./develop/jsapi/style_simple_popup/lab.md)
  * [Client-side Buffering](./develop/jsapi/buffer_with_geometry_engine/lab.md)
  * [Client-side Buffering with UI](./develop/jsapi/buffer_with_geometry_engine_and_slider/lab.md)
  * [Search with a Widget](./develop/jsapi/search_with_widget/lab.md)
