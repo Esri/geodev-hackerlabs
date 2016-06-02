@@ -1,10 +1,10 @@
-###Customize Vector Basemap
+### Customize Vector Basemap
 
 Esri has introduced a new set of vector basemaps (now in beta release). There are several benefits to vector basemaps including high-res displays, smaller and easier to update and the ability to customize the look and feel of the basemaps.
 
 In this lab you will customize a vector basemap from an existing tile layer and then publish the updated style as a new tile layer.
 
-###Steps
+### Steps
 
 1. Go to [arcgis.com](http://www.arcgis.com) and login. Click `Map`.
 
@@ -29,14 +29,13 @@ In the steps below you're going to change the color for a couple of layers in th
 
 	1. Background, water, and marine areas: use the find and replace tool to find `#cfcfd4` and replace with `#a6deff`. This approach is recommended because these layers appear multiple times in the map style for different zoom levels.  
 
-		```json
-			"type": "background",
-      		"paint": {
-        			"background-color": "#a6deff"
-
+    ```js
+				"type": "background",
+        "paint": {
+		      "background-color": "#a6deff"
 		```
 
-		```json
+		```js
 			"source-layer": "Water area",
       		"paint": {
         			"fill-outline-color": "#a6deff",
@@ -45,7 +44,7 @@ In the steps below you're going to change the color for a couple of layers in th
 
 	2. Land: change the `fill-color` from `#ededed` to `#dfffd9`.
 
-		```json
+		```js
    			"source-layer": "Land",
       		"paint": {
         		"fill-color": "#dfffd9"
@@ -53,7 +52,7 @@ In the steps below you're going to change the color for a couple of layers in th
 
 	3. Urban area: change the `fill-color` from `#e8e8e8` to `#d5e3ca`.
 
-		```json
+		```js
 			"source-layer": "Urban area",
       			"maxzoom": 12,
       		"paint": {
@@ -62,13 +61,13 @@ In the steps below you're going to change the color for a couple of layers in th
 
 	4. Admin0 and Admin1 forest or park areas: change the `fill-color` from `#e4e8e4` to `#9cb297`.
 
-		```json
+		```js
 			"source-layer": "Admin0 forest or park",
       		"paint": {
         		"fill-color": "#9cb297"
 		```
 
-		```json
+		```js
 			"source-layer": "Admin1 forest or park",
       		"paint": {
         		"fill-color": "#9cb297"
@@ -76,7 +75,7 @@ In the steps below you're going to change the color for a couple of layers in th
 
 	5. Park or farming: change the `fill-color` from `#e4e8e4` to `#929991` and `Save` the file.
 
-		```json
+		```js
 			"source-layer": "Park or farming",
       		"paint": {
         		"fill-color": "#929991"
