@@ -11,7 +11,7 @@ In this lab you will use the new styling capabilities of the scene viewer to mak
 
 2. Click `Scene`.
 
-3. On the map, click `Basemap` to change the basemap to `Imagery`. Close the dialog.
+3. In the upper right corner of the scene, click the `Basemap` icon to open the `Basemap` dialog and change the basemap to `Imagery`. Close the `Basemap` dialog.
 
 4. In `Contents` click `+ Add Layers` > `Enter Layer URL`.
 
