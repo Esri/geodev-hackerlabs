@@ -6,7 +6,7 @@ In this lab, you will build a simple WAB app.
 
 1. Click [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=7186a92406194797aa518c06c189a71f) to open the map in the Map Viewer. If you have your own map, you can try to use that too.
 
-2. Click `Share` > `Create a Web App` > `Web App Builder` > `Get Started`.
+2. Click `Share` > `Create a Web App` > `Web App Builder`.
 
 3. Set the following properties:
 
@@ -29,7 +29,7 @@ In this lab, you will build a simple WAB app.
 7. Click `Widget`
 
  * Configure the `Search` widget to search
- * Add Search Source: Population Density
+ * Add Search Source: Neighborhoods
  * Name: Neighborhoods
  * Search Fields: Name
  * Display Fiends: Name
