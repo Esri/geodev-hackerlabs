@@ -23,7 +23,7 @@ In this lab, you will build a simple Template app.
 4. Change the following properties:
 
  ```
- Choose Swipe Layer: Population Density
+ Choose Swipe Layer: Neighborhoods
  Details: 
   Application Title: 2015 Portland Population Density
   Application Summary: 2015 Portland Population Density
@@ -40,9 +40,11 @@ In this lab, you will build a simple Template app.
   Check Enable Webcams Layer
  NOTE: Disable other layers
  Search Settings:
+  Enable the Neighborhoods layer
+  Edit the Neighborhoods layer
   Name: Neighborhoods
   Check Enable Suggestions
-  Field: Name
+  Display Field: Name
   Search Fields: Name
   Click save
  ```
