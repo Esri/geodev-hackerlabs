@@ -85,9 +85,9 @@ ArcGIS Online Tools
 
 Code
 * [Add a styled layer to an app - Bonus section](./develop/jsapi/add_feature_layer/lab.md)
-* [Style a layer with JSON](./develop/jsapi3/style_feature_layer_with_json/lab.md)
-* [Style a layer popup](./develop/jsapi3/style_simple_popup/lab.md)
-* [Style a layer with a renderer](./develop/jsapi3/style_feature_layer/lab.md)
+* [Style a layer with JSON](./develop/jsapi/style_feature_layer_with_json/lab.md)
+* [Style a layer popup](./develop/jsapi/style_simple_popup/lab.md)
+* [Style a layer with a renderer](./develop/jsapi/style_feature_layer/lab.md)
 * [Add a vector tiled layer](./develop/jsapi/add_vector_tile_layer/lab.md)
 
 ### 3. Develop
@@ -99,7 +99,7 @@ In these labs you will use the Configurable App Templates, the ArcGIS Web App Bu
 * Web Map Apps
  * [Create a Configurable App](./develop/webmap_apps/create_configurable_app/lab.md)
  * [Create a Web AppBuilder App](./develop/webmap_apps/create_web_appbuilder_app/lab.md)
- * [Create a JS API 3.x App](./develop/webmap_apps/create_jsapi3_app/lab.md)
+ * [Create a JS API App](./develop/webmap_apps/create_jsapi_app/lab.md)
  * [Create a Esri Leaflet App](./develop/leaflet/add_feature_layer/lab.md)
  * [Create a JS API 4.x - Calcite Maps App](./develop/jsapi/create_calcite_maps_app/lab.md)
  * [Create an AppStudio App](./develop/webmap_apps/create_appstudio_app/lab.md)
@@ -110,17 +110,15 @@ In these labs you will use the Configurable App Templates, the ArcGIS Web App Bu
  * [Extrude data as Polygons in 3D](./develop/jsapi/extrude_polygon_3d/lab.md)
  * [Add Feature Layer](./develop/jsapi/add_feature_layer/lab.md)
  * [Add Vector Tile Layer](./develop/jsapi/add_vector_tile_layer/lab.md)
- * [Client-side Buffering](./develop/jsapi/buffer_with_geometry_engine/lab.md)
- * [Client-side Buffering with UI](./develop/jsapi/buffer_with_geometry_engine_and_slider/lab.md)
+ * [Style Feature Layer](./develop/jsapi/style_feature_layer/lab.md)
+ * [Style Feature Layer with JSON](./develop/jsapi/style_feature_layer_with_json/lab.md)
+ * [Style a layer popup](./develop/jsapi/style_simple_popup/lab.md)
  * [Search with a Widget](./develop/jsapi/search_with_widget/lab.md)
  * [Search with a Query Task](./develop/jsapi/search_with_query_task/lab.md)
- 
-* JS API 3
- * [Style Feature Layers](./develop/jsapi3/style_feature_layer/lab.md)
- * [Style Feature Layers with JSON](./develop/jsapi3/style_feature_layer_with_json/lab.md)
- * [Add GeoJSON Layer](./develop/jsapi3/add_geojson_layer/lab.md)
- * [Smart Mapping](./develop/jsapi3/style_feature_layer_with_smart_mapping/lab.md)
- * [Search with HTML5 Location](./develop/jsapi3/search_with_html5_location/lab.md)
+ * [Client-side Buffering](./develop/jsapi/buffer_with_geometry_engine/lab.md)
+ * [Client-side Buffering with UI](./develop/jsapi/buffer_with_geometry_engine_and_slider/lab.md)
+
+The above labs all use the 4.x JS API. If you would rather learn about the 3.x JS API, check [here](./develop/jsapi3/README.md).
 
 * Esri-Leaflet
  * [Build a Starter Map](./develop/leaflet/create_starter_map/lab.md)

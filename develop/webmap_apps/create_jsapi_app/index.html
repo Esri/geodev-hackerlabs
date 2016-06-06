@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>JS API Starter App</title>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.0/esri/css/main.css">
+
+  <style>
+    html, body, #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+    }
+  
+    #title {
+      display: inline-block;
+      padding: 10px;
+      font-size: 20px;
+      background-color: #843520;
+      color: #f8f8f8;
+      width: 100%;
+      font-family: sans-serif;
+    }
+  </style>
+
+  <script src="https://js.arcgis.com/4.0/"></script>
+
+  <script>
+    require([
+      "esri/views/MapView",
+      "esri/WebMap",
+      "esri/widgets/Legend",
+      "dojo/domReady!"
+    ], function(MapView, WebMap, Legend) {
+
+      var map = new WebMap({
+        portalItem: { // autocasts as new PortalItem()
+          id: "7186a92406194797aa518c06c189a71f"
+        }
+      });
+
+      var view = new MapView({
+        map: map,
+        container: "viewDiv"
+      });
+
+      var legend = new Legend({
+        view: view
+      });
+
+      view.ui.add(legend, "top-right");
+
+    });
+  </script>
+</head>
+<body>
+  <div id="title">2015 Portland Population Density - ArcGIS JS API</div>
+  <div id="viewDiv"></div>
+</body>
+</html>

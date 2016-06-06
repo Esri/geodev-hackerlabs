@@ -3,7 +3,7 @@
 This lab covers the basics for creating a basic starter 3D mapping application.
 The starter map simply loads a default base map and centers it.
 If you are new to ArcGIS and need a full set of instructions on building a basic 3D mapping application
-visit the [Get started with SceneView](https://developers.arcgis.com/javascript/beta/sample-code/get-started-sceneview/index.html) tutorial.
+visit the [Get started with SceneView](https://developers.arcgis.com/javascript/latest/sample-code/get-started-sceneview/index.html) tutorial.
 
 1. Copy and paste the code below into a new [jsbin.com](http://jsbin.com).
 

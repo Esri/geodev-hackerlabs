@@ -12,13 +12,13 @@ In this lab you will explore services via the REST API.
 
 3. Select any feature layer.
 
-4. Click on the url for the layer.  Your url should look something like this:
+4. Under `Layers`, click a layer name to open the layer's REST URL in a new browser tab. The URL should look something like this:
 
  ```
  http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops/FeatureServer/0
  ```
 
-5. Explore the meta data.
+5. Explore the metadata.
 
 6. At the bottom of the page, try the `Query` functionality using the following settings:
 

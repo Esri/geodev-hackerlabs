@@ -82,7 +82,7 @@ Your app should look something like this:
     var map = new Map({
       basemap: { // Auto-casting a Basemap
         baseLayers: [new VectorTileLayer({
-          id: "https://www.arcgis.com/sharing/rest/content/items/51acb8875f86482e82cb2ae24155b362/resources/styles/root.json"
+          url: "https://www.arcgis.com/sharing/rest/content/items/51acb8875f86482e82cb2ae24155b362/resources/styles/root.json"
         })]  
       }
     });
