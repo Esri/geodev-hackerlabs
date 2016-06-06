@@ -81,7 +81,7 @@ In the steps below you're going to change the color for a couple of layers in th
         "fill-color": "#929991"
     ```
 
-7. Go to [arcgis.com](http://www.arcgis.com) and login if necessary. Click `My Content` > click the `Light Green Canvas` tile layer > click `UPDATE` > `Choose File` > select the `root.json` file > `UPDATE ITEM`.
+7. Go to [arcgis.com](http://www.arcgis.com) and login if necessary. Click `My Content` > click the `Light Green Canvas` tile layer > click `UPDATE` > `Choose File` > select the `root.json` file > `Update Style File`.
 
 8. To see the changes, click `OPEN` > `Add layer to new map`.  
 

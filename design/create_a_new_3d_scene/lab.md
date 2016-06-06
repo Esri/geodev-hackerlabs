@@ -18,7 +18,7 @@ In this lab you will use the new styling capabilities of the scene viewer to mak
   1. Enter the following URL and click `Add`:
 
     ```
-    http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Lines/FeatureServer/0
+    https://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Lines/FeatureServer/0
     ```
 
   2. Click `PDX Rail Lines Styled` > `Zoom To` to zoom the map.
@@ -42,7 +42,7 @@ In this lab you will use the new styling capabilities of the scene viewer to mak
   1. Enter the following URL and click `Add`:
 
     ```
-    http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops/FeatureServer/0
+    https://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops/FeatureServer/0
     ```  
 
   2. Click `PDX Rail Stops` > `Configure Layer` and set the following properties:
@@ -58,4 +58,4 @@ In this lab you will use the new styling capabilities of the scene viewer to mak
  
 4. Save your scene.
 
-Your scene should look something like [this](http://edn.maps.arcgis.com/home/webscene/viewer.html?webscene=48403313d9bf4a39a2ca0fc4851b758e).
+Your scene should look something like [this](https://edn.maps.arcgis.com/home/webscene/viewer.html?webscene=48403313d9bf4a39a2ca0fc4851b758e).
