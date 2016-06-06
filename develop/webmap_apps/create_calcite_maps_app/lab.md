@@ -144,7 +144,7 @@ In this lab you will use Calcite Maps and Bootstrap to build an app that loads t
     <script src="https://js.arcgis.com/4.0/"></script>
    ```
 
-4. Now add code to load the webmap and wire up the widgets to the UI controls. 
+6. And lastly, add code to load the webmap and wire up the widgets to the UI controls. 
   
   NOTE: Feel free to use your own webmap ID below!
 
@@ -287,7 +287,7 @@ In this lab you will use Calcite Maps and Bootstrap to build an app that loads t
   </html>
   ```
 
-7. Now test-drive teh app
+7. Now go ahead and test-drive the app. Try viewing the legend and searching for different neighborhoods in Portland. Also try the app at different screen sizes or even try the app on your phone.
 
 Your app should look something like this:
  * [Code](index.html)
