@@ -1,6 +1,6 @@
-###Create an ArcGIS JS 4.x - Calcite Maps App with Bootstrap
+###Create an ArcGIS JS 4.0 - Calcite Maps App with Bootstrap
 
-You can easily build apps with frameworks like Bootstrap with the [ArcGIS API for JavaScript](https://developers.arcgis.com/javascript/jsapi/). This example uses [Calcite Maps](http://github.com/esri/calcite-maps), a custom map app theme for Bootstrap, and the [ArcGIS JS 4.x API](https://developers.arcgis.com/javascript/) to load layers that were built with the Map Viewer. 
+You can easily build apps with frameworks like Bootstrap with the [ArcGIS API for JavaScript](https://developers.arcgis.com/javascript/jsapi/). This example uses [Calcite Maps](http://github.com/esri/calcite-maps), a custom map app theme for Bootstrap, and the [ArcGIS JS 4.0 API](https://developers.arcgis.com/javascript/) to load layers that were built with the Map Viewer. 
 
 To learn more about the Calcite Maps framework visit [this site](http://github.com/esri/calcite-maps).
 
