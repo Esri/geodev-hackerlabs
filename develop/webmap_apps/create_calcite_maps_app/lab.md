@@ -175,7 +175,7 @@ In this lab you will use Calcite Maps and Bootstrap to build an app that loads t
           
         // App
         app = {
-          initialViewpoint: null,
+          initialExtent: null,
           mapView: null,
           viewPadding: {
             top: 50
@@ -201,18 +201,21 @@ In this lab you will use Calcite Maps and Bootstrap to build an app that loads t
           }
         });
 
-        // Search
-        app.searchWidgetNav = createSearchWidget("searchNavDiv");
-        app.searchWidgetPanel = createSearchWidget("searchPanelDiv");
-
         app.mapView.then(function(){
+
           // Set view properties
-          app.initialViewpoint = app.mapView.viewpoint.clone();
+          app.initialExtent = app.mapView.extent.clone();
           app.mapView.popup.dockOptions = {
             breakpoint: {width: 768}
           }
+          
+          // Search
+          app.searchWidgetNav = createSearchWidget("searchNavDiv");
+          app.searchWidgetPanel = createSearchWidget("searchPanelDiv");
+
           // Legend
           createLegendWidget("legendDiv");
+
         });
 
         function createLegendWidget(parentId) {
@@ -227,29 +230,38 @@ In this lab you will use Calcite Maps and Bootstrap to build an app that loads t
         
         function createSearchWidget(parentId) {
           var search = new Search({
-              view: app.mapView
+              view: app.mapView,
+              allPlaceholder: "Find neighborhoods and places"
             }, parentId);
-
-          search.defaultSource.name = "Find address or place";
-          search.defaultSource.placeholder = "e.g. Downtown";
         
-          var sources = [ 
-            search.defaultSource,
-            {
-              featureLayer: new FeatureLayer({
-                url: "http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Enriched_Styled/FeatureServer/0",
-                outFields: ["*"]
-              }),
-              searchFields: ["NAME"],
-              displayField: "NAME",
-              exactMatch: false,
-              outFields: ["*"],
-              name: "Find Neighborhood",
-              placeholder: "e.g. Old Town",
-              popupEnabled: true,
-              popupOpenOnSelect: true
-            }];
+          var sources = [];
+
+          // Add neighborhoods search
+          sources.push({
+            featureLayer: new FeatureLayer({
+              url: "http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Enriched_Styled/FeatureServer/0",
+              outFields: ["*"]
+            }),
+            searchFields: ["NAME"],
+            displayField: "NAME",
+            exactMatch: false,
+            outFields: ["*"],
+            name: "Find a Neighborhood",
+            placeholder: "e.g. old town",
+            popupEnabled: true,
+            popupOpenOnSelect: true,
+            searchExtent: app.initialExtent,
+            withinViewEnabled: false
+
+          });
+
+          // Add Esri geocoder search
+          search.defaultSource.name = "Find an address or place";
+          search.defaultSource.placeholder = "e.g. Starbucks";
+          search.defaultSource.searchExtent = app.initialExtent;
+          sources.push(search.defaultSource);
             
+          // Set search sources
           search.sources = sources;
 
           search.startup();
@@ -259,7 +271,7 @@ In this lab you will use Calcite Maps and Bootstrap to build an app that loads t
 
         // Home
         query(".calcite-navbar .navbar-brand").on("click", function(e) {
-          app.mapView.viewpoint = app.initialViewpoint;
+          app.mapView.goTo({target: app.initialExtent, rotation: 0});
         })
 
         // Basemaps
@@ -284,6 +296,7 @@ In this lab you will use Calcite Maps and Bootstrap to build an app that loads t
         });
 
       });
+      
     </script>
 
   </body>
