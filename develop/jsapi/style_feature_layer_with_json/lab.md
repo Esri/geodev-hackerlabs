@@ -2,7 +2,7 @@
 
 In this lab you will apply custom styling to a feature layer using the JSON Drawing Info stored with the feature service.
 
-1. Click [this layer](http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Styled/FeatureServer/0) and copy the Drawing Info JSON. You will use this to style your layer below.
+1. Click [this layer](http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Styled/FeatureServer/0) and copy the content of the Drawing Info JSON's `renderer` property. You will use this to style your layer below.
 
 2. Click [create_starter_map/index.html](../create_starter_map/index.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
 
