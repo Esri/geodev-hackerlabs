@@ -274,7 +274,9 @@
       // Panels - hide
       app.mapView.popup.watch("currentDockPosition", function(result) {
         if (result && query(".calcite-panels .panel.in").length > 0) {
-          query(".calcite-panels").addClass("invisible");
+          if (!(window.innerWidth > 544 && window.innerWidth < 768)) {
+            query(".calcite-panels").addClass("invisible");
+          }
         } else {
           query(".calcite-panels").removeClass("invisible");
         }
