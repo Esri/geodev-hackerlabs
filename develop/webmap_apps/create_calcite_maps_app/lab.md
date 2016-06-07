@@ -149,6 +149,8 @@ In this lab you will use Calcite Maps and Bootstrap to build an app that loads t
   NOTE: Feel free to use your own webmap ID below!
 
   ```javascript
+    <script src="https://js.arcgis.com/4.0/"></script>
+
     <script>
       
       var app;
@@ -173,16 +175,11 @@ In this lab you will use Calcite Maps and Bootstrap to build an app that loads t
           
         // App
         app = {
-          zoom: 11,
-          center: [-122.657, 45.533],
-          featureLayer: null,
-          viewPadding: {
-            top: 65
-          },
-          uiPadding: {
-            top: 15
-          },
+          initialViewpoint: null,
           mapView: null,
+          viewPadding: {
+            top: 50
+          },
           searchWidgetNav: null,
           searchWidgetPanel: null
         };
@@ -198,12 +195,9 @@ In this lab you will use Calcite Maps and Bootstrap to build an app that loads t
         app.mapView = new MapView({
           container: "mapViewDiv",
           map: map,
-          zoom: app.zoom,
-          center: app.center,
           padding: app.viewPadding,
-          ui: {
-            components: ["zoom", "compass", "attribution"],
-            padding: app.uiPadding
+          ui: { 
+            components: ["zoom", "compass", "attribution"] 
           }
         });
 
@@ -211,15 +205,17 @@ In this lab you will use Calcite Maps and Bootstrap to build an app that loads t
         app.searchWidgetNav = createSearchWidget("searchNavDiv");
         app.searchWidgetPanel = createSearchWidget("searchPanelDiv");
 
-        // Legend
         app.mapView.then(function(){
+          // Set view properties
+          app.initialViewpoint = app.mapView.viewpoint.clone();
           app.mapView.popup.dockOptions = {
             breakpoint: {width: 768}
           }
-          createLegendWidget("legendDiv", app.featureLayer);
-        })
+          // Legend
+          createLegendWidget("legendDiv");
+        });
 
-        function createLegendWidget(parentId, featureLayer) {
+        function createLegendWidget(parentId) {
           var legend = new Legend({
             viewModel: {
               view: app.mapView
@@ -261,23 +257,30 @@ In this lab you will use Calcite Maps and Bootstrap to build an app that loads t
           return search;
         }
 
+        // Home
+        query(".calcite-navbar .navbar-brand").on("click", function(e) {
+          app.mapView.viewpoint = app.initialViewpoint;
+        })
+
         // Basemaps
         query("#selectBasemapPanel").on("change", function(e){
           app.mapView.map.basemap = e.target.options[e.target.selectedIndex].dataset.vector;
         });  
-    
-        // Panels - hide
-        app.mapView.popup.watch("currentDockPosition", function(result) {
-          if (result && query(".calcite-panels .panel.in").length > 0) {
-            query(".calcite-panels").addClass("invisible");
-          } else {
-            query(".calcite-panels").removeClass("invisible");
-          }
-        });
 
         // Popup - undock
         query(".calcite-panels .panel").on("show.bs.collapse", function(e) {
           app.mapView.popup.dockEnabled = false;
+        });
+
+        // Panels - hide
+        app.mapView.popup.watch("currentDockPosition", function(result) {
+          if (result && query(".calcite-panels .panel.in").length > 0) {
+            if (!(window.innerWidth > 544 && window.innerWidth < 768)) {
+              query(".calcite-panels").addClass("invisible");
+            }
+          } else {
+            query(".calcite-panels").removeClass("invisible");
+          }
         });
 
       });
@@ -296,6 +299,19 @@ Your app should look something like this:
 ###Bonus
 Try applying different Calcite Maps classes to change the look and feel of the app:
 * Layout - Add the `calcite-layout-small-title` to the `<body>` element. You will also have to change the top padding to 50 to match the navbar height.
+* Header Icon - Change the icon to a home icon.
+```
+  .calcite-layout-small-title .calcite-navbar .navbar-brand {
+    padding: 13px 15px 8px 17.5px;
+    font-size: 24px;
+  }
+```
+```
+  <!-- Header -->
+  <div class="navbar-header">
+    <a class="navbar-brand"><span class="esri-icon esri-icon-home"></span></a>
+  </div>
+```
 * Color - Apply different colors to the `nav` element. e.g. `calcite-bgcolor-dark-red`
 * Theme - Apply different colors and theme classes to the `nav`, `dropdown-menu` and `panels` elements. e.g. `calcite-text-light`, `calcite-bg-dark`...
 
