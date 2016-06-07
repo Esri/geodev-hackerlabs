@@ -291,7 +291,7 @@ In this lab you will use Calcite Maps and Bootstrap to build an app that loads t
 
 Your app should look something like this:
  * [Code](index.html)
- * [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi/create_calcite_maps_app/index.html)
+ * [Live App](http://esri.github.io/geodev-hackerlabs/develop/webmap_apps/create_calcite_maps_app/index.html)
 
 ###Bonus
 Try applying different Calcite Maps classes to change the look and feel of the app:
