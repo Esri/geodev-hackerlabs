@@ -21,7 +21,7 @@ In this lab you will use Calcite Maps and Bootstrap to build an app that loads t
       <!-- Title -->
       <div class="calcite-title calcite-overflow-hidden">
         <div class="calcite-title-main">2015 Portland Population Density - Calcite Maps</div>
-        <div class="calcite-title-sub">Explore were people are living in downtown neighborhoods</div> 
+        <div class="calcite-title-sub">Explore where people are living in downtown neighborhoods</div> 
       </div>
        <!-- Nav -->
       <ul class="nav navbar-nav">                    
