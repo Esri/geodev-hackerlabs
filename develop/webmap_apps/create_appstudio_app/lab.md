@@ -23,15 +23,9 @@ In this lab, you will use AppStudio to build a native app from a single webmap.
 
 9. Click `Choose Web Map(s)`, choose the `Public` tab, and in search type `geodev breweries colorado`. Click the `Breweries in Colorado` webmap. Click `OK` and `Save and Finish`.
 
-10. To view your app before you build the binaries for your plaform of choice you can use AppStudio Player for ArcGIS in iOS or Android. If you have a device that supports one of these operating systems go ahead and download it from the App Store or Google Play.
-
- * If you don't have an iOS or Android go to step 12.
+10. To view your app before you build the binaries for your plaform of choice you can use AppStudio Player for ArcGIS. Players are available for Windows, Mac, Linux, iOS or Android [here](http://doc.arcgis.com/en/appstudio/download/). If you have a device that supports one of these operating systems go ahead and download it.
 
 11. Open AppStudio Player and `Sign In` to view your apps. Select the app you just created and select `Yes` to download the selected app to your device. Once the download is complete click `OK`. Select the app again and you now have that app running in AppStudio Player.  
-
-12. You can also view your application on your desktop before you build the binaries. Click [this link](http://appstudio.arcgis.com/download.html) to download AppStudio for ArcGIS Desktop edition.
-
-13. Open AppStudio for ArcGIS on your desktop and click `Sign In`. Click the thumbnail icon for your app and select `Yes` to download the selected app to your computer. After the download completes double click your app and now have that app running in AppStudio Player. 
 
 __You are now ready to deploy your native app__ 
 
@@ -43,3 +37,7 @@ __You are now ready to deploy your native app__
 3. Once the build is completed. Click `Download` to install your app.
 
 * You can find all your app builds in your ArcGIS Developers or Organization account under `My Content` > `My Apps`.
+
+### Bonus
+
+* You can also further customize your apps using AppStudio for ArcGIS (Desktop Edition), available [here](http://doc.arcgis.com/en/appstudio/download/) for Windows, Mac and Linux. To deploy applications customized with Desktop Edition, you need to purchase a AppStudio for ArcGIS `Standard` license. However, you can still build and play these customized apps without a paid license. See [here](http://doc.arcgis.com/en/appstudio/extend-apps/extendapps.htm) for more details.
