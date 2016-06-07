@@ -1,12 +1,12 @@
-###Create an ArcGIS JS 4.x - Calcite Maps App with Bootstrap
+###Create a Calcite Maps - Bootstrap App
 
-You can easily build webmap apps with the [ArcGIS API for JavaScript](https://developers.arcgis.com/javascript/jsapi/) and frameworks such as [Calcite Maps](http://github.com/esri/calcite-maps). [Calcite Maps](http://github.com/esri/calcite-maps) is a map app framework that works with Bootstrap. It contains CSS classes and Bootstrap extensions specifically for building map apps for web and mobile devices. To learn more, visit the Calcite Maps [site](http://github.com/esri/calcite-maps).
+It is easiy to build webmap apps with the [ArcGIS API for JavaScript](https://developers.arcgis.com/javascript/jsapi/) and frameworks such as [Calcite Maps](http://github.com/esri/calcite-maps). [Calcite Maps](http://github.com/esri/calcite-maps) is a framework that contains CSS classes and extensions that extend Bootstrap and are specifically for building map apps for web and mobile devices. To learn more, visit the Calcite Maps [site](http://github.com/esri/calcite-maps).
 
-In this lab you will use Calcite Maps and Bootstrap to build an app that loads the Portland Demographics webmap. You will be able to access popups, view the legend and perform searches on the data itself.
+In this lab you will use Calcite Maps and Bootstrap to build an app that loads the Portland Demographics webmap. You will also wire up the UI and widgets so you can easily access popups, view the legend and perform searches on the underlying neighborhood data itself.
 
 1. Click [start calcite HTML](step_1.html) and copy the contents to a new [jsbin.com](http://jsbin.com).
 
-2. In `JSBin` > `HTML`, let's get started by adding the HTML and classes for the `navbar`:
+2. In `JSBin` > `HTML`, let's get started by adding the HTML and classes for the `body` and `navbar`:
   
   ```
   <body class="calcite-nav-top">
@@ -56,7 +56,7 @@ In this lab you will use Calcite Maps and Bootstrap to build an app that loads t
 
   ```
 
-4. Next, let's add the HTML for the panels that link up to the menus above.
+4. Next, let's add the HTML for the `panels` that link up to the menus above.
 
   ```
     <!-- Panels -->
@@ -144,7 +144,7 @@ In this lab you will use Calcite Maps and Bootstrap to build an app that loads t
     <script src="https://js.arcgis.com/4.0/"></script>
    ```
 
-4. Now add code to load the webmap and wire up the widgets to the UI controls. 
+6. And lastly, add code to load the webmap and wire up the widgets to the UI controls. 
   
   NOTE: Feel free to use your own webmap ID below!
 
@@ -287,14 +287,16 @@ In this lab you will use Calcite Maps and Bootstrap to build an app that loads t
   </html>
   ```
 
+7. Now go ahead and test-drive the app. Try viewing the legend and searching for different neighborhoods in Portland. Also try the app at different screen sizes or even try the app on your phone.
+
 Your app should look something like this:
  * [Code](index.html)
- * [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi/create_calcite_maps_app/index.html)
+ * [Live App](http://esri.github.io/geodev-hackerlabs/develop/webmap_apps/create_calcite_maps_app/index.html)
 
 ###Bonus
 Try applying different Calcite Maps classes to change the look and feel of the app:
-* Layout: Add the `calcite-layout-small-title` to the `<body>` element. You will also have to change the top padding to 50 to match the navbar height.
-* Color: Apply different colors to the `nav` element. e.g. `calcite-bgcolor-dark-red`
-* Theme: Apply different colors and theme classes to the `nav`, `dropdown-menu` and `panels` elements. e.g. `calcite-text-light`, `calcite-bg-dark`...
+* Layout - Add the `calcite-layout-small-title` to the `<body>` element. You will also have to change the top padding to 50 to match the navbar height.
+* Color - Apply different colors to the `nav` element. e.g. `calcite-bgcolor-dark-red`
+* Theme - Apply different colors and theme classes to the `nav`, `dropdown-menu` and `panels` elements. e.g. `calcite-text-light`, `calcite-bg-dark`...
 
-Visit the Calcite Maps [site](http://github.com/esri/calcite-maps) for documentation and examples.
+Visit the Calcite Maps [site](http://github.com/esri/calcite-maps) for documentation and examples. Use the [Styler](http://github.com/esri/calcite-maps) to explore the different app layouts and designs you can create.

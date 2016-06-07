@@ -18,7 +18,7 @@ In this lab you will customize a vector basemap from an existing tile layer and 
 
 	2. Click `Add` to add the `Light Gray Canvas` layer to the map > click `Done Adding Layers`.
 
-3. In the table of contents, hover over the selected layer's hamburger menu `•••` and click `More Options` > `Copy`.
+3. In the table of contents, click the new layer's hamburger menu `•••` and select `Copy`.
 
 4. For the layer just copied, click `More Options` > `Save Layer` > change the Title to `Light Green Canvas` and click `CREATE ITEM`.
 
