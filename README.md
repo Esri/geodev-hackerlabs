@@ -20,7 +20,7 @@ Here's how to get started:
 
 1. **Sign up for a free** [ArcGIS Developer subscription](https://developers.arcgis.com/en/sign-up/) - Your subscription allows you to download software, register apps, import data, create new services, store maps, perform spatial analysis and more. If you already have an [ArcGIS Organizational subscription](http://www.arcgis.com/features/plans/pricing.html) (with at least publisher level permission) you can use that too. Please note that [free public accounts](https://geonet.esri.com/groups/geodev/blog/2014/10/15/help-i-cant-get-into-developersarcgiscom) and Organizational 'User' accounts will not work.
 
-2. **Start the labs** - You can complete the labs in order or just pick and choose the ones you want to do. It will be easiest to use the data provided (Portland open data), but you feel free to substitute with your own data and augment the steps where necessary.
+2. **Start the labs** - You can complete the labs in order or just pick and choose the ones you want to do. It will be easiest to use the data provided (Portland open data), but you feel free to substitute with your own data and augment the steps where necessary. The labs marked with an `*` are the minimum labs you need to complete to build your own custom app from ground zero.
 
 3. **Share your work** - This is 100% optional, but as you are going through, feel free to share your work with others in this [ArcGIS Online Group](#want-to-share-your-work)!
 
@@ -40,6 +40,8 @@ Here are the resources you will use for the labs.
 
 The labs start from ground-zero and work through the Data - Design - Develop process. In this case we use Portland open data, but feel free to use your own data to work through and build your own custom solutions. You might find it helpful to follow along with the [Hackerlab Slides](http://slides.com/alaframboise/geodev-hackerlabs).
 
+NOTE: Labs marked with an `*` are the minium required to build your own app from ground zero. The others are optional.
+
 Let's get started!
 
 ![Steps](./geodev-hackerlabs-apps.png)
@@ -51,12 +53,12 @@ Creating and importing data interactively is a fast and effective way to prepare
 In these labs you will import, create and manage data using the [ArcGIS Online](http://arcgis.com) and [ArcGIS for Developers](http://developers.arcgis.com) website and tools. You will also use the map viewer to perform data enrichment, the process of adding social demographic information to a dataset, and spatial analyses, the process of creating new data based on spatial critria. You will also explore the feature service REST endpoints and use them in a simple web app to access and display spatial data.
 
 ArcGIS Online and Developer Tools
-* [Import Data](./data/import_data/lab.md)
+* [Import Data](./data/import_data/lab.md)*
 * [Create and Edit Data](./data/create_and_edit_data/lab.md)
 * [Share Data](./data/share_data/lab.md)
 * [View via REST](./data/view_via_rest/lab.md)
 * [View in a Map](./data/view_in_a_map/lab.md)
-* [GeoEnrich Data](./data/geoenrich_data/lab.md)
+* [GeoEnrich Data](./data/geoenrich_data/lab.md)*
 * [Create Buffers](/data/create_buffers/lab.md)
 * [Create Walk Areas](./data/create_walk_areas/lab.md)
 * [Extract Walkable Neighborhoods](./data/extract_walkable_neighborhoods/lab.md)
@@ -74,9 +76,9 @@ Creating web maps with great cartography is one of the most important steps to b
 In these labs you will use [ArcGIS Online](http://arcgis.com) and the map viewer to create and style web maps. You will create new maps, explore basemaps, search for layers, use smart mapping to change symbol styles, style popups, label data, show/hide fields, filter data, and more. You will also learn how to save web maps and featurelayers and use the JSON to achieve the same rich cartographic and popup experiences in your own custom apps.
 
 ArcGIS Online Tools
-* [Create a New Web Map](./design/create_a_new_map/lab.md)
-* [Style a Web Map](./design/style_a_map/lab.md)
-* [Style Popups](./design/style_popups/lab.md)
+* [Create a New Web Map](./design/create_a_new_map/lab.md)*
+* [Style a Web Map](./design/style_a_map/lab.md)*
+* [Style Popups](./design/style_popups/lab.md)*
 * [Smart Mapping - Proportional Styling](./design/style_map_layers_with_smart_mapping/lab.md)
 * [Copy and save a Layer](./design/save_a_layer/lab.md)
 * [Vector Basemaps](./design/apply_vector_basemap/lab.md)
@@ -97,7 +99,7 @@ One of the easiest ways to build an ArcGIS map app is to start with a web map.
 In these labs you will use the Configurable App Templates, the ArcGIS Web App Builder, and the APIs to build custom mapping apps. You will use the web maps with the Web AppBuilder to create an HTML5 responsive app or AppStudio to build and deploy a native app for iOS and Android. Or you can just build a custom app from the ground up with the ArcGIS JS API, Esri-Leaflet or the ArcGIS Runtime APIs.
 
 * Web Map Apps
- * [Create a Configurable App](./develop/webmap_apps/create_configurable_app/lab.md)
+ * [Create a Configurable App](./develop/webmap_apps/create_configurable_app/lab.md)*
  * [Create a Web AppBuilder App](./develop/webmap_apps/create_web_appbuilder_app/lab.md)
  * [Create a JS API App](./develop/webmap_apps/create_jsapi_app/lab.md)
  * [Create a Esri Leaflet App](./develop/leaflet/add_feature_layer/lab.md)
