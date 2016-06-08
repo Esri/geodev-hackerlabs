@@ -40,7 +40,7 @@ Here are the resources you will use for the labs.
 
 The labs start from ground-zero and work through the Data - Design - Develop process. In this case we use Portland open data, but feel free to use your own data to work through and build your own custom solutions. You might find it helpful to follow along with the [Hackerlab Slides](http://slides.com/alaframboise/geodev-hackerlabs).
 
-NOTE: Labs marked with an `*` are the minium required to build your own app from ground zero. The others are optional.
+NOTE: Labs marked with an `*` are the minimum required to build your own app from ground zero. The others are optional.
 
 Let's get started!
 
