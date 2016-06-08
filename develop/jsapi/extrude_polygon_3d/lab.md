@@ -38,7 +38,7 @@ This lab introduces visual variables as a powerful way of extruding polygons in 
 
           //Create map
           var map = new Map({
-            basemap: "streets"
+            basemap: "dark-gray"
           });
 
           //Create SceneView for 3d visualization
@@ -46,9 +46,9 @@ This lab introduces visual variables as a powerful way of extruding polygons in 
             container: "viewDiv",
             map: map,
             camera: {
-              position: [-118.25, 4.27, 6249238],
-              tilt: 30,
-              heading: 23
+              position: [-122.617, 45.18, 30000],
+              tilt: 50,
+              heading: 0
             }
           });
 
@@ -71,7 +71,7 @@ Don't worry, we're going to fix this in just a minute.
   ``` js
       //Create featureLayer and add to the map
       var featureLayer = new FeatureLayer({
-        url: "https://sampleserver6.arcgisonline.com/arcgis/rest/services/Census/MapServer/3"
+        url: "http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Enriched/FeatureServer/0"
       });
       map.add(featureLayer);
   ```
@@ -90,23 +90,33 @@ then we'll apply `visualVariables` to define how to render the values by color, 
         // These define how to render by size, color and/or opacity
         // Each visualVariable is associated with a field
         visualVariables: [{
-          type: "size",
-          field: "POP07_SQMI",
-          minSize: 40000,
-          maxSize: 1000000,
-          minDataValue: 1,
-          maxDataValue: 1000
-        }, {
-          type: "color",
-          field: "SQMI",
-          minDataValue: 1,
-          maxDataValue: 600000,
-          colors: [
-            new Color("white"),
-            new Color("red")
-          ]
-        }]
-      });
+            type: "size",
+            field: "TOTPOP_CY",
+            normalizationField: "AREA",
+             stops: [
+              {
+                value: 0,
+                size: 500
+              },
+              {
+                value: 10000,
+                size: 4000
+              }]
+          }, {
+            type: "color", 
+            field: "TOTPOP_CY",
+            normalizationField: "AREA",
+             stops: [
+              {
+                value: 0,
+                color: "#FFFCD4",
+              },
+              {
+                value: 10000,
+                color: [153, 83, 41],
+              }]
+          }]
+        });
 
       featureLayer.renderer = extrudePolygonRenderer;
 
