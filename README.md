@@ -50,7 +50,7 @@ Let's get started!
 
 Creating and importing data interactively is a fast and effective way to prepare data for both prototype and production app development.
 
-In these labs you will import, create and manage data using the [ArcGIS Online](http://arcgis.com) and [ArcGIS for Developers](http://developers.arcgis.com) website and tools. You will also use the map viewer to perform data enrichment, the process of adding social demographic information to a dataset, and spatial analyses, the process of creating new data based on spatial critria. You will also explore the feature service REST endpoints and use them in a simple web app to access and display spatial data.
+In these labs you will import, create and manage data using the [ArcGIS Online](http://arcgis.com) and [ArcGIS for Developers](http://developers.arcgis.com) website and tools. You will also use the map viewer to perform data enrichment, the process of adding social demographic information to a dataset, and spatial analyses, the process of creating new data based on spatial criteria. You will also explore the feature service REST endpoints and use them in a simple web app to access and display spatial data.
 
 ArcGIS Online and Developer Tools
 * [Import Data](./data/import_data/lab.md)*
