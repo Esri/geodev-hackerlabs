@@ -33,6 +33,7 @@ Here are the resources you will use for the labs.
 * [ArcGIS Online Maps and Apps - Map Viewer, My Content, Item Management](http://arcgis.com)
 * [ArcGIS Online Help - Documentation and Tutorials](http://doc.arcgis.com/en/arcgis-online/)
 * [JS Bin - Interactive JS coding](http://jsbin.com)
+* [A simple guide for setting up a local web server (optional)](https://gist.github.com/jgravois/5e73b56fa7756fd00b89)
 
 > NOTE: If you are brand new to ArcGIS, we recommend that you use your developer account to sign into [developers.arcgis.com](http://developers.arcgis.com) to familiarize yourself with the site and then sign into [ArcGIS.com](https://www.arcgis.com) to learn how to [create your first map](http://doc.arcgis.com/en/arcgis-online/create-maps/make-your-first-map.htm).
 
