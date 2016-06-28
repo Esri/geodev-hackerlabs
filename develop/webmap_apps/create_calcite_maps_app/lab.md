@@ -9,40 +9,41 @@ In this lab you will use Calcite Maps and Bootstrap to build an app that loads t
 2. In `JSBin` > `HTML`, let's get started by adding the HTML and classes for the `body` and `navbar`:
   
   ```
-  <body class="calcite-nav-top">
+  <body class="calcite-maps calcite-nav-top">
 
     <!-- Navbar -->
 
     <nav class="navbar calcite-navbar navbar-fixed-top calcite-text-light calcite-bg-dark calcite-bgcolor-red-75">
-      <!-- Header -->
-      <div class="navbar-header">
-        <a class="navbar-brand"><span class="esri-icon esri-icon-map-pin"></span></a>
+      <!-- Dropdown -->
+      <div class="dropdown calcite-dropdown calcite-bg-light calcite-text-dark" role="presentation">
+        <a class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
+          <div class="calcite-dropdown-toggle">
+            <span class="sr-only">Toggle dropdown menu</span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="visible-xs" data-target="#panelSearch" role="button" aria-haspopup="true"><span class="glyphicon glyphicon-search"></span> Search</a></li>
+          <li><a role="button" data-target="#panelLegend" aria-haspopup="true"><span class="glyphicon glyphicon-list"></span> Legend</a></li>
+          <li><a role="button" data-target="#panelBasemaps" aria-haspopup="true"><span class="glyphicon glyphicon-th-large"></span> Basemaps</a></li>
+          <li><a role="button" id="calciteToggleNavbar" aria-haspopup="true"><span class="glyphicon glyphicon-fullscreen"></span> Toggle Title</a></li>
+        </ul>
       </div>
       <!-- Title -->
       <div class="calcite-title calcite-overflow-hidden">
-        <div class="calcite-title-main">2015 Portland Population Density - Calcite Maps</div>
-        <div class="calcite-title-sub">Explore where people are living in downtown neighborhoods</div> 
+        <div class="calcite-title-main">2015 Portland Population Density</div>
+        <span class="calcite-title-divider hidden-xs"></span>
+        <div class="calcite-title-sub hidden-xs">Explore where people are living in downtown neighborhoods</div> 
       </div>
-       <!-- Nav -->
-      <ul class="nav navbar-nav">                    
+      <!-- Nav -->
+      <ul class="nav navbar-nav calcite-nav">                    
         <li><div class="calcite-navbar-search hidden-xs"><div id="searchNavDiv"></div></div></li>
       </ul>
-      <!-- Dropdown -->
-      <div class="dropdown calcite-dropdown calcite-bg-light calcite-text-dark" role="presentation">
-        <a class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <span class="sr-only">Toggle dropdown menu</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="visible-xs" role="button" data-target="#panelSearch" aria-haspopup="true"><span class="glyphicon glyphicon-search"></span> Search</a></li>
-          <li><a role="button" data-target="#panelLegend" aria-haspopup="true"><span class="glyphicon glyphicon-list"></span> Legend</a></li>
-          <li><a role="button" data-target="#panelBasemaps" aria-haspopup="true"><span class="glyphicon glyphicon-th-large"></span> Basemaps</a></li>
-          <li><a role="button" data-target="toggleNavbar" aria-haspopup="true"><span class="glyphicon glyphicon-fullscreen"></span> Toggle Title</a></li>
-        </ul>
-      </div>
     </nav><!--/.calcite-navbar --> 
+
     ```
 
 3. Now add a container for the map.
@@ -61,7 +62,7 @@ In this lab you will use Calcite Maps and Bootstrap to build an app that loads t
   ```
     <!-- Panels -->
 
-    <div class="calcite-panels calcite-text-dark calcite-bg-light panel-group" role="tablist" aria-multiselectable="true">
+    <div class="calcite-panels calcite-panels-right calcite-text-dark calcite-bg-light panel-group" role="tablist" aria-multiselectable="true">
           
       <!-- Legend Panel -->
       
@@ -269,11 +270,6 @@ In this lab you will use Calcite Maps and Bootstrap to build an app that loads t
           return search;
         }
 
-        // Home
-        query(".calcite-navbar .navbar-brand").on("click", function(e) {
-          app.mapView.goTo({target: app.initialExtent, rotation: 0});
-        })
-
         // Basemaps
         query("#selectBasemapPanel").on("change", function(e){
           app.mapView.map.basemap = e.target.options[e.target.selectedIndex].dataset.vector;
@@ -311,20 +307,7 @@ Your app should look something like this:
 
 ###Bonus
 Try applying different Calcite Maps classes to change the look and feel of the app:
-* Layout - Add the `calcite-layout-small-title` to the `<body>` element. You will also have to change the top padding to 50 to match the navbar height.
-* Header Icon - Change the icon to a home icon.
-```
-  .calcite-layout-small-title .calcite-navbar .navbar-brand {
-    padding: 13px 15px 8px 17.5px;
-    font-size: 24px;
-  }
-```
-```
-  <!-- Header -->
-  <div class="navbar-header">
-    <a class="navbar-brand"><span class="esri-icon esri-icon-home"></span></a>
-  </div>
-```
+* Layout - Add the `calcite-layout-medium-title` to the `<body>` element. You will also have to change the top padding to 60 to match the navbar height.
 * Color - Apply different colors to the `nav` element. e.g. `calcite-bgcolor-dark-red`
 * Theme - Apply different colors and theme classes to the `nav`, `dropdown-menu` and `panels` elements. e.g. `calcite-text-light`, `calcite-bg-dark`...
 
