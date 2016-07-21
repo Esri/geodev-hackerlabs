@@ -6,11 +6,11 @@ In this lab you will add neighborhood polygons and enrich them with population d
 
 ###Steps
 
-1. Go to [arcgis.com](http://www.arcgis.com) and login.  
+1. Go to [arcgis.com](http://www.arcgis.com) and login.
 
 2. Use `Search` > `Search for Layers` to find the `PDX Neighborhoods` layer by `al_geodev`.
 
-3. Click `Open` > `Add layer to new map`. 
+3. Click `Open` > `Add layer to new map`.
 
 > NOTE: If you are having difficulty finding it, just click [this link](http://www.arcgis.com/home/item.html?id=cc1d37e67e934a93b489ca4d82b07d9c).
 
@@ -19,9 +19,9 @@ In this lab you will add neighborhood polygons and enrich them with population d
   1. Click `Select Variables` and `Search` and select the following:
 
     ```
-    Population > 2015 Total Population (Esri)
-    Income > 2015 Average Household Income (Esri)
-    Age > 2015 Median Age (Esri)
+    Population > 2016 Total Population (Esri)
+    Income > 2016 Average Household Income (Esri)
+    Age > 2016 Median Age (Esri)
     ```
 
     ```HINT: After you select each variable, click `Back` to select each variable and `Apply` when you are done.```
@@ -34,13 +34,13 @@ In this lab you will add neighborhood polygons and enrich them with population d
 
 7. Click `Enriched PDX Neighborhoods` > `Change Style`.
 
-  1. Set the following properties: 
+  1. Set the following properties:
 
     ```
-    Choose and attribute to show: 2015 Total Population
+    Choose and attribute to show: 2016 Total Population
     ```
 
-  2. Done. 
+  2. Done.
 
 8. Save your map.
 
