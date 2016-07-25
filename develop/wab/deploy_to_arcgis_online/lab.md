@@ -7,7 +7,7 @@ In this exercise, you will:
 * **Create a new group to share the item**
 * **Ensure that ArcGIS Online is using content from this group when displaying templates**
 
-1. On the Web AppBuilder homepage [http://[server]:3344/webappbuilder/](http://[server]:3344/webappbuilder/), click `Configure App` for the application you would like to export as template.
+1. On the Web AppBuilder homepage [http://[server]:3344/webappbuilder/], click `Configure App` for the application you would like to export as template.
 
 2. In the `Theme` tab click the `^` to the right of the Saved button > `Export As Template` and select the individual options you want to make configurable for webmap authors later and then click `Export` > `Export to My Organization`.
 
