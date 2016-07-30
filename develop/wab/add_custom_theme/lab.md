@@ -57,7 +57,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
   "copyright": "",
   "license": "http://www.apache.org/licenses/LICENSE-2.0"
 }
-    ```  
+```  
 3. .
 
 4. 
