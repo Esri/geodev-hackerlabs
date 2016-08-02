@@ -5,14 +5,14 @@
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
   <!-- Load Leaflet from CDN-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/leaflet/1.0.0-rc.1/leaflet.css" />
-  <script src="https://cdn.jsdelivr.net/leaflet/1.0.0-rc.1/leaflet-src.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/leaflet/1.0.0-rc.2/leaflet.css" />
+  <script src="https://cdn.jsdelivr.net/leaflet/1.0.0-rc.2/leaflet-src.js"></script>
 
   <!-- Load Esri Leaflet from CDN -->
   <script src="https://cdn.jsdelivr.net/leaflet.esri/2.0.0/esri-leaflet.js"></script>
 
   <!-- Load Esri Leaflet Renderers -->
-  <script src="//cdn.jsdelivr.net/leaflet.esri.renderers/2.0.1/esri-leaflet-renderers.js"></script>
+  <script src="https://cdn.jsdelivr.net/leaflet.esri.renderers/2.0.2/esri-leaflet-renderers.js"></script>
 
   <style>
     body {
@@ -45,14 +45,27 @@
 <div id="map"></div>
 
 <script type='text/javascript'>
+
     var map = L.map('map').setView([45.533, -122.657], 12);
     L.esri.basemapLayer('DarkGray').addTo(map);
 
-    // Load layers in order
-    L.esri.featureLayer({url: "http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Styled/FeatureServer/0"}).on("load", function() {
-      L.esri.featureLayer({url: "http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Lines_Styled/FeatureServer/0"}).on("load", function() {
-          L.esri.featureLayer({url: "http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0"}).addTo(map);
-      }).addTo(map);
+    // use panes to control the order that layers are displayed
+    map.createPane('neighborhoods');
+    L.esri.featureLayer({
+      url: 'http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Styled/FeatureServer/0',
+      pane: 'neighborhoods'
+    }).addTo(map);
+
+    map.createPane('rail lines');
+    L.esri.featureLayer({
+      url: 'http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Lines_Styled/FeatureServer/0',
+      pane: 'rail lines'
+    }).addTo(map);
+
+    map.createPane('stops');
+    L.esri.featureLayer({
+      url: 'http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0',
+      pane: 'stops'
     }).addTo(map);
 
 </script>
