@@ -21,7 +21,7 @@ In this lab, you will add featurelayers to an Esri Leaflet application.
 
 		 // ADD the rail lines here
 		L.esri.featureLayer({
-			url: 'http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Lines_Styled/FeatureServer/0'
+			url: 'https://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Lines_Styled/FeatureServer/0'
 		}).addTo(map);
 
 	</script>
