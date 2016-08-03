@@ -57,7 +57,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
   "copyright": "",
   "license": "http://www.apache.org/licenses/LICENSE-2.0"
 }
-```
+ ```
 3.  Launch Web AppBuilder using the startup batch file. Create a New Default (2D) app. Give it a title `Custom Theme` and click `OK`.
 
 4.  Click the HackerlabTheme and click `Save`. Notice the default `Style` is light blue and contains one `Layout`, but the header controller is dark gray. Now you're going to style this theme using CSS.
