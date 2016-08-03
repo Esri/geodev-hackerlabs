@@ -85,3 +85,4 @@ In this lab you will add a custom Theme to Web AppBuilder.
     color: #323232;
     }
 ```
+6.
