@@ -6,6 +6,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
 
 2. Click the HackerlabTheme folder and edit the manifest.json to describe the theme's content(e.g., styles, panels, and layouts). This informs Web AppBuilder which files to load for the theme.
  
+
 ```json
  {
   "name": "HackerlabTheme",
