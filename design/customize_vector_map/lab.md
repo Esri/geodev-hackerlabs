@@ -88,3 +88,7 @@ In the steps below you're going to change the color for a couple of layers in th
 Your map should look like this:
 * [Live Map](http://www.arcgis.com/home/webmap/viewer.html?webmap=b66770c3ad184c6a8f68cba5c19addeb)
 * [Code](root_lightgreen.json)
+
+### Bonus
+
+* Working with JSON is fun, but you can also work with the layer styles in a more "[WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG)" fashion. Use the [ArcGIS Vector Basemap Style Editor](http://maps.esri.com/AGSJS_Demos/templates/VectorBasemapStyleEditor/) to edit the `Light Green Canvas` map you just created. Try using the colors of your organization, or maybe the colors of your [favorite team](http://teamcolors.arc90.com/)!
