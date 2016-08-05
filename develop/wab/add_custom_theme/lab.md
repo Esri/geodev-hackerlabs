@@ -144,7 +144,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
    height: 14px;
    margin-top: 13px;
    }
-
+```
     Make the text labels in the drop-down menu smaller and change the link color in the header to gray.
 
 ```CSS
