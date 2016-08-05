@@ -123,34 +123,36 @@ In this lab you will add a custom Theme to Web AppBuilder.
 
 8.  Widgets can be grouped when the group display mode is `show in Dropdown Menu` in the HeaderController widget. To align the drop-down caret correctly, place the drop-down caret at the bottom of the icon node.
 
-```CSS
+ ```CSS
     .jimu-widget-header-controller .drop-triangle{
     bottom: 5px;
     margin-left: -5px;
     } 
-```
+ ```
     Change the background color of the drop-down menu to dark gray.
 
-```CSS
+ ```CSS
     .jimu-widget-header-controller .jimu-drop-menu {
     background-color: #323232;
     }
-````
+ ````
     Make the widget icons in the drop-down menu the same size as other widget icons and align them correctly.
 
-```CSS
+ ```CSS
     .jimu-widget-header-controller .jimu-drop-menu .menu-item img{
     width: 14px;
     height: 14px;
     margin-top: 13px;
     }
-```
+ ```
     Make the text labels in the drop-down menu smaller and change the link color in the header to gray.
 
-```CSS
+ ```CSS
     .jimu-widget-header-controller .jimu-drop-menu .menu-item .label{
     font-size: 12px;
     }
     .jimu-link:link, .jimu-link:visited{
     color: #848484;
     }    
+ ```
+ 9.
