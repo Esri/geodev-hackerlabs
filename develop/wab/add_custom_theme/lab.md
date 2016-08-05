@@ -129,14 +129,14 @@ In this lab you will add a custom Theme to Web AppBuilder.
    margin-left: -5px;
    } 
 ```
-  Change the background color of the drop-down menu to dark gray.
+    Change the background color of the drop-down menu to dark gray.
 
 ```CSS
    .jimu-widget-header-controller .jimu-drop-menu {
    background-color: #323232;
    }
 ````
-  Make the widget icons in the drop-down menu the same size as other widget icons and align them correctly.
+    Make the widget icons in the drop-down menu the same size as other widget icons and align them correctly.
 
 ```CSS
    .jimu-widget-header-controller .jimu-drop-menu .menu-item img{
@@ -145,7 +145,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
    margin-top: 13px;
    }
 
-   Make the text labels in the drop-down menu smaller and change the link color in the header to gray.
+     Make the text labels in the drop-down menu smaller and change the link color in the header to gray.
 
 ```CSS
    .jimu-widget-header-controller .jimu-drop-menu .menu-item .label{
