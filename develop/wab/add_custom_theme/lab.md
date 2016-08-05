@@ -63,6 +63,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
 4.  Click the HackerlabTheme and click `Save`. Notice the default `Style` is light blue and contains one `Layout`, but the header controller is dark gray. We are going change this to match our theme using CSS.
  
 5.  Click the `HackerlabTheme\styles\default` folder and edit the style.css. The first thing we want to do is add some CSS to import a new font, change the background color, add a border, and update the title and subtitle color. Save these changes and refresh the page. 
+ 
 ```CSS
       @import url(//fonts.googleapis.com/css?family=Ubuntu);
       .jimu-main-font{
