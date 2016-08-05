@@ -90,9 +90,8 @@ In this lab you will add a custom Theme to Web AppBuilder.
        box-shadow: none;
        border-bottom: 2px solid #323232;
      }
- ```
+```
  
-
 6.   Now that we have modified the default style the widget icons in the header controller are not visible, they need to be resized, and need margin properties to allign the icons. Add the CSS to implement these changes.    
 
 ```CSS
