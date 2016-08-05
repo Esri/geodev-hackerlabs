@@ -65,31 +65,31 @@ In this lab you will add a custom Theme to Web AppBuilder.
 5.  Click the `HackerlabTheme\styles\default` folder and edit the style.css. The first thing we want to do is add some CSS to import a new font, change the background color, add a border, and update the title and subtitle color. Save these changes and refresh the page. 
  
 ```CSS
-      @import url(//fonts.googleapis.com/css?family=Ubuntu);
-      .jimu-main-font{
-      font-family: 'Ubuntu';
+       @import url(//fonts.googleapis.com/css?family=Ubuntu);
+       .jimu-main-font{
+       font-family: 'Ubuntu';
+       }
+       .jimu-main-background{
+       background-color: #fff;
+       }
+       .jimu-widget-homebutton,
+       .jimu-widget-mylocation,
+       .jimu-widget-zoomslider .zoom,
+       .jimu-widget-homebutton .HomeButton .home,
+       .jimu-widget-mylocation .place-holder{
+       background-color: #2196f3;
+       opacity: .9;
+       }
+       .jimu-title,
+       .jimu-subtitle {
+       color: #323232;
       }
-      .jimu-main-background{
-      background-color: #fff;
-      }
-      .jimu-widget-homebutton,
-      .jimu-widget-mylocation,
-      .jimu-widget-zoomslider .zoom,
-      .jimu-widget-homebutton .HomeButton .home,
-      .jimu-widget-mylocation .place-holder{
-      background-color: #2196f3;
-      opacity: .9;
-      }
-      .jimu-title,
-      .jimu-subtitle {
-      color: #323232;
+       .jimu-widget-header-controller{
+       -moz-box-shadow: none;
+       -webkit-box-shadow: none;
+       box-shadow: none;
+       border-bottom: 2px solid #323232;
      }
-      .jimu-widget-header-controller{
-      -moz-box-shadow: none;
-      -webkit-box-shadow: none;
-      box-shadow: none;
-      border-bottom: 2px solid #323232;
-    }
  ```
 6. 
  
