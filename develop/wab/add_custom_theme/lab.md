@@ -114,12 +114,12 @@ In this lab you will add a custom Theme to Web AppBuilder.
 
 7.  WebAppBuilder has state classes which don't have any CSS rules. Add selected state styles to match the current theme of blue when an icon is selected. 
 
-```CSS
+ ```CSS
     .jimu-widget-header-controller .icon-node.jimu-state-selected{
     border-top: 0;
     background-color: #2196f3;
     }
-```
+ ```
 
 8.  Widgets can be grouped when the group display mode is `show in Dropdown Menu` in the HeaderController widget. To align the drop-down caret correctly, place the drop-down caret at the bottom of the icon node.
 
