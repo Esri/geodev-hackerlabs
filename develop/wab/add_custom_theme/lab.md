@@ -145,7 +145,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
    margin-top: 13px;
    }
 
-     Make the text labels in the drop-down menu smaller and change the link color in the header to gray.
+    Make the text labels in the drop-down menu smaller and change the link color in the header to gray.
 
 ```CSS
    .jimu-widget-header-controller .jimu-drop-menu .menu-item .label{
