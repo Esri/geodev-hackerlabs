@@ -92,8 +92,8 @@ In this lab you will add a custom Theme to Web AppBuilder.
     }
 ```
 
-6.  Now that we have modified the default style the widget icons in the header controller are not visible, they need to be resized, and need margin properties to allign the icons. Add the CSS to implement these changes.    
 
+6.  Now that we have modified the default style the widget icons in the header controller are not visible, they need to be resized, and need margin properties to allign the icons. Add the CSS to implement these changes.    
 
 ```CSS
     .jimu-widget-header-controller .icon-node{
