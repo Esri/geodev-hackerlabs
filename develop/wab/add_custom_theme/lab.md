@@ -93,24 +93,24 @@ In this lab you will add a custom Theme to Web AppBuilder.
  ```
 6. Now that we have modified the default style the widget icons in the header controller are not visible, they need to be resized, and need margin properties to allign the icons. Add the CSS to implement these changes.    
 
-```CSS
-    .jimu-widget-header-controller .icon-node{
-    opacity: 1;
-    background: #323232;
-    border-right: 0;
-    height: 30px !important;
-    width: 30px !important;
-    margin-top: 4px;
-    margin-right: 10px;
-    -moz-box-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    }
-    .jimu-widget-header-controller .icon-node img{
-    height: 14px;
-    width: 14px;
-    }
-```
+ ```CSS
+     .jimu-widget-header-controller .icon-node{
+     opacity: 1;
+     background: #323232;
+     border-right: 0;
+     height: 30px !important;
+     width: 30px !important;
+     margin-top: 4px;
+     margin-right: 10px;
+     -moz-box-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     }
+     .jimu-widget-header-controller .icon-node img{
+     height: 14px;
+     width: 14px;
+     }
+ ```
 
 7.  WebAppBuilder has state classes which don't have any CSS rules. Add selected state styles to match the current theme of blue when an icon is selected. 
 
