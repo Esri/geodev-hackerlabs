@@ -62,9 +62,8 @@ In this lab you will add a custom Theme to Web AppBuilder.
 
 4. Click the HackerlabTheme and click `Save`. Notice the default `Style` is light blue and contains one `Layout`, but the header controller is dark gray. We are going change this to match our theme using CSS.
  
-5. Click the `HackerlabTheme\styles\default` folder and edit the style.css. Make sure you refresh the page each time you save your work to see your changes. 
- 
-      Import a new font and change the background color. Below we are using common class names from the [Jimu CSS framework] (https://developers.arcgis.com/web-appbuilder/api-reference/css-framework.htm) part of Web AppBuilder. 
+5. Click the `HackerlabTheme\styles\default` folder and edit the style.css. Make sure you refresh the page each time you save your work to see your changes. Import a new font and change the background color. 
+Below we are using common class names from the [Jimu CSS framework] (https://developers.arcgis.com/web-appbuilder/api-reference/css-framework.htm) part of Web AppBuilder. 
 
   ```CSS
        @import url(//fonts.googleapis.com/css?family=Ubuntu);
@@ -75,7 +74,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
        background-color: #fff;
        }
   ```
-      Add a blue background color and opacity for default widgets on map. Below we are using a widget specific class name.
+      Add a blue background color and opacity for default widgets on map.
 
   ```CSS
        .jimu-widget-homebutton,
@@ -107,7 +106,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
   ```
 6. Now that we have modified the default style the widget icons in the header controller are not visible and they need to be resized.    
 
-      Make the icon nodes smaller, add margin properties, and border radius.
+        Make the icon nodes smaller, add margin properties, and border radius.
 
  ```CSS
     .jimu-widget-header-controller .icon-node{
