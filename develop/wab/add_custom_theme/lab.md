@@ -175,7 +175,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
   ```
  9. The HeaderController in this theme has the ability to wrap any widget icons into more widgets pop-up when there isn't enough space.  Add a more widgets icon and restyle the pop-up.
 
-      Change the overlay DIV to opaque white and change the background color of the pop-up to black.
+        Change the overlay DIV to opaque white and change the background color of the pop-up to black.
 
   ```CSS
     .jimu-more-icon-cover{
@@ -223,7 +223,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
     height: 25px !important;
     width: 25px !important;
     }
-
+  ```    
  10. The panel widgets include foldable panel and on-screen panel. Change background color of the title panes to blue and remove the borders.
 
   ```CSS
@@ -266,4 +266,5 @@ In this lab you will add a custom Theme to Web AppBuilder.
     color: #2196f3;
     font-size: 12px;
     border: none;
-    }                  
+    }
+  ```                      
