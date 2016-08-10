@@ -153,7 +153,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
     .jimu-widget-header-controller .jimu-drop-menu {
     background-color: #323232;
     }
-  ````
+  ```
       Make the widget icons in the drop-down menu the same size as other widget icons and align them correctly.
 
   ```CSS
