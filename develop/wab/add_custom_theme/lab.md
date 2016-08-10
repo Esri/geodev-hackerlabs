@@ -62,8 +62,9 @@ In this lab you will add a custom Theme to Web AppBuilder.
 
 4. Click the HackerlabTheme and click `Save`. Notice the default `Style` is light blue and contains one `Layout`, but the header controller is dark gray. We are going change this to match our theme using CSS.
  
-5. Click the `HackerlabTheme\styles\default` folder and edit the style.css. Make sure you refresh the page each time you save your work to see your changes. Import a new font and change the background color. 
-Below we are using common class names from the [Jimu CSS framework] (https://developers.arcgis.com/web-appbuilder/api-reference/css-framework.htm) part of Web AppBuilder. 
+5. Click the `HackerlabTheme\styles\default` folder and edit the style.css. Make sure you refresh the page each time you save your work to see your changes.  Throughout this lab you will see the name jimu which is the [Jimu CSS framework] (https://developers.arcgis.com/web-appbuilder/api-reference/css-framework.htm) in Web AppBuilder. 
+
+        Import a new font and change the background color. 
 
   ```CSS
        @import url(//fonts.googleapis.com/css?family=Ubuntu);
@@ -145,33 +146,33 @@ Below we are using common class names from the [Jimu CSS framework] (https://dev
     bottom: 5px;
     margin-left: -5px;
     } 
- ```
+  ```
       Change the background color of the drop-down menu to dark gray.
 
- ```CSS
+  ```CSS
     .jimu-widget-header-controller .jimu-drop-menu {
     background-color: #323232;
     }
- ````
+  ````
       Make the widget icons in the drop-down menu the same size as other widget icons and align them correctly.
 
- ```CSS
+  ```CSS
     .jimu-widget-header-controller .jimu-drop-menu .menu-item img{
     width: 14px;
     height: 14px;
     margin-top: 13px;
     }
- ```
+  ```
       Make the text labels in the drop-down menu smaller and change the link color in the header to gray.
 
- ```CSS
+  ```CSS
     .jimu-widget-header-controller .jimu-drop-menu .menu-item .label{
     font-size: 12px;
     }
     .jimu-link:link, .jimu-link:visited{
     color: #848484;
     }    
- ```
+  ```
  9. The HeaderController in this theme has the ability to wrap any widget icons into more widgets pop-up when there isn't enough space.  Add a more widgets icon and restyle the pop-up.
 
       Change the overlay DIV to opaque white and change the background color of the pop-up to black.
