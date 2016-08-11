@@ -269,5 +269,6 @@ In this lab you will add a custom Theme to Web AppBuilder.
     }
   ```
 Your theme should look something like this:
-* [Code] (style.css)
-* [Theme]()                        
+* [Code](style.css)
+* [Theme]()
+                        
