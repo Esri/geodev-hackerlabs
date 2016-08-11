@@ -1,10 +1,10 @@
 ### Web AppBuilder Custom Theme
 
-In this lab you will add a custom Theme to Web AppBuilder.
+In this lab you will add a custom Theme to Web AppBuilder. 
 
-1. Download the [Hackerlab Theme](HackerlabTheme.zip?raw=true) unzip it and copy the folder to the themes directory for Web AppBuilder(e.g., webappbuilder\client\stemapp\themes).
+1. Download the [Hackerlab Theme](HackerlabTheme.zip?raw=true) unzip it and copy the folder to the themes directory for Web AppBuilder (e.g., webappbuilder\client\stemapp\themes). Make sure Web AppBuilder isn't running.
 
-2. Click the HackerlabTheme folder and edit the manifest.json to describe the theme's content as below(e.g., styles, panels, and layouts). This informs Web AppBuilder which files to load for the theme.
+2. Click the HackerlabTheme folder and edit the manifest.json to describe the theme's content as below (e.g., styles, panels, and layouts). This informs Web AppBuilder which files to load for the theme.
  
   ```json
  {
@@ -131,7 +131,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
     width: 14px;
     }
   ```
-7. WebAppBuilder has state classes which don't have any CSS rules. Add selected state styles to match the current theme of blue when an icon is selected. 
+7. Web AppBuilder has state classes which don't have any CSS rules. Add selected state styles to match the current theme of blue when an icon is selected. 
 
   ```CSS
     .jimu-widget-header-controller .icon-node.jimu-state-selected{
@@ -246,7 +246,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
   ```
 12. Override the default CSS for the search widget to match the current style.   
 
-      Remove the borders and change the colors for search button hover and focus.
+        Remove the borders and change the colors for search button hover and focus.
 
   ```CSS
     .jimu-widget-search .arcgisSearch .searchBtn{
@@ -267,4 +267,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
     font-size: 12px;
     border: none;
     }
-  ```                      
+  ```
+Your theme should look something like this:
+* [Code] (style.css)
+* [Theme]()                        
