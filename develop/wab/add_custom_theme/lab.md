@@ -109,7 +109,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
 
         Make the icon nodes smaller, add margin properties, and border radius.
 
- ```CSS
+  ```CSS
     .jimu-widget-header-controller .icon-node{
     opacity: 1;
     background: #323232;
@@ -154,7 +154,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
     background-color: #323232;
     }
   ```
-    Make the widget icons in the drop-down menu the same size as other widget icons and align them correctly.
+      Make the widget icons in the drop-down menu the same size as other widget icons and align them correctly.
 
   ```CSS
     .jimu-widget-header-controller .jimu-drop-menu .menu-item img{
@@ -163,7 +163,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
     margin-top: 13px;
     }
   ```
-     Make the text labels in the drop-down menu smaller and change the link color in the header to gray.
+      Make the text labels in the drop-down menu smaller and change the link color in the header to gray.
 
   ```CSS
     .jimu-widget-header-controller .jimu-drop-menu .menu-item .label{
@@ -173,7 +173,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
     color: #848484;
     }    
   ```
- 9. The HeaderController in this theme has the ability to wrap any widget icons into more widgets pop-up when there isn't enough space.  Add a more widgets icon and restyle the pop-up.
+9. The HeaderController in this theme has the ability to wrap any widget icons into more widgets pop-up when there isn't enough space.  Add a more widgets icon and restyle the pop-up.
 
         Change the overlay DIV to opaque white and change the background color of the pop-up to black.
 
@@ -224,7 +224,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
     width: 25px !important;
     }
   ```    
- 10. The panel widgets include foldable panel and on-screen panel. Change background color of the title panes to blue and remove the borders.
+10. The panel widgets include foldable panel and on-screen panel. Change background color of the title panes to blue and remove the borders.
 
   ```CSS
     .jimu-on-screen-widget-panel>.jimu-panel-title,
@@ -237,14 +237,14 @@ In this lab you will add a custom Theme to Web AppBuilder.
     }
   ```
 
- 11. Change the background color of the pop-up's title pane to blue.
+11. Change the background color of the pop-up's title pane to blue.
 
   ```CSS
     .esriPopup .titlePane {
     background-color: #2196f3;
     }
   ```
- 12. Override the default CSS for the search widget to match the current style.   
+12. Override the default CSS for the search widget to match the current style.   
 
       Remove the borders and change the colors for search button hover and focus.
 
