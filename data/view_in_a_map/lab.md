@@ -10,7 +10,7 @@ In this lab you will add your own layers and some existing publicly available la
 
 2. Click `My Content`.
 
-3. Click on a `feature layer` > `Open` > `Add layer to new map`.
+3. Click on a `feature layer` > `Open in Map Viewer` > `Add layer to new map`.
 
  NOTE: If you don't have any layers in your account, go to [Import Data](../import_data/lab.md) first.
 
@@ -22,3 +22,4 @@ In this lab you will add your own layers and some existing publicly available la
 
 ###Bonus
 * In the Map Viewer select `Add` > `Search for Layers` > `In: ArcGIS Online` to load other pre-existing layers into your map. HINT: Try searching for weather, rain or wind.
+* In the Map Viewer, click `Details` > `layer` > `Show Table` and explore the `Table Options` menu.

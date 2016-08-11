@@ -21,4 +21,6 @@ In this lab you will use [Add items](http://doc.arcgis.com/en/arcgis-online/shar
 4. View each dataset and make sure it has proper tags, description and attribution.  Edit if necessary.
 
 ###Bonus
-* Try importing some of your own data. Explore the Share and Edit capabilities of each layer.
+* Try importing some of your own data.
+* Explore the `Overview` and `Settings` tabs to control your layer. Explore the Share and Edit capabilities of each layer.
+* Explore the `Data`, `Visualization` and `Usage` tabs.

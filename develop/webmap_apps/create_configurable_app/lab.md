@@ -8,7 +8,7 @@ In this lab, you will build a simple Template app.
 
 2. Click `Share` > `Create a Web App` > `Configurable Apps`.
 
-3. Search for the `Public Information` template and select `Create App`.
+3. Search for the `Public Information` template and select `Create Web App`.
 
 4. set the following properties:
 
@@ -51,7 +51,7 @@ In this lab, you will build a simple Template app.
 
  Click `Save and View` > `Close`.
 
-6. Click `Open` > `View Application` to test-drive your app.
+6. Click `View Application` to test-drive your app.
 
 Your app should look something like [this](http://edn.maps.arcgis.com/apps/PublicInformation/index.html?appid=09ed800aca42450c89278c3c6a3815dc).
 

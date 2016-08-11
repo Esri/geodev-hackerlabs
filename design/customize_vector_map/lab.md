@@ -20,9 +20,9 @@ In this lab you will customize a vector basemap from an existing tile layer and 
 
 3. In the table of contents, click the new layer's hamburger menu `•••` and select `Copy`.
 
-4. For the layer just copied, click `More Options` > `Save Layer` > change the Title to `Light Green Canvas` and click `CREATE ITEM`.
+4. For the layer just copied, click `•••` > `Save Layer` > change the Title to `Light Green Canvas` and click `CREATE ITEM`.
 
-5. Click `My Content` > click the `Light Green Canvas` tile layer > click `OPEN` > `Download style`.
+5. Click `My Content` > click the `Light Green Canvas` tile layer > `Download style`.
 
 6. Open the `root.json` style you downloaded in a text editor. The `root.json` file controls the map style.
 In the steps below you're going to change the color for a couple of layers in the map.
@@ -81,9 +81,9 @@ In the steps below you're going to change the color for a couple of layers in th
         "fill-color": "#929991"
     ```
 
-7. Go to [arcgis.com](http://www.arcgis.com) and login if necessary. Click `My Content` > click the `Light Green Canvas` tile layer > click `UPDATE` > `Choose File` > select the `root.json` file > `Update Style File`.
+7. Go to [arcgis.com](http://www.arcgis.com) and login if necessary. Click `My Content` > click the `Light Green Canvas` tile layer > click `Update` > `Choose File` > select the `root.json` file > `Update Style File`.
 
-8. To see the changes, click `OPEN` > `Add layer to new map`.  
+8. To see the changes, click `Open in Map Viewer`.  
 
 Your map should look like this:
 * [Live Map](http://www.arcgis.com/home/webmap/viewer.html?webmap=b66770c3ad184c6a8f68cba5c19addeb)
