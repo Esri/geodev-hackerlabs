@@ -173,7 +173,8 @@ In this lab you will add a custom Theme to Web AppBuilder.
     color: #848484;
     }    
   ```
-  
+  9. 
+
  9. The HeaderController in this theme has the ability to wrap any widget icons into more widgets pop-up when there isn't enough space.  Add a more widgets icon and restyle the pop-up.
 
         Change the overlay DIV to opaque white and change the background color of the pop-up to black.
