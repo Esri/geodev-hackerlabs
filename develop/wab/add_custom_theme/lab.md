@@ -133,12 +133,12 @@ In this lab you will add a custom Theme to Web AppBuilder.
   ```
 7. WebAppBuilder has state classes which don't have any CSS rules. Add selected state styles to match the current theme of blue when an icon is selected. 
 
- ```CSS
+  ```CSS
     .jimu-widget-header-controller .icon-node.jimu-state-selected{
     border-top: 0;
     background-color: #2196f3;
     }
- ```
+  ```
 8. Widgets can be grouped when the group display mode is `show in Dropdown Menu` in the HeaderController widget. To align the drop-down caret correctly, place the drop-down caret at the bottom of the icon node.
 
   ```CSS
@@ -154,7 +154,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
     background-color: #323232;
     }
   ```
-      Make the widget icons in the drop-down menu the same size as other widget icons and align them correctly.
+    Make the widget icons in the drop-down menu the same size as other widget icons and align them correctly.
 
   ```CSS
     .jimu-widget-header-controller .jimu-drop-menu .menu-item img{
@@ -163,7 +163,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
     margin-top: 13px;
     }
   ```
-      Make the text labels in the drop-down menu smaller and change the link color in the header to gray.
+     Make the text labels in the drop-down menu smaller and change the link color in the header to gray.
 
   ```CSS
     .jimu-widget-header-controller .jimu-drop-menu .menu-item .label{
@@ -173,8 +173,6 @@ In this lab you will add a custom Theme to Web AppBuilder.
     color: #848484;
     }    
   ```
-  9. 
-
  9. The HeaderController in this theme has the ability to wrap any widget icons into more widgets pop-up when there isn't enough space.  Add a more widgets icon and restyle the pop-up.
 
         Change the overlay DIV to opaque white and change the background color of the pop-up to black.
