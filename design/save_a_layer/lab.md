@@ -14,11 +14,11 @@ In this lab you will style and save a layer to your account.
 
 4. Search for `PDX Neighborhoods Enriched` by (al_geodev) and add this layer.
 
-5. Click `PDX Neighborhoods Enriched` > `Copy`. This creates a new Layer Item in your account.
+5. Click `PDX Neighborhoods Enriched` > `Copy`. This creates a new Layer in your map named `PDX Neighborhoods Enriched - Copy`.
 
 6. Change the extent of the map and style the layer as desired. See [Style a Map](../style_a_map/lab.md) for help on styling.
 
-7. Click `PDX Neighborhoods Enriched Copy` > `Save layer`. Set the following properties:
+7. Click `PDX Neighborhoods Enriched - Copy` > `Save layer`. This will save a new Layer Item in your account. Set the following properties:
 
  ```
  * Title: PDX Neighborhoods Enriched Copy
@@ -43,4 +43,3 @@ https://www.arcgis.com/sharing/rest/content/items/d07ec497291b470f9038d3759838f5
 NOTE: Replace the item ID above with yours.
 
 If you would like to format the response, try [this JSON Editor tool](http://www.jsoneditoronline.org/).
-

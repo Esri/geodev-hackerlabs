@@ -27,7 +27,7 @@ In this lab you will style popups by formatting fields and adding charts.
 
 		2. OK
 
-	3. SAVE POP-UP
+	3. OK
 
 6. Click `Rail Lines` > `Configure Popup-up` and set following properties:
 
@@ -41,7 +41,7 @@ In this lab you will style popups by formatting fields and adding charts.
 
 		2. OK
 
-	3. SAVE POP-UP
+	3. OK
 
 7. Click `Neighborhoods` > `Configure Popup-up` and set following properties:
 
@@ -68,7 +68,7 @@ In this lab you will style popups by formatting fields and adding charts.
 			* AVERAGE INCOME
 		* OK
 
-	4. SAVE POP-UP
+	4. OK
 
 8. Save your map and test the popups.
 

@@ -10,7 +10,7 @@ In this lab we will look at how to pre-authenticate the traffic layer so it can 
 
 2. Go to `My Content`.
 
-3. Click `Add Items` > `From the Web` to access the traffic service.
+3. Click `Add Item` > `From the Web` to access the traffic service.
 
 	1. Set the following properties:
 
@@ -28,7 +28,7 @@ In this lab we will look at how to pre-authenticate the traffic layer so it can 
 
 	This creates a new layer that points to the original Traffic layer.
 
-4. Click `My Contents` > `My Traffic Layer` > `Advanced Options` select `Limit Usage` and set the checkbox to enable rate limiting to 1000 requests per second.
+4. Click `My Contents` > `My Traffic Layer`. Select the `Settings` tab and click `Limit Usage`. Set the checkbox to enable rate limiting to 1000 requests per second.
 
 5. Click `My Contents` > `My Traffic Layer` > `My Contents` to identify the url. It should look something like this:
 

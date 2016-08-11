@@ -21,7 +21,7 @@ In this lab you will use the new styling capabilities of the scene viewer to mak
     https://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Lines/FeatureServer/0
     ```
 
-  2. Click `PDX Rail Lines Styled` > `Zoom To` to zoom the map.
+  2. Click `PDX Rail Lines` > `Zoom To` to zoom the map.
   
 
   3. On the map, click `Rotate`. Click and drag on the map to tilt and zoom the view.

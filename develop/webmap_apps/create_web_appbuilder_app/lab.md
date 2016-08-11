@@ -6,7 +6,7 @@ In this lab, you will build a simple WAB app.
 
 1. Click [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=7186a92406194797aa518c06c189a71f) to open the map in the Map Viewer. If you have your own map, you can try to use that too.
 
-2. Click `Share` > `Create a Web App` > `Web App Builder`.
+2. Click `Share` > `Create a Web App` > `Web AppBuilder`.
 
 3. Set the following properties:
 
@@ -20,7 +20,7 @@ In this lab, you will build a simple WAB app.
 
 4. Explore the different themes and pick `Foldable Theme`.
 
-5. In `Theme` and set the `Style` > `Orange`.
+5. In `Theme` set the `Style` > `Orange`.
 
 6. In `Theme` try a different `Layout`.
 
@@ -28,11 +28,11 @@ In this lab, you will build a simple WAB app.
 
 7. Click `Widget`
 
- * Configure the `Search` widget to search
- * Add Search Source: Neighborhoods
- * Name: Neighborhoods
- * Search Fields: Name
- * Display Fiends: Name
+ * Configure the `Search` widget.
+ * `Add Search Source` > `Feature Layer`: Neighborhoods
+   * Name: Neighborhoods
+   * Search Fields: Name
+   * Display Field: Name
 
  Click `Ok`.
 
@@ -40,7 +40,7 @@ In this lab, you will build a simple WAB app.
 
 7. Click `Save`.
 
-8. Click `Preview` to view the application at different screen sizes.
+8. Click `Previews` to view the application at different screen sizes.
 
 9. Click `Launch` to test the application.
 

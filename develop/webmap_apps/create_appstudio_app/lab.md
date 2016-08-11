@@ -9,7 +9,7 @@ In this lab, you will use AppStudio to build a native app from a single webmap.
 
 2. Scroll down to the Map Viewer section and click `start with this template`. 
 
-3. Sign in with your ArcGIS developer or Organization account.
+3. Sign in with your ArcGIS Developer or Organization account.
 
 4. Download [the images](https://onedrive.live.com/redir?resid=C6391DBDAAFC7209!29697&authkey=!ABHcU1LSk7LrIFw&ithint=folder%2c) you are going to use to build this app.
 
