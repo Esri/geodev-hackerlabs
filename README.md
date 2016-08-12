@@ -135,6 +135,7 @@ The above labs all use the 4.x JS API. If you would rather learn about the 3.x J
  * [Setup Development Environment](./develop/wab/install_developer_edition_locally/lab.md)
  * [Add a Custom Widget](./develop/wab/add_custom_widget_to_app/lab.md)
  * [Add a Custom Configurable Widget](./develop/wab/add_configurable_widget/lab.md)
+ * [Add a Custom Theme](./develop/wab/add_custom_theme/lab.md)
  * [Deploy to ArcGIS Online](./develop/wab/deploy_to_arcgis_online/lab.md)
 
 ## Want to share your work?

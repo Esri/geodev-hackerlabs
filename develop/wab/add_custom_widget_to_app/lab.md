@@ -2,7 +2,7 @@
 
 In this lab you will create a custom widget for Web AppBuilder.
 
-1. Create a New Default (2D)app in Web App Builder. Give it a title `Custom Widget App` and click `Ok`.
+1. Create a New Default (2D)app in Web App Builder. Give it a title `Custom Widget App` and click `OK`.
 
 2. Click the Plateau Theme and click `Save`.
 
