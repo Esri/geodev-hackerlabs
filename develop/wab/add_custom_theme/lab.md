@@ -60,7 +60,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
   ```
 3. Launch Web AppBuilder using the startup batch file. Create a New Default (2D) app. Give it a title `Custom Theme` and click `OK`.
 
-4. Click the HackerlabTheme and click `Save`. Notice the default `Style` is light blue and contains one `Layout`, but the header controller is dark gray. We are going change this to match our theme using CSS.
+4. Click the HackerlabTheme and click `Save`. Notice the default `Style` is light blue and contains one `Layout`, but the header controller is dark gray. You are going to style this theme using CSS.
  
 5. Click the `HackerlabTheme\styles\default` folder and edit the style.css. Make sure you save your changes after each step. Throughout this lab you will see the name jimu which is the [Jimu CSS framework] (https://developers.arcgis.com/web-appbuilder/api-reference/css-framework.htm) in Web AppBuilder. 
 
@@ -75,7 +75,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
     background-color: #fff;
     }
   ```
-      Add a blue background color and opacity for the default widgets on map.
+      Add a blue background color and opacity for the default widgets on the map.
 
   ```CSS
     .jimu-widget-homebutton,
@@ -107,7 +107,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
   ```
 6. To see the changes you just implemented in the Web AppBuilder GUI select any theme other than Hackerlab Theme (e.g. Foldable theme) and click `Save`, then select the Hackerlab Theme. This refreshes the Custom Theme application by using the current theme selected.  
 
-7. Now that we have modified the default style the widget icons in the header controller are not visible and they need to be resized.    
+7. Now that the default style has been modified, the widget icons in the header controller are not visible and they need to be resized.    
 
         Make the icon nodes smaller, add margin properties, and border radius.
 
@@ -135,7 +135,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
   ```
   ![header controller](headercontroller.png)
 
-8. Web AppBuilder has state classes which don't have any CSS rules. Add selected state styles to match the current theme of blue when an icon is selected. 
+8. Web AppBuilder has state classes which do not have any CSS rules. Add selected state styles to match the current theme of blue when an icon is selected. 
 
   ```CSS
     .jimu-widget-header-controller .icon-node.jimu-state-selected{
@@ -233,7 +233,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
     ![widget wrap](widgetwrap.png)
     
 
-11. The panel widgets include foldable panel and on-screen panel. Change background color of the title panes to blue and remove the borders.
+11. The panel widgets include foldable panel and on-screen panel. Change the background color of the title panes to blue and remove the borders.
 
   ```CSS
     .jimu-on-screen-widget-panel>.jimu-panel-title,
@@ -255,7 +255,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
   ```
 13. Override the default CSS for the search widget to match the current style.   
 
-        Remove the borders and change the colors for search button hover and focus.
+        Remove the borders and change the colors for the search button hover and focus.
 
   ```CSS
     .jimu-widget-search .arcgisSearch .searchBtn{
