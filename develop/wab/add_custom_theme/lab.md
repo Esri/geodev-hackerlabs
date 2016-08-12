@@ -2,9 +2,9 @@
 
 In this lab you will add a custom Theme to Web AppBuilder. 
 
-1. Download the [Hackerlab Theme](HackerlabTheme.zip?raw=true) unzip it and copy the folder to the themes directory for Web AppBuilder (e.g., webappbuilder\client\stemapp\themes). Make sure Web AppBuilder isn't running.
+1. Download the [Hackerlab Theme](HackerlabTheme.zip?raw=true) unzip it and copy the folder to the themes directory for Web AppBuilder (webappbuilder\client\stemapp\themes). Make sure Web AppBuilder isn't running.
 
-2. Click the HackerlabTheme folder and edit the manifest.json to describe the theme's content as below (e.g., styles, panels, and layouts). This informs Web AppBuilder which files to load for the theme.
+2. Click the HackerlabTheme folder and edit the manifest.json to describe the theme's content as below (styles, panels, and layouts). This informs Web AppBuilder which files to load for the theme.
  
   ```json
  {
@@ -62,50 +62,50 @@ In this lab you will add a custom Theme to Web AppBuilder.
 
 4. Click the HackerlabTheme and click `Save`. Notice the default `Style` is light blue and contains one `Layout`, but the header controller is dark gray. We are going change this to match our theme using CSS.
  
-5. Click the `HackerlabTheme\styles\default` folder and edit the style.css. Throughout this lab you will see the name jimu which is the [Jimu CSS framework] (https://developers.arcgis.com/web-appbuilder/api-reference/css-framework.htm) in Web AppBuilder. 
+5. Click the `HackerlabTheme\styles\default` folder and edit the style.css. Make sure you save your changes after each step. Throughout this lab you will see the name jimu which is the [Jimu CSS framework] (https://developers.arcgis.com/web-appbuilder/api-reference/css-framework.htm) in Web AppBuilder. 
 
         Import a new font and change the background color. 
 
   ```CSS
-       @import url(//fonts.googleapis.com/css?family=Ubuntu);
-       .jimu-main-font{
-       font-family: 'Ubuntu';
-       }
-       .jimu-main-background{
-       background-color: #fff;
-       }
+    @import url(//fonts.googleapis.com/css?family=Ubuntu);
+    .jimu-main-font{
+    font-family: 'Ubuntu';
+    }
+    .jimu-main-background{
+    background-color: #fff;
+    }
   ```
       Add a blue background color and opacity for the default widgets on map.
 
   ```CSS
-       .jimu-widget-homebutton,
-       .jimu-widget-mylocation,
-       .jimu-widget-zoomslider .zoom,
-       .jimu-widget-homebutton .HomeButton .home,
-       .jimu-widget-mylocation .place-holder{
-       background-color: #2196f3;
-       opacity: .9;
-       }
+    .jimu-widget-homebutton,
+    .jimu-widget-mylocation,
+    .jimu-widget-zoomslider .zoom,
+    .jimu-widget-homebutton .HomeButton .home,
+    .jimu-widget-mylocation .place-holder{
+    background-color: #2196f3;
+    opacity: .9;
+    }
   ```
       Change the title and subtitle colors in the header to gray. 
 
   ```CSS       
-       .jimu-title,
-       .jimu-subtitle {
-       color: #323232;
-      }
+    .jimu-title,
+    .jimu-subtitle {
+    color: #323232;
+    }
   ```
-      Remove the shadow and add a border. 
+      Remove the shadow and add a border.
   
   ```CSS                  
-       .jimu-widget-header-controller{
-       -moz-box-shadow: none;
-       -webkit-box-shadow: none;
-       box-shadow: none;
-       border-bottom: 2px solid #323232;
-     }
+    .jimu-widget-header-controller{
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 2px solid #323232;
+    }
   ```
-6. To see the changes you just implemented in the Web AppBuilder GUI select any theme other than Hackerlab Theme (e.g., Foldable theme) and click `Save`, then select the Hackerlab Theme. This refreshes the Custom Theme application by using the current theme selected.  
+6. To see the changes you just implemented in the Web AppBuilder GUI select any theme other than Hackerlab Theme (e.g. Foldable theme) and click `Save`, then select the Hackerlab Theme. This refreshes the Custom Theme application by using the current theme selected.  
 
 7. Now that we have modified the default style the widget icons in the header controller are not visible and they need to be resized.    
 
@@ -125,7 +125,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
     border-radius: 50%;
     }
   ```
-      Make the icon images smaller.
+      Make the icon images smaller. 
 
   ```CSS
     .jimu-widget-header-controller .icon-node img{
@@ -133,6 +133,8 @@ In this lab you will add a custom Theme to Web AppBuilder.
     width: 14px;
     }
   ```
+  ![header controller](headercontroller.png)
+
 8. Web AppBuilder has state classes which don't have any CSS rules. Add selected state styles to match the current theme of blue when an icon is selected. 
 
   ```CSS
@@ -141,7 +143,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
     background-color: #2196f3;
     }
   ```
-9. Widgets can be grouped when the group display mode is `show in Dropdown Menu` in the HeaderController widget. To align the drop-down caret correctly, place the drop-down caret at the bottom of the icon node.
+9. Widgets can be grouped when the group display mode is `show in Dropdown Menu` in the [HeaderController widget](http://doc.arcgis.com/en/web-appbuilder/create-apps/widget-header-controller-and-sidebar-controller.htm). To align the drop-down caret correctly, place the drop-down caret at the bottom of the icon node.
 
   ```CSS
     .jimu-widget-header-controller .drop-triangle{
