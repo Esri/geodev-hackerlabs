@@ -255,7 +255,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
       ```
 13. Override the default CSS for the search widget to match the current style.   
 
-      * Remove the borders and change the colors for the search button hover and focus.
+      * Remove the borders and change the color for the search button hover and focus.
 
       ```CSS
         .jimu-widget-search .arcgisSearch .searchBtn{
