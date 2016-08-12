@@ -66,7 +66,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
 
       * Import a new font and change the background color. 
 
-       ```CSS
+      ```CSS
          @import url(//fonts.googleapis.com/css?family=Ubuntu);
         .jimu-main-font{
           font-family: 'Ubuntu';
@@ -74,7 +74,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
         .jimu-main-background{
           background-color: #fff;
         }
-        ```
+      ```
       * Add a blue background color and opacity for the default widgets on the map.
 
       ```CSS
@@ -97,186 +97,186 @@ In this lab you will add a custom Theme to Web AppBuilder.
       ```
       * Remove the shadow and add a border.
     
-    ```CSS                  
-      .jimu-widget-header-controller{
-        -moz-box-shadow: none;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-        border-bottom: 2px solid #323232;
-      }
-    ```
+      ```CSS                  
+        .jimu-widget-header-controller{
+          -moz-box-shadow: none;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          border-bottom: 2px solid #323232;
+        }
+      ```
 6. To see the changes you just implemented in the Web AppBuilder GUI select any theme other than Hackerlab Theme (e.g. Foldable theme) and click `Save`, then select the Hackerlab Theme. This refreshes the Custom Theme application by using the current theme selected.  
 
 7. Now that the default style has been modified, the widget icons in the header controller are not visible and they need to be resized.    
 
       * Make the icon nodes smaller, add margin properties, and border radius.
 
-    ```CSS
-      .jimu-widget-header-controller .icon-node{
-        opacity: 1;
-        background: #323232;
-        border-right: 0;
-        height: 30px !important;
-        width: 30px !important;
-        margin-top: 4px;
-        margin-right: 10px;
-        -moz-box-radius: 50%;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-      }
-    ```
+      ```CSS
+        .jimu-widget-header-controller .icon-node{
+          opacity: 1;
+          background: #323232;
+          border-right: 0;
+          height: 30px !important;
+          width: 30px !important;
+          margin-top: 4px;
+          margin-right: 10px;
+          -moz-box-radius: 50%;
+          -webkit-border-radius: 50%;
+          border-radius: 50%;
+        }
+      ```
       * Make the icon images smaller. 
 
-    ```CSS
-      .jimu-widget-header-controller .icon-node img{
-        height: 14px;
-        width: 14px;
-      }
-    ```
+      ```CSS
+        .jimu-widget-header-controller .icon-node img{
+          height: 14px;
+          width: 14px;
+        }
+      ```
   ![header controller](headercontroller.png)
 
 8. Web AppBuilder has state classes which do not have any CSS rules. Add selected state styles to match the current theme of blue when an icon is selected. 
 
-    ```CSS
-      .jimu-widget-header-controller .icon-node.jimu-state-selected{
-        border-top: 0;
-        background-color: #2196f3;
-      }
-    ```
+      ```CSS
+        .jimu-widget-header-controller .icon-node.jimu-state-selected{
+          border-top: 0;
+          background-color: #2196f3;
+        }
+      ```
 9. Widgets can be grouped when the group display mode is `show in Dropdown Menu` in the [HeaderController widget](http://doc.arcgis.com/en/web-appbuilder/create-apps/widget-header-controller-and-sidebar-controller.htm). To align the drop-down caret correctly, place the drop-down caret at the bottom of the icon node.
 
-    ```CSS
-      .jimu-widget-header-controller .drop-triangle{
-        bottom: 5px;
-        margin-left: -5px;
-      } 
-    ```
-    * Change the background color of the drop-down menu to dark gray.
+      ```CSS
+        .jimu-widget-header-controller .drop-triangle{
+          bottom: 5px;
+          margin-left: -5px;
+        } 
+      ```
+      * Change the background color of the drop-down menu to dark gray.
 
-    ```CSS
-      .jimu-widget-header-controller .jimu-drop-menu {
-        background-color: #323232;
-      }
-    ```
-    * Make the widget icons in the drop-down menu the same size as other widget icons and align them correctly.
+      ```CSS
+        .jimu-widget-header-controller .jimu-drop-menu {
+          background-color: #323232;
+        }
+      ```
+      * Make the widget icons in the drop-down menu the same size as other widget icons and align them correctly.
 
-    ```CSS
-      .jimu-widget-header-controller .jimu-drop-menu .menu-item img{
-        width: 14px;
-        height: 14px;
-        margin-top: 13px;
-      }
-    ```
-     * Make the text labels in the drop-down menu smaller and change the link color in the header to gray.
+      ```CSS
+        .jimu-widget-header-controller .jimu-drop-menu .menu-item img{
+          width: 14px;
+          height: 14px;
+          margin-top: 13px;
+        }
+      ```
+      * Make the text labels in the drop-down menu smaller and change the link color in the header to gray.
 
-    ```CSS
-      .jimu-widget-header-controller .jimu-drop-menu .menu-item .label{
-        font-size: 12px;
-      }
-      .jimu-link:link, .jimu-link:visited{
-        color: #848484;
-      }    
-    ```
+      ```CSS
+        .jimu-widget-header-controller .jimu-drop-menu .menu-item .label{
+          font-size: 12px;
+        }
+        .jimu-link:link, .jimu-link:visited{
+          color: #848484;
+        }    
+      ```
     ![drop down](dropdown.png)
 
 10. The HeaderController in this theme has the ability to wrap any widget icons into more widgets pop-up when there isn't enough space.  Add a more widgets icon ![collapse icon](iconcollapse.png) and restyle the pop-up.
 
-    * Change the overlay DIV to opaque white and change the background color of the pop-up to black.
+      * Change the overlay DIV to opaque white and change the background color of the pop-up to black.
 
-    ```CSS
-      .jimu-more-icon-cover{
-        background-color: #323232;
-        opacity: 65;
-      }    
-      .jimu-header-more-popup {
-        background-color: #000;
-      }
-    ```
-    * Change the background color of the icon tiles, pop-up footer, and close button.
+      ```CSS
+        .jimu-more-icon-cover{
+          background-color: #323232;
+          opacity: 65;
+        }    
+        .jimu-header-more-popup {
+          background-color: #000;
+        }
+      ```
+      * Change the background color of the icon tiles, pop-up footer, and close button.
 
-    ```CSS
-      .jimu-header-more-popup .icon-node {
-        background-color: #323232;
-      }
-      .jimu-header-more-popup .points{
-        background: #000;
-      }
-      .jimu-header-more-popup .close,
-      .jimu-header-more-popup .close-inner{
-        background-color: #2196f3;
-      }
-    ```        
-    * Make the pagination dots smaller and apply white (normal state) and blue (active state) background colors.  
+      ```CSS
+        .jimu-header-more-popup .icon-node {
+          background-color: #323232;
+        }
+        .jimu-header-more-popup .points{
+          background: #000;
+        }
+        .jimu-header-more-popup .close,
+        .jimu-header-more-popup .close-inner{
+          background-color: #2196f3;
+        }
+      ```        
+      * Make the pagination dots smaller and apply white (normal state) and blue (active state) background colors.  
     
-    ```CSS
-      .jimu-header-more-popup .points-inner {
-        position: relative;
-        top: -3px;
-      }
-      .jimu-header-more-popup .point {
-        width: 5px;
-        height: 5px;
-        background-color: #fff;
-      }
-      .jimu-header-more-popup .point-selected {
-        background-color: #2196f3;
-      }
-    ```
-    * Resize the icon images. 
+      ```CSS
+        .jimu-header-more-popup .points-inner {
+          position: relative;
+          top: -3px;
+        }
+        .jimu-header-more-popup .point {
+          width: 5px;
+          height: 5px;
+          background-color: #fff;
+        }
+        .jimu-header-more-popup .point-selected {
+          background-color: #2196f3;
+        }
+      ```
+      * Resize the icon images. 
 
-    ```CSS
-      .jimu-header-more-popup img {
-        height: 25px !important;
-        width: 25px !important;
-      }
-    ```
+      ```CSS
+        .jimu-header-more-popup img {
+          height: 25px !important;
+          width: 25px !important;
+        }
+      ```
       ![widget wrap](widgetwrap.png)
       
 
 11. The panel widgets include foldable panel and on-screen panel. Change the background color of the title panes to blue and remove the borders.
 
-    ```CSS
-      .jimu-on-screen-widget-panel>.jimu-panel-title,
-      .jimu-foldable-panel>.jimu-panel-title,
-      .jimu-title-panel>.title{
-        background-color: #2196f3;
-      }
-      .jimu-panel{
-        border: 0;
-      }
-    ```
+      ```CSS
+        .jimu-on-screen-widget-panel>.jimu-panel-title,
+        .jimu-foldable-panel>.jimu-panel-title,
+        .jimu-title-panel>.title{
+          background-color: #2196f3;
+        }
+        .jimu-panel{
+          border: 0;
+        }
+      ```
 
 12. Change the background color of the pop-up's title pane to blue.
 
-    ```CSS
-      .esriPopup .titlePane {
-        background-color: #2196f3;
-      }
-    ```
+      ```CSS
+        .esriPopup .titlePane {
+          background-color: #2196f3;
+        }
+      ```
 13. Override the default CSS for the search widget to match the current style.   
 
-    * Remove the borders and change the colors for the search button hover and focus.
+      * Remove the borders and change the colors for the search button hover and focus.
 
-    ```CSS
-      .jimu-widget-search .arcgisSearch .searchBtn{
-        padding: 6px;
-        border: none;
-      }
-      .jimu-widget-search .arcgisSearch .searchBtn:hover,
-      .jimu-widget-search .arcgisSearch .searchBtn:focus{
-        background-color: #fff;
-        color: #2196f3;
-      }
-    ```
+      ```CSS
+        .jimu-widget-search .arcgisSearch .searchBtn{
+          padding: 6px;
+          border: none;
+        }
+        .jimu-widget-search .arcgisSearch .searchBtn:hover,
+        .jimu-widget-search .arcgisSearch .searchBtn:focus{
+          background-color: #fff;
+          color: #2196f3;
+        }
+      ```
       * Change the color and font size and remove the borders for the search input.
     
-    ```CSS
-      .jimu-widget-search .arcgisSearch .searchGroup .searchInput{
-        color: #2196f3;
-        font-size: 12px;
-        border: none;
-      }
-    ```
+      ```CSS
+        .jimu-widget-search .arcgisSearch .searchGroup .searchInput{
+          color: #2196f3;
+          font-size: 12px;
+          border: none;
+        }
+      ```
 14. Now refresh the Custom theme application and test your theme by adding some widgets and grouping them in the Header Controller.
 
   ![custom theme](customtheme.png)
