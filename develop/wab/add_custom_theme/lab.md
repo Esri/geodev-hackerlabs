@@ -23,13 +23,13 @@ In this lab you will add a custom Theme to Web AppBuilder.
       "styleColor": "#2196f3"
     },
     {
-      "name": "medium-grey",
+      "name": "medium-gray",
       "description": "this is gray style",
       "styleColor": "#6E6E6E"
     },
     {
-      "name": "black-grey",
-      "description": "this is black grey style",
+      "name": "black-gray",
+      "description": "this is black gray style",
       "styleColor": "#2E3641"
     },
     {
@@ -62,7 +62,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
 
 4. Click the HackerlabTheme and click `Save`. Notice the default `Style` is light blue and contains one `Layout`, but the header controller is dark gray. We are going change this to match our theme using CSS.
  
-5. Click the `HackerlabTheme\styles\default` folder and edit the style.css. Make sure you refresh the page each time you save your work to see your changes.  Throughout this lab you will see the name jimu which is the [Jimu CSS framework] (https://developers.arcgis.com/web-appbuilder/api-reference/css-framework.htm) in Web AppBuilder. 
+5. Click the `HackerlabTheme\styles\default` folder and edit the style.css. Throughout this lab you will see the name jimu which is the [Jimu CSS framework] (https://developers.arcgis.com/web-appbuilder/api-reference/css-framework.htm) in Web AppBuilder. 
 
         Import a new font and change the background color. 
 
@@ -75,7 +75,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
        background-color: #fff;
        }
   ```
-      Add a blue background color and opacity for default widgets on map.
+      Add a blue background color and opacity for the default widgets on map.
 
   ```CSS
        .jimu-widget-homebutton,
@@ -105,7 +105,9 @@ In this lab you will add a custom Theme to Web AppBuilder.
        border-bottom: 2px solid #323232;
      }
   ```
-6. Now that we have modified the default style the widget icons in the header controller are not visible and they need to be resized.    
+6. To see the changes you just implemented in the Web AppBuilder GUI select any theme other than Hackerlab Theme (e.g., Foldable theme) and click `Save`, then select the Hackerlab Theme. This refreshes the Custom Theme application by using the current theme selected.  
+
+7. Now that we have modified the default style the widget icons in the header controller are not visible and they need to be resized.    
 
         Make the icon nodes smaller, add margin properties, and border radius.
 
@@ -131,7 +133,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
     width: 14px;
     }
   ```
-7. Web AppBuilder has state classes which don't have any CSS rules. Add selected state styles to match the current theme of blue when an icon is selected. 
+8. Web AppBuilder has state classes which don't have any CSS rules. Add selected state styles to match the current theme of blue when an icon is selected. 
 
   ```CSS
     .jimu-widget-header-controller .icon-node.jimu-state-selected{
@@ -139,7 +141,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
     background-color: #2196f3;
     }
   ```
-8. Widgets can be grouped when the group display mode is `show in Dropdown Menu` in the HeaderController widget. To align the drop-down caret correctly, place the drop-down caret at the bottom of the icon node.
+9. Widgets can be grouped when the group display mode is `show in Dropdown Menu` in the HeaderController widget. To align the drop-down caret correctly, place the drop-down caret at the bottom of the icon node.
 
   ```CSS
     .jimu-widget-header-controller .drop-triangle{
@@ -173,7 +175,9 @@ In this lab you will add a custom Theme to Web AppBuilder.
     color: #848484;
     }    
   ```
-9. The HeaderController in this theme has the ability to wrap any widget icons into more widgets pop-up when there isn't enough space.  Add a more widgets icon and restyle the pop-up.
+    ![custom theme](dropdown.png)
+
+10. The HeaderController in this theme has the ability to wrap any widget icons into more widgets pop-up when there isn't enough space.  Add a more widgets icon ![custom theme](collapseicon.png) and restyle the pop-up.
 
         Change the overlay DIV to opaque white and change the background color of the pop-up to black.
 
@@ -223,8 +227,10 @@ In this lab you will add a custom Theme to Web AppBuilder.
     height: 25px !important;
     width: 25px !important;
     }
-  ```    
-10. The panel widgets include foldable panel and on-screen panel. Change background color of the title panes to blue and remove the borders.
+  ```
+    ![custom theme](widgetwrap.png)
+
+11. The panel widgets include foldable panel and on-screen panel. Change background color of the title panes to blue and remove the borders.
 
   ```CSS
     .jimu-on-screen-widget-panel>.jimu-panel-title,
@@ -237,14 +243,14 @@ In this lab you will add a custom Theme to Web AppBuilder.
     }
   ```
 
-11. Change the background color of the pop-up's title pane to blue.
+12. Change the background color of the pop-up's title pane to blue.
 
   ```CSS
     .esriPopup .titlePane {
     background-color: #2196f3;
     }
   ```
-12. Override the default CSS for the search widget to match the current style.   
+13. Override the default CSS for the search widget to match the current style.   
 
         Remove the borders and change the colors for search button hover and focus.
 
@@ -268,9 +274,11 @@ In this lab you will add a custom Theme to Web AppBuilder.
     border: none;
     }
   ```
-  
-Your theme should look something like this:
+14. Now refresh the Custom theme application and test your theme by adding some widgets and grouping them in the Header Controller.
 
-* [Code](style.css)
-* [Theme]()
+  ![custom theme](customtheme.png)
+
+Your code should look like this:
+
+* [CSS](style.css)
                         
