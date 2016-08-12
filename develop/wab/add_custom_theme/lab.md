@@ -229,7 +229,7 @@ In this lab you will add a custom Theme to Web AppBuilder.
     }
   ```
     ![widget wrap](widgetwrap.png)
-    ![custom theme](customtheme.png)
+    
 
 11. The panel widgets include foldable panel and on-screen panel. Change background color of the title panes to blue and remove the borders.
 
