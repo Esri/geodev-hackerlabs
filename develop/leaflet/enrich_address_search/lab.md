@@ -26,7 +26,11 @@ Last, we'll add a Leaflet [Marker](http://leafletjs.com/reference.html#marker) t
 
 ![Step 4](step_4.png)
 
-In the end, hopefully your app will look *kinda, sorta* like [**this**](http://bl.ocks.org/jgravois/d998363818666f5363ef).
+In the end, hopefully your app will look *kinda, sorta* like **this**.
+
+ * [Code](index.html)
+ * [Live App](http://esri.github.io/geodev-hackerlabs/develop/leaflet/enrich_address_search/index.html)
+
 ---
 ### Resources
 
