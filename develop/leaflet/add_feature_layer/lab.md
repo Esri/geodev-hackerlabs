@@ -8,7 +8,7 @@ In this lab, you will add featurelayers to an Esri Leaflet application.
 
 	```js
 	<!-- Load Esri Leaflet Renderers -->
-	<script src="//cdn.jsdelivr.net/leaflet.esri.renderers/2.0.0/esri-leaflet-renderers.js"></script>
+	<script src="https://unpkg.com/esri-leaflet-renderers@2.0.2"></script>
 
 	```
 

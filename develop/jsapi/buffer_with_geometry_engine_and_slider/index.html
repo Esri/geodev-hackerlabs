@@ -40,7 +40,8 @@
 
   <!-- Add a link to a dojo theme for the horizontal slider display -->
   <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/tundra/tundra.css">
-  
+
+  <!-- need to figure out why this sample doesn't work at 4.1 -->
   <script src="https://js.arcgis.com/4.0/"></script>
 
   <script>
@@ -55,7 +56,7 @@
       "dijit/form/HorizontalSlider",
       "dojo/dom",
       "dojo/domReady!"
-    ], function(Map, MapView, 
+    ], function(Map, MapView,
                 GraphicsLayer, FeatureLayer, Graphic, SimpleFillSymbol, geometryEngineAsync,
                 HorizontalSlider, dom) {
 
@@ -130,7 +131,7 @@
         dom.byId("bufferDistance").innerText = roundedValue + " " + unit;
         bufferDistance = roundedValue;
       }
-    
+
       // Create the Buffer Range slider.
       var slider = new HorizontalSlider({
         value: bufferDistance,
@@ -145,7 +146,7 @@
           bufferStops(bufferDistance);
         }
       }, "bufferSlider").startup();
-    
+
       // Initialize the range display text.
       setBufferDisplay(bufferDistance);
 

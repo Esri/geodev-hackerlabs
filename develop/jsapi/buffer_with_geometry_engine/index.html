@@ -16,6 +16,7 @@
     }
   </style>
 
+  <!-- need to figure out why this sample doesn't work at 4.1 -->
   <script src="https://js.arcgis.com/4.0/"></script>
 
   <script>
@@ -28,7 +29,7 @@
       "esri/symbols/SimpleFillSymbol",
       "esri/geometry/geometryEngineAsync",
       "dojo/domReady!"
-    ], function(Map, MapView, 
+    ], function(Map, MapView,
                 GraphicsLayer, FeatureLayer, Graphic, SimpleFillSymbol, geometryEngineAsync) {
 
       var map = new Map({

@@ -26,7 +26,11 @@ Add the feature that is retrieved to the map using Leaflet's [`L.geoJSON`](http:
 
 ![Step 4](step_4.png)
 
-In the end, hopefully your app will look *kinda, sorta* like [**this**](https://bl.ocks.org/jgravois/a4a93d907f3aaf3f7340).
+In the end, hopefully your app will look *kinda, sorta* like **this**.
+
+ * [Code](index.html)
+ * [Live App](http://esri.github.io/geodev-hackerlabs/develop/leaflet/query_with_html5_location/index.html)
+
 ---
 ### Resources
 

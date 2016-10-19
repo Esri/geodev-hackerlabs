@@ -12,7 +12,7 @@ This lab introduces visual variables as a powerful way of extruding polygons in 
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
     <title>Extrude polygon by visual variables - 4.0beta3</title>
 
-    <link rel="stylesheet" href="https://js.arcgis.com/4.0/esri/css/main.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.1/esri/css/main.css">
     <style>
       html, body, #viewDiv {
         padding: 0;
@@ -22,7 +22,7 @@ This lab introduces visual variables as a powerful way of extruding polygons in 
       }
     </style>
 
-    <script src="https://js.arcgis.com/4.0/"></script>
+    <script src="https://js.arcgis.com/4.1/"></script>
 
     <script>
       require(["esri/Map",
