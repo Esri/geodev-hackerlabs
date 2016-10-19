@@ -1,4 +1,4 @@
-###Add feature layers with Esri Leaflet
+### Add feature layers with Esri Leaflet
 
 In this lab, you will add featurelayers to an Esri Leaflet application.
 
