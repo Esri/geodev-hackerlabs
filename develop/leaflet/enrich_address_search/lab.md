@@ -28,11 +28,11 @@ searchControl.on('results', function (evt) {
 ![Step 3](step_3.png)
 
 ```js
-neighborhoods.query()
-  .intersects(/*the geometry of the matched address*/)
-  .run(function(error, featureCollection){
-  	// here we'll have a reference to the neighborhood that is coincident with the address
-  });
+var neighborhoodQuery = neighborhoods.query()
+neighborhoodQuery.intersects(/*the geometry of the matched address*/)
+neighborhoodQuery.run(function(error, featureCollection){
+  // here we'll have a reference to the neighborhood that is coincident with the address
+});
 ```
 > ### 4. ... and display the demographic data we dug out
 

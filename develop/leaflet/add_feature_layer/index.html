@@ -5,11 +5,11 @@
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
   <!-- Load Leaflet from CDN-->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0/dist/leaflet.css" />
-  <script src="https://unpkg.com/leaflet@1.0.0/dist/leaflet-src.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet-src.js"></script>
 
   <!-- Load Esri Leaflet from CDN -->
-  <script src="https://unpkg.com/esri-leaflet@2.0.3"></script>
+  <script src="https://unpkg.com/esri-leaflet@2.0.4"></script>
 
   <!-- Load Esri Leaflet Renderers -->
   <script src="https://unpkg.com/esri-leaflet-renderers@2.0.2"></script>
@@ -20,7 +20,7 @@
       padding: 0;
       font-family: Helvetica;
     }
-    #map {
+    #mapDiv {
       position: absolute;
       top: 43px;
       bottom: 0;
@@ -39,33 +39,37 @@
 </head>
 <body>
 
-<div id="title">2015 Portland Population Density - Esri-Leaflet</div>
+<div id="title">2015 Portland Population Density - Esri Leaflet</div>
 
-<div id="map"></div>
+<div id="mapDiv"></div>
 
 <script type='text/javascript'>
 
-    var map = L.map('map').setView([45.533, -122.657], 12);
-    L.esri.basemapLayer('DarkGray').addTo(map);
+    var pdxMap = L.map('mapDiv');
+    pdxMap.setView([45.533, -122.657], 12);
+    L.esri.basemapLayer('DarkGray').addTo(pdxMap);
 
     // use panes to control the order that layers are displayed
-    map.createPane('neighborhoods');
-    L.esri.featureLayer({
+    pdxMap.createPane('neighborhoods');
+    var neighborhoods = L.esri.featureLayer({
       url: 'http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Neighborhoods_Styled/FeatureServer/0',
       pane: 'neighborhoods'
-    }).addTo(map);
+    });
+    neighborhoods.addTo(pdxMap);
 
-    map.createPane('rail lines');
-    L.esri.featureLayer({
+    pdxMap.createPane('rail lines');
+    var rail = L.esri.featureLayer({
       url: 'http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Lines_Styled/FeatureServer/0',
       pane: 'rail lines'
-    }).addTo(map);
+    });
+    rail.addTo(pdxMap);
 
-    map.createPane('stops');
-    L.esri.featureLayer({
+    pdxMap.createPane('stops');
+    var stops = L.esri.featureLayer({
       url: 'http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0',
       pane: 'stops'
-    }).addTo(map);
+    });
+    stops.addTo(pdxMap);
 
 </script>
 
