@@ -13,15 +13,16 @@
 
   <style>
     body {margin:0;padding:0;}
-    #map {position: absolute;top:0;bottom:0;right:0;left:0;}
+    #mapDiv {position: absolute;top:0;bottom:0;right:0;left:0;}
   </style>
 </head>
 <body>
 
-  <div id="map"></div>
+  <div id="mapDiv"></div>
 
   <script type='text/javascript'>
-    var map = L.map('map').setView([45.533, -122.657], 12);
+    var map = L.map('mapDiv')
+    map.setView([45.533, -122.657], 12);
     L.esri.basemapLayer('DarkGray').addTo(map);
   </script>
 

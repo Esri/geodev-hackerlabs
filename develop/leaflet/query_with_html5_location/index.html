@@ -13,12 +13,12 @@
 
   <style>
     body { margin:0; padding:0; }
-    #map { position: absolute; top:0; bottom:0; right:0; left:0; }
+    #mapDiv { position: absolute; top:0; bottom:0; right:0; left:0; }
   </style>
 </head>
 <body>
 
-<div id="map"></div>
+<div id="mapDiv"></div>
 
 <script>
 
@@ -27,7 +27,7 @@
     window.location.protocol = "https";
   }
 
-  var map = L.map('map').setView([34, -118], 10);
+  var map = L.map('mapDiv').setView([34, -118], 10);
   L.esri.basemapLayer('DarkGray').addTo(map);
 
   // ask leaflet to use HTML5 to query the user location
@@ -44,7 +44,7 @@
     // execute the spatial query
     censusBlocks.run(function(error, intersectingBlocks){
       // add the GeoJson to the map
-      var blockLayer = L.geoJson(intersectingBlocks).addTo(map);
+      var blockLayer = L.geoJSON(intersectingBlocks).addTo(map);
       // and update the map extent
       map.fitBounds(blockLayer.getBounds())
     });
