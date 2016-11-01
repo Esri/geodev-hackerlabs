@@ -13,7 +13,7 @@ In this lab you will add a search widget. The widget performs context-sensitve s
     /*** ADD ***/
     "esri/widgets/Search",
     "dojo/domReady!"
-  ], function(Map, SceneView, Search) { /*** ADD ***/ 
+  ], function(Map, SceneView, /*** ADD ***/  Search) { 
   ```
 
 3. Change the Map's `basemap` and `ground` properties.
@@ -29,8 +29,7 @@ In this lab you will add a search widget. The widget performs context-sensitve s
 
 4. Create the Search widget and add its code below `SceneView`. Position the widget to the `top-left` of the UI.
 
-  ```javascript
-    ...      
+  ```javascript    
 
       var searchWidget = new Search({
         view: view
