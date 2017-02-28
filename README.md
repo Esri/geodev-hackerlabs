@@ -8,9 +8,9 @@ This repository contains short labs that step you through the process of develop
 
 The process involves three steps:
 
-1. Data - Prepare data for your apps with [ArcGIS Online](http://www.arcgis.com).
-2. Design - Style maps and layers for your apps with the [ArcGIS Online Map and Scene Viewer](http://www.arcgis.com).
-3. Develop - Use maps and layers in your apps with [ArcGIS templates, builders and APIs](http://developers.arcgis.com).
+1. [Data](#1-data) - Prepare data for your apps with [ArcGIS Online](http://www.arcgis.com).
+2. [Design](#2-design) - Style maps and layers for your apps with the [ArcGIS Online Map and Scene Viewer](http://www.arcgis.com).
+3. [Develop](#3-develop) - Use maps and layers in your apps with [ArcGIS templates, builders and APIs](http://developers.arcgis.com).
 
 ![Process](./arcgis-process.png)
 
@@ -18,7 +18,9 @@ The process involves three steps:
 
 Here's how to get started:
 
-1. **Sign up for a free** [ArcGIS Developer subscription](https://developers.arcgis.com/en/sign-up/) - Your subscription allows you to download software, register apps, import data, create new services, store maps, perform spatial analysis and more. If you already have an [ArcGIS Organizational subscription](http://www.arcgis.com/features/plans/pricing.html) (with at least publisher level permission) you can use that too. Please note that [free public accounts](https://geonet.esri.com/groups/geodev/blog/2014/10/15/help-i-cant-get-into-developersarcgiscom) and Organizational 'User' accounts will not work.
+1. **Sign up for a free** [ArcGIS Developer subscription](https://developers.arcgis.com/en/sign-up/) - Your subscription allows you to download software, register apps, import data, create new services, store maps, perform spatial analysis and more. If you already have an [ArcGIS Organization subscription](http://www.arcgis.com/features/plans/pricing.html) (with at least publisher level permission) or access to ArcGIS Enterprise, that will work too. 
+
+> [Free public accounts](https://geonet.esri.com/groups/geodev/blog/2014/10/15/help-i-cant-get-into-developersarcgiscom) and Organizational 'User' accounts are *not* sufficient to complete the Hackerlabs.
 
 2. **Start the labs** - You can complete the labs in order or just pick and choose the ones you want to do. It will be easiest to use the data provided (Portland open data), but you feel free to substitute with your own data and augment the steps where necessary. The labs marked with an `*` are the minimum labs you need to complete to build your own custom app from ground zero.
 
