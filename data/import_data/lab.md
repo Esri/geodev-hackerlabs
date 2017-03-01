@@ -22,5 +22,8 @@ In this lab you will use [Add items](http://doc.arcgis.com/en/arcgis-online/shar
 
 ###Bonus
 * Try importing some of your own data.
+
+> note: ArcGIS Online supports a [*wide variety*](https://doc.arcgis.com/en/arcgis-online/reference/supported-items.htm) of file uploads, but only a select few can be used to publish [hosted feature services](https://doc.arcgis.com/en/arcgis-online/share-maps/publish-features.htm)
+
 * Explore the `Overview` and `Settings` tabs to control your layer. Explore the Share and Edit capabilities of each layer.
 * Explore the `Data`, `Visualization` and `Usage` tabs.
