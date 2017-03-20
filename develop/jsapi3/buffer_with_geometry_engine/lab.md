@@ -1,4 +1,4 @@
-###Client-side Buffer
+### Client-side Buffer
 
 In this lab you will use the GeometryEngine to buffer around Rail Stops in the browser.
 
@@ -175,7 +175,7 @@ Your app should look something like this:
 * [Code](index.html)
 * [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi3/buffer_with_geometry_engine/index.html)
 
-###Bonus
+### Bonus
 * Explore the functions available in the [Geometry Engine](https://developers.arcgis.com/javascript/jsapi/esri.geometry.geometryengine-amd.html).
 * Look at the [FeatureLayer documentation](https://developers.arcgis.com/javascript/jsapi/featurelayer-amd.html) to explore what the `FeatureLayer.MODE_SNAPSHOT` setting means. Notice how it's used with the `update-end` event to calculate the initial buffer.
 * Change the order the layers are added to the map.

@@ -1,10 +1,10 @@
-###Create Authenticated Traffic Layer
+### Create Authenticated Traffic Layer
 
 ArcGIS Online provides a number of [ready-to-use maps, layers and services](http://www.arcgis.com/features/maps/index.html). You can use any of these services and layers to enhance your applications. Some of the services require user authentication to access them and others are credit-consuming.
 
 In this lab we will look at how to pre-authenticate the traffic layer so it can be accessed without prompting the user for credentials. The traffic layer is non-credit consuming but does require authentication.
 
-###Steps
+### Steps
 
 1. Go to [arcgis.com](http://www.arcgis.com) and login.  
 
@@ -42,5 +42,5 @@ In this lab we will look at how to pre-authenticate the traffic layer so it can 
 
 > Your map should look something like [this](http://edn.maps.arcgis.com/home/webmap/viewer.html?webmap=80bd92e2e0924358a1e9490b3c6b8603).
 
-###Bonus
+### Bonus
 * Make the layer accessible by Everyone and ensure the layer can be accessed by users without authentication. To do this you'll need `Share` the layer to `Everyone`. After doing so, log out of [arcgis.com](http://www.arcgis.com) and Click `Open` > `Add layer to new map`. It's best to use a different web browser that isn't logged in to [arcgis.com](http://www.arcgis.com). To add the layer, use the URL for your authenticated traffic layer (you copied eariler). If you don't have it, you can always find the URL on the item page in `My Contents`.

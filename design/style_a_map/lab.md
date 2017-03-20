@@ -1,10 +1,10 @@
-###Style a Map
+### Style a Map
 
 The easiest way to style a map is to use the [Map Viewer](http://doc.arcgis.com/en/arcgis-online/use-maps/view-maps.htm).
 
 In this lab you will use the styling capabilities of the viewer to make your map more meaningful.
 
-###Steps
+### Steps
 
 1. Go to [arcgis.com](http://www.arcgis.com) and login.  
 
@@ -54,7 +54,7 @@ In this lab you will use the styling capabilities of the viewer to make your map
 
 Your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=b5fd4aa210ac42f6b86cf5f7a0c989cf)
 
-###Bonus
+### Bonus
 * Try using some of the other advanced features of the `Change Style` tools.
 * Style the layers using different attributes. 
 * Save out different maps for different attributes and styles used.

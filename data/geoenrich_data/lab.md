@@ -1,10 +1,10 @@
-###Enrich with Population Data
+### Enrich with Population Data
 
 ArcGIS Online allows you interactively geoenrich your data with [social demographic and business data](https://developers.arcgis.com/en/features/geo-enrichment/). The easiest way to do accomplish this is to use the Map Viewer and add the field data interactively. You can also use the [raw REST API](https://developers.arcgis.com/rest/geoenrichment/api-reference/geoenrichment-service-overview.htm).
 
 In this lab you will add neighborhood polygons and enrich them with population data.
 
-###Steps
+### Steps
 
 1. Go to [arcgis.com](http://www.arcgis.com) and login.
 
@@ -46,7 +46,7 @@ In this lab you will add neighborhood polygons and enrich them with population d
 
 > Your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=93cd156deb3e49abb7e48bf1b202cc61).
 
-###Bonus
+### Bonus
 * Explore some of the other enrichment fields available.
 * Perform different types of geoenrichment analyses.
 * Style the map to use some of the other fields.

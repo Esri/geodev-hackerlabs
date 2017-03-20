@@ -1,4 +1,4 @@
-###Create an App from a Web Map
+### Create an App from a Web Map
 
 You can use the [ArcGIS API for JavaScript](https://developers.arcgis.com/javascript/) to easily load web maps built with the Map Viewer. The advantage to using this approach is that the map will contain all of the pre-defined settings you configured in the Map Viewer. e.g. Layer Styles, Popups, Refresh Rate.
 
@@ -46,7 +46,7 @@ Your app should look something like this:
  * [Code](index.html)
  * [Live App](http://esri.github.io/geodev-hackerlabs/develop/webmap_apps/create_jsapi_app/index.html)
 
-###Bonus
+### Bonus
 * Use the esri/dijit/Legend to add a legend to the upper right of the app. Use the [View UI](https://developers.arcgis.com/javascript/latest/guide/view-ui/index.html) calls to place the legend at the top-right of the display.
 
   ```javascript

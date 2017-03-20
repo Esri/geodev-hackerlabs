@@ -1,4 +1,4 @@
-###Feature Layer Search
+### Feature Layer Search
 
 In this lab you will add a search widget search against a feature layer. The widget performs context-sensitve search as you type and then it will zoom to and highlight the feature selected. You can also format the data in the popup that appears. 
 
