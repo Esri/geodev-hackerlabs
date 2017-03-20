@@ -1,10 +1,10 @@
-###Filter Data
+### Filter Data
 
 The ArcGIS Online Map Viewer allows you to filter your data by multiple criteria. This allows you to limit which features draw and focus on only certain subsets of your data that are of interest to you. In addition, Analysis Tools take note of current filters when generating their output.
 
 In this lab you will focus in on Rail Stops on the Blue Line and generate buffers around only those stops.
 
-###Steps
+### Steps
 
 1. Go to [www.arcgis.com](https://www.arcgis.com) and login.  
 
@@ -40,7 +40,7 @@ In this lab you will focus in on Rail Stops on the Blue Line and generate buffer
 
 > Your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=39efc42b4920454a8241663e7764d6d5). See how buffers were only calculated for stations on the B (Blue) line.
 
-###Bonus 
+### Bonus 
 
 * Try filtering by `TYPE`, `is` and selecting `Unique` from the Value radio buttons. What happens to the text box?
 * See if you can show only Rail Stops that are under construction (`STATUS` `is not` `Existing`).
@@ -50,6 +50,6 @@ In this lab you will focus in on Rail Stops on the Blue Line and generate buffer
     * `STATUS` `is` `Existing`, or 
     * `STATUS` `is not` `Existing`.
 
-###More Bonus
+### More Bonus
 
 * You can click `Details` > `PDX Rail Stops` > `Save Layer` to save this filtered "view" on the layer to your `My Content` space in your account. Perhaps name it `PDX Blue Line Stops`. This new item will point to the same unfiltered data source, but when added to the ArcGIS Online Map Viewer, will automatically filter according to the saved definitions. You can share these items with colleagues and users as a great way for them to bring focused content from a larger dataset into their own maps.

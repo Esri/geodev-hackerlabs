@@ -1,4 +1,4 @@
-###Add a vector tile layer
+### Add a vector tile layer
 
 In this lab you will add a vector tile layer to an ArcGIS API for JavaScript application. 
 

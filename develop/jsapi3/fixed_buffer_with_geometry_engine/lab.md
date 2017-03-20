@@ -1,4 +1,4 @@
-###Client-side Buffer by Fixed Amount
+### Client-side Buffer by Fixed Amount
 
 In this lab you will use the GeometryEngine to buffer around Rail Stops in the browser by a fixed amount.
 
@@ -75,6 +75,6 @@ Your app should look something like this:
 * [Code](index.html)
 * [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi3/fixed_buffer_with_geometry_engine/index.html)
 
-###Bonus
+### Bonus
 * Make the buffer amount a top-level JavaScript variable and use the browser's interactive console to modify it between clicks.
 * See the [Interactive Buffer Lab](../buffer_with_geometry_engine/lab.md) for more bonus items.

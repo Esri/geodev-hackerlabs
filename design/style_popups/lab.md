@@ -1,10 +1,10 @@
-###Style Layer Popups
+### Style Layer Popups
 
 With the Map Viewer, you can easily style popups for each layer. You can change fields, format data, add or remove information, or add charts, images or url links. These settings are stored with the map when it is saved and is accessible by all clients apps that reference the map. Learn more about configuring popups [here](https://doc.arcgis.com/en/arcgis-online/create-maps/configure-pop-ups.htm).
 
 In this lab you will style popups by formatting fields and adding charts.
 
-###Steps
+### Steps
 
 1. Go to [arcgis.com](http://www.arcgis.com) and login.  
 
@@ -74,6 +74,6 @@ In this lab you will style popups by formatting fields and adding charts.
 
 Your popups should look similar to the popups in [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=6f1f04e49536466fa4a631afcd0141c5).
 
-###Bonus
+### Bonus
 * Try adding different types of charts to the Neighborhoods layer popups.
 * Try changing the order of the fields.

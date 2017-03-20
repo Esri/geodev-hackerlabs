@@ -1,4 +1,4 @@
-###Create a Calcite Maps - Bootstrap App
+### Create a Calcite Maps - Bootstrap App
 
 It is easiy to build webmap apps with the [ArcGIS API for JavaScript](https://developers.arcgis.com/javascript/jsapi/) and frameworks such as [Calcite Maps](http://github.com/esri/calcite-maps). [Calcite Maps](http://github.com/esri/calcite-maps) is a framework that contains CSS classes and extensions that extend Bootstrap and are specifically for building map apps for web and mobile devices. To learn more, visit the Calcite Maps [site](http://github.com/esri/calcite-maps).
 
@@ -305,7 +305,7 @@ Your app should look something like this:
  * [Code](index.html)
  * [Live App](http://esri.github.io/geodev-hackerlabs/develop/webmap_apps/create_calcite_maps_app/index.html)
 
-###Bonus
+### Bonus
 Try applying different Calcite Maps classes to change the look and feel of the app:
 * Layout - Add the `calcite-layout-medium-title` to the `<body>` element. You will also have to change the top padding to 60 to match the navbar height.
 * Color - Apply different colors to the `nav` element. e.g. `calcite-bgcolor-dark-red`

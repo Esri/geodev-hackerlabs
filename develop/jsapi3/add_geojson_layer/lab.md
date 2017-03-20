@@ -1,4 +1,4 @@
-###Create a map from GeoJSON
+### Create a map from GeoJSON
 
 In this lab you'll learn an easy way to load GeoJSON directly into your ArcGIS map.
 

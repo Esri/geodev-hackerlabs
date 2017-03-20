@@ -1,10 +1,10 @@
-###Vector Basemaps
+### Vector Basemaps
 
 Esri has introduced a new set of [vector basemaps](http://www.arcgis.com/home/search.html?q=owner:esri_vector) now in beta release. There are several benefits to vector basemaps including high-res displays, smaller and easier to update and the ability to customize the look and feel of the basemaps. You can see them live [here](http://www.arcgis.com/home/search.html?q=owner:esri_vector).
 
 In this lab you will swap your basemap with your favorite vector basemap.
 
-###Steps
+### Steps
 
 1. Go to [arcgis.com](http://www.arcgis.com) and login.
 
@@ -26,7 +26,7 @@ In this lab you will swap your basemap with your favorite vector basemap.
 
 Your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=11e2285a131540f792c58565db996b4b)
 
-###Bonus
+### Bonus
 
 Experiment with adding and removing other vector tile layers as basemaps.
  		

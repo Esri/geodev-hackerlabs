@@ -1,4 +1,4 @@
-###Build a starter map (3.x JS API)
+### Build a starter map (3.x JS API)
 
 This lab covers the basics for creating a basic starter mapping application with the 3.x JS API.
 The starter map simply loads a default base map, centers and zooms it in.
@@ -53,7 +53,7 @@ Your app should look something like this:
  * [Code](index.html)
  * [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi3/create_starter_map/index.html)
 
-###Bonus
+### Bonus
 
 * Experiment with different basemaps such as `topo` or `gray`.
 * Run the code locally on your machine. Eventually if your app gets larger you'll want to migrate it from JSBin to your desktop.

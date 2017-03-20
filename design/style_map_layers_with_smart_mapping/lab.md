@@ -1,10 +1,10 @@
-###Smart Mapping - Proportional Styling
+### Smart Mapping - Proportional Styling
 
 Smart Mapping provides some powerful ways to style your data on the map in a way that highlights the data's properties.
 
 In this lab you will see how we can display population totals as a population density by dividing the totals by area.
 
-###Steps
+### Steps
 
 1. Go to [www.arcgis.com](https://www.arcgis.com) and login.  
 
@@ -28,7 +28,7 @@ In this lab you will see how we can display population totals as a population de
 
 Your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=6dd14f639f784ff692327d8f4b3eb00a).
 
-###Bonus
+### Bonus
 
 * In the `Change Style` > `Counts and Amounts` > `Options` panel:
   * Drag the sliders up and down the color-ramp to see how the visualization changes to highlight extremes or just deviations from the mean.

@@ -1,10 +1,10 @@
-###Save a Layer
+### Save a Layer
 
 With the [Map Viewer](http://doc.arcgis.com/en/arcgis-online/use-maps/view-maps.htm) you can easily update and save the metadata for your layers. Saving layers updates and stores the styling and extent information with the layer itself. If you own the layer, you can save directly to the layer. If you don't, you can copy other people's layers and save the layer with your own style and extent information. This technique is handy when you want to render a layer the same way in all apps/APIs that access the layer.
 
 In this lab you will style and save a layer to your account.
 
-###Steps
+### Steps
 
 1. Go to [arcgis.com](http://www.arcgis.com) and login.  
 
@@ -32,7 +32,7 @@ In this lab you will style and save a layer to your account.
 
 Your map should look something like [this map](http://edn.maps.arcgis.com/home/webmap/viewer.html?webmap=43b55908ff1142678e1c6d3701f69695).
 
-###Bonus
+### Bonus
 
 * View the JSON for the layer by using the REST API to access the item in your account. In your web browser, paste in this url. Identify the `renderer` section.
 

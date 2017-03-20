@@ -1,4 +1,4 @@
-###Create a Configurable App
+### Create a Configurable App
 
 You can use any of the [Configurable Apps](http://www.arcgis.com/home/gallery.html#c=esri&t=apps&o=modified&f=configurable) to build differnt types of focused HTML, CSS, JS apps. All apps are developed on top of an existing web map and are shared out as a web application. By default, these apps are stored and hosted in ArcGIS Online, but you can also download all of the code locally and host and customize them yourself.
 
@@ -55,7 +55,7 @@ In this lab, you will build a simple Template app.
 
 Your app should look something like [this](http://edn.maps.arcgis.com/apps/PublicInformation/index.html?appid=09ed800aca42450c89278c3c6a3815dc).
 
-###Bonus
+### Bonus
 * Go back to the app and try to change and save some of the configuration settings.
 * View the JSON for the web app by using the REST API to access the item in your account. Try formatting the JSON with try [this JSON Editor tool](http://www.jsoneditoronline.org/).
 
