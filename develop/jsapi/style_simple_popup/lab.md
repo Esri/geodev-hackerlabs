@@ -1,4 +1,4 @@
-###Style a Layer Popup
+### Style a Layer Popup
 
 In this lab you will use code to style a popup.
 

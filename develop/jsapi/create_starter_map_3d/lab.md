@@ -1,4 +1,4 @@
-###Build a starter 3D map
+### Build a starter 3D map
 
 This lab covers the basics for creating a basic starter 3D mapping application.
 The starter map simply loads a default base map and centers it.
@@ -61,7 +61,7 @@ Your app should look something like this:
  * [Code](index.html)
  * [Live App](https://esri.github.io/geodev-hackerlabs/develop/jsapi/create_starter_map_3d/index.html)
 
-###Bonus
+### Bonus
 
 * Experiment with different basemaps such as `topo` or `gray`.
 * Take a look at the bonus section for the [2D Starter Map](../create_starter_map/lab.md#bonus) and try the same only with the `SceneView` instead of the `MapView`.

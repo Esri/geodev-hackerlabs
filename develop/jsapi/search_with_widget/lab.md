@@ -1,4 +1,4 @@
-###Search with Widget
+### Search with Widget
 
 In this lab you will add a search widget and search against a feature layer. The widget performs context-sensitve search as you type and then it will zoom to and highlight the feature selected. You can also format the data in the popup that appears. 
 
@@ -93,6 +93,6 @@ Your app should look something like this:
 * [Code](index.html)
 * [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi/search_with_widget/index.html)
 
-###Bonus
+### Bonus
 * Add the default world geocoder to the search widget as well.
 * Add a [Rail Stops feature layer](http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0) to the Search widget.

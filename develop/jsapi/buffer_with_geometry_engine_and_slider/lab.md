@@ -1,4 +1,4 @@
-###Interactive Client-side Buffer
+### Interactive Client-side Buffer
 
 In this lab you will use the GeometryEngine to buffer around Rail Stops in the browser.
 
@@ -214,7 +214,7 @@ Your app should look something like this:
 * [Code](index.html)
 * [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi/buffer_with_geometry_engine_and_slider/index.html)
 
-###Bonus
+### Bonus
 * Explore the functions available in the [Geometry Engine](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-geometryEngineAsync.html).
 * Change the order the layers are added to the map.
 * Change the symbol used for the buffer display.

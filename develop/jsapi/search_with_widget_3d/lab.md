@@ -1,4 +1,4 @@
-###Search with Widget 3D
+### Search with Widget 3D
 
 In this lab you will add a search widget. The widget performs context-sensitve search as you type and then it will zoom to and highlight the feature selected. You can also format the data in the popup that appears. 
 
@@ -49,5 +49,5 @@ Your app should look something like this:
 * [Code](index.html)
 * [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi/search_with_widget_3d/index.html)
 
-###Bonus
+### Bonus
 * Add a button that clears the search results and graphic from the map. Hint: check the API reference on which method to use.
