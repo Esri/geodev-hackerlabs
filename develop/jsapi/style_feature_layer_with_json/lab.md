@@ -1,4 +1,4 @@
-###Style Feature Layers with JSON
+### Style Feature Layers with JSON
 
 In this lab you will apply custom styling to a feature layer using the JSON Drawing Info stored with the feature service.
 

@@ -1,4 +1,4 @@
-###Extrude a polygon in 3D
+### Extrude a polygon in 3D
 
 This lab introduces visual variables as a powerful way of extruding polygons in a 3D mapping application.
 
@@ -127,7 +127,7 @@ Your app should look something like this:
  * [Code](index.html)
  * [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi/extrude_polygon_3d/index.html)
  
-###Bonus
+### Bonus
 
 * Experiment with Visual Variables. You can read mode about that [here](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html#visualVariables).
 * Experiment with opacity values. You can read more about that [here](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html#opacity).

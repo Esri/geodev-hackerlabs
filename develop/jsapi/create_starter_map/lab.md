@@ -1,4 +1,4 @@
-###Build a starter map
+### Build a starter map
 
 This lab covers the basics for creating a basic starter mapping application.
 The starter map simply loads a default base map, and centers and zooms it in in a [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html).
@@ -61,7 +61,7 @@ Your app should look something like this:
  * [Code](index.html)
  * [Live App](https://esri.github.io/geodev-hackerlabs/develop/jsapi/create_starter_map/index.html)
 
-###Bonus
+### Bonus
 
 * Experiment with different basemaps such as `topo` or `gray`.
 * Declare the `view` variable globally instead and open your browser's javascript console ([see some instructions here](https://www.wickedlysmart.com/hfjsconsole/)). You can then interactively control the view from your browser console by referring to the `view` global variable. Many browsers will autocomplete once you've typed `view.`. For example, change the view extent, center point, zoom level or scale. See [here](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) for some examples.
