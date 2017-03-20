@@ -101,7 +101,7 @@ One of the easiest ways to build an ArcGIS map app is to start with a web map.
 
 In these labs you will use the Configurable App Templates, the ArcGIS Web App Builder, and the APIs to build custom mapping apps. You will use the web maps with the Web AppBuilder to create an HTML5 responsive app or AppStudio to build and deploy a native app for iOS and Android. Or you can just build a custom app from the ground up with the ArcGIS JS API, Esri-Leaflet or the ArcGIS Runtime APIs.
 
-* Web Map Apps
+#### Web Map Apps
  * [Create a Configurable App](./develop/webmap_apps/create_configurable_app/lab.md)*
  * [Create a Web AppBuilder App](./develop/webmap_apps/create_web_appbuilder_app/lab.md)
  * [Create a JS API App](./develop/webmap_apps/create_jsapi_app/lab.md)
@@ -109,7 +109,7 @@ In these labs you will use the Configurable App Templates, the ArcGIS Web App Bu
  * [Create a Calcite Maps - Bootstrap App](./develop/webmap_apps/create_calcite_maps_app/lab.md)
  * [Create an AppStudio App](./develop/webmap_apps/create_appstudio_app/lab.md)
 
-* JS API
+#### JS API
  * [Build a Starter Map](./develop/jsapi/create_starter_map/lab.md)
  * [Build a Starter 3D Map](./develop/jsapi/create_starter_map_3d/lab.md)
  * [Add Feature Layer](./develop/jsapi/add_feature_layer/lab.md)
@@ -126,7 +126,7 @@ In these labs you will use the Configurable App Templates, the ArcGIS Web App Bu
 
 The above labs all use the 4.x JS API. If you would rather learn about the 3.x JS API, check [here](./develop/jsapi3/README.md).
 
-* Esri-Leaflet
+#### Esri-Leaflet
  * [Build a Starter Map](./develop/leaflet/create_starter_map/lab.md)
  * [Add Feature Layers](./develop/leaflet/add_feature_layer/lab.md)
  * [GeoEnrich address searches](./develop/leaflet/enrich_address_search/lab.md)
@@ -134,7 +134,7 @@ The above labs all use the 4.x JS API. If you would rather learn about the 3.x J
  * [Use Geolocation to Query](./develop/leaflet/query_with_html5_location/lab.md)
  * [Use Geolocation (and turf) to Query](./develop/leaflet/query_with_html5_location_turf/lab.md)
 
-* Web AppBuilder Developer Edition
+#### Web AppBuilder Developer Edition
  * [Setup Development Environment](./develop/wab/install_developer_edition_locally/lab.md)
  * [Add a Custom Widget](./develop/wab/add_custom_widget_to_app/lab.md)
  * [Add a Custom Configurable Widget](./develop/wab/add_configurable_widget/lab.md)
@@ -160,7 +160,7 @@ The above labs all use the 4.x JS API. If you would rather learn about the 3.x J
 Please see [www.civicapps.org](http://www.civicapps.org/), [developer.trimet.org/gis](developer.trimet.org/gis) and [http://www.portlandoregon.gov/bts](http://www.portlandoregon.gov/bts) for the data terms of use.
 
 ## Licensing
-Copyright 2016 Esri
+Copyright 2017 Esri
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
