@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
 
-  <link rel="stylesheet" href="https://js.arcgis.com/4.0/esri/css/main.css">
+  <link rel="stylesheet" href="https://js.arcgis.com/4.3/esri/css/main.css">
 
   <style>
     html, body, #viewDiv {
@@ -42,7 +42,7 @@
   <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/tundra/tundra.css">
 
   <!-- need to figure out why this sample doesn't work at 4.1 -->
-  <script src="https://js.arcgis.com/4.0/"></script>
+  <script src="https://js.arcgis.com/4.3/"></script>
 
   <script>
     require([
@@ -134,20 +134,21 @@
 
       // Create the Buffer Range slider.
       var slider = new HorizontalSlider({
+        id: "slider",
         value: bufferDistance,
         minimum: 0.25,
         maximum: 5,
-        intermediateChanges: true,
+        discreteValues: 20,
+        intermediateChanges: false,
         showButtons: false,
+        // Show updated results when we release the slider
         onChange: function(value) {
           setBufferDisplay(value);
-        },
-        onMouseUp: function () {
           bufferStops(bufferDistance);
         }
       }, "bufferSlider").startup();
 
-      // Initialize the range display text.
+        // Initialize the range display text.
       setBufferDisplay(bufferDistance);
 
     });
