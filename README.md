@@ -123,7 +123,7 @@ In these labs you will use the Configurable App Templates, the ArcGIS Web App Bu
  * [Search with a Query Task](./develop/jsapi/search_with_query_task/lab.md)
  * [Client-side Buffering](./develop/jsapi/buffer_with_geometry_engine/lab.md)
  * [Client-side Buffering with UI](./develop/jsapi/buffer_with_geometry_engine_and_slider/lab.md)
- * [Working with a Proxy](./develop/jsapi/work_with_proxy/lab.md)
+ * [Working with ArcGIS Online Proxy](./develop/jsapi/work_with_proxy/lab.md)
 
 The above labs all use the 4.x JS API. If you would rather learn about the 3.x JS API, check [here](./develop/jsapi3/README.md).
 
