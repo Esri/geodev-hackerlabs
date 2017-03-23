@@ -4,7 +4,7 @@ A place to learn how to build geo apps with the ArcGIS platform.
 
 ## Welcome
 
-This repository contains short labs that step you through the process of developing applications with [ArcGIS](http://www.arcgis.com). The process described here uses [ArcGIS Online](http://www.arcgis.com) and [ArcGIS for Developers](http://developers.arcgis.com) accounts, tools and services, and does not require the installation of desktop software for most labs.
+This repository contains short labs that step you through the process of developing applications with [ArcGIS](http://www.arcgis.com). The process described here uses [ArcGIS Online](http://www.arcgis.com) and [ArcGIS for Developers](http://developers.arcgis.com) accounts, tools and services, and does not require the installation of desktop software for most labs. A handful have been reworked as [ArcGIS DevLabs](https://developers.arcgis.com/labs/).
 
 The process involves three steps:
 
@@ -18,7 +18,7 @@ The process involves three steps:
 
 Here's how to get started:
 
-1. **Sign up for a free** [ArcGIS Developer subscription](https://developers.arcgis.com/en/sign-up/) - Your subscription allows you to download software, register apps, import data, create new services, store maps, perform spatial analysis and more. If you already have an [ArcGIS Organization subscription](http://www.arcgis.com/features/plans/pricing.html) (with at least publisher level permission) or access to ArcGIS Enterprise, that will work too. 
+1. **Sign up for a free** [ArcGIS Developer subscription](https://developers.arcgis.com/en/sign-up/) - Your subscription allows you to download software, register apps, import data, create new services, store maps, perform spatial analysis and more. If you already have an [ArcGIS Organization subscription](http://www.arcgis.com/features/plans/pricing.html) (with at least publisher level permission) or access to ArcGIS Enterprise, that will work too.
 
 > [Free public accounts](https://geonet.esri.com/groups/geodev/blog/2014/10/15/help-i-cant-get-into-developersarcgiscom) and Organizational 'User' accounts are *not* sufficient to complete the Hackerlabs.
 
@@ -71,7 +71,7 @@ ArcGIS Online and Developer Tools
 Code
 * [Add a layer to an app](./develop/jsapi/add_feature_layer/lab.md)
 * [GeometryEngine Buffering](./develop/jsapi/buffer_with_geometry_engine/lab.md)
- 
+
 ### 2. Design
 
 Creating web maps with great cartography is one of the most important steps to building effective mapping applications. Styling maps interactively can also be huge time-saver in app development.
@@ -175,7 +175,4 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-A copy of the license is available in the repository's [LICENSE](./license.txt) file.
-
-[](Esri Tags: ArcGIS Web Mapping Leaflet AppBuilder Hackerlabs Labs JavaScript)
-[](Esri Language: JavaScript)
+A copy of the license is available in the repository's [LICENSE](./LICENSE) file.
