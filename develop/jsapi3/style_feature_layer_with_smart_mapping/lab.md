@@ -1,4 +1,4 @@
-###Smart Mapping
+### Smart Mapping
 
 In this lab you will use Smart Mapping components to style neighborhoods by population and see how Smart Mapping can intelligently pick appropriate styles for you.
 
@@ -183,7 +183,7 @@ Your app should look something like this:
 * [Code](index.html)
 * [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi3/style_feature_layer_with_smart_mapping/index.html)
 
-###Bonus
+### Bonus
 * When the Neighborhood layer first loads, you can see the default symbology inherited from the layer before Smart Mapping kicks in and updates the symbology appropriately. Try using the `visible` parameter when creating the `FeatureLayer` to initially hide the layer, and the `show()` method to display it only once the renderer has been created.
 * Try extending the list of basemaps to include other basemaps. See the `Map` [constructor](https://developers.arcgis.com/javascript/jsapi/map-amd.html#map1) for valid values.
 * Try using different `themes` when calling `smartMapping.createColorRenderer()` and see how it affects the symbology that's chosen. See the `createColorRenderer()` [documentation](https://developers.arcgis.com/javascript/jsapi/esri.renderers.smartmapping-amd.html#createcolorrenderer) for more info.

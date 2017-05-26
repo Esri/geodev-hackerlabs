@@ -86,7 +86,7 @@ In the steps below you're going to change the color for a couple of layers in th
 8. To see the changes, click `Open in Map Viewer`.  
 
 Your map should look like this:
-* [Live Map](http://www.arcgis.com/home/webmap/viewer.html?webmap=b66770c3ad184c6a8f68cba5c19addeb)
+* [Live Map](http://www.arcgis.com/home/webmap/viewer.html?webmap=4c7c4df0642540bba27106f1bc44ddac)
 * [Code](root_lightgreen.json)
 
 ### Bonus

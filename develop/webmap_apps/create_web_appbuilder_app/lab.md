@@ -1,4 +1,4 @@
-###Create a Web AppBuilder Application
+### Create a Web AppBuilder Application
 
 You can use the [Web AppBuilder for ArcGIS](http://doc.arcgis.com/en/web-appbuilder/) to build an HTML, CSS, JS app that will run on any device. All apps are developed on top of an existing web map and are shared out as a web application.
 
@@ -46,6 +46,6 @@ In this lab, you will build a simple WAB app.
 
 Your app should look something like [this](http://edn.maps.arcgis.com/apps/webappviewer/index.html?id=53ee22673c5c4f5bb543e18a7dd1f277).
 
-###Bonus
+### Bonus
 * Scan the QR code to view the app on your mobile device.
 * Try adding and configuring different themes and widgets.

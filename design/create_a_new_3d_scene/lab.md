@@ -1,10 +1,10 @@
-###Create a new 3D Scene
+### Create a new 3D Scene
 
 The easiest way to style a scene is to use the [Scene Viewer](http://doc.arcgis.com/en/arcgis-online/use-maps/view-scenes.htm).
 
 In this lab you will use the new styling capabilities of the scene viewer to make your map more meaningful in 3D.
 
-###Steps
+### Steps
 
 
 1. Go to [arcgis.com](http://www.arcgis.com) and login.  
@@ -45,14 +45,11 @@ In this lab you will use the new styling capabilities of the scene viewer to mak
     https://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops/FeatureServer/0
     ```  
 
-  2. Click `PDX Rail Stops` > `Configure Layer` and set the following properties:
+  2. Navigate to your previous zoomed in/rotated view.
+  3. Click `PDX Rail Stops` > `Configure Layer` > `3D Object` > `Options` and change the following properties:
 
-    * Elevation Mode: `Relative to ground`
-    * Offset (meters): `0`
-    * Symbols: `Change Symbols`
-     * Type: `3D Object`
-     * Shape: `Cylinder`
-     * Size (meters): `100` Color: `Red` (pick a dark red with 25% transparency)
+    * Color: `Red` (pick a dark red with 25% transparency)
+     * Size: `80` (meters)
 
   5. Click `Done`.
  

@@ -4,13 +4,13 @@ A place to learn how to build geo apps with the ArcGIS platform.
 
 ## Welcome
 
-This repository contains short labs that step you through the process of developing applications with [ArcGIS](http://www.arcgis.com). The process described here uses [ArcGIS Online](http://www.arcgis.com) and [ArcGIS for Developers](http://developers.arcgis.com) accounts, tools and services, and does not require the installation of desktop software for most labs.
+This repository contains short labs that step you through the process of developing applications with [ArcGIS](http://www.arcgis.com). The process described here uses [ArcGIS Online](http://www.arcgis.com) and [ArcGIS for Developers](http://developers.arcgis.com) accounts, tools and services, and does not require the installation of desktop software for most labs. A handful have been reworked as [ArcGIS DevLabs](https://developers.arcgis.com/labs/).
 
 The process involves three steps:
 
-1. Data - Prepare data for your apps with [ArcGIS Online](http://www.arcgis.com).
-2. Design - Style maps and layers for your apps with the [ArcGIS Online Map and Scene Viewer](http://www.arcgis.com).
-3. Develop - Use maps and layers in your apps with [ArcGIS templates, builders and APIs](http://developers.arcgis.com).
+1. [Data](#1-data) - Prepare data for your apps with [ArcGIS Online](http://www.arcgis.com).
+2. [Design](#2-design) - Style maps and layers for your apps with the [ArcGIS Online Map and Scene Viewer](http://www.arcgis.com).
+3. [Develop](#3-develop) - Use maps and layers in your apps with [ArcGIS templates, builders and APIs](http://developers.arcgis.com).
 
 ![Process](./arcgis-process.png)
 
@@ -18,7 +18,9 @@ The process involves three steps:
 
 Here's how to get started:
 
-1. **Sign up for a free** [ArcGIS Developer subscription](https://developers.arcgis.com/en/sign-up/) - Your subscription allows you to download software, register apps, import data, create new services, store maps, perform spatial analysis and more. If you already have an [ArcGIS Organizational subscription](http://www.arcgis.com/features/plans/pricing.html) (with at least publisher level permission) you can use that too. Please note that [free public accounts](https://geonet.esri.com/groups/geodev/blog/2014/10/15/help-i-cant-get-into-developersarcgiscom) and Organizational 'User' accounts will not work.
+1. **Sign up for a free** [ArcGIS Developer subscription](https://developers.arcgis.com/en/sign-up/) - Your subscription allows you to download software, register apps, import data, create new services, store maps, perform spatial analysis and more. If you already have an [ArcGIS Organization subscription](http://www.arcgis.com/features/plans/pricing.html) (with at least publisher level permission) or access to ArcGIS Enterprise, that will work too.
+
+> [Free public accounts](https://geonet.esri.com/groups/geodev/blog/2014/10/15/help-i-cant-get-into-developersarcgiscom) and Organizational 'User' accounts are *not* sufficient to complete the Hackerlabs.
 
 2. **Start the labs** - You can complete the labs in order or just pick and choose the ones you want to do. It will be easiest to use the data provided (Portland open data), but you feel free to substitute with your own data and augment the steps where necessary. The labs marked with an `*` are the minimum labs you need to complete to build your own custom app from ground zero.
 
@@ -69,7 +71,7 @@ ArcGIS Online and Developer Tools
 Code
 * [Add a layer to an app](./develop/jsapi/add_feature_layer/lab.md)
 * [GeometryEngine Buffering](./develop/jsapi/buffer_with_geometry_engine/lab.md)
- 
+
 ### 2. Design
 
 Creating web maps with great cartography is one of the most important steps to building effective mapping applications. Styling maps interactively can also be huge time-saver in app development.
@@ -99,7 +101,7 @@ One of the easiest ways to build an ArcGIS map app is to start with a web map.
 
 In these labs you will use the Configurable App Templates, the ArcGIS Web App Builder, and the APIs to build custom mapping apps. You will use the web maps with the Web AppBuilder to create an HTML5 responsive app or AppStudio to build and deploy a native app for iOS and Android. Or you can just build a custom app from the ground up with the ArcGIS JS API, Esri-Leaflet or the ArcGIS Runtime APIs.
 
-* Web Map Apps
+#### Web Map Apps
  * [Create a Configurable App](./develop/webmap_apps/create_configurable_app/lab.md)*
  * [Create a Web AppBuilder App](./develop/webmap_apps/create_web_appbuilder_app/lab.md)
  * [Create a JS API App](./develop/webmap_apps/create_jsapi_app/lab.md)
@@ -107,7 +109,7 @@ In these labs you will use the Configurable App Templates, the ArcGIS Web App Bu
  * [Create a Calcite Maps - Bootstrap App](./develop/webmap_apps/create_calcite_maps_app/lab.md)
  * [Create an AppStudio App](./develop/webmap_apps/create_appstudio_app/lab.md)
 
-* JS API
+#### JS API
  * [Build a Starter Map](./develop/jsapi/create_starter_map/lab.md)
  * [Build a Starter 3D Map](./develop/jsapi/create_starter_map_3d/lab.md)
  * [Add Feature Layer](./develop/jsapi/add_feature_layer/lab.md)
@@ -121,10 +123,11 @@ In these labs you will use the Configurable App Templates, the ArcGIS Web App Bu
  * [Search with a Query Task](./develop/jsapi/search_with_query_task/lab.md)
  * [Client-side Buffering](./develop/jsapi/buffer_with_geometry_engine/lab.md)
  * [Client-side Buffering with UI](./develop/jsapi/buffer_with_geometry_engine_and_slider/lab.md)
+ * [Working with ArcGIS Online Proxy](./develop/jsapi/work_with_proxy/lab.md)
 
 The above labs all use the 4.x JS API. If you would rather learn about the 3.x JS API, check [here](./develop/jsapi3/README.md).
 
-* Esri-Leaflet
+#### Esri-Leaflet
  * [Build a Starter Map](./develop/leaflet/create_starter_map/lab.md)
  * [Add Feature Layers](./develop/leaflet/add_feature_layer/lab.md)
  * [GeoEnrich address searches](./develop/leaflet/enrich_address_search/lab.md)
@@ -132,7 +135,7 @@ The above labs all use the 4.x JS API. If you would rather learn about the 3.x J
  * [Use Geolocation to Query](./develop/leaflet/query_with_html5_location/lab.md)
  * [Use Geolocation (and turf) to Query](./develop/leaflet/query_with_html5_location_turf/lab.md)
 
-* Web AppBuilder Developer Edition
+#### Web AppBuilder Developer Edition
  * [Setup Development Environment](./develop/wab/install_developer_edition_locally/lab.md)
  * [Add a Custom Widget](./develop/wab/add_custom_widget_to_app/lab.md)
  * [Add a Custom Configurable Widget](./develop/wab/add_configurable_widget/lab.md)
@@ -158,7 +161,7 @@ The above labs all use the 4.x JS API. If you would rather learn about the 3.x J
 Please see [www.civicapps.org](http://www.civicapps.org/), [developer.trimet.org/gis](developer.trimet.org/gis) and [http://www.portlandoregon.gov/bts](http://www.portlandoregon.gov/bts) for the data terms of use.
 
 ## Licensing
-Copyright 2016 Esri
+Copyright 2017 Esri
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -172,7 +175,4 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-A copy of the license is available in the repository's [LICENSE](./license.txt) file.
-
-[](Esri Tags: ArcGIS Web Mapping Leaflet AppBuilder Hackerlabs Labs JavaScript)
-[](Esri Language: JavaScript)
+A copy of the license is available in the repository's [LICENSE](./LICENSE) file.

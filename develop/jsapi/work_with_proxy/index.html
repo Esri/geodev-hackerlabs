@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Simple Routing - RouteTask - 4.3</title>
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    #paneDiv {
+      position: absolute;
+      top: 10px;
+      left: 62px;
+      padding: 0 12px 0 12px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.3/esri/css/main.css">
+  <script src="https://js.arcgis.com/4.3/"></script>
+
+  <script>
+      require([
+          "esri/Map",
+          "esri/views/MapView",
+          "esri/Graphic",
+          "esri/layers/GraphicsLayer",
+          "esri/tasks/RouteTask",
+          "esri/tasks/support/RouteParameters",
+          "esri/tasks/support/FeatureSet",
+          "esri/symbols/SimpleMarkerSymbol",
+          "esri/symbols/SimpleLineSymbol",
+          "esri/Color",
+          "dojo/on",
+          "dojo/domReady!"
+      ], function(
+          Map, MapView, Graphic, GraphicsLayer, RouteTask, RouteParameters,
+          FeatureSet, SimpleMarkerSymbol, SimpleLineSymbol, Color, on
+      ) {
+
+          // Point the URL to a valid route service
+          var routeTask = new RouteTask({
+              url: "YOUR_NEW_SERVICE_PROXY_URL"
+          });
+
+          // The stops and route result will be stored in this layer
+          var routeLyr = new GraphicsLayer();
+
+          // Setup the route parameters
+          var routeParams = new RouteParameters({
+              stops: new FeatureSet(),
+              outSpatialReference: { // autocasts as new SpatialReference()
+                  wkid: 3857
+              }
+          });
+
+          // Define the symbology used to display the stops
+          var stopSymbol = new SimpleMarkerSymbol({
+              style: "cross",
+              size: 15,
+              outline: { // autocasts as new SimpleLineSymbol()
+                  width: 4
+              }
+          });
+
+          // Define the symbology used to display the route
+          var routeSymbol = new SimpleLineSymbol({
+              color: [0, 0, 255, 0.5],
+              width: 5
+          });
+
+          var map = new Map({
+              basemap: "streets",
+              layers: [routeLyr] // Add the route layer to the map
+          });
+          var view = new MapView({
+              container: "viewDiv", // Reference to the scene div created in step 5
+              map: map, // Reference to the map object created before the scene
+              center: [-117.195, 34.057],
+              zoom: 14
+          });
+
+          // Adds a graphic when the user clicks the map. If 2 or more points exist, route is solved.
+          on(view, "click", addStop);
+
+          function addStop(event) {
+              // Add a point at the location of the map click
+              var stop = new Graphic({
+                  geometry: event.mapPoint,
+                  symbol: stopSymbol
+              });
+              routeLyr.add(stop);
+
+              // Execute the route task if 2 or more stops are input
+              routeParams.stops.features.push(stop);
+              if (routeParams.stops.features.length >= 2) {
+                  routeTask.solve(routeParams).then(showRoute);
+              }
+          }
+          // Adds the solved route to the map as a graphic
+          function showRoute(data) {
+              var routeResult = data.routeResults[0].route;
+              routeResult.symbol = routeSymbol;
+              routeLyr.add(routeResult);
+          }
+      });
+  </script>
+</head>
+<body>
+<div id="viewDiv"></div>
+<div id="paneDiv">
+  <div>
+    <p>Click on the map to add stops to the route. The route from the last stop to
+      the newly added stop is calculated. If a stop is not reachable, it is removed
+      and the last valid point is set as the starting point.</p>
+  </div>
+</div>
+</body>
+</html>

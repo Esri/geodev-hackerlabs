@@ -1,4 +1,4 @@
-###Add a vector tile layer
+### Add a vector tile layer
 
 In this lab you will add a vector tile layer to an ArcGIS API for JavaScript application. 
 
@@ -44,7 +44,7 @@ Your app should look something like this:
 * [Code](index.html)
 * [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi/add_vector_tile_layer/index.html)
 
-###Bonus
+### Bonus
 * The 4.0 JS API works closely with ArcGIS Portals. Instead of the style JSON, you can [create a Layer directly from the Portal Item](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#.fromPortalItem). Use the same GUID as embededd in the code added in Step 3 above. You'll have to change the require module too.
 
   ```javascript

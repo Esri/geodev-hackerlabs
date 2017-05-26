@@ -1,4 +1,4 @@
-###Style Feature Layers
+### Style Feature Layers
 
 In this lab you will apply custom styling to a feature layer.
 
@@ -86,5 +86,5 @@ Your app should look something like this:
  * [Code](index.html)
  * [Live App](http://esri.github.io/geodev-hackerlabs/develop/jsapi/style_feature_layer/index.html)
 
-###Bonus
+### Bonus
  * Add a [Rail Stops feature layer](http://services.arcgis.com/uCXeTVveQzP4IIcx/ArcGIS/rest/services/PDX_Rail_Stops/FeatureServer/0) to the map and then apply custom styles to it.

@@ -1,10 +1,10 @@
-###Build an Esri-leaflet Starter App
+### Build an Esri-leaflet Starter App
 
 This lab covers the basics for creating a basic starter Esri-Leaflet mapping application.
 The starter map simply loads a default base map, centers and zooms it in.
 If you are new to Esri-Leafet you can get the examples and API documentation [here](http://esri.github.io/esri-leaflet/examples/).
 
-###Steps
+### Steps
 
 1. Copy and paste the code below into [jsbin.com](http://jsbin.com). You can also click [here](index.html).
 
@@ -42,7 +42,7 @@ If you are new to Esri-Leafet you can get the examples and API documentation [he
 
 2. Run the app and you should see a dark gray map centered on Portland, Oregon.
 
-###Bonus
+### Bonus
 
 * Experiment with different basemaps such as [`Topographic`](http://esri.github.io/esri-leaflet/api-reference/layers/basemap-layer.html) or [`Gray`](http://esri.github.io/esri-leaflet/api-reference/layers/basemap-layer.html).
 * Run the code locally on your machine. Eventually if your app gets larger you'll want to migrate it from JSBin to your desktop.

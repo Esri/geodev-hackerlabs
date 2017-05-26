@@ -1,4 +1,4 @@
-###Search with a Query Task
+### Search with a Query Task
 
 In this lab you will use a QueryTask to query data from a feature layer. A query task allows you to make a SQL or spatial query to retrieve subsets of records from a layer or service. With query tasks, you are responsible for adding the resulting features to the map as graphics. You are also responsible for adding a symbol and the defining the popup template used for the data.
 

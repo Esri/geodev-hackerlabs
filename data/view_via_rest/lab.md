@@ -1,10 +1,10 @@
-###View via REST
+### View via REST
 
 All of feature layers are [ArcGIS REST feature services](http://resources.arcgis.com/en/help/arcgis-rest-api/index.html#/Feature_Service/02r3000000z2000000/). You can explore the underlying data with the REST API or the default web page that shows the metadata and exposes some query functionality.
 
 In this lab you will explore services via the REST API.
 
-###Steps
+### Steps
 
 1. Go to [arcgis.com](http://www.arcgis.com) and login.  
 
@@ -30,5 +30,5 @@ In this lab you will explore services via the REST API.
 
 7. Click `Query (GET)`
 
-###Bonus
+### Bonus
 * Explore the REST API by trying a number of different queries and different return formats.

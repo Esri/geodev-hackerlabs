@@ -1,10 +1,10 @@
-###Create a new map
+### Create a new map
 
 The easiet way to create a new map is to use the [Map Viewer](http://doc.arcgis.com/en/arcgis-online/use-maps/view-maps.htm).
 
 In this lab you will create a new map from existing layers that have been already been published.
 
-###Steps
+### Steps
 
 1. Go to [arcgis.com](http://www.arcgis.com) and login.  
 
@@ -38,7 +38,7 @@ In this lab you will create a new map from existing layers that have been alread
 
 8. Go to `My Contents` to view the item for this map.
 
-###Bonus
+### Bonus
 
 * View the JSON for the web map by using the REST API to access the item in your account. In your web browser, paste in this url. Try formatting the JSON with try [this JSON Editor tool](http://www.jsoneditoronline.org/).
 

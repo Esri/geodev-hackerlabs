@@ -1,4 +1,4 @@
-###Query-Feature Layer
+### Query-Feature Layer
 
 In this lab you will use a QueryTask to query data from a feature layer.
 

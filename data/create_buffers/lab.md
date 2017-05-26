@@ -32,7 +32,7 @@ In this lab you will take rail stations and buffer them by half a mile to get an
 
 > Your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=aa3e5b4e656f49af9e9ca893ed1c610e).
 
-###Bonus 
+### Bonus 
 
 * Use the small blue `i` icons in the analysis tool to learn more about the tools' various options.
 * Click `Show credits` to see how many credits the analysis will consume.

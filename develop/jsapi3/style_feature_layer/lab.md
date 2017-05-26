@@ -1,4 +1,4 @@
-###Style Feature Layers
+### Style Feature Layers
 
 In this lab you will apply custom styling to a feature layer.
 
