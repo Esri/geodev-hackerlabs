@@ -8,29 +8,30 @@ There are numerous options for installing the ArcGIS API for Python. Refer to th
 
 Navigate to the [Anacaonda Download page](https://www.continuum.io/downloads) and proceed with installation of the appropriate software for your Operating System. 
 
-Once installed, interaction with the Anaconda installation primarily occurs through its command-line tool called *conda*. Conda manages packages and dependencies so they don't interfere with each other through a mechanism called an environment, which is a folder or directory with a specific collection of packages and their dependencies. Core python and other default packages are installed into the default environment, named root. You can choose to keep this core environment isolated and untouched, or install additional packages into the environment before creating environments of your own. Refer to the core conda documentation at https://conda.io/docs/intro.html for instructions on managing environments.
+Once installed, interaction with the Anaconda installation primarily occurs through its command-line tool called *conda*. Conda manages packages and dependencies so they don't interfere with each other through a mechanism called an environment, which is a folder or directory with a specific collection of packages and their dependencies. Core python and other default packages are installed into the default environment, named root. You can choose to keep this core environment isolated and untouched, or install additional packages into the environment before creating environments of your own. Refer to the [core conda documentation](https://conda.io/docs/intro.html) for instructions on managing environments.
 
 # Esri distributes the ArcGIS Python API in a conda package called arcgis accessible at Esri's channel named esri. 
 
-		2. Install the arcgis package with the following command:
-		   '''python
-		      conda install -n <environment_name> -c esri arcgis 
-		   '''
-	           *NOTE: if you do not enter an environment name, the package installs into the root environment.
+Install the arcgis package with the following command:
+'''python
+conda install -n <environment_name> -c esri arcgis 
+'''
+**NOTE:** if you do not enter an environment name, the package installs into the root environment.
 
 # Environments much be activated in order to use them.
-		3. Activate the environment into which you installed arcgis. See topic at https:/conda.io/docs/test-drive.html#managing-conda for specific commands based on your OS.
-                  In Mac OS X:
-                  '''python
-                  source activate <ENVIRONMENT_NAME>
-                  '''
 
-	The ArcGIS API for Python integrates with the Jupyter Notebook. See documentation at https://jupyter.org for more about the Jupyter suite of software and tools.  
+Activate the environment into which you installed arcgis. See topic at https:/conda.io/docs/test-drive.html#managing-conda for specific commands based on your OS.
+In Mac OS X:
+'''python
+source activate <ENVIRONMENT_NAME>
+'''
+
+The ArcGIS API for Python integrates with the Jupyter Notebook. See documentation at https://jupyter.org for more about the Jupyter suite of software and tools.  
 
 # Start the Jupyter Notebook inside the directory where you want to create notebooks (or where notebooks already exist).
-		4. '''
-                   jupyter notebook
-                   ''' 
+'''
+jupyter notebook
+''' 
 
-	Full documentation including samples and an API Reference located at https://developers.arcgis.com/python.
+Full documentation including samples and an API Reference located at https://developers.arcgis.com/python.
 
