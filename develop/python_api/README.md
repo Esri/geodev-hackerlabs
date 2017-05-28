@@ -31,7 +31,8 @@ source activate <ENVIRONMENT_NAME>
 
 The ArcGIS API for Python integrates with the Jupyter Notebook. See documentation at https://jupyter.org for more about the Jupyter suite of software and tools.  
 
-# Start the Jupyter Notebook inside the directory where you want to create notebooks (or where notebooks already exist).
+# Start the Jupyter Notebook 
+Navigate to the directory where you want to create notebooks (or where notebooks already exist).
 
 ```
 jupyter notebook
