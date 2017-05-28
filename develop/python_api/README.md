@@ -13,7 +13,7 @@ Once installed, interaction with the Anaconda installation primarily occurs thro
 # Esri distributes the ArcGIS Python API in a conda package called arcgis accessible at Esri's channel named esri. 
 
 Install the arcgis package with the following command:
-'''python
+'''
 conda install -n <environment_name> -c esri arcgis 
 '''
 **NOTE:** if you do not enter an environment name, the package installs into the root environment.
@@ -22,7 +22,7 @@ conda install -n <environment_name> -c esri arcgis
 
 Activate the environment into which you installed arcgis. See topic at https:/conda.io/docs/test-drive.html#managing-conda for specific commands based on your OS.
 In Mac OS X:
-'''python
+'''
 source activate <ENVIRONMENT_NAME>
 '''
 
