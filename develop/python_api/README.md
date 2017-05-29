@@ -12,7 +12,7 @@ Once installed, interaction with the Anaconda installation primarily occurs thro
 
 ## Create an environment with this command:
 ```python
-conda create \-\-name gis-enviro
+conda create --name gis-enviro
 ```
 
 ## Install the ArcGIS API for Python
@@ -20,7 +20,7 @@ conda create \-\-name gis-enviro
 Esri distributes the ArcGIS Python API in a conda package called arcgis accessible at Esri's channel named esri. Install the arcgis package with the following command: 
 
 ```python
-conda install \-\-name gis-enviro -c esri arcgis
+conda install --name gis-enviro -c esri arcgis
 ```
 
 **NOTE:** if you do not enter an environment name, the package installs into the root environment.
