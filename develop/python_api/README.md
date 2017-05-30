@@ -43,6 +43,7 @@ Navigate to the directory where you want to create notebooks (or where notebooks
 ```
 jupyter notebook
 ```
+If installed correctly, you'll see messages indicating that a web server is started and will launch your default web browser in your current directory.
 
 Full documentation including samples and an API Reference located at https://developers.arcgis.com/python.
 
