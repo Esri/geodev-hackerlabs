@@ -18,7 +18,7 @@ Name the environment how you want.
 
 ## Install the ArcGIS API for Python
 
-Esri distributes the ArcGIS Python API in a conda package called arcgis accessible at Esri's channel named esri. Install the arcgis package with the following command: 
+Esri distributes the ArcGIS Python API in a conda package called arcgis accessible at Esri's channel named esri. Install the arcgis package with the following command. Additional packages, including 'jupyter' (mentioned below), get installed with the arcgis package. 
 
 ```bash
 conda install --name gis-enviro -c esri arcgis
