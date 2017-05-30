@@ -10,10 +10,11 @@ Navigate to the [Anaconda Download page](https://www.continuum.io/downloads) and
 
 Once installed, interaction with the Anaconda installation primarily occurs through its command-line tool called *conda*. Conda manages packages and dependencies so they don't interfere with each other through a mechanism called an environment, which is a folder or directory with a specific collection of packages and their dependencies. Core python and other default packages are installed into the default environment, named root. You can choose to keep this core environment isolated and untouched, or install additional packages into the environment before creating environments of your own. Refer to the [core conda documentation](https://conda.io/docs/intro.html) for instructions on managing environments.
 
-## Create an environment with this command. Name the environment how you want.:
+## Create an environment with this command:
 ```bash
 conda create --name gis-enviro
 ```
+Name the environment how you want.
 
 ## Install the ArcGIS API for Python
 
