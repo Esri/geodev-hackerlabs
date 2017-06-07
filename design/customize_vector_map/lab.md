@@ -91,4 +91,4 @@ Your map should look like this:
 
 ### Bonus
 
-* Working with JSON is fun, but you can also work with the layer styles in a more "[WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG)" fashion. Use the [ArcGIS Vector Basemap Style Editor](http://maps.esri.com/AGSJS_Demos/templates/VectorBasemapStyleEditor/) to edit the `Light Green Canvas` map you just created. Try using the colors of your organization, or maybe the colors of your [favorite team](http://teamcolors.arc90.com/)!
+* Working with JSON is fun, but you can also work with the layer styles in a more "[WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG)" fashion. Use the [ArcGIS Vector Basemap Style Editor](https://maps.esri.com/jg/VectorBasemapStyleEditor/) to edit the `Light Green Canvas` map you just created. Try using the colors of your organization, or maybe the colors of your [favorite team](http://teamcolors.arc90.com/)!
