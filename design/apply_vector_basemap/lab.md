@@ -1,8 +1,8 @@
 ### Vector Basemaps
 
-Esri has introduced a new set of [vector basemaps](http://www.arcgis.com/home/search.html?q=owner:esri_vector) now in beta release. There are several benefits to vector basemaps including high-res displays, smaller and easier to update and the ability to customize the look and feel of the basemaps. You can see them live [here](http://www.arcgis.com/home/search.html?q=owner:esri_vector).
+Esri has introduced vector basemaps. There are several benefits to vector basemaps including the ability to customize the map to change its content and symbology, including fonts.  You can also turn on and off layers, change symbols for layers and switch to alternate local language in some areas. You can see them live [here](http://www.arcgis.com/home/search.html?q=owner:esri%20type:tile%20layer).
 
-In this lab you will swap your basemap with your favorite vector basemap.
+In this lab you will swap an existing basemap with your favorite vector basemap.
 
 ### Steps
 
@@ -15,14 +15,16 @@ In this lab you will swap your basemap with your favorite vector basemap.
 	1. Search for:
 
 		```
-		owner:esri_vector -mature
+		owner:esri type:tile layer
 		```
 		
-	2. Click on `World Street Map (Night)` (DO NOT CLICK ADD!) > ```Add to Map```.
+	2. Click on `World Street Map (Night)` > ```Add```.
 
 	3. Click `Done Adding Layers`.
- 
-4. Save your map.
+
+4. Click on the three dots ". . . " under the checkbox for `World Street Map (Night)` to show the option list > `Move to Basemap`
+
+5. Save your map.
 
 Your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=11e2285a131540f792c58565db996b4b)
 
@@ -30,12 +32,11 @@ Your map should look something like [this map](http://www.arcgis.com/home/webmap
 
 Experiment with adding and removing other vector tile layers as basemaps.
  		
-	```
+```
 	World Street Map
-	World Street Map (Night)
 	World Navigation Map
 	World Topographic Map
 	Dark Gray Canvas
 	Light Gray Canvas
 	...
-	```
+```
