@@ -32,11 +32,11 @@ Your map should look something like [this map](http://www.arcgis.com/home/webmap
 
 Experiment with adding and removing other vector tile layers as basemaps.
  		
-	```
+```
 	World Street Map
 	World Navigation Map
 	World Topographic Map
 	Dark Gray Canvas
 	Light Gray Canvas
 	...
-	```
+```
