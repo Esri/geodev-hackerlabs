@@ -1,8 +1,8 @@
 ### Vector Basemaps
 
-Esri has introduced vector basemaps. There are several benefits to vector basemaps including high-res displays, smaller and easier to update and the ability to customize the look and feel of the basemaps. You can see them live [here](http://www.arcgis.com/home/search.html?q=owner:esri%20type:tile%20layer).
+Esri has introduced vector basemaps. There are several benefits to vector basemaps including the ability to customize the map to change its content and symbology, including fonts.  You can also turn on and off layers, change symbols for layers and switch to alternate local language in some areas. You can see them live [here](http://www.arcgis.com/home/search.html?q=owner:esri%20type:tile%20layer).
 
-In this lab you will swap your basemap with your favorite vector basemap.
+In this lab you will swap an existing basemap with your favorite vector basemap.
 
 ### Steps
 
