@@ -15,14 +15,16 @@ In this lab you will swap your basemap with your favorite vector basemap.
 	1. Search for:
 
 		```
-		owner:esri_vector -mature
+		owner:esri type:tile layer
 		```
 		
-	2. Click on `World Street Map (Night)` (DO NOT CLICK ADD!) > ```Add to Map```.
+	2. Click on `World Street Map (Night)` > ```Add```.
 
 	3. Click `Done Adding Layers`.
- 
-4. Save your map.
+
+4. Click on the three dots ". . . " under the checkbox for `World Street Map (Night)` to show the option list > `Move to Basemap`
+
+5. Save your map.
 
 Your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=11e2285a131540f792c58565db996b4b)
 
@@ -32,7 +34,6 @@ Experiment with adding and removing other vector tile layers as basemaps.
  		
 	```
 	World Street Map
-	World Street Map (Night)
 	World Navigation Map
 	World Topographic Map
 	Dark Gray Canvas
