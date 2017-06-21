@@ -34,7 +34,7 @@ In this lab you will create a new map from existing layers that have been alread
 
 7. Save your map. 
 
-	NOTE: With the default styles, your map should look something like [this map](http://www.arcgis.com/home/webmap/viewer.html?webmap=c8cd4b6f2d724c99be9a2d14fb31603e).
+	NOTE: With the default styles, your map should look something like [this map](http://geeknixta.maps.arcgis.com/home/webmap/viewer.html?webmap=50066020b34f45d1a8b88f9194f6aeef).
 
 8. Go to `My Contents` to view the item for this map.
 
