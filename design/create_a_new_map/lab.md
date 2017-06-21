@@ -34,7 +34,7 @@ In this lab you will create a new map from existing layers that have been alread
 
 7. Save your map. 
 
-	NOTE: With the default styles, your map should look something like [this map](http://geeknixta.maps.arcgis.com/home/webmap/viewer.html?webmap=50066020b34f45d1a8b88f9194f6aeef).
+	NOTE: With the default styles, your map should look something like [this map](https://edn.maps.arcgis.com/home/webmap/viewer.html?webmap=1ce063a74a024fa38fd4ed00126eb130).
 
 8. Go to `My Contents` to view the item for this map.
 
@@ -43,7 +43,7 @@ In this lab you will create a new map from existing layers that have been alread
 * View the JSON for the web map by using the REST API to access the item in your account. In your web browser, paste in this url. Try formatting the JSON with [this JSON Editor tool](http://www.jsoneditoronline.org/).
 
 ```
-https://www.arcgis.com/sharing/rest/content/items/c8cd4b6f2d724c99be9a2d14fb31603e/data
+https://www.arcgis.com/sharing/rest/content/items/1ce063a74a024fa38fd4ed00126eb130/data
 ```
 
 NOTE: Replace the item ID above with yours.
