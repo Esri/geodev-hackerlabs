@@ -40,7 +40,7 @@ In this lab you will create a new map from existing layers that have been alread
 
 ### Bonus
 
-* View the JSON for the web map by using the REST API to access the item in your account. In your web browser, paste in this url. Try formatting the JSON with try [this JSON Editor tool](http://www.jsoneditoronline.org/).
+* View the JSON for the web map by using the REST API to access the item in your account. In your web browser, paste in this url. Try formatting the JSON with [this JSON Editor tool](http://www.jsoneditoronline.org/).
 
 ```
 https://www.arcgis.com/sharing/rest/content/items/c8cd4b6f2d724c99be9a2d14fb31603e/data
