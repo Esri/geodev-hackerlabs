@@ -127,6 +127,11 @@ In these labs you will use the Configurable App Templates, the ArcGIS Web App Bu
 
 The above labs all use the 4.x JS API. If you would rather learn about the 3.x JS API, check [here](./develop/jsapi3/README.md).
 
+#### ArcGIS API for Python
+* [Set up your developer environment](./develop/python_api/setup.md)
+* [Create a map](./develop/python_api/create-map.md)
+* [Add a layer to a map](./develop/python_api/add-layer.md)
+
 #### Esri-Leaflet
  * [Build a Starter Map](./develop/leaflet/create_starter_map/lab.md)
  * [Add Feature Layers](./develop/leaflet/add_feature_layer/lab.md)
