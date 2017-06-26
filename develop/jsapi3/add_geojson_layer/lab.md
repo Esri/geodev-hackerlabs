@@ -42,7 +42,7 @@ In this lab you'll learn an easy way to load GeoJSON directly into your ArcGIS m
       // ADD load event handler
       map.on("load", function () {
         var geoJsonLayer = new GeoJsonLayer({
-          url: "https://cdn.rawgit.com/Esri/geodev-hackerlabs/gh-pages/resources/pdx_data/PDX_Rail_Lines.geojson"
+          url: "https://cdn.rawgit.com/Esri/geodev-hackerlabs/master/resources/pdx_data/PDX_Rail_Lines.geojson"
         });
 
         map.addLayer(geoJsonLayer);
