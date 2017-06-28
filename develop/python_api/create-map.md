@@ -42,9 +42,8 @@ Sign in to https://www.arcgis.com or your own ArcGIS Enterprise to access your M
 import getpass
 password = getpass.getpass("Enter password: ")
 
-#p_gis = GIS(<YOUR PORTAL HOME URL>, <USERNAME>, password, verify_cert=False)
-#set verify_cert to False if ssl errors are returned regarding security
-p_gis = GIS("https://www.arcgis.com", "[your username]", password, verify_cert=False)
+#p_gis = GIS(<YOUR PORTAL HOME URL>, <USERNAME>, password)
+p_gis = GIS("https://www.arcgis.com", "[your username]", password)
 
 # Entering a specific location and Zoom Level controls how the map draws
 p_map = p_gis.map("Cannon Beach, OR", 12)
