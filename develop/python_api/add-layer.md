@@ -16,7 +16,7 @@ print("Logged in successfully to {} as {}.".format(gis.properties.urlKey + '.' +
 
 ### Load a map widget from the `gis` class
 
-For more information on IPython.display, refer to [IPython's Rich Display System](http://jupyter-notebook.readthedocs.io/en/latest/notebook.html#structure-of-a-notebook-document). Importing the diplay function allows for display of Item html and other graphic representations of objects.
+For more information on IPython.display, refer to [IPython's Rich Display System](https://github.com/ipython/ipython/blob/master/examples/IPython%20Kernel/Rich%20Output.ipynb) or the [IPython API Reference](http://ipython.readthedocs.io/en/stable/api/generated/IPython.display.html). Importing the diplay function allows for display of Item html and other graphic representations of objects.
 
 Be sure to set your map to a variable for referencing later in the notebook.
 
