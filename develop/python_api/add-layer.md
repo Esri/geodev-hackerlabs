@@ -1,4 +1,4 @@
-# Add a layer to a map
+http://jupyter-notebook.readthedocs.io/en/latest/notebook.html#structure-of-a-notebook-document# Add a layer to a map
 
 Login to your ArcGIS Organization and hide the password with the getpass module. The API represents a GIS portal using the GIS class from the gis module. Instantiate your own GIS portal with this class and use its properties property (the **Property Manager** object accessed as a property) to access various information. You can also use the **User Manager** helper class by accessing the _users_ property of the gis class to work with user infromation.
 
@@ -16,7 +16,7 @@ print("Logged in successfully to {} as {}.".format(gis.properties.urlKey + '.' +
 
 ### Load a map widget from the `gis` class
 
-For more information on IPython.display, refer to [IPython's Rich Display System](http://jupyter-notebook.readthedocs.io/en/latest/notebook.html#structure-of-a-notebook-document). Importing the diplay function allows for display of Item html and other graphic representations of objects.
+For more information on IPython.display, refer to [IPython's Rich Display System](https://github.com/ipython/ipython/blob/master/examples/IPython%20Kernel/Rich%20Output.ipynb) or the [IPython API Reference](http://ipython.readthedocs.io/en/stable/api/generated/IPython.display.html). Importing the diplay function allows for display of Item html and other graphic representations of objects.
 
 Be sure to set your map to a variable for referencing later in the notebook.
 
