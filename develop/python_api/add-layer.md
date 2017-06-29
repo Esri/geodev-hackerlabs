@@ -1,4 +1,4 @@
-http://jupyter-notebook.readthedocs.io/en/latest/notebook.html#structure-of-a-notebook-document# Add a layer to a map
+# Add a layer to a map
 
 Login to your ArcGIS Organization and hide the password with the getpass module. The API represents a GIS portal using the GIS class from the gis module. Instantiate your own GIS portal with this class and use its properties property (the **Property Manager** object accessed as a property) to access various information. You can also use the **User Manager** helper class by accessing the _users_ property of the gis class to work with user infromation.
 
