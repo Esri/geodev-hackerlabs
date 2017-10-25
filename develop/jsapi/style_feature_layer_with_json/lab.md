@@ -42,7 +42,7 @@ In this lab you will apply custom styling to a feature layer using the JSON Draw
     map.add(featureLayer);
   ```
 
-4. Confirm that the JSBin `Output` panel shows styled neighborhoods.
+5. Confirm that the JSBin `Output` panel shows styled neighborhoods.
 
 Your app should look something like this:
 * [Code](index.html)
