@@ -8,20 +8,20 @@ In this lab, you will use the ArcGIS JS API to load a WebMap by its ID in a cust
 
 2. In `JSBin` > `HTML`, update the `require` statement and `function` definition (notice to remove the `Map` reference).
 
-	```javascript
+  ```javascript
   require([
     "esri/views/MapView",
     /*** ADD ***/
     "esri/WebMap",
     "dojo/domReady!"
   ], function(MapView, WebMap) {
-	```
+  ```
 
 3. Open a WebMap into the MapView using the WebMapID. Note that the code is really similar to the starter map, but in place of a Map we're using a WebMap. To use the saved initial view of the WebMap, remove the `center` and `zoom` attributes from the `MapView` options.
 	
   NOTE: Feel free to use your own WebMap ID below!
 
-	```javascript
+  ```javascript
   require([
     "esri/views/MapView",
     "esri/WebMap",
@@ -40,7 +40,7 @@ In this lab, you will use the ArcGIS JS API to load a WebMap by its ID in a cust
       map: map,
       container: "viewDiv"
     });
-	```
+  ```
 
 Your app should look something like this:
  * [Code](index.html)
