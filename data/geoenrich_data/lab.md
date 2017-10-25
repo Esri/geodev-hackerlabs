@@ -10,7 +10,7 @@ In this lab you will add neighborhood polygons and enrich them with population d
 
 2. Use `Search` > `Search for Layers` to find the `PDX Neighborhoods` layer by `al_geodev`.
 
-3. Click `Open` > `Add layer to new map`.
+3. Click `Open in Map Viewer` > `Add to new map`.
 
 > NOTE: If you are having difficulty finding it, just click [this link](http://www.arcgis.com/home/item.html?id=cc1d37e67e934a93b489ca4d82b07d9c).
 
