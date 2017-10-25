@@ -16,7 +16,7 @@ In this lab you will add neighborhood polygons and enrich them with population d
 
 4. Click `PDX Neighborhoods` > `Perform Analysis` > `Data Enrichment` > `Enrich Layer`.
 
-  1. Click `Select Variables` and `Search` and select the following:
+    i. Click `Select Variables` and `Search` and select the following:
 
     ```
     Population > 2017 Total Population (Esri)
@@ -26,7 +26,7 @@ In this lab you will add neighborhood polygons and enrich them with population d
 
     ```HINT: After you select each variable, click `Back` to select each variable and `Apply` when you are done.```
 
-  2. Now `Run Analysis`.
+    ii. Now `Run Analysis`.
 
 5. Click `PDX Neighborhood` to turn off the original layer.
 
@@ -34,13 +34,13 @@ In this lab you will add neighborhood polygons and enrich them with population d
 
 7. Click `Enriched PDX Neighborhoods` > `Change Style`.
 
-  1. Set the following properties:
+    i. Set the following properties:
 
     ```
     Choose and attribute to show: 2017 Total Population
     ```
 
-  2. Done.
+    ii. Done.
 
 8. Save your map.
 
