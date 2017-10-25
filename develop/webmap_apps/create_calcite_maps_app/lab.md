@@ -44,7 +44,7 @@ In this lab you will use Calcite Maps and Bootstrap to build an app that loads t
       </ul>
     </nav><!--/.calcite-navbar --> 
 
-    ```
+  ```
 
 3. Now add a container for the map.
 
@@ -143,7 +143,7 @@ In this lab you will use Calcite Maps and Bootstrap to build an app that loads t
     </script>
 
     <script src="https://js.arcgis.com/4.0/"></script>
-   ```
+  ```
 
 6. And lastly, add code to load the webmap and wire up the widgets to the UI controls. 
   
