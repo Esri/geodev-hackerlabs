@@ -6,7 +6,7 @@
   <title>Search with Query Task</title>
 
   <link rel="stylesheet" href="https://js.arcgis.com/4.3/esri/css/main.css">
-  
+
   <style>
     html, body, #viewDiv {
       padding: 0;
@@ -42,7 +42,7 @@
         zoom: 10
       });
 
-      // Create query task to reference the PDX_Rail_Stops_Styled feature layer      
+      // Create query task to reference the PDX_Rail_Stops_Styled feature layer
       var queryTask = new QueryTask({
         url: "http://services.arcgis.com/uCXeTVveQzP4IIcx/arcgis/rest/services/PDX_Rail_Stops_Styled/FeatureServer/0"
       });
@@ -112,17 +112,17 @@
         view.popup.visible = false;
       }
 
+      // Select a sql query
+      on(dom.byId("queryDiv"), "change", function(e) {
+        var sql = e.target.value;
+        getFeatures(sql);
+      });
+
       // Add select element to UI
       view.ui.add(dom.byId("queryDiv"), {
         position: "top-right"
       });
 
-      // Select a sql query
-      on(dom.byId("queryDiv"), "change", function(e) {
-        var sql = e.target.value;
-        getFeatures(sql);
-      })
-      
     });
   </script>
 </head>
