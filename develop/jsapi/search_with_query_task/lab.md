@@ -132,16 +132,16 @@ In this lab you will use a QueryTask to query data from a feature layer. A query
   ```javascript
     /*** ADD ***/
 
-    // Add select element to UI
-    view.ui.add(dom.byId("queryDiv"), {
-      position: "top-right"
-    });
-
     // Select a sql query
     on(dom.byId("queryDiv"), "change", function(e) {
       var sql = e.target.value;
       getFeatures(sql);
-    })
+    });
+
+    // Add select element to UI
+    view.ui.add(dom.byId("queryDiv"), {
+      position: "top-right"
+    });
 
   ```
 
